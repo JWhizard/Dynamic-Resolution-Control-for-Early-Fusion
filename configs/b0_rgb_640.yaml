@@ -1,0 +1,16 @@
+# B0: RGB-only YOLO26n @ 640
+name: b0_rgb_640
+data: /mnt/12TB_Drive/whisenaj/Datasets/M3FD_4ch/rgb.yaml
+weights: /home/whisenaj/anaconda3/envs/YOLO_Workspace/YOLO_Workspace/YOLO_Workspace/yolo26n.pt
+seed: 42
+ms_sizes: null
+train:   # identical recipe for every configuration
+  imgsz: 640
+  epochs: 150
+  batch: 16
+  optimizer: SGD
+  lr0: 0.01
+  close_mosaic: 10
+  workers: 8
+  cache: ram
+  plots: true
