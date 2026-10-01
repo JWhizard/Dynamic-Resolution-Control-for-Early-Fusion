@@ -1,0 +1,25 @@
+oracle,eps,chosen_on,scored_on,cost_ms,AP,gain_vs_frontier
+per-image oracle,0.0,seed42,seed42,22.45,0.4311,0.0322
+per-image oracle,0.0,seed42,seed123,22.45,0.4192,0.013
+per-image oracle,0.0,seed42,seed456,22.45,0.4285,0.0191
+per-image oracle,0.02,seed42,seed42,21.13,0.4297,0.0346
+per-image oracle,0.02,seed42,seed123,21.13,0.4149,0.013
+per-image oracle,0.02,seed42,seed456,21.13,0.4231,0.0177
+per-image oracle,0.05,seed42,seed42,18.89,0.423,0.0345
+per-image oracle,0.05,seed42,seed123,18.89,0.4106,0.0159
+per-image oracle,0.05,seed42,seed456,18.89,0.4126,0.0138
+per-image oracle,0.1,seed42,seed42,16.08,0.4051,0.0345
+per-image oracle,0.1,seed42,seed123,16.08,0.3977,0.0221
+per-image oracle,0.1,seed42,seed456,16.08,0.3878,0.0134
+sequence-level oracle,0.0,seed42,seed42,23.51,0.4264,0.0243
+sequence-level oracle,0.0,seed42,seed123,23.51,0.4174,0.0078
+sequence-level oracle,0.0,seed42,seed456,23.51,0.4288,0.0164
+sequence-level oracle,0.02,seed42,seed42,21.85,0.4245,0.0274
+sequence-level oracle,0.02,seed42,seed123,21.85,0.4176,0.0134
+sequence-level oracle,0.02,seed42,seed456,21.85,0.4264,0.0188
+sequence-level oracle,0.05,seed42,seed42,18.85,0.4132,0.0247
+sequence-level oracle,0.05,seed42,seed123,18.85,0.4102,0.0156
+sequence-level oracle,0.05,seed42,seed456,18.85,0.4103,0.0116
+sequence-level oracle,0.1,seed42,seed42,15.91,0.3911,0.0215
+sequence-level oracle,0.1,seed42,seed123,15.91,0.3914,0.017
+sequence-level oracle,0.1,seed42,seed456,15.91,0.3785,0.0055

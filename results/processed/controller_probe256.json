@@ -1,0 +1,114 @@
+{
+ "kind": "probe",
+ "fit_split": "val",
+ "features": [
+  "n_conf25",
+  "n_conf10",
+  "n_small_conf10",
+  "n_people_conf10",
+  "n_small_people_conf10",
+  "frac_small_conf10",
+  "median_area_conf25",
+  "min_area_conf25",
+  "mean_conf_top10",
+  "n_uncertain",
+  "max_conf"
+ ],
+ "probe_res": 256,
+ "choices": [
+  256,
+  320,
+  480,
+  640
+ ],
+ "run": "ms_fusion_seed42",
+ "platform": "_cpu4",
+ "cost_ms_by_choice": [
+  10.445332800519008,
+  22.833609403953453,
+  29.16909431091783,
+  38.414152425601955
+ ],
+ "fixed_cost_ms": [
+  12.388276603434445,
+  18.723761510398823,
+  27.96881962508295
+ ],
+ "selection": "cheapest val policy with val AP >= fixed640 - 0.02",
+ "val_AP_fixed640": 0.446700925401012,
+ "lam": 0.003353549993738181,
+ "depth": 2,
+ "min_leaf": 20,
+ "tree": {
+  "feature": "frac_small_conf10",
+  "threshold": 0.05131578947368421,
+  "n": 841,
+  "left": {
+   "feature": "median_area_conf25",
+   "threshold": 36527.677734375,
+   "n": 485,
+   "left": {
+    "leaf": 480,
+    "n": 432,
+    "mean_q": [
+     0.5122,
+     0.5592,
+     0.6172,
+     0.6299
+    ]
+   },
+   "right": {
+    "leaf": 256,
+    "n": 53,
+    "mean_q": [
+     0.6705,
+     0.6836,
+     0.7004,
+     0.7016
+    ]
+   }
+  },
+  "right": {
+   "feature": "mean_conf_top10",
+   "threshold": 0.1881142184138298,
+   "n": 356,
+   "left": {
+    "leaf": 480,
+    "n": 20,
+    "mean_q": [
+     0.3709,
+     0.5034,
+     0.5613,
+     0.5688
+    ]
+   },
+   "right": {
+    "leaf": 640,
+    "n": 336,
+    "mean_q": [
+     0.3379,
+     0.408,
+     0.4876,
+     0.5367
+    ]
+   }
+  }
+ },
+ "rules": "if frac_small_conf10 <= 0.05132:\n    if median_area_conf25 <= 3.653e+04:\n        -> 480 px  (n=432, mean AP@320/480/640 [0.5122, 0.5592, 0.6172, 0.6299])\n    else:\n        -> 256 px  (n=53, mean AP@320/480/640 [0.6705, 0.6836, 0.7004, 0.7016])\nelse:\n    if mean_conf_top10 <= 0.1881:\n        -> 480 px  (n=20, mean AP@320/480/640 [0.3709, 0.5034, 0.5613, 0.5688])\n    else:\n        -> 640 px  (n=336, mean AP@320/480/640 [0.3379, 0.408, 0.4876, 0.5367])\n",
+ "test": {
+  "test_AP": 0.4105493799906237,
+  "test_AP_small": 0.18383151021969327,
+  "test_People_recall50": 0.6662452591656132,
+  "test_cost_ms": 31.204928896874254
+ },
+ "test_fixed_AP": {
+  "320": 0.3463953491814299,
+  "480": 0.3880381215621509,
+  "640": 0.41508456406951627
+ },
+ "random_costmatched": {
+  "mix": "640/640 with p(640)=0.000",
+  "AP_mean": 0.4150845640695163,
+  "AP_std": 5.851389114294502e-17
+ }
+}

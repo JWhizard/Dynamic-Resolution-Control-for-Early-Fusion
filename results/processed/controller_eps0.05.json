@@ -1,0 +1,71 @@
+{
+ "run": "ms_fusion_seed42",
+ "eps": 0.05,
+ "fit_split": "val",
+ "max_depth": 3,
+ "min_leaf": 40,
+ "cv_accuracy": {
+  "10": 0.39954457265363325,
+  "20": 0.4015445726536332,
+  "40": 0.4131330543150343,
+  "80": 0.38465879546048415
+ },
+ "majority_baseline": 0.40665873959571935,
+ "label_mix_val": {
+  "320": 255,
+  "480": 342,
+  "640": 244
+ },
+ "tree": {
+  "feature": "lapvar_ir",
+  "threshold": 2500.6258544921875,
+  "n": 841,
+  "left": {
+   "feature": "lum_std",
+   "threshold": 14.895194053649902,
+   "n": 763,
+   "left": {
+    "leaf": 320,
+    "n": 62,
+    "counts": [
+     36,
+     15,
+     11
+    ]
+   },
+   "right": {
+    "feature": "hf480_rgb",
+    "threshold": 0.044377522543072645,
+    "n": 701,
+    "left": {
+     "leaf": 320,
+     "n": 40,
+     "counts": [
+      21,
+      7,
+      12
+     ]
+    },
+    "right": {
+     "leaf": 480,
+     "n": 661,
+     "counts": [
+      149,
+      300,
+      212
+     ]
+    }
+   }
+  },
+  "right": {
+   "leaf": 320,
+   "n": 78,
+   "counts": [
+    49,
+    20,
+    9
+   ]
+  }
+ },
+ "rules": "if lapvar_ir <= 2501:\n    if lum_std <= 14.9:\n        -> 320 px  (n=62, oracle counts [36, 15, 11])\n    else:\n        if hf480_rgb <= 0.04438:\n            -> 320 px  (n=40, oracle counts [21, 7, 12])\n        else:\n            -> 480 px  (n=661, oracle counts [149, 300, 212])\nelse:\n    -> 320 px  (n=78, oracle counts [49, 20, 9])\n"
+}

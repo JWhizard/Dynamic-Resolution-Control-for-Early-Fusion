@@ -1,0 +1,43 @@
+{
+ "description": "Frozen CPU cost model used to FIT controllers: 4 threads pinned to dedicated cores, 3 reps x 419 test frames. Deployment latency is re-measured separately by bench_session.sh.",
+ "run": "ms_fusion_seed42",
+ "platform": "_cpu4",
+ "costs": {
+  "320": {
+   "mean_ms": 12.60592759266057,
+   "p95_ms": 13.756062462925911,
+   "timestamp": "2026-09-30T18:09:58",
+   "source": "bench_ms_fusion_seed42_fixed-320_test_cpu4.json"
+  },
+  "400": {
+   "mean_ms": 16.457985065263966,
+   "p95_ms": 18.106804275885224,
+   "timestamp": "2026-10-01T12:58:53",
+   "source": "bench_ms_fusion_seed42_fixed-400_test_cpu4_frontier.json"
+  },
+  "480": {
+   "mean_ms": 19.31241173434235,
+   "p95_ms": 21.024358412250876,
+   "timestamp": "2026-09-30T18:10:59",
+   "source": "bench_ms_fusion_seed42_fixed-480_test_cpu4.json"
+  },
+  "544": {
+   "mean_ms": 21.80320517139253,
+   "p95_ms": 25.09598410688341,
+   "timestamp": "2026-10-01T12:59:33",
+   "source": "bench_ms_fusion_seed42_fixed-544_test_cpu4_frontier.json"
+  },
+  "576": {
+   "mean_ms": 23.53776775484989,
+   "p95_ms": 26.69908762909472,
+   "timestamp": "2026-10-01T13:00:16",
+   "source": "bench_ms_fusion_seed42_fixed-576_test_cpu4_frontier.json"
+  },
+  "640": {
+   "mean_ms": 27.790275043952402,
+   "p95_ms": 31.112113082781434,
+   "timestamp": "2026-09-30T18:12:11",
+   "source": "bench_ms_fusion_seed42_fixed-640_test_cpu4.json"
+  }
+ }
+}

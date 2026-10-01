@@ -1,0 +1,112 @@
+{
+ "kind": "scene",
+ "fit_split": "train",
+ "features": [
+  "lum_mean",
+  "lum_std",
+  "ir_spread",
+  "dark_channel",
+  "edge_rgb",
+  "edge_ir",
+  "lapvar_rgb",
+  "lapvar_ir",
+  "hf320_rgb",
+  "hf320_ir",
+  "hf480_rgb",
+  "hf480_ir",
+  "ir_blobs",
+  "ir_blob_median_area",
+  "ir_blob_min_area"
+ ],
+ "probe_res": null,
+ "choices": [
+  320,
+  480,
+  640
+ ],
+ "run": "ms_fusion_seed42",
+ "platform": "_cpu4",
+ "cost_ms_by_choice": [
+  12.388276603434445,
+  18.723761510398823,
+  27.96881962508295
+ ],
+ "fixed_cost_ms": [
+  12.388276603434445,
+  18.723761510398823,
+  27.96881962508295
+ ],
+ "selection": "cheapest val policy with val AP >= fixed640 - 0.02",
+ "val_AP_fixed640": 0.446700925401012,
+ "lam": 0.002559518442170529,
+ "depth": 2,
+ "min_leaf": 80,
+ "tree": {
+  "feature": "dark_channel",
+  "threshold": 122.0337028503418,
+  "n": 2940,
+  "left": {
+   "feature": "ir_blobs",
+   "threshold": 4.5,
+   "n": 1085,
+   "left": {
+    "leaf": 640,
+    "n": 107,
+    "mean_q": [
+     0.5914,
+     0.6734,
+     0.7119
+    ]
+   },
+   "right": {
+    "leaf": 480,
+    "n": 978,
+    "mean_q": [
+     0.6867,
+     0.7505,
+     0.7639
+    ]
+   }
+  },
+  "right": {
+   "feature": "ir_spread",
+   "threshold": 121.50390625,
+   "n": 1855,
+   "left": {
+    "leaf": 480,
+    "n": 221,
+    "mean_q": [
+     0.739,
+     0.7774,
+     0.7892
+    ]
+   },
+   "right": {
+    "leaf": 640,
+    "n": 1634,
+    "mean_q": [
+     0.509,
+     0.593,
+     0.6297
+    ]
+   }
+  }
+ },
+ "rules": "if dark_channel <= 122:\n    if ir_blobs <= 4.5:\n        -> 640 px  (n=107, mean AP@320/480/640 [0.5914, 0.6734, 0.7119])\n    else:\n        -> 480 px  (n=978, mean AP@320/480/640 [0.6867, 0.7505, 0.7639])\nelse:\n    if ir_spread <= 121.5:\n        -> 480 px  (n=221, mean AP@320/480/640 [0.739, 0.7774, 0.7892])\n    else:\n        -> 640 px  (n=1634, mean AP@320/480/640 [0.509, 0.593, 0.6297])\n",
+ "test": {
+  "test_AP": 0.4054952681401304,
+  "test_AP_small": 0.1832344102490914,
+  "test_People_recall50": 0.6852085967130215,
+  "test_cost_ms": 25.166618239486574
+ },
+ "test_fixed_AP": {
+  "320": 0.3463953491814299,
+  "480": 0.3880381215621509,
+  "640": 0.41508456406951627
+ },
+ "random_costmatched": {
+  "mix": "480/640 with p(640)=0.697",
+  "AP_mean": 0.4079976282080712,
+  "AP_std": 0.0035930636116499686
+ }
+}

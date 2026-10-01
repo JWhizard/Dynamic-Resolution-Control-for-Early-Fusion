@@ -1,0 +1,32 @@
+{
+ "description": "Frozen CPU cost model used to FIT controllers: MS model, 4 threads pinned to cores 104-107, 3 reps x 419 test frames. Deployment latency is re-measured separately by bench_session.sh.",
+ "run": "ms_fusion_seed42",
+ "platform": "_cpu4",
+ "costs": {
+  "192": {
+   "mean_ms": 8.540729537358775,
+   "p95_ms": 9.405347146093845,
+   "timestamp": "2026-09-30T17:51:21"
+  },
+  "256": {
+   "mean_ms": 10.445332800519008,
+   "p95_ms": 11.574673280119896,
+   "timestamp": "2026-09-30T17:51:46"
+  },
+  "320": {
+   "mean_ms": 12.388276603434445,
+   "p95_ms": 15.095337526872756,
+   "timestamp": "2026-09-30T17:32:11"
+  },
+  "480": {
+   "mean_ms": 18.723761510398823,
+   "p95_ms": 21.957820979878306,
+   "timestamp": "2026-09-30T17:33:12"
+  },
+  "640": {
+   "mean_ms": 27.96881962508295,
+   "p95_ms": 31.054354272782803,
+   "timestamp": "2026-09-30T17:34:25"
+  }
+ }
+}

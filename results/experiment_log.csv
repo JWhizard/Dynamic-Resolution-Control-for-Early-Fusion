@@ -1,0 +1,13 @@
+run_id,git_sha,code_hash,config,seed,device,start,end,outcome
+b1_ir_640_seed42,uncommitted,17588afcd8e4,configs/b1_ir_640.yaml,42,cuda:3,2026-09-30T13:56:51,2026-09-30T14:54:46,trained
+b2_fusion_640_seed42,uncommitted,17588afcd8e4,configs/b2_fusion_640.yaml,42,cuda:1,2026-09-30T13:55:31,2026-09-30T14:54:53,trained
+spec_fusion_320_seed42,uncommitted,17588afcd8e4,configs/spec_fusion_320.yaml,42,cuda:3,2026-09-30T13:57:11,2026-09-30T14:55:03,trained
+ms_fusion_seed42,uncommitted,17588afcd8e4,configs/ms_fusion.yaml,42,cuda:1,2026-09-30T13:55:51,2026-09-30T14:56:37,trained
+b0_rgb_640_seed42,uncommitted,17588afcd8e4,configs/b0_rgb_640.yaml,42,cuda:2,2026-09-30T13:56:11,2026-09-30T15:03:32,trained
+spec_fusion_480_seed42,uncommitted,17588afcd8e4,configs/spec_fusion_480.yaml,42,cuda:2,2026-09-30T13:56:31,2026-09-30T15:03:51,trained
+ms_fusion_seed123,uncommitted,ebf8e894ac70,configs/ms_fusion.yaml,123,cuda:1,2026-09-30T14:38:01,2026-09-30T15:25:42,trained
+b2_fusion_640_seed123,uncommitted,ebf8e894ac70,configs/b2_fusion_640.yaml,123,cuda:3,2026-09-30T14:38:01,2026-09-30T15:34:40,trained
+b2_fusion_640_seed456,uncommitted,ebf8e894ac70,configs/b2_fusion_640.yaml,456,cuda:2,2026-09-30T14:38:01,2026-09-30T15:53:52,trained
+ms_fusion_seed456,uncommitted,ebf8e894ac70,configs/ms_fusion.yaml,456,cuda:2,2026-09-30T14:38:01,2026-09-30T15:54:10,trained
+crossfit_ms_halfA_seed42,uncommitted,22feadc0ea1c,configs/crossfit_ms_halfA.yaml,42,cuda:2,2026-10-01T14:40:22,2026-10-01T15:00:13,trained
+crossfit_ms_halfB_seed42,uncommitted,22feadc0ea1c,configs/crossfit_ms_halfB.yaml,42,cuda:3,2026-10-01T14:40:22,2026-10-01T15:00:14,trained

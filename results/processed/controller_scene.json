@@ -1,0 +1,84 @@
+{
+ "kind": "scene",
+ "fit_split": "val",
+ "features": [
+  "lum_mean",
+  "lum_std",
+  "ir_spread",
+  "dark_channel",
+  "edge_rgb",
+  "edge_ir",
+  "lapvar_rgb",
+  "lapvar_ir",
+  "hf320_rgb",
+  "hf320_ir",
+  "hf480_rgb",
+  "hf480_ir",
+  "ir_blobs",
+  "ir_blob_median_area",
+  "ir_blob_min_area"
+ ],
+ "probe_res": null,
+ "choices": [
+  320,
+  480,
+  640
+ ],
+ "run": "ms_fusion_seed42",
+ "platform": "_cpu4",
+ "cost_ms_by_choice": [
+  12.388276603434445,
+  18.723761510398823,
+  27.96881962508295
+ ],
+ "fixed_cost_ms": [
+  12.388276603434445,
+  18.723761510398823,
+  27.96881962508295
+ ],
+ "selection": "cheapest val policy with val AP >= fixed640 - 0.02",
+ "val_AP_fixed640": 0.446700925401012,
+ "lam": 0.003353549993738181,
+ "depth": 1,
+ "min_leaf": 80,
+ "tree": {
+  "feature": "dark_channel",
+  "threshold": 126.86713790893555,
+  "n": 841,
+  "left": {
+   "leaf": 480,
+   "n": 355,
+   "mean_q": [
+    0.5601,
+    0.6302,
+    0.6454
+   ]
+  },
+  "right": {
+   "leaf": 640,
+   "n": 486,
+   "mean_q": [
+    0.4653,
+    0.5249,
+    0.5595
+   ]
+  }
+ },
+ "rules": "if dark_channel <= 126.9:\n    -> 480 px  (n=355, mean AP@320/480/640 [0.5601, 0.6302, 0.6454])\nelse:\n    -> 640 px  (n=486, mean AP@320/480/640 [0.4653, 0.5249, 0.5595])\n",
+ "test": {
+  "test_AP": 0.40500396510785874,
+  "test_AP_small": 0.18593442157814677,
+  "test_People_recall50": 0.6852085967130215,
+  "test_cost_ms": 24.703262104860396
+ },
+ "test_fixed_AP": {
+  "320": 0.3463953491814299,
+  "480": 0.3880381215621509,
+  "640": 0.41508456406951627
+ },
+ "random_costmatched": {
+  "mix": "480/640 with p(640)=0.647",
+  "AP_mean": 0.4033755906101648,
+  "AP_std": 0.0037387421764141704
+ }
+}
