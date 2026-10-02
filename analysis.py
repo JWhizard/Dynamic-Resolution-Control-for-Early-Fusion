@@ -71,6 +71,7 @@ def policy_table(platform: str = "") -> pd.DataFrame:
                      **({"p50_ms": b["latency_ms"]["p50"], "p95_ms": b["latency_ms"]["p95"],
                          "p99_ms": b["latency_ms"]["p99"], "mean_ms": b["latency_ms"]["mean"],
                          "J_per_frame": b["energy"]["J_per_frame"], "peak_mem_MiB": b["peak_mem_MiB"],
+                         "J_per_TP": b["energy"]["J_per_frame"] * len(ids) / max(1.0, evaluate_policy(dets, pol, "test")["TP50_conf25"]),
                          "stage_sum_over_e2e": b["stage_sum_over_e2e"],
                          **{f"stage_{k}": v for k, v in b["stage_ms_mean"].items()}} if b else {})})
 
@@ -298,7 +299,7 @@ def main():
     tables = {p: t for p, t in tables.items() if "p95_ms" in t}
     df = pd.concat(tables.values(), ignore_index=True)
     cols = ["name", "AP", "AP50", "AP_small", "AP_People", "People_recall50", "mean_pixels_rel640", "p50_ms",
-            "p95_ms", "p99_ms", "J_per_frame", "peak_mem_MiB", "AP_draws_mean", "AP_draws_std"]
+            "p95_ms", "p99_ms", "J_per_frame", "J_per_TP", "peak_mem_MiB", "AP_draws_mean", "AP_draws_std"]
     df.to_csv(PROC / "T1_policies_test.csv", index=False)
     print(df[[c for c in cols if c in df]].round(4).to_string(index=False))
 

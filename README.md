@@ -102,6 +102,24 @@ cores 104–107 on this shared host.
 Slides are built by `python3 scripts/build_m2_slides.py`, which writes `../Project_Presentation_whisenaj_M2.pptx`
 and leaves the original deck untouched.
 
+## Controller study, round 2 (2026-10-01)
+
+See `docs/controller_improvement_plan.md` (motivation) and `docs/controller_results.md` (results).
+
+- **The baseline is now the best-fixed hull**, not a random 320/480/640 mix. Fixed 576 px (AP 0.417, 23.5 ms
+  CPU) beats 640 px (0.415, 28.0 ms).
+- **About half the raw oracle gain was noise.** The cross-seed oracle leaves +0.6 to +1.8 AP of real headroom.
+- **New pieces:**
+  - `controller_v3.py`: cost-aware trees over {400, 480, 544, 576, 640} with denoised targets.
+  - `controller_learned.py`: CNN and kNN controllers on 4-channel thumbnails, including their own measured CPU cost.
+  - Cross-fitted labels from two half-train detectors (`configs/crossfit_ms_half*.yaml`).
+  - `bootstrap_vs_hull.py`: fast, validated sequence bootstrap.
+- **Result.** Learned controllers gain +0.4 to +0.9 AP when their compute is ignored. Once it is included,
+  every controller ties the best fixed resolution.
+- **3-seed table for all configurations:** `results/processed/T2_multiseed_all_test.csv`.
+  - Fusion beats RGB-only by +2.8 ± 0.2 AP and IR-only by +7.7 AP.
+  - The multi-scale model is +1.1 AP at 320 vs the 320 specialist, −0.1 at 480, and −0.7 at 640.
+
 ## Progress notes
 
 - **2026-09-30** — Data prep, grouped split, and 4-channel pipeline done. Stem, preprocessing and

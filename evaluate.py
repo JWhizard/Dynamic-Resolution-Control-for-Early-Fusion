@@ -92,6 +92,10 @@ def evaluate_policy(dets_by_res: dict[int, dict], policy: dict[str, int], split:
     ev25 = run_cocoeval(gt, policy_detections(dets_by_res, policy, ids, min_conf=RECALL_CONF))
     rec = ev25.eval["recall"]  # [IoU, class, area, maxDet]
     m["People_recall50"] = float(rec[0, PEOPLE, 0, -1])
+    # true positives at the deployment threshold (IoU 0.5, conf >= 0.25), for energy per correct detection
+    n_gt = np.array([len(gt.getAnnIds(catIds=[c + 1])) for c in range(len(NAMES))])
+    r50 = np.clip(rec[0, :, 0, -1], 0, None)
+    m["TP50_conf25"] = float((r50 * n_gt).sum())
     m["People_small_recall50"] = float(rec[0, PEOPLE, 1, -1])
     m["mean_res"] = float(np.mean([policy[i] for i in ids]))
     m["mean_pixels_rel640"] = float(np.mean([(policy[i] / 640) ** 2 for i in ids]))
