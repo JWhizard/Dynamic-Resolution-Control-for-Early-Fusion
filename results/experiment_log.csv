@@ -20,3 +20,5 @@ b0_rgb_640_seed456,uncommitted,cdcd3d7f13d0,configs/b0_rgb_640.yaml,456,cuda:3,2
 b1_ir_640_seed456,uncommitted,cdcd3d7f13d0,configs/b1_ir_640.yaml,456,cuda:3,2026-10-01T16:34:06,2026-10-01T18:31:18,trained
 spec_fusion_480_seed456,uncommitted,cdcd3d7f13d0,configs/spec_fusion_480.yaml,456,cuda:3,2026-10-01T16:34:21,2026-10-01T18:31:25,trained
 spec_fusion_320_seed456,uncommitted,cdcd3d7f13d0,configs/spec_fusion_320.yaml,456,cuda:3,2026-10-01T16:34:36,2026-10-01T18:31:28,trained
+ms_fine_fusion_seed123,a8b1a78,c9b1f3545523,configs/ms_fine_fusion.yaml,123,cuda:2,2026-10-01T20:52:50,2026-10-01T21:51:19,trained
+ms_fine_fusion_seed456,a8b1a78,542da94f2b0f,configs/ms_fine_fusion.yaml,456,cuda:3,2026-10-01T21:34:18,2026-10-01T22:32:20,trained
