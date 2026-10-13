@@ -1,0 +1,19 @@
+# Final deployment model selected from the measured fixed-resolution frontier.
+# Fine-tunes the strong multi-scale checkpoint at 576 px: the seed-42 study found
+# 576 px slightly more accurate than 640 while reducing four-thread CPU latency.
+name: fixed576_lightweight_final
+data: /mnt/12TB_Drive/whisenaj/Datasets/M3FD_4ch/fusion.yaml
+weights: /home/whisenaj/anaconda3/envs/Systems_Class/model/runs/ms_fusion_seed42/weights/best.pt
+seed: 42
+train:
+  imgsz: 576
+  epochs: 40
+  batch: 16
+  optimizer: SGD
+  lr0: 0.001
+  warmup_epochs: 1.0
+  close_mosaic: 10
+  freeze: 0
+  workers: 8
+  cache: ram
+  plots: true

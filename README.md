@@ -43,6 +43,28 @@ python analysis.py                                       # F1 (main result) from
 
 Tests: `python tests/test_stem.py`, `python tests/test_per_image_ap.py`, `python tests/test_preprocess.py`.
 
+## Final trained deployment model (2026-10-13)
+
+The model to use for the project demo is the fixed-576 early-fusion detector:
+
+- checkpoint: `runs/fixed576_lightweight_final_seed42/weights/best.pt`
+- training config: `configs/fixed576_lightweight_final.yaml`
+- size: 2,506,284 parameters, 5.12 MiB checkpoint
+- grouped test result: 0.4207 mAP@50-95, 0.1508 AP-small, 0.7105 People recall at IoU 0.5/conf 0.25
+- four-thread CPU: 23.05 ms mean, 25.87 ms p95, 43.4 FPS (3 repetitions x 419 test frames)
+- SHA-256: `1018dd271f63aa21fa6405a45b1771c608244daa7ee9ca07baba863a7ec65b99`
+
+It is fine-tuned from the multi-scale checkpoint at the measured best fixed operating point. Relative
+to that checkpoint served at 576 px, fine-tuning adds 0.36 AP and 1.45 AP-small. Relative to serving
+the original multi-scale checkpoint at 640 px, it adds 0.56 AP while reducing mean CPU latency from
+27.79 to 23.05 ms (17%). The complete test row is in
+`results/processed/fixed576_lightweight_final_test.csv`; the raw latency record is in
+`results/raw/bench_fixed576_lightweight_final_seed42_fixed-576_test_cpu4_final.json`.
+
+The stride-4 P2 alternative was also trained and evaluated (`configs/p2_lightweight_final.yaml`). It
+did not improve accuracy and was slower, so it is retained as a negative ablation rather than used as
+the deployment model.
+
 **Evaluator cross-check (B2, seed 42, test @640).** Ultralytics `val` gives mAP50-95 0.4427. The same
 detections from our GPU path, scored with Ultralytics' AP code, give 0.4369. That 0.6-point pipeline
 difference comes from antialiased bilinear resize vs cv2 INTER_AREA; mAP50 agrees to 0.001. Scored with
@@ -116,6 +138,11 @@ See `docs/controller_improvement_plan.md` (motivation) and `docs/controller_resu
   - `bootstrap_vs_hull.py`: fast, validated sequence bootstrap.
 - **Result.** Learned controllers gain +0.4 to +0.9 AP when their compute is ignored. Once it is included,
   every controller ties the best fixed resolution.
+- **Amortised sequence controller.** `fit_sequence_controller.py` fits a controller on cross-fitted,
+  window-averaged targets. It uses preceding-frame detections already produced by the detector, holds
+  each choice for 16 frames, and chooses from {480, 544, 576, 640}. Run it with
+  `python fit_sequence_controller.py --interval 16`, then benchmark the exported artifact with
+  `--policy sequence:results/processed/sequence/controller.json`.
 - **3-seed table for all configurations:** `results/processed/T2_multiseed_all_test.csv`.
   - Fusion beats RGB-only by +2.8 ± 0.2 AP and IR-only by +7.7 AP.
   - The multi-scale model is +1.1 AP at 320 vs the 320 specialist, −0.1 at 480, and −0.7 at 640.

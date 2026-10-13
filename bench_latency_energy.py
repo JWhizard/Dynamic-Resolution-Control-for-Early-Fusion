@@ -2,6 +2,7 @@
 
     python bench_latency_energy.py --run ms_fusion_seed42 --policy fixed:640 --gpu 1
     python bench_latency_energy.py --run ms_fusion_seed42 --policy heuristic:results/processed/controller_eps0.05.json --gpu 1
+    python bench_latency_energy.py --run ms_fusion_seed42 --policy sequence:results/processed/sequence/controller.json --cpu-threads 4
     python bench_latency_energy.py --run ms_fusion_seed42 --policy file:results/processed/policy_oracle_eps0.05_test.json --gpu 1
 
 Per frame (frames pre-decoded into pinned host memory; decode reported separately):
@@ -76,7 +77,8 @@ def main():
     ap.add_argument("--run", required=True)
     ap.add_argument("--view", default="fusion", choices=["fusion", "rgb", "ir"])
     ap.add_argument("--weights", default="last.pt")
-    ap.add_argument("--policy", required=True, help="fixed:R | heuristic:<json> | file:<json>")
+    ap.add_argument("--policy", required=True,
+                    help="fixed:R | heuristic:<json> | sequence:<json> | distilled:<json> | hybrid:<json> | file:<json>")
     ap.add_argument("--split", default="test")
     ap.add_argument("--gpu", type=int, default=None, help="physical (PCI order) GPU index")
     ap.add_argument("--cpu-threads", type=int, default=None,
@@ -110,7 +112,6 @@ def main():
     model = load_model(str(REPO / "runs" / args.run / "weights" / args.weights), dev)
     policy = make_policy(args.policy)
     analyzer = SceneAnalyzer(dev, getattr(policy, "features", None)) if policy.needs_features else None
-    h, w = frames[0].shape[:2]
     nvml = None if cpu else NVML(args.gpu)
     sync = (lambda: None) if cpu else (lambda: torch.cuda.synchronize(dev))
 
@@ -122,22 +123,28 @@ def main():
             return (other.t - self.t) * 1e3
 
     def step(i: str, frame: torch.Tensor, ev):
+        h, w = frame.shape[:2]
         ev[0].record()
         g = frame.to(dev, non_blocking=True)
         ev[1].record()
         feats = analyzer(g) if analyzer is not None else None
-        res = policy.choose(i, feats)
+        res = policy.choose(i, feats, frame=frame)
         ev[2].record()
         x, lb = to_input(g, res)
         ev[3].record()
         out = model(x)
         ev[4].record()
-        dets = postprocess(out, lb, h, w, conf=args.conf).cpu()
+        # Keep low-confidence candidates for feedback features (which use thresholds
+        # down to 0.10), while returning only deployment-threshold detections.
+        feedback_dets = postprocess(out, lb, h, w, conf=min(args.conf, 0.10)).cpu()
+        policy.update(i, feedback_dets)
+        dets = feedback_dets[feedback_dets[:, 4] >= args.conf]
         ev[5].record()
         return res, dets
 
     with torch.no_grad():
         ev = [CpuStamp() if cpu else torch.cuda.Event(enable_timing=True) for _ in range(6)]
+        policy.reset()
         for k in range(args.warmup):
             step(ids[k % len(ids)], frames[k % len(ids)], ev)
         sync()
@@ -151,6 +158,7 @@ def main():
 
         e2e, stages, chosen, reps = [], {s: [] for s in STAGES}, {}, []
         for rep in range(args.reps):
+            policy.reset()
             e_start, t_start = (nvml.energy_mj() if nvml else 0), time.perf_counter()
             for i, frame in zip(ids, frames):
                 t = time.perf_counter()

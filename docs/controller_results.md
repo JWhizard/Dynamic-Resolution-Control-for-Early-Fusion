@@ -40,3 +40,22 @@ Once the controller pays for itself, every learned controller ties the best fixe
   compute-bound CPU the controller's own cost cancels the benefit.
 - Open option (needs a scope decision; uses video): **amortised per-scene control**, i.e. run the
   expensive controller once per K frames.
+
+## Amortised sequence control (implemented 2026-10-07)
+
+`fit_sequence_controller.py` implements the video option without an extra probe or thumbnail model.
+It uses detection statistics from the preceding frame, holds each decision for 16 frames, chooses
+from {480, 544, 576, 640}, and immediately escalates to 640 when a small `People` candidate appears.
+Training uses cross-fitted detection features and mean quality over the following 16-frame window.
+
+- 492 cross-fitted training examples after augmenting each decision boundary over the four possible
+  preceding resolutions.
+- Validation gain over the equal-cost best-fixed hull: **+0.15 AP** averaged across three seeds.
+- Test gain: **+0.10 AP** averaged across three seeds (+0.05 / -0.01 / +0.27 AP by seed).
+- Seed-42 test policy: 325 frames at 576 px and 94 at 640 px; live CPU smoke benchmark mean 23.29 ms,
+  p95 27.80 ms (one repetition, 4 pinned threads).
+
+This is a small positive result, not a pass on the +0.5 AP success criterion. The held-out split has
+only one manifest group longer than 16 frames, so most test frames correctly fall back to 576 px and
+the dataset cannot provide a strong test of temporal amortisation. The generated artifact and sweep
+are in `results/processed/sequence/`; the online smoke record is in `results/raw/`.

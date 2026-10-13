@@ -1,0 +1,82 @@
+{
+ "kind": "distilled_thumbnail",
+ "model_file": "student_fp32.pt",
+ "actions": [
+  400,
+  480,
+  544,
+  576
+ ],
+ "cost_ms": [
+  16.457985065263966,
+  19.31241173434235,
+  21.80320517139253,
+  23.53776775484989
+ ],
+ "lambda": 0.02,
+ "uncertainty_margin": 0.0,
+ "safety_threshold": 0.5,
+ "fallback_resolution": 576,
+ "refresh_interval": 16,
+ "scene_change_threshold": 0.12,
+ "target": "crossfit_empirical_bayes_delta_vs_576",
+ "shrinkage_strength": 4.0,
+ "shrinkage_cv_mse": {
+  "2.0": 0.005314287722450775,
+  "4.0": 0.0052727100796469435,
+  "8.0": 0.0052819780735967785,
+  "16.0": 0.005324116415222335
+ },
+ "teacher_count": 10,
+ "teacher_val_loss": [
+  0.20654532313346863,
+  0.20584264397621155,
+  0.20711825788021088,
+  0.20638126134872437,
+  0.20592650771141052,
+  0.20738710463047028,
+  0.20502495765686035,
+  0.206557959318161,
+  0.2065933346748352,
+  0.2066664844751358
+ ],
+ "student_val_loss": 0.06239209696650505,
+ "controller_latency_ms": {
+  "mean": 0.11164963152259588,
+  "p95": 0.13872873969376087
+ },
+ "quantization": {
+  "correlation": 0.997714669767928,
+  "latency": {
+   "mean": 0.23373328428715467,
+   "p95": 0.2466079080477357
+  },
+  "val_gain": 0.002247033779457175,
+  "fp32_latency": {
+   "mean": 0.11164963152259588,
+   "p95": 0.13872873969376087
+  },
+  "fp32_val_gain": 0.002272165085943708
+ },
+ "validation": {
+  "teacher_free_gain": 0.002692132434838438,
+  "student_free_gain": 0.0025395448092759842,
+  "deployed_gain": 0.002272165085943708,
+  "deployed_cost_ms": 23.281224873810345,
+  "safety_delta": {
+   "AP_small": 0.013697719428366617,
+   "People_recall50": -0.0010215995329830492
+  }
+ },
+ "gates": {
+  "teacher_free_gain_ge_1AP": false,
+  "student_free_gain_ge_0.8AP": false,
+  "mean_overhead_le_0.12ms": true,
+  "p95_overhead_le_0.20ms": true,
+  "deployed_val_gain_ge_0.5AP": false,
+  "small_AP_drop_le_1AP": true,
+  "People_recall_drop_le_1pt": true
+ },
+ "validation_pass": false,
+ "test_evaluated": false
+}

@@ -54,10 +54,34 @@ class FusionTrainer(DetectionTrainer):
     """
 
     ms_sizes: tuple[int, ...] | None = None
+    warm_start: str | None = None
 
     def get_model(self, cfg=None, weights=None, verbose=True):
         model = super().get_model(cfg, weights, verbose)
-        if weights is not None and self.data["channels"] == 4 and inflate_stem(model, weights):
+        source = weights
+        if weights is not None and len(getattr(model.model[-1], "cv3", ())) == 4:
+            # A P2 checkpoint may have a widened classification branch that is not
+            # represented in Ultralytics' architecture YAML. The stock loader first
+            # rebuilds the narrow YAML model and silently drops those tensors. Match
+            # the saved branch width, then reload so a P2 fine-tune preserves its head.
+            from .p2warm import align_cls_width
+
+            width = align_cls_width(model, weights)
+            if width is not None:
+                model.load(weights, verbose=False)
+                print(f"{colorstr('P2 resume:')} restored widened c3={width} classification branches")
+        if weights is None and self.warm_start:
+            # Architecture came from a YAML, so Ultralytics built it randomly. Transfer
+            # what a trained P3-P5 checkpoint can supply (see fusion/p2warm.py).
+            import torch
+
+            from .p2warm import warm_start_p2
+
+            ckpt = torch.load(self.warm_start, weights_only=False)
+            source = ckpt["model"].float()
+            n, total = warm_start_p2(model, source)
+            print(f"{colorstr('warm start:')} {n}/{total} tensors from {self.warm_start}")
+        if source is not None and self.data["channels"] == 4 and inflate_stem(model, source):
             print(f"{colorstr('stem:')} inflated COCO RGB stem to B,G,R,IR")
         return model
 
@@ -93,5 +117,6 @@ class FusionTrainer(DetectionTrainer):
         return batch
 
 
-def make_trainer(ms_sizes=None):
-    return type("FusionTrainerMS" if ms_sizes else "FusionTrainer", (FusionTrainer,), {"ms_sizes": ms_sizes})
+def make_trainer(ms_sizes=None, warm_start=None):
+    return type("FusionTrainerMS" if ms_sizes else "FusionTrainer", (FusionTrainer,),
+                {"ms_sizes": ms_sizes, "warm_start": warm_start})

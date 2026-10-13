@@ -38,7 +38,8 @@ def git_sha() -> str:
 def code_hash() -> str:
     """SHA-256 over the repo's Python sources and configs, so a result is traceable even before a commit."""
     h = hashlib.sha256()
-    for f in sorted([*REPO.glob("*.py"), *REPO.glob("*/*.py"), *REPO.glob("configs/*.yaml")]):
+    for f in sorted([*REPO.glob("*.py"), *REPO.glob("*/*.py"),
+                     *REPO.glob("configs/*.yaml"), *REPO.glob("configs/models/*.yaml")]):
         h.update(f.relative_to(REPO).as_posix().encode() + f.read_bytes())
     return h.hexdigest()[:12]
 
@@ -78,10 +79,14 @@ def main():
         shutil.copytree(REPO / d, snap / d, ignore=shutil.ignore_patterns("__pycache__"))
     for f in REPO.glob("*.py"):
         shutil.copy2(f, snap / f.name)
-    model = YOLO(cfg["weights"])
+    # Optional `model:` builds a custom architecture from YAML and warm-starts it from
+    # `weights:` (see fusion/p2warm.py). Without it, behaviour is unchanged: the
+    # architecture comes from the checkpoint itself.
+    arch = cfg.get("model")
+    model = YOLO(arch) if arch else YOLO(cfg["weights"])
     model.train(
         data=cfg["data"],
-        trainer=make_trainer(cfg.get("ms_sizes")),
+        trainer=make_trainer(cfg.get("ms_sizes"), cfg["weights"] if arch else None),
         project=str(REPO / "runs"),
         name=name,
         exist_ok=True,

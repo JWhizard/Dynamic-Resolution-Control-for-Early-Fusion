@@ -5,6 +5,7 @@ benchmark harness never needs to know which one is loaded:
     fixed:R            constant resolution (B2 / B3)
     file:<json>        precomputed {frame_id: R} (oracle B5, matched random B4)
     heuristic:<json>   decision tree over SceneAnalyzer features (H)
+    sequence:<json>    stateful controller over detections from preceding frames
 
 The tree is a small self-contained CART (Gini, exhaustive thresholds), so it has
 no sklearn dependency and exports as readable if/else rules for the slides.
@@ -34,15 +35,21 @@ class Policy:
     needs_features = False
     needs_probe = False
 
-    def choose(self, frame_id: str, features: dict | None) -> int:
+    def choose(self, frame_id: str, features: dict | None, frame=None) -> int:
         raise NotImplementedError
+
+    def update(self, frame_id: str, detections) -> None:
+        """Observe the completed frame. Stateless policies intentionally do nothing."""
+
+    def reset(self) -> None:
+        """Reset streaming state between independent benchmark repetitions."""
 
 
 @dataclass
 class Fixed(Policy):
     res: int
 
-    def choose(self, frame_id, features):
+    def choose(self, frame_id, features, frame=None):
         return self.res
 
 
@@ -50,7 +57,7 @@ class Fixed(Policy):
 class FromFile(Policy):
     table: dict
 
-    def choose(self, frame_id, features):
+    def choose(self, frame_id, features, frame=None):
         return self.table[frame_id]
 
 
@@ -67,7 +74,7 @@ class Heuristic(Policy):
         self.tree = tree
         self.features = tree_features(tree)
 
-    def choose(self, frame_id, features):
+    def choose(self, frame_id, features, frame=None):
         node = self.tree
         while "leaf" not in node:
             node = node["left"] if features[node["feature"]] <= node["threshold"] else node["right"]
@@ -83,8 +90,8 @@ class Cascade(Policy):
     def __init__(self, tree: dict):
         self.tree = tree
 
-    def choose(self, frame_id, features):
-        return Heuristic.choose(self, frame_id, features)
+    def choose(self, frame_id, features, frame=None):
+        return Heuristic.choose(self, frame_id, features, frame)
 
 
 def make_policy(spec: str) -> Policy:
@@ -97,6 +104,15 @@ def make_policy(spec: str) -> Policy:
         return Heuristic(json.loads(Path(arg).read_text())["tree"])
     if kind == "cascade":
         return Cascade(json.loads(Path(arg).read_text())["tree"])
+    if kind == "sequence":
+        # Lazy import avoids coupling the stateless policies to probe-feature code.
+        from controller_sequence import SequenceController
+
+        return SequenceController.from_json(arg)
+    if kind in ("distilled", "hybrid"):
+        from controller_distilled import DistilledController
+
+        return DistilledController.from_json(arg, temporal=(kind == "hybrid"))
     raise ValueError(spec)
 
 
@@ -185,7 +201,7 @@ def fit_policy_tree(X: np.ndarray, Q: np.ndarray, cost: np.ndarray, names: list[
 
 def tree_rules(node: dict, indent: str = "") -> str:
     if "leaf" in node:
-        extra = f"oracle counts {node['counts']}" if "counts" in node else f"mean AP@320/480/640 {node['mean_q']}"
+        extra = f"label counts {node['counts']}" if "counts" in node else f"mean quality by action {node['mean_q']}"
         return f"{indent}-> {node['leaf']} px  (n={node['n']}, {extra})\n"
     return (f"{indent}if {node['feature']} <= {node['threshold']:.4g}:\n" + tree_rules(node["left"], indent + "    ")
             + f"{indent}else:\n" + tree_rules(node["right"], indent + "    "))
