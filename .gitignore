@@ -3,3 +3,13 @@ __pycache__/
 *.pkl
 *.pt
 results/cache/
+captures/
+
+# The live dynamic-resolution demo needs this compact deployment checkpoint.
+!runs/
+runs/*
+!runs/ms_fusion_seed42/
+runs/ms_fusion_seed42/*
+!runs/ms_fusion_seed42/weights/
+runs/ms_fusion_seed42/weights/*
+!runs/ms_fusion_seed42/weights/best.pt

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Early Fusion Control Room</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="noise"></div>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">RGB + LWIR / EDGE VISION</p>
+        <h1>Early Fusion <span>Control Room</span></h1>
+      </div>
+      <div class="system-state">
+        <span id="state-dot" class="state-dot"></span>
+        <div><strong id="state-label">Connecting</strong><small id="device-label">Checking runtime</small></div>
+      </div>
+    </header>
+
+    <section id="error-banner" class="error-banner hidden" role="alert">
+      <strong>Pipeline alert</strong><span id="error-text"></span>
+    </section>
+
+    <section class="metrics" aria-label="Live performance">
+      <article><span>Processed rate</span><strong><b id="fps">—</b> FPS</strong><small>Latest-frame pipeline</small></article>
+      <article><span>Inference</span><strong><b id="latency">—</b> ms</strong><small>Rolling mean</small></article>
+      <article class="resolution-card"><span>Active resolution</span><strong><b id="resolution">—</b> px</strong><small id="policy-summary">Sequence controller</small></article>
+      <article><span>Detections</span><strong><b id="detection-total">—</b></strong><small>Current frame</small></article>
+    </section>
+
+    <section class="workspace">
+      <div class="viewer-card">
+        <div class="viewer-head">
+          <div>
+            <span class="live-pill"><i></i> LIVE</span>
+            <span id="frame-label" class="frame-label">Waiting for synchronized frames</span>
+          </div>
+          <button id="snapshot" class="ghost-button" type="button" title="Save the current annotated frame and metadata">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3 7.2 5H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-3.2L15 3H9Zm3 14a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9Z"/></svg>
+            Snapshot
+          </button>
+        </div>
+        <div class="stream-wrap">
+          <img id="stream" src="{{ url_for('stream') }}" alt="Live annotated RGB and thermal detections">
+          <div id="stream-empty" class="stream-empty"><div class="scanner"></div><p>Awaiting camera frames</p></div>
+          <div class="corner top-left"></div><div class="corner top-right"></div>
+          <div class="corner bottom-left"></div><div class="corner bottom-right"></div>
+        </div>
+        <div class="source-strip">
+          <div><span id="rgb-dot" class="mini-dot"></span><strong>RGB</strong><small id="rgb-source">—</small></div>
+          <div><span id="thermal-dot" class="mini-dot"></span><strong>LWIR</strong><small id="thermal-source">—</small></div>
+          <div class="sync"><strong>SYNC</strong><small><b id="skew">—</b> ms skew</small></div>
+          <div><strong>DROPPED</strong><small><b id="dropped">0</b> frames</small></div>
+        </div>
+      </div>
+
+      <aside class="control-column">
+        <section class="panel">
+          <div class="panel-title"><h2>Run control</h2><span id="model-name">best.pt</span></div>
+          <button id="run-toggle" class="primary-button" type="button"><span class="button-icon">■</span><span>Stop pipeline</span></button>
+          <label class="field-label" for="policy">Resolution policy</label>
+          <div class="segmented" id="policy" role="group" aria-label="Resolution policy">
+            <button type="button" data-value="sequence" class="active">Dynamic</button>
+            <button type="button" data-value="fixed576">Fixed 576</button>
+          </div>
+          <p class="field-note">Dynamic mode uses detections from preceding frames and refreshes every 16 frames.</p>
+        </section>
+
+        <section class="panel">
+          <h2>Display</h2>
+          <label class="field-label" for="view">Sensor view</label>
+          <div class="segmented three" id="view" role="group" aria-label="Sensor view">
+            <button type="button" data-value="rgb" class="active">RGB</button>
+            <button type="button" data-value="thermal">Thermal</button>
+            <button type="button" data-value="split">Split</button>
+          </div>
+          <div class="range-head"><label for="confidence">Confidence floor</label><output id="confidence-value">0.25</output></div>
+          <input id="confidence" type="range" min="0.10" max="0.90" step="0.01" value="0.25">
+          <div class="range-scale"><span>0.10</span><span>0.90</span></div>
+        </section>
+
+        <section class="panel detections-panel">
+          <div class="panel-title"><h2>Current objects</h2><span id="class-total">0 classes</span></div>
+          <div id="class-counts" class="class-counts"><p class="empty-copy">No detections yet</p></div>
+        </section>
+
+        <section class="research-note">
+          <strong>Research mode</strong>
+          <p>The dynamic controller is experimental. Its measured average test gain was +0.10 AP point and did not clearly beat the best fixed operating point.</p>
+        </section>
+      </aside>
+    </section>
+
+    <footer><span>Dynamic-Resolution Control for Early Fusion</span><span id="updated">No frames processed</span></footer>
+  </main>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</body>
+</html>

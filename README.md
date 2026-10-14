@@ -13,6 +13,7 @@ resolutions, a matched random control and a per-image oracle. See [`PROPOSAL.md`
 | `fusion/stem.py`, `fusion/trainer.py` | COCO stem inflation to B,G,R,IR; Ultralytics trainer with colour aug on 4-ch input and discrete {320,480,640} multi-scale |
 | `train_early_fusion.py`, `configs/*.yaml` | One entry point per configuration (B0, B1, B2, specialists, MS) |
 | `fusion/preprocess.py` | The single GPU inference path shared by evaluation and benchmarking |
+| `live_dashboard.py`, `dashboard/` | Local live-camera dashboard for paired RGB/LWIR input and the sequence controller |
 | `predict_cache.py`, `evaluate.py` | Per-image detection cache; pycocotools scoring of any per-image policy |
 | `generate_oracle_labels.py` | Per-image oracle (B5) and matched random control (B4) |
 | `scene_analyzer.py`, `controller_heuristic.py` | Scene features (+ microbenchmark), policies, CART controller (H) |
@@ -64,6 +65,39 @@ the original multi-scale checkpoint at 640 px, it adds 0.56 AP while reducing me
 The stride-4 P2 alternative was also trained and evaluated (`configs/p2_lightweight_final.yaml`). It
 did not improve accuracy and was slower, so it is retained as a negative ablation rather than used as
 the deployment model.
+
+## Live RGB/LWIR dashboard
+
+The local dashboard consumes two already-registered OpenCV sources, fuses their frames in the trained
+`B,G,R,IR` order, and runs the sequence controller with the multi-scale checkpoint. Sources can be USB
+camera indices, video paths, or RTSP URLs. The inputs must have identical dimensions and deliver 8-bit
+pixels; three-channel thermal video is converted to grayscale. Install the one UI-specific dependency
+with `pip install -r requirements-ui.txt`, then run:
+
+```bash
+# Two USB/UVC cameras
+python live_dashboard.py --rgb-source 0 --thermal-source 1
+
+# Paired recordings, looped for a presentation
+python live_dashboard.py --rgb-source rgb.mp4 --thermal-source thermal.mp4 --loop
+
+# Network cameras
+python live_dashboard.py --rgb-source rtsp://rgb-camera/stream \
+  --thermal-source rtsp://thermal-camera/stream
+```
+
+Open `http://127.0.0.1:5000`. The dashboard shows the annotated RGB, thermal, or split view; current
+resolution; rolling inference latency/FPS; class counts; synchronization skew; dropped frames; and
+source health. It provides start/stop, confidence, dynamic/fixed-576, view, and snapshot controls.
+Snapshots and their JSON metadata go to the ignored `captures/` directory.
+
+The default dynamic policy is the preceding-detection sequence controller in
+`results/processed/sequence/controller.json`, selecting from {480, 544, 576, 640} once every 16 frames.
+It retains candidates down to confidence 0.10 for controller feedback regardless of the UI threshold.
+The packaged multi-scale checkpoint is `runs/ms_fusion_seed42/weights/best.pt` (SHA-256
+`79d21a315500db3e0d061ce273de5affe26e8b778055e50f9ceca22994a55cda`). Dynamic mode is an experimental
+research demo: its measured test gain averaged +0.10 AP point and did not clearly beat the best fixed
+operating point. The fixed-576 toggle provides a same-checkpoint comparison.
 
 **Evaluator cross-check (B2, seed 42, test @640).** Ultralytics `val` gives mAP50-95 0.4427. The same
 detections from our GPU path, scored with Ultralytics' AP code, give 0.4369. That 0.6-point pipeline
