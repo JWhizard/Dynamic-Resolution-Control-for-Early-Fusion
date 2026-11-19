@@ -1,0 +1,12 @@
+{
+  "verified_cases": 162,
+  "unique_pairs": 16873,
+  "input_frames": 455571,
+  "processed_frames": 280026,
+  "dropped_frames": 175545,
+  "result_score_hashes_match": true,
+  "source_accounting_valid": true,
+  "saved_score_summaries_match": true,
+  "annotation_manifest_hashes_match": true,
+  "power_read_errors": 0
+}

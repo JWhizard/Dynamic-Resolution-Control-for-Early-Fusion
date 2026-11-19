@@ -1,0 +1,46 @@
+{
+  "created_utc": "2026-11-16T17:41:21.239364+00:00",
+  "models": [
+    {
+      "name": "yolo26n_ms",
+      "family": "yolo",
+      "checkpoint": "/home/imsel/EMCH585_Workspace/Dynamic-Resolution-Control-for-Early-Fusion/runs/ms_fusion_seed42/weights/best.pt",
+      "sha256": "79d21a315500db3e0d061ce273de5affe26e8b778055e50f9ceca22994a55cda"
+    },
+    {
+      "name": "fasterrcnn",
+      "family": "fasterrcnn",
+      "checkpoint": "/media/imsel/4TBSSD/EMCH585_Artifacts/trained_families_20261116/runs/fasterrcnn/best.pt",
+      "sha256": "b8244ba7e660afb07cf176440d575c53d34152dc48093b5daa45c97fa62230be"
+    },
+    {
+      "name": "retinanet",
+      "family": "retinanet",
+      "checkpoint": "/media/imsel/4TBSSD/EMCH585_Artifacts/trained_families_20261116/runs/retinanet_retry_20261113/best.pt",
+      "sha256": "560592ed877a3e414918f5c88a19a36129a49f613ce9729423473c115b93dc71"
+    }
+  ],
+  "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/manifest.json",
+  "manifest_sha256": "a503ad7226a4d75e64022c8034d0f0e8cb2fbaee4957329c749f21501a86242c",
+  "controller": "/home/imsel/EMCH585_Workspace/Dynamic-Resolution-Control-for-Early-Fusion/results/processed/sequence/controller.json",
+  "controller_sha256": "4ace5cab65e0c8ca65b9ac1b6d9b4b18ea9f63ab2b5a2d56d84f58698c1b960e",
+  "device": "cpu",
+  "cpu_threads": 4,
+  "warmup_per_resolution": 3,
+  "order_seed": 20261116,
+  "budget_ms": 1000,
+  "policies": [
+    "fixed:576",
+    "sequence",
+    "deadline",
+    "guarded"
+  ],
+  "protocol": "Short Jetson CPU deployment cost study with32 unique indoor pairs per run; four policies/three detectors. Measured named rail integrals; no FLIR accuracy labels. Warmup excluded. No inference on Jetson GPU for additional families.",
+  "limitations": [
+    "Single short trial per case: percentiles are exploratory and not stable tail estimates.",
+    "Shared host: dashboard and camera acquisition remain active; named-rail energy includes all background activity, not isolated model or wall-plug energy.",
+    "CPU results must not be pooled with earlier YOLO TensorRT GPU study.",
+    "1s budget applies to this CPU pilot only; workstation study uses25ms.",
+    "No continuous live-video, cross-environment, or additional-family TensorRT claims."
+  ]
+}

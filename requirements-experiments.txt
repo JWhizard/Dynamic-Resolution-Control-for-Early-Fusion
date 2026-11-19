@@ -1,0 +1,8 @@
+-r requirements-flir.txt
+pytest>=8,<10
+pycocotools>=2.0.7,<3
+gdown>=5,<7
+python-pptx>=1,<2
+# TensorRT Python bindings come from the matching JetPack NVIDIA Debian package;
+# see docs/GPU_SETUP.md. Do not replace the native runtime with an arbitrary wheel.
+Markdown>=3,<4

@@ -1,0 +1,13 @@
+{
+  "models_completed": 3,
+  "test_images_each": 419,
+  "ground_truth_boxes": 3376,
+  "native_sizes_match_committed_manifest": true,
+  "original_boxes_outside_image": 103,
+  "checkpoint_copies_sha256_verified": 3,
+  "prediction_structure_and_counts_valid": true,
+  "evaluator_targeted_tests_passed": 2,
+  "checkpoint_selection": "Frozen validation-best checkpoints; no test selection",
+  "raw_results": "/media/imsel/4TBSSD/EMCH585_Artifacts/heldout_20261116",
+  "local_checkpoint_root": "/media/imsel/4TBSSD/EMCH585_Artifacts/trained_families_20261116"
+}

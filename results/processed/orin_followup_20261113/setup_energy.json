@@ -1,0 +1,5208 @@
+{
+  "engine_build": {
+    "duration_s": 57.22633195600065,
+    "rail_joules": {
+      "VDDQ_VDD2_1V8AO": 115.65640437963248,
+      "VDD_GPU_SOC": 304.63131467422915,
+      "VDD_CPU_CV": 322.90867842853936,
+      "VIN_SYS_5V0": 396.96924048134883
+    },
+    "named_rail_sum_joules": 1140.1656379637498,
+    "background_subtracted_named_rail_joules": 78.40881491894356
+  },
+  "runtime_initialization_and_12_warmup_calls": {
+    "duration_s": 0.6237099420104641,
+    "rail_joules": {
+      "VDDQ_VDD2_1V8AO": 1.3051688734286406,
+      "VDD_GPU_SOC": 3.097391293738451,
+      "VDD_CPU_CV": 3.857013236736337,
+      "VIN_SYS_5V0": 4.365570419710362
+    },
+    "named_rail_sum_joules": 12.625143823613792,
+    "background_subtracted_named_rail_joules": 1.0530534257938662
+  },
+  "runtime_initialization_ms": 295.8460579975508,
+  "warmup_calls": [
+    {
+      "resolution": 480,
+      "ms": 61.15563400089741
+    },
+    {
+      "resolution": 480,
+      "ms": 18.899073998909444
+    },
+    {
+      "resolution": 480,
+      "ms": 21.66718900843989
+    },
+    {
+      "resolution": 544,
+      "ms": 21.97985899692867
+    },
+    {
+      "resolution": 544,
+      "ms": 24.540935002733022
+    },
+    {
+      "resolution": 544,
+      "ms": 22.80551900912542
+    },
+    {
+      "resolution": 576,
+      "ms": 25.513825996313244
+    },
+    {
+      "resolution": 576,
+      "ms": 23.222892996273004
+    },
+    {
+      "resolution": 576,
+      "ms": 25.814624998020008
+    },
+    {
+      "resolution": 640,
+      "ms": 29.20439900481142
+    },
+    {
+      "resolution": 640,
+      "ms": 23.47902000474278
+    },
+    {
+      "resolution": 640,
+      "ms": 29.484175000106916
+    }
+  ],
+  "build_command": [
+    "/usr/src/tensorrt/bin/trtexec",
+    "--onnx=/media/imsel/4TBSSD/EMCH585_Artifacts/project_trt_fp32_strict/model.onnx",
+    "--saveEngine=/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/setup_energy/measurement_only.engine",
+    "--minShapes=images:1x4x256x320",
+    "--optShapes=images:1x4x352x576",
+    "--maxShapes=images:1x4x640x640",
+    "--memPoolSize=workspace:512",
+    "--builderOptimizationLevel=2",
+    "--noTF32",
+    "--skipInference"
+  ],
+  "power_samples": [
+    {
+      "time": 92155.660426728,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.67216,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92155.766219579,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.31728,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92155.872373835,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.31728,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92155.977816992,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.31904,
+        "VDD_CPU_CV": 5.892,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92156.083784497,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.31904,
+        "VDD_CPU_CV": 5.892,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92156.189776482,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.31904,
+        "VDD_CPU_CV": 5.892,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92156.295324277,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.31904,
+        "VDD_CPU_CV": 5.4992,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92156.401242758,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.82304,
+        "VDD_GPU_SOC": 4.3208,
+        "VDD_CPU_CV": 5.4992,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92156.507557878,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.72176,
+        "VDD_GPU_SOC": 4.32256,
+        "VDD_CPU_CV": 5.10848,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92156.614047844,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.72176,
+        "VDD_GPU_SOC": 4.32256,
+        "VDD_CPU_CV": 4.71552,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92156.720728914,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.82304,
+        "VDD_GPU_SOC": 4.32256,
+        "VDD_CPU_CV": 5.10848,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92156.826963682,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.82304,
+        "VDD_GPU_SOC": 4.3208,
+        "VDD_CPU_CV": 5.10848,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92156.932980403,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.82304,
+        "VDD_GPU_SOC": 4.32256,
+        "VDD_CPU_CV": 5.10848,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92157.039309762,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.82304,
+        "VDD_GPU_SOC": 4.3208,
+        "VDD_CPU_CV": 5.10848,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92157.146062127,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.82304,
+        "VDD_GPU_SOC": 4.3208,
+        "VDD_CPU_CV": 5.10848,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92157.25401695,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.82304,
+        "VDD_GPU_SOC": 4.3208,
+        "VDD_CPU_CV": 5.10848,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92157.362033629,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.3208,
+        "VDD_CPU_CV": 5.10848,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92157.469320071,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.3208,
+        "VDD_CPU_CV": 5.10848,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92157.575593943,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.3208,
+        "VDD_CPU_CV": 5.10848,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92157.668806691,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.32256,
+        "VDD_CPU_CV": 5.10848,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92157.681645063,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.3208,
+        "VDD_CPU_CV": 5.10848,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92157.787452856,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.3208,
+        "VDD_CPU_CV": 5.4992,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92157.893326185,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.3208,
+        "VDD_CPU_CV": 5.4992,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92157.999792791,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.4992,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92158.10598487,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.4992,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92158.211745751,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.4992,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92158.31808231,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.4992,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92158.423940662,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.892,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92158.530029638,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.4992,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92158.636562803,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.4992,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92158.74240618,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.4992,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92158.848312692,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.892,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92158.954435716,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92159.060410931,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92159.168026043,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92159.273333902,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92159.381483027,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92159.487802753,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92159.59419691,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92159.700452989,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92159.807562983,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92159.914183507,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92160.022275897,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92160.127952553,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92160.235380817,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92160.342800858,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92160.449282982,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92160.555749683,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92160.661334628,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92160.767351986,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92160.873980958,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92160.980138509,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92161.08709311,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92161.193830561,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92161.300443757,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92161.406928569,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92161.513035911,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92161.619661522,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92161.726245502,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92161.831876942,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92161.938702425,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92162.046203551,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92162.152885226,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92162.259812468,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92162.367571865,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92162.474842977,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92162.581087694,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92162.689608592,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92162.795494654,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92162.903779617,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92163.010030926,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92163.117183446,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92163.223739809,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92163.32978923,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92163.436418872,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92163.543322401,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92163.649344719,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92163.756861845,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92163.862789154,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92163.969117838,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92164.075095003,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92164.180618122,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92164.28688863,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92164.393157601,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92164.499363661,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92164.607182002,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92164.714911382,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92164.820924483,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92164.927729036,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92165.035117394,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.31904,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92165.141602652,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92165.247907975,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92165.355466956,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.31904,
+        "VDD_CPU_CV": 6.2848,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92165.462177685,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.31904,
+        "VDD_CPU_CV": 6.2848,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92165.569510715,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92165.67622122,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92165.783018253,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.31904,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92165.889806229,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92165.99571981,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92166.10242897,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92166.208111352,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92166.3140177,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92166.423634431,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92166.530001641,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92166.636576754,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92166.742265343,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.32944,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92166.847930093,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92166.954098424,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.49696,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92167.061518972,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92167.167334249,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92167.272970678,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92167.378593091,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92167.48428712,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92167.590882072,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92167.699215384,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92167.804585319,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92167.909897013,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92168.015582466,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92168.120985648,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92168.2265615,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92168.332440872,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92168.438700849,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.10016,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92168.544675356,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92168.650452648,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92168.756096213,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92168.862580925,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92168.968886215,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92169.075045552,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92169.181712407,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92169.287857121,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92169.394069578,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92169.500442867,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92169.606659356,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92169.713550754,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92169.821269156,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92169.92747707,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92170.033072186,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92170.138880036,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92170.245258924,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92170.351785076,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92170.458319579,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92170.564332997,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92170.670198191,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92170.775953082,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92170.881408039,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92170.986955378,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92171.093195931,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.10432,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92171.1999472,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92171.306191272,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92171.411475605,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92171.51755251,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92171.624445315,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10432,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92171.731096553,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10432,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92171.837446513,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92171.943877176,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10432,
+        "VDD_CPU_CV": 5.49696,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92172.051194075,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92172.15806608,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.10432,
+        "VDD_CPU_CV": 5.49696,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92172.265809344,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10432,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92172.372825828,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10432,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92172.478720333,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10432,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92172.586229295,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92172.692159224,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10432,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92172.799002237,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92172.904479688,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92173.011060622,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10432,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92173.117917778,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92173.22442284,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92173.331227773,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10432,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92173.438909821,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.10432,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92173.547002748,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10432,
+        "VDD_CPU_CV": 5.49696,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92173.653250563,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10432,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92173.7597986,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10432,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92173.866390862,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10432,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92173.973086259,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10432,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92174.081031921,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92174.186691067,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92174.293667678,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92174.401950811,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.10432,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92174.508381249,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92174.614108106,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92174.72009765,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92174.826003642,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92174.933243548,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92175.040263294,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92175.146713028,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92175.253922661,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.2848,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92175.36040961,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.892,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92175.466636944,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.892,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92175.572589848,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.31904,
+        "VDD_CPU_CV": 5.892,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92175.678362336,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.892,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92175.784626278,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.892,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92175.892416005,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.892,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92175.999024617,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10432,
+        "VDD_CPU_CV": 5.4992,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92176.106047947,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.4992,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92176.21245496,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.4992,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92176.319346003,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.7136,
+        "VDD_CPU_CV": 5.4992,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92176.428677514,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.7136,
+        "VDD_CPU_CV": 5.4992,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92176.535446285,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.7136,
+        "VDD_CPU_CV": 5.1064,
+        "VIN_SYS_5V0": 6.5936
+      }
+    },
+    {
+      "time": 92176.641900465,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.82304,
+        "VDD_GPU_SOC": 5.10432,
+        "VDD_CPU_CV": 5.1064,
+        "VIN_SYS_5V0": 6.5936
+      }
+    },
+    {
+      "time": 92176.747968888,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.49696,
+        "VDD_CPU_CV": 5.10432,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92176.85414435,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.49696,
+        "VDD_CPU_CV": 5.10432,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92176.960707874,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.49696,
+        "VDD_CPU_CV": 5.1064,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92177.06722071,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.49696,
+        "VDD_CPU_CV": 5.4992,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92177.173586187,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.10432,
+        "VDD_CPU_CV": 5.49696,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92177.278877556,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.10432,
+        "VDD_CPU_CV": 5.49696,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92177.384428413,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.10432,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92177.489998949,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.10432,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92177.595481678,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92177.701058326,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92177.806719742,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92177.912266023,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92178.018302764,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92178.123598358,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92178.229124542,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92178.334663334,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92178.44092721,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92178.546559506,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92178.65252588,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92178.75807216,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92178.863970822,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.71168,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92178.969385007,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92179.074899894,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92179.180869788,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92179.289089655,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92179.395659001,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92179.503936116,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10016,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92179.610129592,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10016,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92179.717049721,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10016,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92179.824151257,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92179.931699895,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 7.30368
+      }
+    },
+    {
+      "time": 92180.038341465,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92180.144713788,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.30368
+      }
+    },
+    {
+      "time": 92180.251377022,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10016,
+        "VDD_CPU_CV": 5.49472,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92180.358839355,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92180.465852283,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10016,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92180.571639361,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10016,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92180.677863461,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10016,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92180.783930186,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10016,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92180.891726022,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10016,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92180.998856517,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92181.105091208,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10016,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92181.211792425,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10016,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92181.318054316,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10016,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92181.423552947,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92181.528868027,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70784,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92181.634437985,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92181.740234854,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92181.84682676,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92181.952396206,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92182.058776816,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 5.8896,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92182.165119891,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92182.272129554,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92182.379765614,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92182.486443214,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10016,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92182.59359422,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92182.699678512,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92182.806404528,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 6.27456,
+        "VDD_CPU_CV": 5.49248,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92182.912296885,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 6.66672,
+        "VDD_CPU_CV": 5.49248,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92183.020402638,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 6.27456,
+        "VDD_CPU_CV": 5.49248,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92183.126736464,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.72176,
+        "VDD_GPU_SOC": 5.8896,
+        "VDD_CPU_CV": 4.71168,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92183.233211025,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.5192,
+        "VDD_GPU_SOC": 5.4992,
+        "VDD_CPU_CV": 4.32256,
+        "VIN_SYS_5V0": 6.5936
+      }
+    },
+    {
+      "time": 92183.339493459,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.42016,
+        "VDD_GPU_SOC": 5.50144,
+        "VDD_CPU_CV": 3.9312,
+        "VIN_SYS_5V0": 6.39072
+      }
+    },
+    {
+      "time": 92183.445695765,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.31872,
+        "VDD_GPU_SOC": 5.11056,
+        "VDD_CPU_CV": 3.53808,
+        "VIN_SYS_5V0": 6.28928
+      }
+    },
+    {
+      "time": 92183.551913848,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.31872,
+        "VDD_GPU_SOC": 5.11264,
+        "VDD_CPU_CV": 3.14624,
+        "VIN_SYS_5V0": 6.18784
+      }
+    },
+    {
+      "time": 92183.657951707,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.21728,
+        "VDD_GPU_SOC": 4.72128,
+        "VDD_CPU_CV": 3.14752,
+        "VIN_SYS_5V0": 6.096
+      }
+    },
+    {
+      "time": 92183.764091582,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.11584,
+        "VDD_GPU_SOC": 4.7232,
+        "VDD_CPU_CV": 2.3616,
+        "VIN_SYS_5V0": 5.9944
+      }
+    },
+    {
+      "time": 92183.870239616,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.11584,
+        "VDD_GPU_SOC": 4.7232,
+        "VDD_CPU_CV": 1.9688,
+        "VIN_SYS_5V0": 5.8928
+      }
+    },
+    {
+      "time": 92183.976312035,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.0144,
+        "VDD_GPU_SOC": 4.72512,
+        "VDD_CPU_CV": 1.9696,
+        "VIN_SYS_5V0": 5.7912
+      }
+    },
+    {
+      "time": 92184.082424741,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.0144,
+        "VDD_GPU_SOC": 5.11888,
+        "VDD_CPU_CV": 1.57504,
+        "VIN_SYS_5V0": 5.7912
+      }
+    },
+    {
+      "time": 92184.188543624,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 0.91296,
+        "VDD_GPU_SOC": 5.11888,
+        "VDD_CPU_CV": 1.57504,
+        "VIN_SYS_5V0": 5.6896
+      }
+    },
+    {
+      "time": 92184.294638538,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 0.91296,
+        "VDD_GPU_SOC": 5.5104,
+        "VDD_CPU_CV": 1.18128,
+        "VIN_SYS_5V0": 5.6896
+      }
+    },
+    {
+      "time": 92184.40075022,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 0.91296,
+        "VDD_GPU_SOC": 5.5104,
+        "VDD_CPU_CV": 1.18128,
+        "VIN_SYS_5V0": 5.6896
+      }
+    },
+    {
+      "time": 92184.507245229,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.0144,
+        "VDD_GPU_SOC": 5.51264,
+        "VDD_CPU_CV": 1.18128,
+        "VIN_SYS_5V0": 5.6896
+      }
+    },
+    {
+      "time": 92184.613443471,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.0144,
+        "VDD_GPU_SOC": 5.11888,
+        "VDD_CPU_CV": 1.18176,
+        "VIN_SYS_5V0": 5.6896
+      }
+    },
+    {
+      "time": 92184.719660497,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.0144,
+        "VDD_GPU_SOC": 5.11888,
+        "VDD_CPU_CV": 1.18176,
+        "VIN_SYS_5V0": 5.6896
+      }
+    },
+    {
+      "time": 92184.825756211,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.0144,
+        "VDD_GPU_SOC": 5.11888,
+        "VDD_CPU_CV": 1.57568,
+        "VIN_SYS_5V0": 5.6896
+      }
+    },
+    {
+      "time": 92184.931730774,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.0144,
+        "VDD_GPU_SOC": 4.72512,
+        "VDD_CPU_CV": 1.57568,
+        "VIN_SYS_5V0": 5.6896
+      }
+    },
+    {
+      "time": 92185.037712921,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.0144,
+        "VDD_GPU_SOC": 4.72512,
+        "VDD_CPU_CV": 1.57568,
+        "VIN_SYS_5V0": 5.6896
+      }
+    },
+    {
+      "time": 92185.143714875,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.0144,
+        "VDD_GPU_SOC": 4.72512,
+        "VDD_CPU_CV": 1.57568,
+        "VIN_SYS_5V0": 5.6896
+      }
+    },
+    {
+      "time": 92185.249796893,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.0144,
+        "VDD_GPU_SOC": 4.72512,
+        "VDD_CPU_CV": 1.57568,
+        "VIN_SYS_5V0": 5.6896
+      }
+    },
+    {
+      "time": 92185.356049822,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 0.91296,
+        "VDD_GPU_SOC": 4.72512,
+        "VDD_CPU_CV": 1.18176,
+        "VIN_SYS_5V0": 5.588
+      }
+    },
+    {
+      "time": 92185.462314047,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 0.91296,
+        "VDD_GPU_SOC": 4.72704,
+        "VDD_CPU_CV": 1.18176,
+        "VIN_SYS_5V0": 5.588
+      }
+    },
+    {
+      "time": 92185.56830173,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 0.91296,
+        "VDD_GPU_SOC": 4.72704,
+        "VDD_CPU_CV": 1.18176,
+        "VIN_SYS_5V0": 5.588
+      }
+    },
+    {
+      "time": 92185.674472579,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.0144,
+        "VDD_GPU_SOC": 4.72704,
+        "VDD_CPU_CV": 1.18176,
+        "VIN_SYS_5V0": 5.588
+      }
+    },
+    {
+      "time": 92185.780578725,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.0144,
+        "VDD_GPU_SOC": 4.33312,
+        "VDD_CPU_CV": 1.57568,
+        "VIN_SYS_5V0": 5.6896
+      }
+    },
+    {
+      "time": 92185.886810662,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.0144,
+        "VDD_GPU_SOC": 4.33136,
+        "VDD_CPU_CV": 1.57568,
+        "VIN_SYS_5V0": 5.6896
+      }
+    },
+    {
+      "time": 92185.992979656,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.0144,
+        "VDD_GPU_SOC": 4.33136,
+        "VDD_CPU_CV": 1.9696,
+        "VIN_SYS_5V0": 5.6896
+      }
+    },
+    {
+      "time": 92186.099090601,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.0144,
+        "VDD_GPU_SOC": 4.33136,
+        "VDD_CPU_CV": 2.36352,
+        "VIN_SYS_5V0": 5.6896
+      }
+    },
+    {
+      "time": 92186.205139307,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.0144,
+        "VDD_GPU_SOC": 4.33136,
+        "VDD_CPU_CV": 1.9696,
+        "VIN_SYS_5V0": 5.6896
+      }
+    },
+    {
+      "time": 92186.311150477,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.0144,
+        "VDD_GPU_SOC": 4.33136,
+        "VDD_CPU_CV": 1.9696,
+        "VIN_SYS_5V0": 5.588
+      }
+    },
+    {
+      "time": 92186.417169135,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 0.91296,
+        "VDD_GPU_SOC": 4.33312,
+        "VDD_CPU_CV": 1.57632,
+        "VIN_SYS_5V0": 5.588
+      }
+    },
+    {
+      "time": 92186.523303632,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 0.91296,
+        "VDD_GPU_SOC": 4.33312,
+        "VDD_CPU_CV": 1.57632,
+        "VIN_SYS_5V0": 5.588
+      }
+    },
+    {
+      "time": 92186.629481457,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 0.91296,
+        "VDD_GPU_SOC": 4.33312,
+        "VDD_CPU_CV": 1.57632,
+        "VIN_SYS_5V0": 5.588
+      }
+    },
+    {
+      "time": 92186.735335795,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 0.91296,
+        "VDD_GPU_SOC": 4.33312,
+        "VDD_CPU_CV": 1.57568,
+        "VIN_SYS_5V0": 5.588
+      }
+    },
+    {
+      "time": 92186.841567476,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 0.91296,
+        "VDD_GPU_SOC": 5.1168,
+        "VDD_CPU_CV": 1.57504,
+        "VIN_SYS_5V0": 5.588
+      }
+    },
+    {
+      "time": 92186.947838293,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 0.91296,
+        "VDD_GPU_SOC": 5.5104,
+        "VDD_CPU_CV": 1.5744,
+        "VIN_SYS_5V0": 5.588
+      }
+    },
+    {
+      "time": 92187.054502707,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 0.91296,
+        "VDD_GPU_SOC": 5.9016,
+        "VDD_CPU_CV": 1.5744,
+        "VIN_SYS_5V0": 5.588
+      }
+    },
+    {
+      "time": 92187.161197201,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.0144,
+        "VDD_GPU_SOC": 5.9016,
+        "VDD_CPU_CV": 1.5744,
+        "VIN_SYS_5V0": 5.588
+      }
+    },
+    {
+      "time": 92187.267653104,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.0144,
+        "VDD_GPU_SOC": 5.9016,
+        "VDD_CPU_CV": 1.5744,
+        "VIN_SYS_5V0": 5.6896
+      }
+    },
+    {
+      "time": 92187.375038187,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.11584,
+        "VDD_GPU_SOC": 5.8992,
+        "VDD_CPU_CV": 1.9672,
+        "VIN_SYS_5V0": 5.8928
+      }
+    },
+    {
+      "time": 92187.482997507,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.31872,
+        "VDD_GPU_SOC": 5.8968,
+        "VDD_CPU_CV": 2.75184,
+        "VIN_SYS_5V0": 6.18784
+      }
+    },
+    {
+      "time": 92187.590116479,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.5192,
+        "VDD_GPU_SOC": 5.892,
+        "VDD_CPU_CV": 3.53664,
+        "VIN_SYS_5V0": 6.49216
+      }
+    },
+    {
+      "time": 92187.697635577,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.72176,
+        "VDD_GPU_SOC": 5.4992,
+        "VDD_CPU_CV": 4.3208,
+        "VIN_SYS_5V0": 6.5936
+      }
+    },
+    {
+      "time": 92187.80341942,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.82304,
+        "VDD_GPU_SOC": 5.49696,
+        "VDD_CPU_CV": 4.71168,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92187.909575164,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.82304,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 4.71168,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92188.016699384,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.10224,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92188.122429018,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.8872,
+        "VDD_CPU_CV": 5.10224,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92188.228834361,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.49472,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92188.335444631,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.49472,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92188.446642591,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.49472,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92188.553227005,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92188.659107103,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92188.765361662,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10016,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92188.870847778,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10016,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92188.977672222,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10016,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92189.083565151,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70784,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92189.191141976,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70784,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92189.298650481,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70784,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92189.404466995,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70784,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92189.511265615,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70784,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92189.617927949,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70784,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92189.724108492,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92189.830362315,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92189.935875598,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92190.042288108,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.31728,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92190.149365031,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70784,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92190.255582214,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.31728,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92190.362047683,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.31552,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92190.468614177,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.31552,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92190.57466624,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.31728,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92190.681120574,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.31728,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92190.787182974,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.31728,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92190.893344861,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.31728,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92190.999814714,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.31728,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92191.106766901,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.31728,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92191.212613526,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.31728,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92191.319723152,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 4.31728,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92191.426066029,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.31728,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92191.53265921,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.31728,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92191.639831876,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92191.746951294,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.32944,
+        "VDD_GPU_SOC": 5.10016,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 7.608
+      }
+    },
+    {
+      "time": 92191.853425307,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.528,
+        "VDD_GPU_SOC": 5.88,
+        "VDD_CPU_CV": 5.8824,
+        "VIN_SYS_5V0": 7.91232
+      }
+    },
+    {
+      "time": 92191.95906566,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.62912,
+        "VDD_GPU_SOC": 6.272,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 8.01376
+      }
+    },
+    {
+      "time": 92192.065612217,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.73024,
+        "VDD_GPU_SOC": 6.26944,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 8.1152
+      }
+    },
+    {
+      "time": 92192.172127605,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.62912,
+        "VDD_GPU_SOC": 6.26944,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 8.01376
+      }
+    },
+    {
+      "time": 92192.277863829,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.62912,
+        "VDD_GPU_SOC": 6.26944,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 8.01376
+      }
+    },
+    {
+      "time": 92192.386793478,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.528,
+        "VDD_GPU_SOC": 6.664,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.91232
+      }
+    },
+    {
+      "time": 92192.493735841,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.62912,
+        "VDD_GPU_SOC": 6.66128,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 8.01376
+      }
+    },
+    {
+      "time": 92192.601162265,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.528,
+        "VDD_GPU_SOC": 6.66128,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 8.01376
+      }
+    },
+    {
+      "time": 92192.708374706,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.528,
+        "VDD_GPU_SOC": 6.66128,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.91232
+      }
+    },
+    {
+      "time": 92192.815212909,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.528,
+        "VDD_GPU_SOC": 6.66128,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 8.01376
+      }
+    },
+    {
+      "time": 92192.921515402,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.528,
+        "VDD_GPU_SOC": 6.664,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.91232
+      }
+    },
+    {
+      "time": 92193.027840647,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.43072,
+        "VDD_GPU_SOC": 6.664,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.81088
+      }
+    },
+    {
+      "time": 92193.135279103,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.43072,
+        "VDD_GPU_SOC": 6.272,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.81088
+      }
+    },
+    {
+      "time": 92193.241834043,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 6.27456,
+        "VDD_CPU_CV": 5.49024,
+        "VIN_SYS_5V0": 7.608
+      }
+    },
+    {
+      "time": 92193.348607765,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 6.27456,
+        "VDD_CPU_CV": 5.09808,
+        "VIN_SYS_5V0": 7.50656
+      }
+    },
+    {
+      "time": 92193.455287121,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 6.27456,
+        "VDD_CPU_CV": 5.09808,
+        "VIN_SYS_5V0": 7.50656
+      }
+    },
+    {
+      "time": 92193.561587406,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 6.27456,
+        "VDD_CPU_CV": 5.09808,
+        "VIN_SYS_5V0": 7.50656
+      }
+    },
+    {
+      "time": 92193.667860683,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 6.27456,
+        "VDD_CPU_CV": 5.09808,
+        "VIN_SYS_5V0": 7.50656
+      }
+    },
+    {
+      "time": 92193.774091432,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 6.27456,
+        "VDD_CPU_CV": 5.09808,
+        "VIN_SYS_5V0": 7.50656
+      }
+    },
+    {
+      "time": 92193.880253542,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 6.27456,
+        "VDD_CPU_CV": 5.49024,
+        "VIN_SYS_5V0": 7.608
+      }
+    },
+    {
+      "time": 92193.986411716,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.32944,
+        "VDD_GPU_SOC": 6.272,
+        "VDD_CPU_CV": 5.49024,
+        "VIN_SYS_5V0": 7.608
+      }
+    },
+    {
+      "time": 92194.092868895,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.32944,
+        "VDD_GPU_SOC": 6.664,
+        "VDD_CPU_CV": 5.49024,
+        "VIN_SYS_5V0": 7.70944
+      }
+    },
+    {
+      "time": 92194.199426523,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.43072,
+        "VDD_GPU_SOC": 6.272,
+        "VDD_CPU_CV": 5.49024,
+        "VIN_SYS_5V0": 7.70944
+      }
+    },
+    {
+      "time": 92194.30724104,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.43072,
+        "VDD_GPU_SOC": 6.664,
+        "VDD_CPU_CV": 5.488,
+        "VIN_SYS_5V0": 7.81088
+      }
+    },
+    {
+      "time": 92194.413668492,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.528,
+        "VDD_GPU_SOC": 6.66128,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.81088
+      }
+    },
+    {
+      "time": 92194.520820004,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.528,
+        "VDD_GPU_SOC": 6.66128,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.81088
+      }
+    },
+    {
+      "time": 92194.627471871,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.528,
+        "VDD_GPU_SOC": 6.66128,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.81088
+      }
+    },
+    {
+      "time": 92194.733948123,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.43072,
+        "VDD_GPU_SOC": 6.272,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.81088
+      }
+    },
+    {
+      "time": 92194.841169939,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.43072,
+        "VDD_GPU_SOC": 6.272,
+        "VDD_CPU_CV": 5.49024,
+        "VIN_SYS_5V0": 7.70944
+      }
+    },
+    {
+      "time": 92194.947706286,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.43072,
+        "VDD_GPU_SOC": 6.272,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.81088
+      }
+    },
+    {
+      "time": 92195.054765927,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.43072,
+        "VDD_GPU_SOC": 6.272,
+        "VDD_CPU_CV": 5.8824,
+        "VIN_SYS_5V0": 7.81088
+      }
+    },
+    {
+      "time": 92195.161489441,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.43072,
+        "VDD_GPU_SOC": 6.272,
+        "VDD_CPU_CV": 5.8824,
+        "VIN_SYS_5V0": 7.70944
+      }
+    },
+    {
+      "time": 92195.268103003,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.532,
+        "VDD_GPU_SOC": 6.272,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.70944
+      }
+    },
+    {
+      "time": 92195.374090009,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.532,
+        "VDD_GPU_SOC": 6.272,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.70944
+      }
+    },
+    {
+      "time": 92195.479697176,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.532,
+        "VDD_GPU_SOC": 6.272,
+        "VDD_CPU_CV": 5.8824,
+        "VIN_SYS_5V0": 7.608
+      }
+    },
+    {
+      "time": 92195.586022388,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.532,
+        "VDD_GPU_SOC": 6.272,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.70944
+      }
+    },
+    {
+      "time": 92195.692260561,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.532,
+        "VDD_GPU_SOC": 6.272,
+        "VDD_CPU_CV": 5.8824,
+        "VIN_SYS_5V0": 7.608
+      }
+    },
+    {
+      "time": 92195.798584717,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.532,
+        "VDD_GPU_SOC": 6.272,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.608
+      }
+    },
+    {
+      "time": 92195.904872425,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.532,
+        "VDD_GPU_SOC": 6.272,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.70944
+      }
+    },
+    {
+      "time": 92196.010711047,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.532,
+        "VDD_GPU_SOC": 6.664,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.70944
+      }
+    },
+    {
+      "time": 92196.1176368,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.62912,
+        "VDD_GPU_SOC": 6.66128,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.81088
+      }
+    },
+    {
+      "time": 92196.223856412,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.83136,
+        "VDD_GPU_SOC": 6.66128,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.91232
+      }
+    },
+    {
+      "time": 92196.332032302,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.73024,
+        "VDD_GPU_SOC": 6.66128,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.91232
+      }
+    },
+    {
+      "time": 92196.439452708,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.62912,
+        "VDD_GPU_SOC": 6.66128,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.81088
+      }
+    },
+    {
+      "time": 92196.547188857,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.63328,
+        "VDD_GPU_SOC": 6.664,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.70944
+      }
+    },
+    {
+      "time": 92196.655299564,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.43072,
+        "VDD_GPU_SOC": 6.664,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.608
+      }
+    },
+    {
+      "time": 92196.762376803,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.43072,
+        "VDD_GPU_SOC": 6.272,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.50656
+      }
+    },
+    {
+      "time": 92196.8693095,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.43072,
+        "VDD_GPU_SOC": 6.272,
+        "VDD_CPU_CV": 5.8824,
+        "VIN_SYS_5V0": 7.50656
+      }
+    },
+    {
+      "time": 92196.976722706,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.32944,
+        "VDD_GPU_SOC": 6.272,
+        "VDD_CPU_CV": 5.8824,
+        "VIN_SYS_5V0": 7.50656
+      }
+    },
+    {
+      "time": 92197.082850382,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.32944,
+        "VDD_GPU_SOC": 6.272,
+        "VDD_CPU_CV": 5.8824,
+        "VIN_SYS_5V0": 7.30368
+      }
+    },
+    {
+      "time": 92197.18906961,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 6.272,
+        "VDD_CPU_CV": 5.8824,
+        "VIN_SYS_5V0": 7.30368
+      }
+    },
+    {
+      "time": 92197.295264837,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 6.27456,
+        "VDD_CPU_CV": 5.8824,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92197.401564064,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.8824,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92197.508143738,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.8824,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92197.61508293,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.8824,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92197.721645356,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.8824,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92197.827206123,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.8824,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92197.933490278,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.8824,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92198.039785057,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.8824,
+        "VDD_CPU_CV": 5.8824,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92198.145824317,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 5.8824,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92198.253053011,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.8824,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92198.360076138,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.8824,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92198.469020248,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 5.8824,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92198.574937844,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 6.27456,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92198.681070128,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 6.27456,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92198.787828616,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 6.27456,
+        "VDD_CPU_CV": 5.8824,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92198.894738912,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 5.8824,
+        "VDD_CPU_CV": 5.8824,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92199.001761527,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 6.27456,
+        "VDD_CPU_CV": 5.8824,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92199.108437743,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 6.27456,
+        "VDD_CPU_CV": 5.8824,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92199.21537831,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.32944,
+        "VDD_GPU_SOC": 6.272,
+        "VDD_CPU_CV": 5.8824,
+        "VIN_SYS_5V0": 7.30368
+      }
+    },
+    {
+      "time": 92199.321574753,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.43072,
+        "VDD_GPU_SOC": 6.664,
+        "VDD_CPU_CV": 5.8824,
+        "VIN_SYS_5V0": 7.40512
+      }
+    },
+    {
+      "time": 92199.427728316,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.532,
+        "VDD_GPU_SOC": 6.664,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.50656
+      }
+    },
+    {
+      "time": 92199.534642739,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.532,
+        "VDD_GPU_SOC": 6.66128,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.608
+      }
+    },
+    {
+      "time": 92199.641197164,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.62912,
+        "VDD_GPU_SOC": 6.66128,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.608
+      }
+    },
+    {
+      "time": 92199.747468518,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.63328,
+        "VDD_GPU_SOC": 6.66128,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.608
+      }
+    },
+    {
+      "time": 92199.854015039,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.62912,
+        "VDD_GPU_SOC": 6.66128,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.70944
+      }
+    },
+    {
+      "time": 92199.959361022,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.62912,
+        "VDD_GPU_SOC": 6.66128,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.70944
+      }
+    },
+    {
+      "time": 92200.065510392,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.62912,
+        "VDD_GPU_SOC": 6.66128,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.70944
+      }
+    },
+    {
+      "time": 92200.171988113,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.63328,
+        "VDD_GPU_SOC": 6.66128,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.70944
+      }
+    },
+    {
+      "time": 92200.278537642,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.532,
+        "VDD_GPU_SOC": 6.664,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.608
+      }
+    },
+    {
+      "time": 92200.386021693,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.532,
+        "VDD_GPU_SOC": 6.664,
+        "VDD_CPU_CV": 5.88,
+        "VIN_SYS_5V0": 7.608
+      }
+    },
+    {
+      "time": 92200.49427771,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.43072,
+        "VDD_GPU_SOC": 6.272,
+        "VDD_CPU_CV": 5.8824,
+        "VIN_SYS_5V0": 7.50656
+      }
+    },
+    {
+      "time": 92200.600134985,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.32944,
+        "VDD_GPU_SOC": 6.272,
+        "VDD_CPU_CV": 5.8824,
+        "VIN_SYS_5V0": 7.30368
+      }
+    },
+    {
+      "time": 92200.7077943,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 6.27456,
+        "VDD_CPU_CV": 5.8824,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92200.815462704,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 6.27456,
+        "VDD_CPU_CV": 5.8824,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92200.921638474,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 6.27456,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92201.028481697,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.8824,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92201.134814682,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.8824,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92201.240842804,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92201.348435847,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92201.455642204,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92201.562186708,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92201.669375337,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92201.775218596,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92201.882384441,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92201.988910993,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92202.095637416,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92202.202138784,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92202.308552824,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92202.415652685,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92202.5222273,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92202.627560161,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92202.733948698,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92202.839508054,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92202.944885107,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92203.051307819,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92203.15698503,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92203.262465251,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92203.367887199,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92203.473598586,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92203.578845048,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92203.684183477,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92203.790172431,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92203.896185928,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92204.001722564,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92204.108379994,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92204.21425954,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92204.319836399,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92204.425153068,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92204.530918022,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92204.636189379,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92204.74140992,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.49472,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92204.846623037,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.49472,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92204.951991258,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92205.05734735,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92205.162974736,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92205.270216835,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92205.376408603,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92205.481862358,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92205.588122894,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92205.694205222,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92205.799910945,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92205.905397404,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92206.010817591,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92206.116699472,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92206.222093547,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92206.32759335,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92206.433066561,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92206.538472124,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92206.644073687,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92206.749382738,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 5.49696,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92206.854829645,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 5.49696,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92206.960768038,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 5.49696,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92207.06637024,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 5.49696,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92207.171724699,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 1.92432,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 5.49472,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92207.277694835,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92207.383653579,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92207.48907591,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.69504
+      }
+    },
+    {
+      "time": 92207.594442145,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92207.699955995,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92207.806000946,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92207.912125738,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92208.017962018,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92208.123264669,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.49248,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92208.228807287,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.49248,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92208.334499215,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92208.44024324,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92208.545744962,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92208.651296252,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92208.757217875,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92208.863933959,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.43072,
+        "VDD_GPU_SOC": 6.27456,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 7.40512
+      }
+    },
+    {
+      "time": 92208.969625184,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.532,
+        "VDD_GPU_SOC": 6.272,
+        "VDD_CPU_CV": 5.8824,
+        "VIN_SYS_5V0": 7.40512
+      }
+    },
+    {
+      "time": 92209.075007962,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.32944,
+        "VDD_GPU_SOC": 6.27456,
+        "VDD_CPU_CV": 5.8824,
+        "VIN_SYS_5V0": 7.30368
+      }
+    },
+    {
+      "time": 92209.180734226,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 6.27456,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92209.287713828,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 6.27456,
+        "VDD_CPU_CV": 5.49248,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92209.393183902,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 6.27712,
+        "VDD_CPU_CV": 5.49248,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92209.498742263,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 6.27712,
+        "VDD_CPU_CV": 5.49248,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92209.604173201,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 6.27712,
+        "VDD_CPU_CV": 5.49248,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92209.709677258,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 6.27712,
+        "VDD_CPU_CV": 5.49472,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92209.815082884,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.49248,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92209.921203962,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92210.026618644,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92210.132070829,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92210.237469222,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92210.342908544,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92210.449355316,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92210.556022759,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 6.27456,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92210.661473088,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 6.27456,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92210.767229208,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92210.872827472,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92210.978242314,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92211.084208128,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8848,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92211.189516665,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92211.295249904,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92211.400948136,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92211.506203586,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92211.611911449,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.8848,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92211.717620752,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92211.822893514,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92211.929815035,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92212.035292308,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.79648
+      }
+    },
+    {
+      "time": 92212.141848646,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.49248,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 6.89792
+      }
+    },
+    {
+      "time": 92212.248044987,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.10016,
+        "VDD_CPU_CV": 6.66944,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92212.353804626,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 5.10016,
+        "VDD_CPU_CV": 6.66944,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92212.467202979,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 5.09808,
+        "VDD_CPU_CV": 6.66944,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92212.572995769,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 5.09808,
+        "VDD_CPU_CV": 7.06176,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92212.678676528,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 5.09808,
+        "VDD_CPU_CV": 6.66944,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92212.785020676,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 5.10016,
+        "VDD_CPU_CV": 6.66944,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92212.890865275,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 5.09808,
+        "VDD_CPU_CV": 7.06176,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92212.996772752,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.32944,
+        "VDD_GPU_SOC": 5.09808,
+        "VDD_CPU_CV": 7.06176,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92213.10268599,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.32944,
+        "VDD_GPU_SOC": 5.09808,
+        "VDD_CPU_CV": 7.06176,
+        "VIN_SYS_5V0": 7.30368
+      }
+    },
+    {
+      "time": 92213.208261021,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 5.09808,
+        "VDD_CPU_CV": 7.06176,
+        "VIN_SYS_5V0": 7.30368
+      }
+    },
+    {
+      "time": 92213.314019571,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 5.09808,
+        "VDD_CPU_CV": 7.06176,
+        "VIN_SYS_5V0": 7.30368
+      }
+    },
+    {
+      "time": 92213.419906089,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 5.10016,
+        "VDD_CPU_CV": 7.06176,
+        "VIN_SYS_5V0": 7.30368
+      }
+    },
+    {
+      "time": 92213.525328097,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 5.09808,
+        "VDD_CPU_CV": 6.66944,
+        "VIN_SYS_5V0": 7.30368
+      }
+    },
+    {
+      "time": 92213.631036919,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 5.10016,
+        "VDD_CPU_CV": 6.66944,
+        "VIN_SYS_5V0": 7.30368
+      }
+    },
+    {
+      "time": 92213.736759502,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 5.10016,
+        "VDD_CPU_CV": 6.66944,
+        "VIN_SYS_5V0": 7.30368
+      }
+    },
+    {
+      "time": 92213.843165345,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 5.09808,
+        "VDD_CPU_CV": 7.06176,
+        "VIN_SYS_5V0": 7.30368
+      }
+    },
+    {
+      "time": 92213.948861527,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.32944,
+        "VDD_GPU_SOC": 5.09808,
+        "VDD_CPU_CV": 7.06176,
+        "VIN_SYS_5V0": 7.30368
+      }
+    },
+    {
+      "time": 92214.054676909,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 5.09808,
+        "VDD_CPU_CV": 7.06176,
+        "VIN_SYS_5V0": 7.30368
+      }
+    },
+    {
+      "time": 92214.160066085,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 5.10016,
+        "VDD_CPU_CV": 7.06176,
+        "VIN_SYS_5V0": 7.30368
+      }
+    },
+    {
+      "time": 92214.265593019,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.32944,
+        "VDD_GPU_SOC": 5.09808,
+        "VDD_CPU_CV": 7.06176,
+        "VIN_SYS_5V0": 7.30368
+      }
+    },
+    {
+      "time": 92214.371024563,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 4.70784,
+        "VDD_CPU_CV": 6.67216,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92214.476395499,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 4.70784,
+        "VDD_CPU_CV": 6.67216,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92214.581719331,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 4.70784,
+        "VDD_CPU_CV": 6.67216,
+        "VIN_SYS_5V0": 7.20224
+      }
+    },
+    {
+      "time": 92214.68705289,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.22816,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.67216,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92214.792328019,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 7.1008
+      }
+    },
+    {
+      "time": 92214.898875813,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92214.902469267,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.28224,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92215.004626586,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92215.10990837,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92215.215310121,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 4.70976,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92215.320616417,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.0256,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 6.27968,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92215.426942675,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.10224,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92215.535452795,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92215.536127447,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.99936
+      }
+    },
+    {
+      "time": 92215.541622524,
+      "watts": {
+        "VDDQ_VDD2_1V8AO": 2.12688,
+        "VDD_GPU_SOC": 5.49472,
+        "VDD_CPU_CV": 5.8872,
+        "VIN_SYS_5V0": 6.99936
+      }
+    }
+  ],
+  "power_errors": [],
+  "idle_rail_sum_watts": 18.553641073154125,
+  "scope": "Common shared dynamic engine; repeat builder process with OS/driver caches retained. Not training energy, wall-plug energy, or exact original-build consumption.",
+  "limitations": [
+    "Warmup energy covers a short interval at 10Hz and is coarse.",
+    "Steady per-frame results exclude these setup costs; amortize explicitly."
+  ]
+}

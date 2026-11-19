@@ -1,0 +1,10 @@
+{
+  "purpose": "Complete scene/resource ablations; parameters and weights unchanged. Added after primary block; not a new formal preregistration.",
+  "policies": [
+    "guarded-no-scene",
+    "guarded-no-resource"
+  ],
+  "budget_ms": 50,
+  "frames": 1200,
+  "cold_process_repetitions": 5
+}

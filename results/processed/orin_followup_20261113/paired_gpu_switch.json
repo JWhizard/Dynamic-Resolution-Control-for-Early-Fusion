@@ -1,0 +1,1685 @@
+{
+  "hardware": {
+    "model": "NVIDIA Jetson AGX Orin Developer Kit",
+    "platform": "Linux-5.15.148-tegra-aarch64-with-glibc2.35",
+    "host": "ubuntu",
+    "torch": "2.10.0+cpu",
+    "cuda": null,
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "process_snapshot": "    PID COMMAND         %CPU\n  15024 python           314\n 215442 python           121\n   1637 flir_system_v2   103\n   3175 brave           56.7\n   3012 brave           27.5\n   3048 brave           17.1\n   3050 brave           15.1\n 215466 flir_system_v2   4.0\n    843 sugov:8          1.8\n   2362 gnome-shell      1.7\n    841 sugov:0          1.3\n    842 sugov:4          0.8\n   2220 Xorg             0.5\n   3604 gnome-control-c  0.4\n  10491 update-manager   0.3\n  12309 codex            0.3\n 211950 kworker/10:1-ci  0.3\n   1632 RTW_CMD_THREAD   0.2\n  29813 codex            0.2\n    352 irq/209-gk20a_s  0.1\n    401 systemd-udevd    0.1\n    759 dbus-daemon      0.1\n    760 NetworkManager   0.1\n   1123 nvgpu_channel_p  0.1\n   1982 packagekitd      0.1\n   3239 gnome-terminal-  0.1\n   7179 nautilus         0.1\n 112433 codex            0.1\n 179495 kworker/u24:4-d  0.1\n      1 systemd          0.0\n      2 kthreadd         0.0\n      3 rcu_gp           0.0\n      4 rcu_par_gp       0.0\n      5 slub_flushwq     0.0\n      6 netns            0.0\n      8 kworker/0:0H-ev  0.0\n     10 mm_percpu_wq     0.0\n     11 rcu_tasks_kthre  0.0\n     12 rcu_tasks_rude_  0.0\n     13 rcu_tasks_trace  0.0\n     14 ksoftirqd/0      0.0\n     15 rcu_preempt      0.0\n     16 migration/0      0.0\n     17 cpuhp/0          0.0\n     18 cpuhp/1          0.0\n     19 migration/1      0.0\n     20 ksoftirqd/1      0.0\n     22 kworker/1:0H-kb  0.0\n     23 cpuhp/2          0.0\n     24 migration/2      0.0\n     25 ksoftirqd/2      0.0\n     28 cpuhp/3          0.0\n     29 migration/3      0.0\n     30 ksoftirqd/3      0.0\n     32 kworker/3:0H-kb  0.0\n     33 cpuhp/4          0.0\n     34 migration/4      0.0\n     35 ksoftirqd/4      0.0\n     38 cpuhp/5          0.0\n     39 migration/5      0.0\n     40 ksoftirqd/5      0.0\n     42 kworker/5:0H     0.0\n     43 cpuhp/6          0.0\n     44 migration/6      0.0\n     45 ksoftirqd/6      0.0\n     48 cpuhp/7          0.0\n     49 migration/7      0.0\n     50 ksoftirqd/7      0.0\n     52 kworker/7:0H-kb  0.0\n     53 cpuhp/8          0.0\n     54 migration/8      0.0\n     55 ksoftirqd/8      0.0\n     58 cpuhp/9          0.0\n     59 migration/9      0.0\n     60 ksoftirqd/9      0.0\n     62 kworker/9:0H-kb  0.0\n     63 cpuhp/10         0.0\n     64 migration/10     0.0\n     65 ksoftirqd/10     0.0\n     68 cpuhp/11         0.0\n     69 migration/11     0.0\n     70 ksoftirqd/11     0.0\n     73 kdevtmpfs        0.0\n     74 inet_frag_wq     0.0\n     87 kauditd          0.0\n     88 oom_reaper       0.0\n     89 writeback        0.0\n     90 kcompactd0       0.0\n     91 ksmd             0.0\n     92 khugepaged       0.0\n    103 cryptd           0.0\n    122 kintegrityd      0.0\n    123 kblockd          0.0\n    124 blkcg_punt_bio   0.0\n    125 tpm_dev_wq       0.0\n    126 ata_sff          0.0\n    127 edac-poller      0.0\n    128 devfreq_wq       0.0\n    129 watchdogd        0.0\n    132 kworker/0:1H-kb  0.0\n    133 rpciod           0.0\n    134 kworker/u25:0-h  0.0\n    135 xprtiod          0.0\n    163 kswapd0          0.0\n    164 nfsiod           0.0\n    168 vfio-irqfd-clea  0.0\n    169 dm_bufio_cache   0.0\n    173 krfcommd         0.0\n    174 pr/tty0          0.0\n    175 pr/ttyTCU0       0.0\n    176 pr/ttyAMA0       0.0\n    179 irq/113-3160000  0.0\n    181 irq/114-3180000  0.0\n    183 irq/115-3190000  0.0\n    184 irq/116-31b0000  0.0\n    185 irq/117-31c0000  0.0\n    186 irq/119-31e0000  0.0\n    187 irq/178-c240000  0.0\n    189 irq/179-c250000  0.0\n    194 sdhci            0.0\n    195 irq/123-mmc0     0.0\n    196 sdhci            0.0\n    197 irq/122-mmc1     0.0\n    198 irq/236-3400000  0.0\n    214 kworker/11:1H-k  0.0\n    215 mmc_complete     0.0\n    217 kworker/1:1H-kb  0.0\n    221 irq/200-tegra-p  0.0\n    222 nvme-wq          0.0\n    223 nvme-reset-wq    0.0\n    224 nvme-delete-wq   0.0\n    229 irq/237-1-0008   0.0\n    230 irq/200-aerdrv   0.0\n    231 irq/202-tegra-p  0.0\n    236 1-0008-con0      0.0\n    238 irq/202-aerdrv   0.0\n    239 irq/204-tegra-p  0.0\n    241 1-0008-con0      0.0\n    243 1-0008-con0      0.0\n    245 1-0008-con0      0.0\n    250 1-0008-con0      0.0\n    252 1-0008-con0      0.0\n    254 1-0008-con0      0.0\n    256 1-0008-con0      0.0\n    258 1-0008-con0      0.0\n    260 1-0008-con0      0.0\n    262 1-0008-con0      0.0\n    263 irq/128-3610000  0.0\n    264 irq/125-3610000  0.0\n    270 kworker/2:1H-kb  0.0\n    271 jbd2/mmcblk0p1-  0.0\n    272 ext4-rsv-conver  0.0\n    273 kworker/3:1H-kb  0.0\n    276 kworker/7:1H-kb  0.0\n    284 mld              0.0\n    285 ipv6_addrconf    0.0\n    288 kworker/6:1H-kb  0.0\n    298 kworker/4:1H-kb  0.0\n    299 kworker/10:1H-k  0.0\n    303 kworker/5:1H-kb  0.0\n    307 kworker/8:1H-kb  0.0\n    322 systemd-journal  0.0\n    346 nvmap-bz         0.0\n    347 irq/199-host1x_  0.0\n    350 irq/207-gk20a_s  0.0\n    351 irq/208-gk20a_s  0.0\n    353 irq/210-gk20a_n  0.0\n    360 nv-tee-supplica  0.0\n    367 tee-supplicant   0.0\n    368 optee_bus_scan   0.0\n    378 systemd-udevd    0.0\n    379 systemd-udevd    0.0\n    380 systemd-udevd    0.0\n    381 systemd-udevd    0.0\n    382 systemd-udevd    0.0\n    383 systemd-udevd    0.0\n    384 systemd-udevd    0.0\n    385 systemd-udevd    0.0\n    386 systemd-udevd    0.0\n    387 systemd-udevd    0.0\n    388 systemd-udevd    0.0\n    389 systemd-udevd    0.0\n    390 systemd-udevd    0.0\n    391 systemd-udevd    0.0\n    393 systemd-udevd    0.0\n    394 systemd-udevd    0.0\n    395 systemd-udevd    0.0\n    396 systemd-udevd    0.0\n    397 systemd-udevd    0.0\n    398 systemd-udevd    0.0\n    399 systemd-udevd    0.0\n    400 systemd-udevd    0.0\n    402 systemd-udevd    0.0\n    405 systemd-udevd    0.0\n    406 systemd-udevd    0.0\n    407 systemd-udevd    0.0\n    408 systemd-udevd    0.0\n    409 systemd-udevd    0.0\n    410 systemd-udevd    0.0\n    411 systemd-udevd    0.0\n    412 systemd-udevd    0.0\n    413 systemd-udevd    0.0\n    414 systemd-udevd    0.0\n    415 systemd-udevd    0.0\n    416 systemd-udevd    0.0\n    418 systemd-udevd    0.0\n    419 systemd-udevd    0.0\n    421 systemd-udevd    0.0\n    422 systemd-udevd    0.0\n    423 systemd-udevd    0.0\n    432 irq/259-tsec_ri  0.0\n    433 15820000.crypto  0.0\n    434 15840000.crypto  0.0\n    457 irq/231-bc00000  0.0\n    458 irq/226-tegra_d  0.0\n    459 pva_task_status  0.0\n    460 irq/262-pva-isr  0.0\n    461 irq/263-pva-isr  0.0\n    462 irq/227-tegra_d  0.0\n    463 irq/264-pva-isr  0.0\n    464 irq/265-pva-isr  0.0\n    465 irq/266-pva-isr  0.0\n    466 irq/267-pva-isr  0.0\n    467 irq/268-pva-isr  0.0\n    468 dce-async-ipc-w  0.0\n    469 irq/269-pva-isr  0.0\n    470 irq/270-pva-isr  0.0\n    471 kworker/2:2H-kb  0.0\n    472 capture-control  0.0\n    473 capture          0.0\n    474 irq/271-nvvrs-p  0.0\n    476 nv_queue         0.0\n    477 nv_queue         0.0\n    568 irq/120-3210000  0.0\n    571 spi0             0.0\n    572 irq/121-3230000  0.0\n    573 spi1             0.0\n    576 cfg80211         0.0\n    668 btfwwork         0.0\n    670 bttimerwork      0.0\n    673 kworker/u25:1-h  0.0\n    722 irq/307-rt5640   0.0\n    734 jbd2/nvme0n1p1-  0.0\n    735 ext4-rsv-conver  0.0\n    747 haveged          0.0\n    748 rpcbind          0.0\n    749 systemd-resolve  0.0\n    750 systemd-timesyn  0.0\n    757 avahi-daemon     0.0\n    758 bluetoothd       0.0\n    768 networkd-dispat  0.0\n    780 polkitd          0.0\n    781 power-profiles-  0.0\n    788 rsyslogd         0.0\n    793 seatd            0.0\n    796 snapd            0.0\n    806 accounts-daemon  0.0\n    807 switcheroo-cont  0.0\n    813 systemd-logind   0.0\n    815 udisksd          0.0\n    816 wpa_supplicant   0.0\n    822 avahi-daemon     0.0\n    901 nvfancontrol     0.0\n    958 ModemManager     0.0\n    967 tailscaled       0.0\n    994 file-storage     0.0\n   1093 pr/ramoops-1     0.0\n   1121 sw-quiesce       0.0\n   1124 nvgpu_pg_init_g  0.0\n   1125 nvgpu_clk_arb_p  0.0\n   1153 irq/308-6800000  0.0\n   1154 irq/162-eno1.co  0.0\n   1163 nvargus-daemon   0.0\n   1166 nvs-service      0.0\n   1229 cron             0.0\n   1268 kerneloops       0.0\n   1275 gdm3             0.0\n   1290 nvphsd           0.0\n   1291 kerneloops       0.0\n   1295 agetty           0.0\n   1297 agetty           0.0\n   1298 agetty           0.0\n   1302 nvphsd           0.0\n   1310 systemd          0.0\n   1457 (sd-pam)         0.0\n   1639 pipewire         0.0\n   1641 pipewire-media-  0.0\n   1642 pulseaudio       0.0\n   1646 rtkit-daemon     0.0\n   1748 dbus-daemon      0.0\n   1750 nvidia-modeset/  0.0\n   1751 nvidia-modeset/  0.0\n   1754 nvidia           0.0\n   1755 nv_queue         0.0\n   1973 upowerd          0.0\n   2101 colord           0.0\n   2207 gdm-session-wor  0.0\n   2214 gnome-keyring-d  0.0\n   2218 gdm-x-session    0.0\n   2226 gnome-session-b  0.0\n   2306 at-spi-bus-laun  0.0\n   2312 dbus-daemon      0.0\n   2319 gnome-session-c  0.0\n   2329 gvfsd            0.0\n   2335 gvfsd-fuse       0.0\n   2338 gnome-session-b  0.0\n   2382 gnome-shell-cal  0.0\n   2384 xdg-permission-  0.0\n   2395 evolution-sourc  0.0\n   2401 goa-daemon       0.0\n   2402 dconf-service    0.0\n   2405 gvfs-udisks2-vo  0.0\n   2410 evolution-calen  0.0\n   2416 gvfs-gphoto2-vo  0.0\n   2423 goa-identity-se  0.0\n   2427 gvfs-mtp-volume  0.0\n   2435 gvfs-afc-volume  0.0\n   2442 gvfs-goa-volume  0.0\n   2452 evolution-addre  0.0\n   2466 gvfsd-metadata   0.0\n   2467 gvfsd-trash      0.0\n   2480 gjs              0.0\n   2482 at-spi2-registr  0.0\n   2494 xdg-desktop-por  0.0\n   2501 xdg-document-po  0.0\n   2508 fusermount3      0.0\n   2511 xdg-desktop-por  0.0\n   2513 sh               0.0\n   2514 gsd-a11y-settin  0.0\n   2515 gsd-color        0.0\n   2517 ibus-daemon      0.0\n   2519 gsd-datetime     0.0\n   2522 gsd-housekeepin  0.0\n   2525 gsd-keyboard     0.0\n   2528 gsd-media-keys   0.0\n   2529 gsd-power        0.0\n   2534 gsd-print-notif  0.0\n   2537 gsd-rfkill       0.0\n   2538 gsd-screensaver  0.0\n   2540 gsd-sharing      0.0\n   2543 gsd-smartcard    0.0\n   2546 gsd-sound        0.0\n   2549 gsd-wacom        0.0\n   2553 gsd-xsettings    0.0\n   2562 evolution-alarm  0.0\n   2569 python3          0.0\n   2571 gsd-disk-utilit  0.0\n   2575 gnome-software   0.0\n   2577 ibus-memconf     0.0\n   2578 ibus-extension-  0.0\n   2595 gsd-printer      0.0\n   2606 ibus-x11         0.0\n   2619 ibus-portal      0.0\n   2685 fwupd            0.0\n   2724 python3          0.0\n   2725 python3          0.0\n   2726 python3          0.0\n   2727 python3          0.0\n   2728 python3          0.0\n   2729 python3          0.0\n   2730 python3          0.0\n   2731 python3          0.0\n   2732 python3          0.0\n   2733 python3          0.0\n   2734 python3          0.0\n   2735 python3          0.0\n   2736 python3          0.0\n   2737 python3          0.0\n   2738 python3          0.0\n   2739 python3          0.0\n   2740 python3          0.0\n   2741 python3          0.0\n   2742 python3          0.0\n   2766 gjs              0.0\n   2778 ibus-engine-sim  0.0\n   2790 tracker-miner-f  0.0\n   2805 xdg-desktop-por  0.0\n   3005 brave-browser-s  0.0\n   3010 cat              0.0\n   3011 cat              0.0\n   3014 chrome_crashpad  0.0\n   3016 chrome_crashpad  0.0\n   3022 brave            0.0\n   3023 brave            0.0\n   3025 brave            0.0\n   3061 brave            0.0\n   3080 brave            0.0\n   3197 update-notifier  0.0\n   3261 bash             0.0\n   3514 brave            0.0\n   3738 gvfsd-network    0.0\n   3751 gvfsd-dnssd      0.0\n   5565 cifsiod          0.0\n   5566 smb3decryptd     0.0\n   5567 cifsfileinfoput  0.0\n   5568 cifsoplockd      0.0\n   5569 deferredclose    0.0\n   5655 cifsd            0.0\n   6366 sudo             0.0\n   6367 sudo             0.0\n   6368 xdg-open         0.0\n   6375 dbus-launch      0.0\n   6376 dbus-daemon      0.0\n   7190 xdg-desktop-por  0.0\n   7195 xdg-document-po  0.0\n   7199 xdg-permission-  0.0\n   7205 fusermount3      0.0\n   7209 xdg-desktop-por  0.0\n   7215 gvfsd            0.0\n   7220 gvfsd-fuse       0.0\n   7235 xdg-desktop-por  0.0\n   7243 gnome-keyring-d  0.0\n   7255 dconf-service    0.0\n   8644 nautilus         0.0\n  12272 bash             0.0\n  12417 codex            0.0\n  15041 uuidd            0.0\n  21990 kworker/6:2H     0.0\n  21991 kworker/4:2H     0.0\n  21992 kworker/8:2H     0.0\n  21993 kworker/9:2H     0.0\n  21994 kworker/10:2H    0.0\n  21995 kworker/11:2H    0.0\n  22236 brave            0.0\n  22369 gvfs-udisks2-vo  0.0\n  22376 gvfs-gphoto2-vo  0.0\n  22381 gvfs-mtp-volume  0.0\n  22386 gvfs-afc-volume  0.0\n  22392 gvfs-goa-volume  0.0\n  22396 goa-daemon       0.0\n  22403 goa-identity-se  0.0\n  22414 gvfsd-metadata   0.0\n  23677 sshd             0.0\n  25548 notify-osd       0.0\n  26310 sshd             0.0\n  26315 sshd             0.0\n  26342 sshd             0.0\n  26370 sshd             0.0\n  26371 sftp-server      0.0\n  26390 bash             0.0\n  26530 codex            0.0\n 151857 kworker/u24:7-e  0.0\n 168517 kworker/u24:2-e  0.0\n 171492 kworker/u24:5-e  0.0\n 177075 kworker/1:0-cgr  0.0\n 177992 kworker/6:3-mm_  0.0\n 178252 codex-code-mode  0.0\n 181486 kworker/2:3-pm   0.0\n 209876 kworker/u24:1-e  0.0\n 210098 kworker/11:3-mm  0.0\n 211962 ssh-agent        0.0\n 212090 kworker/7:1-eve  0.0\n 212186 kworker/8:0-mm_  0.0\n 212228 kworker/3:1-cgr  0.0\n 212452 kworker/4:1-mm_  0.0\n 212478 kworker/9:1-mm_  0.0\n 212571 kworker/0:3-eve  0.0\n 212732 python           0.0\n 212926 kworker/5:1-cgr  0.0\n 213288 kworker/0:2-cgr  0.0\n 213325 kworker/10:2-cg  0.0\n 213676 kworker/11:0-cg  0.0\n 213984 kworker/3:2-eve  0.0\n 214204 kworker/5:0-cgr  0.0\n 214252 kworker/8:3-mm_  0.0\n 214284 kworker/9:2-cgr  0.0\n 214341 kworker/6:1-cgr  0.0\n 214416 kworker/4:2-cgr  0.0\n 214499 kworker/2:0-eve  0.0\n 214753 kworker/1:2-eve  0.0\n 214848 kworker/7:0-mm_  0.0\n 214918 kworker/9:0-cgr  0.0\n 214919 kworker/9:3      0.0\n 214984 kworker/8:1-cgr  0.0\n 215004 kworker/10:0-cg  0.0\n 215035 kworker/11:1-cg  0.0\n 215057 kworker/5:2      0.0\n 215058 kworker/5:3-pm   0.0\n 215094 kworker/10:3-ci  0.0\n 215149 kworker/u24:0-d  0.0\n 215258 kworker/6:0-cgr  0.0\n 215393 kworker/3:0-cgr  0.0\n 215394 kworker/2:1      0.0\n 215417 kworker/0:0-eve  0.0\n 215484 ps               0.0\n",
+    "nvpmodel": "NV Power Mode: MAXN\n0\n"
+  },
+  "detector_metadata": {
+    "backend": "TensorRT",
+    "version": "10.3.0",
+    "execution_device": "Jetson GPU",
+    "precision": "fp32_no_tf32",
+    "engine_sha256": "c233b6241340c5eeff253726d39d94d32b003b1f3d1fa6144c0c841073e6ffb8",
+    "checkpoint_sha256": "79d21a315500db3e0d061ce273de5affe26e8b778055e50f9ceca22994a55cda",
+    "preprocessing": "same CPU torch antialiased bilinear and letterbox as project",
+    "input_order": "B,G,R,IR",
+    "output": "native xyxy/conf/class",
+    "synchronous_return": true
+  },
+  "weights_sha256": "983e875d5ad07887d2d8c618a7582e615a1b35fe4fc0e5ba97ae1ffebdb811e1",
+  "manifest_sha256": "7ec2086b121b7c2ca26faba076de1a4c4191fb7f0b9afc40bfa5a1323c8b4f26",
+  "repetitions_per_directed_pair": 10,
+  "summary_paired_delta_ms": {
+    "480->544": {
+      "n": 10,
+      "mean": -0.5059182003606111,
+      "p50": 0.35317500442033634,
+      "p95": 2.7269436934147944,
+      "p99": 3.2384655429632403
+    },
+    "480->576": {
+      "n": 10,
+      "mean": -0.8126991000608541,
+      "p50": -1.45940749644069,
+      "p95": 4.721035351394672,
+      "p99": 6.091172675951385
+    },
+    "480->640": {
+      "n": 10,
+      "mean": 0.022275697847362608,
+      "p50": 0.6113569979788736,
+      "p95": 2.4216503028583243,
+      "p99": 2.5769204647804145
+    },
+    "544->480": {
+      "n": 10,
+      "mean": -1.293170399731025,
+      "p50": -0.7678089896216989,
+      "p95": 2.090893703280015,
+      "p99": 2.669209943851456
+    },
+    "544->576": {
+      "n": 10,
+      "mean": -2.7355799029464833,
+      "p50": -2.3843399976613,
+      "p95": 1.5179523048573145,
+      "p99": 2.491747262247373
+    },
+    "544->640": {
+      "n": 10,
+      "mean": 0.9902933001285419,
+      "p50": -1.224922998517286,
+      "p95": 10.303399299300509,
+      "p99": 10.584079056425253
+    },
+    "576->480": {
+      "n": 10,
+      "mean": 0.7594854963826947,
+      "p50": 1.3983514945721254,
+      "p95": 5.186462945130187,
+      "p99": 5.3690365856164135
+    },
+    "576->544": {
+      "n": 10,
+      "mean": 0.5016170980525203,
+      "p50": 1.4933604979887605,
+      "p95": 4.627800245361866,
+      "p99": 5.496795240615029
+    },
+    "576->640": {
+      "n": 10,
+      "mean": 0.9195339021971449,
+      "p50": 1.1634010006673634,
+      "p95": 3.9098715911677564,
+      "p99": 4.231240710505517
+    },
+    "640->480": {
+      "n": 10,
+      "mean": -0.413574198319111,
+      "p50": -0.8011705067474395,
+      "p95": 5.88543765406939,
+      "p99": 6.566594738833373
+    },
+    "640->544": {
+      "n": 10,
+      "mean": -2.0852396977716126,
+      "p50": -2.2546729960595258,
+      "p95": 1.4006489444000159,
+      "p99": 2.1858337875164584
+    },
+    "640->576": {
+      "n": 10,
+      "mean": -0.7556454991572537,
+      "p50": -0.18457999976817518,
+      "p95": 2.4403461044130377,
+      "p99": 2.519064418011112
+    }
+  },
+  "rows": [
+    {
+      "source": 480,
+      "target": 544,
+      "rep": 9,
+      "frame_index": 17,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 24.910283987992443,
+      "stay_ms": 22.964832009165548,
+      "paired_delta_ms": 1.9454519788268954
+    },
+    {
+      "source": 576,
+      "target": 640,
+      "rep": 4,
+      "frame_index": 11,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 26.20631200261414,
+      "stay_ms": 22.787421010434628,
+      "paired_delta_ms": 3.418890992179513
+    },
+    {
+      "source": 640,
+      "target": 480,
+      "rep": 5,
+      "frame_index": 110,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 26.231976997223683,
+      "stay_ms": 25.08411199960392,
+      "paired_delta_ms": 1.147864997619763
+    },
+    {
+      "source": 640,
+      "target": 576,
+      "rep": 4,
+      "frame_index": 19,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 29.032774997176602,
+      "stay_ms": 26.494031000765972,
+      "paired_delta_ms": 2.5387439964106306
+    },
+    {
+      "source": 640,
+      "target": 480,
+      "rep": 2,
+      "frame_index": 101,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 19.757913003559224,
+      "stay_ms": 25.92905898927711,
+      "paired_delta_ms": -6.171145985717885
+    },
+    {
+      "source": 544,
+      "target": 480,
+      "rep": 0,
+      "frame_index": 76,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 22.076908993767574,
+      "stay_ms": 20.86955399136059,
+      "paired_delta_ms": 1.2073550024069846
+    },
+    {
+      "source": 640,
+      "target": 480,
+      "rep": 3,
+      "frame_index": 49,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 19.650390997412615,
+      "stay_ms": 21.67261199792847,
+      "paired_delta_ms": -2.022221000515856
+    },
+    {
+      "source": 576,
+      "target": 640,
+      "rep": 7,
+      "frame_index": 76,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 24.2925080092391,
+      "stay_ms": 23.449770000297576,
+      "paired_delta_ms": 0.8427380089415237
+    },
+    {
+      "source": 640,
+      "target": 480,
+      "rep": 6,
+      "frame_index": 67,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 24.464608999551274,
+      "stay_ms": 19.619828002760187,
+      "paired_delta_ms": 4.844780996791087
+    },
+    {
+      "source": 640,
+      "target": 544,
+      "rep": 9,
+      "frame_index": 70,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 20.714476995635778,
+      "stay_ms": 26.218727987725288,
+      "paired_delta_ms": -5.50425099208951
+    },
+    {
+      "source": 544,
+      "target": 576,
+      "rep": 7,
+      "frame_index": 87,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 21.73379600571934,
+      "stay_ms": 27.97691100568045,
+      "paired_delta_ms": -6.243114999961108
+    },
+    {
+      "source": 576,
+      "target": 544,
+      "rep": 9,
+      "frame_index": 87,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 20.897777008940466,
+      "stay_ms": 21.785829012515023,
+      "paired_delta_ms": -0.8880520035745576
+    },
+    {
+      "source": 576,
+      "target": 640,
+      "rep": 8,
+      "frame_index": 98,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 25.569849996827543,
+      "stay_ms": 26.9838649983285,
+      "paired_delta_ms": -1.4140150015009567
+    },
+    {
+      "source": 544,
+      "target": 480,
+      "rep": 2,
+      "frame_index": 14,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 23.418954006046988,
+      "stay_ms": 24.872009991668165,
+      "paired_delta_ms": -1.4530559856211767
+    },
+    {
+      "source": 480,
+      "target": 576,
+      "rep": 6,
+      "frame_index": 55,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 29.971643001772463,
+      "stay_ms": 29.772245994536206,
+      "paired_delta_ms": 0.1993970072362572
+    },
+    {
+      "source": 576,
+      "target": 480,
+      "rep": 2,
+      "frame_index": 58,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 21.291482000378892,
+      "stay_ms": 20.28813101060223,
+      "paired_delta_ms": 1.0033509897766635
+    },
+    {
+      "source": 576,
+      "target": 640,
+      "rep": 2,
+      "frame_index": 92,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 25.974018004490063,
+      "stay_ms": 25.950079987524077,
+      "paired_delta_ms": 0.023938016965985298
+    },
+    {
+      "source": 640,
+      "target": 480,
+      "rep": 7,
+      "frame_index": 64,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 20.285538004827686,
+      "stay_ms": 24.134327002684586,
+      "paired_delta_ms": -3.8487889978569
+    },
+    {
+      "source": 544,
+      "target": 640,
+      "rep": 1,
+      "frame_index": 64,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 24.824711013934575,
+      "stay_ms": 26.165892006247304,
+      "paired_delta_ms": -1.3411809923127294
+    },
+    {
+      "source": 576,
+      "target": 480,
+      "rep": 8,
+      "frame_index": 111,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 22.974557999987155,
+      "stay_ms": 21.181206000619568,
+      "paired_delta_ms": 1.7933519993675873
+    },
+    {
+      "source": 480,
+      "target": 544,
+      "rep": 8,
+      "frame_index": 107,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 23.41783199517522,
+      "stay_ms": 22.089482998126186,
+      "paired_delta_ms": 1.3283489970490336
+    },
+    {
+      "source": 576,
+      "target": 480,
+      "rep": 1,
+      "frame_index": 19,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 24.6332819951931,
+      "stay_ms": 21.44402799603995,
+      "paired_delta_ms": 3.189253999153152
+    },
+    {
+      "source": 640,
+      "target": 480,
+      "rep": 8,
+      "frame_index": 97,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 21.27573599864263,
+      "stay_ms": 26.967477999278344,
+      "paired_delta_ms": -5.691742000635713
+    },
+    {
+      "source": 640,
+      "target": 544,
+      "rep": 8,
+      "frame_index": 69,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 23.586348004755564,
+      "stay_ms": 27.680582003085874,
+      "paired_delta_ms": -4.09423399833031
+    },
+    {
+      "source": 480,
+      "target": 544,
+      "rep": 7,
+      "frame_index": 76,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 25.11786899412982,
+      "stay_ms": 26.988246987457387,
+      "paired_delta_ms": -1.8703779933275655
+    },
+    {
+      "source": 480,
+      "target": 544,
+      "rep": 1,
+      "frame_index": 62,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 23.647852009162307,
+      "stay_ms": 24.269850997370668,
+      "paired_delta_ms": -0.621998988208361
+    },
+    {
+      "source": 576,
+      "target": 544,
+      "rep": 8,
+      "frame_index": 14,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 21.494396001799032,
+      "stay_ms": 24.716450992855243,
+      "paired_delta_ms": -3.2220549910562113
+    },
+    {
+      "source": 576,
+      "target": 544,
+      "rep": 0,
+      "frame_index": 112,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 24.083156997221522,
+      "stay_ms": 27.933034987654537,
+      "paired_delta_ms": -3.849877990433015
+    },
+    {
+      "source": 480,
+      "target": 640,
+      "rep": 6,
+      "frame_index": 30,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 27.782214994658716,
+      "stay_ms": 25.597782994736917,
+      "paired_delta_ms": 2.1844319999217987
+    },
+    {
+      "source": 576,
+      "target": 640,
+      "rep": 0,
+      "frame_index": 30,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 28.217776998644695,
+      "stay_ms": 23.906194008304738,
+      "paired_delta_ms": 4.311582990339957
+    },
+    {
+      "source": 480,
+      "target": 640,
+      "rep": 1,
+      "frame_index": 10,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 26.972117004333995,
+      "stay_ms": 24.35637899907306,
+      "paired_delta_ms": 2.615738005260937
+    },
+    {
+      "source": 544,
+      "target": 640,
+      "rep": 2,
+      "frame_index": 104,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 24.790629002382047,
+      "stay_ms": 27.917674000491388,
+      "paired_delta_ms": -3.1270449981093407
+    },
+    {
+      "source": 544,
+      "target": 576,
+      "rep": 1,
+      "frame_index": 97,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 26.97979701042641,
+      "stay_ms": 27.323517002514564,
+      "paired_delta_ms": -0.34371999208815396
+    },
+    {
+      "source": 544,
+      "target": 640,
+      "rep": 0,
+      "frame_index": 16,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 23.652363001019694,
+      "stay_ms": 22.952636005356908,
+      "paired_delta_ms": 0.6997269956627861
+    },
+    {
+      "source": 576,
+      "target": 480,
+      "rep": 6,
+      "frame_index": 70,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 23.860079003497958,
+      "stay_ms": 20.157823004410602,
+      "paired_delta_ms": 3.702255999087356
+    },
+    {
+      "source": 544,
+      "target": 480,
+      "rep": 9,
+      "frame_index": 33,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 23.181280004791915,
+      "stay_ms": 23.263841998414136,
+      "paired_delta_ms": -0.08256199362222105
+    },
+    {
+      "source": 576,
+      "target": 480,
+      "rep": 7,
+      "frame_index": 27,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 25.640598993049935,
+      "stay_ms": 20.225918997311965,
+      "paired_delta_ms": 5.41467999573797
+    },
+    {
+      "source": 544,
+      "target": 480,
+      "rep": 4,
+      "frame_index": 91,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 21.27954199386295,
+      "stay_ms": 25.87609100737609,
+      "paired_delta_ms": -4.59654901351314
+    },
+    {
+      "source": 576,
+      "target": 480,
+      "rep": 0,
+      "frame_index": 51,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 21.419768992927857,
+      "stay_ms": 27.401148996432312,
+      "paired_delta_ms": -5.981380003504455
+    },
+    {
+      "source": 544,
+      "target": 480,
+      "rep": 8,
+      "frame_index": 56,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 21.22395699552726,
+      "stay_ms": 22.88325699919369,
+      "paired_delta_ms": -1.6593000036664307
+    },
+    {
+      "source": 544,
+      "target": 640,
+      "rep": 9,
+      "frame_index": 15,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 26.301701000193134,
+      "stay_ms": 27.61177800130099,
+      "paired_delta_ms": -1.3100770011078566
+    },
+    {
+      "source": 544,
+      "target": 640,
+      "rep": 5,
+      "frame_index": 28,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 23.289410994038917,
+      "stay_ms": 25.643959001172334,
+      "paired_delta_ms": -2.354548007133417
+    },
+    {
+      "source": 576,
+      "target": 544,
+      "rep": 6,
+      "frame_index": 43,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 25.777306000236422,
+      "stay_ms": 22.477136997622438,
+      "paired_delta_ms": 3.300169002613984
+    },
+    {
+      "source": 480,
+      "target": 640,
+      "rep": 2,
+      "frame_index": 75,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 25.45544199529104,
+      "stay_ms": 26.0824959987076,
+      "paired_delta_ms": -0.6270540034165606
+    },
+    {
+      "source": 576,
+      "target": 480,
+      "rep": 3,
+      "frame_index": 75,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 24.739168991800398,
+      "stay_ms": 23.994736999156885,
+      "paired_delta_ms": 0.7444319926435128
+    },
+    {
+      "source": 576,
+      "target": 480,
+      "rep": 5,
+      "frame_index": 0,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 23.566887000924908,
+      "stay_ms": 26.6177070006961,
+      "paired_delta_ms": -3.0508199997711927
+    },
+    {
+      "source": 480,
+      "target": 640,
+      "rep": 3,
+      "frame_index": 90,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 24.07457800291013,
+      "stay_ms": 23.88919900113251,
+      "paired_delta_ms": 0.18537900177761912
+    },
+    {
+      "source": 544,
+      "target": 576,
+      "rep": 0,
+      "frame_index": 29,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 24.36821699666325,
+      "stay_ms": 26.407654004287906,
+      "paired_delta_ms": -2.039437007624656
+    },
+    {
+      "source": 640,
+      "target": 480,
+      "rep": 9,
+      "frame_index": 115,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 28.70108000934124,
+      "stay_ms": 21.96419599931687,
+      "paired_delta_ms": 6.736884010024369
+    },
+    {
+      "source": 640,
+      "target": 576,
+      "rep": 2,
+      "frame_index": 110,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 27.447004002169706,
+      "stay_ms": 31.48965300351847,
+      "paired_delta_ms": -4.042649001348764
+    },
+    {
+      "source": 480,
+      "target": 640,
+      "rep": 4,
+      "frame_index": 9,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 24.873507994925603,
+      "stay_ms": 23.836173000745475,
+      "paired_delta_ms": 1.037334994180128
+    },
+    {
+      "source": 480,
+      "target": 544,
+      "rep": 6,
+      "frame_index": 35,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 23.550215002615005,
+      "stay_ms": 25.770583000849,
+      "paired_delta_ms": -2.2203679982339963
+    },
+    {
+      "source": 544,
+      "target": 640,
+      "rep": 6,
+      "frame_index": 27,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 27.566814998863265,
+      "stay_ms": 28.988382007810287,
+      "paired_delta_ms": -1.4215670089470223
+    },
+    {
+      "source": 640,
+      "target": 480,
+      "rep": 0,
+      "frame_index": 92,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 26.325955011998303,
+      "stay_ms": 28.441937000025064,
+      "paired_delta_ms": -2.1159819880267605
+    },
+    {
+      "source": 480,
+      "target": 576,
+      "rep": 8,
+      "frame_index": 31,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 25.176520997774787,
+      "stay_ms": 28.48107399768196,
+      "paired_delta_ms": -3.304552999907173
+    },
+    {
+      "source": 544,
+      "target": 576,
+      "rep": 9,
+      "frame_index": 103,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 26.560870988760144,
+      "stay_ms": 27.564893011003733,
+      "paired_delta_ms": -1.0040220222435892
+    },
+    {
+      "source": 640,
+      "target": 576,
+      "rep": 8,
+      "frame_index": 24,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 25.106439003138803,
+      "stay_ms": 23.482948003220372,
+      "paired_delta_ms": 1.623490999918431
+    },
+    {
+      "source": 544,
+      "target": 576,
+      "rep": 2,
+      "frame_index": 12,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 24.367992009501904,
+      "stay_ms": 24.33778200065717,
+      "paired_delta_ms": 0.030210008844733238
+    },
+    {
+      "source": 480,
+      "target": 544,
+      "rep": 2,
+      "frame_index": 45,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 26.0329879965866,
+      "stay_ms": 24.62495700456202,
+      "paired_delta_ms": 1.4080309920245782
+    },
+    {
+      "source": 640,
+      "target": 544,
+      "rep": 3,
+      "frame_index": 52,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 23.708905006060377,
+      "stay_ms": 25.176234004902653,
+      "paired_delta_ms": -1.4673289988422766
+    },
+    {
+      "source": 576,
+      "target": 544,
+      "rep": 2,
+      "frame_index": 110,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 24.279541001305915,
+      "stay_ms": 22.49242999823764,
+      "paired_delta_ms": 1.7871110030682757
+    },
+    {
+      "source": 576,
+      "target": 544,
+      "rep": 3,
+      "frame_index": 86,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 24.558874996728264,
+      "stay_ms": 23.35926500381902,
+      "paired_delta_ms": 1.1996099929092452
+    },
+    {
+      "source": 544,
+      "target": 480,
+      "rep": 6,
+      "frame_index": 7,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 21.7435810045572,
+      "stay_ms": 28.860024001915008,
+      "paired_delta_ms": -7.116442997357808
+    },
+    {
+      "source": 544,
+      "target": 576,
+      "rep": 6,
+      "frame_index": 93,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 23.91566000005696,
+      "stay_ms": 32.58048900170252,
+      "paired_delta_ms": -8.664829001645558
+    },
+    {
+      "source": 544,
+      "target": 480,
+      "rep": 7,
+      "frame_index": 102,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 26.032185996882617,
+      "stay_ms": 25.22711199708283,
+      "paired_delta_ms": 0.805073999799788
+    },
+    {
+      "source": 480,
+      "target": 576,
+      "rep": 0,
+      "frame_index": 31,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 22.755377998691984,
+      "stay_ms": 21.226512995781377,
+      "paired_delta_ms": 1.5288650029106066
+    },
+    {
+      "source": 576,
+      "target": 544,
+      "rep": 4,
+      "frame_index": 24,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 24.22661099990364,
+      "stay_ms": 22.118116001365706,
+      "paired_delta_ms": 2.1084949985379353
+    },
+    {
+      "source": 480,
+      "target": 576,
+      "rep": 5,
+      "frame_index": 17,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 25.467981991823763,
+      "stay_ms": 22.840211997390725,
+      "paired_delta_ms": 2.627769994433038
+    },
+    {
+      "source": 544,
+      "target": 640,
+      "rep": 8,
+      "frame_index": 23,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 32.923952996497974,
+      "stay_ms": 22.269704000791535,
+      "paired_delta_ms": 10.654248995706439
+    },
+    {
+      "source": 480,
+      "target": 544,
+      "rep": 5,
+      "frame_index": 59,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 21.492151005077176,
+      "stay_ms": 24.225842993473634,
+      "paired_delta_ms": -2.7336919883964583
+    },
+    {
+      "source": 544,
+      "target": 480,
+      "rep": 3,
+      "frame_index": 111,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 23.803625008440576,
+      "stay_ms": 20.98983600444626,
+      "paired_delta_ms": 2.813789003994316
+    },
+    {
+      "source": 544,
+      "target": 576,
+      "rep": 4,
+      "frame_index": 56,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 22.09907499491237,
+      "stay_ms": 26.804714012541808,
+      "paired_delta_ms": -4.705639017629437
+    },
+    {
+      "source": 544,
+      "target": 576,
+      "rep": 5,
+      "frame_index": 6,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 25.57601500302553,
+      "stay_ms": 22.840819001430646,
+      "paired_delta_ms": 2.735196001594886
+    },
+    {
+      "source": 480,
+      "target": 576,
+      "rep": 2,
+      "frame_index": 11,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 22.425674003898166,
+      "stay_ms": 25.543886004015803,
+      "paired_delta_ms": -3.118212000117637
+    },
+    {
+      "source": 544,
+      "target": 576,
+      "rep": 8,
+      "frame_index": 21,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 24.136656007613055,
+      "stay_ms": 26.865898995311,
+      "paired_delta_ms": -2.729242987697944
+    },
+    {
+      "source": 640,
+      "target": 544,
+      "rep": 1,
+      "frame_index": 62,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 27.050575998146087,
+      "stay_ms": 29.98350300185848,
+      "paired_delta_ms": -2.9329270037123933
+    },
+    {
+      "source": 640,
+      "target": 576,
+      "rep": 0,
+      "frame_index": 27,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 27.31979699456133,
+      "stay_ms": 25.92850300425198,
+      "paired_delta_ms": 1.3912939903093502
+    },
+    {
+      "source": 640,
+      "target": 576,
+      "rep": 9,
+      "frame_index": 115,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 28.910648004966788,
+      "stay_ms": 26.59056599077303,
+      "paired_delta_ms": 2.3200820141937584
+    },
+    {
+      "source": 640,
+      "target": 544,
+      "rep": 0,
+      "frame_index": 21,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 23.960107006132603,
+      "stay_ms": 28.06358999805525,
+      "paired_delta_ms": -4.103482991922647
+    },
+    {
+      "source": 480,
+      "target": 576,
+      "rep": 9,
+      "frame_index": 0,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 23.504961995058693,
+      "stay_ms": 29.62678999756463,
+      "paired_delta_ms": -6.121828002505936
+    },
+    {
+      "source": 576,
+      "target": 640,
+      "rep": 5,
+      "frame_index": 33,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 24.44677300809417,
+      "stay_ms": 27.33730000909418,
+      "paired_delta_ms": -2.8905270010000095
+    },
+    {
+      "source": 544,
+      "target": 576,
+      "rep": 3,
+      "frame_index": 36,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 22.893650995683856,
+      "stay_ms": 27.284851006697863,
+      "paired_delta_ms": -4.391200011014007
+    },
+    {
+      "source": 640,
+      "target": 544,
+      "rep": 4,
+      "frame_index": 89,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 22.832753995317034,
+      "stay_ms": 25.645326997619122,
+      "paired_delta_ms": -2.812573002302088
+    },
+    {
+      "source": 480,
+      "target": 640,
+      "rep": 0,
+      "frame_index": 19,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 31.938551997882314,
+      "stay_ms": 36.0250410012668,
+      "paired_delta_ms": -4.086489003384486
+    },
+    {
+      "source": 480,
+      "target": 544,
+      "rep": 0,
+      "frame_index": 37,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 25.387881993083283,
+      "stay_ms": 22.021535987732932,
+      "paired_delta_ms": 3.3663460053503513
+    },
+    {
+      "source": 640,
+      "target": 576,
+      "rep": 5,
+      "frame_index": 7,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 23.776294008712284,
+      "stay_ms": 29.96814101061318,
+      "paired_delta_ms": -6.191847001900896
+    },
+    {
+      "source": 640,
+      "target": 544,
+      "rep": 5,
+      "frame_index": 95,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 24.895455004298128,
+      "stay_ms": 26.592227994115092,
+      "paired_delta_ms": -1.6967729898169637
+    },
+    {
+      "source": 544,
+      "target": 640,
+      "rep": 7,
+      "frame_index": 7,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 28.11578000546433,
+      "stay_ms": 28.747218995704316,
+      "paired_delta_ms": -0.6314389902399853
+    },
+    {
+      "source": 640,
+      "target": 576,
+      "rep": 3,
+      "frame_index": 74,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 25.60401300434023,
+      "stay_ms": 25.23616500548087,
+      "paired_delta_ms": 0.3678479988593608
+    },
+    {
+      "source": 544,
+      "target": 640,
+      "rep": 3,
+      "frame_index": 64,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 35.02760999253951,
+      "stay_ms": 25.15302698884625,
+      "paired_delta_ms": 9.87458300369326
+    },
+    {
+      "source": 640,
+      "target": 544,
+      "rep": 7,
+      "frame_index": 7,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 24.192686003516428,
+      "stay_ms": 25.016703992150724,
+      "paired_delta_ms": -0.8240179886342958
+    },
+    {
+      "source": 576,
+      "target": 640,
+      "rep": 9,
+      "frame_index": 108,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 28.50458800094202,
+      "stay_ms": 26.15458398940973,
+      "paired_delta_ms": 2.3500040115322918
+    },
+    {
+      "source": 576,
+      "target": 640,
+      "rep": 3,
+      "frame_index": 8,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 27.307377007673495,
+      "stay_ms": 25.5286189931212,
+      "paired_delta_ms": 1.7787580145522952
+    },
+    {
+      "source": 640,
+      "target": 480,
+      "rep": 1,
+      "frame_index": 86,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 24.58536598715,
+      "stay_ms": 24.16548600012902,
+      "paired_delta_ms": 0.41987998702097684
+    },
+    {
+      "source": 480,
+      "target": 640,
+      "rep": 5,
+      "frame_index": 51,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 25.443720995099284,
+      "stay_ms": 23.58480100519955,
+      "paired_delta_ms": 1.8589199898997322
+    },
+    {
+      "source": 576,
+      "target": 544,
+      "rep": 1,
+      "frame_index": 113,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 23.03522099100519,
+      "stay_ms": 20.403132002684288,
+      "paired_delta_ms": 2.632088988320902
+    },
+    {
+      "source": 640,
+      "target": 544,
+      "rep": 2,
+      "frame_index": 74,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 26.57001599436626,
+      "stay_ms": 24.18788599607069,
+      "paired_delta_ms": 2.382129998295568
+    },
+    {
+      "source": 576,
+      "target": 544,
+      "rep": 7,
+      "frame_index": 79,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 21.40312000119593,
+      "stay_ms": 25.168482010485604,
+      "paired_delta_ms": -3.7653620092896745
+    },
+    {
+      "source": 576,
+      "target": 480,
+      "rep": 4,
+      "frame_index": 53,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 24.938781003584154,
+      "stay_ms": 20.03125000919681,
+      "paired_delta_ms": 4.9075309943873435
+    },
+    {
+      "source": 480,
+      "target": 640,
+      "rep": 9,
+      "frame_index": 119,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 25.657132995547727,
+      "stay_ms": 24.597782001364976,
+      "paired_delta_ms": 1.0593509941827506
+    },
+    {
+      "source": 480,
+      "target": 640,
+      "rep": 7,
+      "frame_index": 26,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 23.48575700307265,
+      "stay_ms": 26.84646999114193,
+      "paired_delta_ms": -3.360712988069281
+    },
+    {
+      "source": 640,
+      "target": 544,
+      "rep": 6,
+      "frame_index": 30,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 26.035668997792527,
+      "stay_ms": 25.834608008153737,
+      "paired_delta_ms": 0.2010609896387905
+    },
+    {
+      "source": 640,
+      "target": 576,
+      "rep": 7,
+      "frame_index": 50,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 21.74805499089416,
+      "stay_ms": 25.836304994300008,
+      "paired_delta_ms": -4.088250003405847
+    },
+    {
+      "source": 480,
+      "target": 544,
+      "rep": 4,
+      "frame_index": 85,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 23.863237001933157,
+      "stay_ms": 22.09462299651932,
+      "paired_delta_ms": 1.7686140054138377
+    },
+    {
+      "source": 544,
+      "target": 640,
+      "rep": 4,
+      "frame_index": 58,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 27.035114006139338,
+      "stay_ms": 28.174883002066053,
+      "paired_delta_ms": -1.1397689959267154
+    },
+    {
+      "source": 576,
+      "target": 544,
+      "rep": 5,
+      "frame_index": 118,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 26.851877992157824,
+      "stay_ms": 21.137834002729505,
+      "paired_delta_ms": 5.714043989428319
+    },
+    {
+      "source": 480,
+      "target": 576,
+      "rep": 1,
+      "frame_index": 1,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 27.211852997425012,
+      "stay_ms": 26.952679007081315,
+      "paired_delta_ms": 0.25917399034369737
+    },
+    {
+      "source": 576,
+      "target": 480,
+      "rep": 9,
+      "frame_index": 79,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 23.044818997732364,
+      "stay_ms": 27.172620000783354,
+      "paired_delta_ms": -4.12780100305099
+    },
+    {
+      "source": 640,
+      "target": 576,
+      "rep": 1,
+      "frame_index": 9,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 25.47651900385972,
+      "stay_ms": 26.213527002255432,
+      "paired_delta_ms": -0.7370079983957112
+    },
+    {
+      "source": 576,
+      "target": 640,
+      "rep": 6,
+      "frame_index": 64,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 25.080477993469685,
+      "stay_ms": 23.596414001076482,
+      "paired_delta_ms": 1.484063992393203
+    },
+    {
+      "source": 480,
+      "target": 576,
+      "rep": 3,
+      "frame_index": 16,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 22.460677995695733,
+      "stay_ms": 25.95851400110405,
+      "paired_delta_ms": -3.497836005408317
+    },
+    {
+      "source": 640,
+      "target": 576,
+      "rep": 6,
+      "frame_index": 112,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 27.736856005503796,
+      "stay_ms": 28.475015991716646,
+      "paired_delta_ms": -0.7381599862128496
+    },
+    {
+      "source": 480,
+      "target": 576,
+      "rep": 7,
+      "frame_index": 112,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 22.642185998847708,
+      "stay_ms": 25.775660993531346,
+      "paired_delta_ms": -3.133474994683638
+    },
+    {
+      "source": 480,
+      "target": 640,
+      "rep": 8,
+      "frame_index": 47,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 25.42624599300325,
+      "stay_ms": 26.07038800488226,
+      "paired_delta_ms": -0.644142011879012
+    },
+    {
+      "source": 544,
+      "target": 480,
+      "rep": 1,
+      "frame_index": 20,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 25.720011995872483,
+      "stay_ms": 25.00124399375636,
+      "paired_delta_ms": 0.7187680021161214
+    },
+    {
+      "source": 544,
+      "target": 480,
+      "rep": 5,
+      "frame_index": 106,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 22.631496991380118,
+      "stay_ms": 26.2002770032268,
+      "paired_delta_ms": -3.568780011846684
+    },
+    {
+      "source": 640,
+      "target": 480,
+      "rep": 4,
+      "frame_index": 78,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 23.815362001187168,
+      "stay_ms": 21.25063400308136,
+      "paired_delta_ms": 2.564727998105809
+    },
+    {
+      "source": 480,
+      "target": 544,
+      "rep": 3,
+      "frame_index": 85,
+      "order": [
+        "switch",
+        "stay"
+      ],
+      "switch_ms": 21.09603899589274,
+      "stay_ms": 28.525576009997167,
+      "paired_delta_ms": -7.429537014104426
+    },
+    {
+      "source": 480,
+      "target": 576,
+      "rep": 4,
+      "frame_index": 119,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 28.231585005414672,
+      "stay_ms": 21.79787799832411,
+      "paired_delta_ms": 6.433707007090561
+    },
+    {
+      "source": 576,
+      "target": 640,
+      "rep": 1,
+      "frame_index": 112,
+      "order": [
+        "stay",
+        "switch"
+      ],
+      "switch_ms": 29.198870004620403,
+      "stay_ms": 29.908965007052757,
+      "paired_delta_ms": -0.7100950024323538
+    }
+  ],
+  "limitations": [
+    "Warm detector-only costs; no cold engine build or tracking state.",
+    "Short pilot repetitions do not establish stable tail effects.",
+    "Negative paired deltas are preserved; host noise and thermal drift remain possible."
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "created_utc": "2026-11-16T17:40:10.587072+00:00",
+  "models": [
+    {
+      "name": "yolo26n_ms",
+      "family": "yolo",
+      "checkpoint": "/mnt/12TB_Drive/whisenaj/EMCH585_training/families_20261113_1745/runs/ms_fusion_seed42/weights/best.pt",
+      "sha256": "79d21a315500db3e0d061ce273de5affe26e8b778055e50f9ceca22994a55cda"
+    },
+    {
+      "name": "fasterrcnn",
+      "family": "fasterrcnn",
+      "checkpoint": "/mnt/12TB_Drive/whisenaj/EMCH585_training/families_20261113_1745/runs/fasterrcnn/best.pt",
+      "sha256": "b8244ba7e660afb07cf176440d575c53d34152dc48093b5daa45c97fa62230be",
+      "training_metadata": "/mnt/12TB_Drive/whisenaj/EMCH585_training/families_20261113_1745/runs/fasterrcnn/metadata.json"
+    },
+    {
+      "name": "retinanet",
+      "family": "retinanet",
+      "checkpoint": "/mnt/12TB_Drive/whisenaj/EMCH585_training/families_20261113_1745/runs/retinanet_retry_20261113/best.pt",
+      "sha256": "560592ed877a3e414918f5c88a19a36129a49f613ce9729423473c115b93dc71",
+      "training_metadata": "/mnt/12TB_Drive/whisenaj/EMCH585_training/families_20261113_1745/runs/retinanet_retry_20261113/metadata.json"
+    }
+  ],
+  "device": "cuda:0",
+  "manifest": "/mnt/12TB_Drive/whisenaj/EMCH585_training/families_20261113_1745/adaptive_manifest_20261116.json",
+  "manifest_sha256": "f0363efbe48dedf3aae9fcb3491204e9c318d13b921d25b70063deb831154817",
+  "controller": "/mnt/12TB_Drive/whisenaj/EMCH585_training/families_20261113_1745/results/processed/sequence/controller.json",
+  "controller_sha256": "4ace5cab65e0c8ca65b9ac1b6d9b4b18ea9f63ab2b5a2d56d84f58698c1b960e",
+  "policies": [
+    "fixed:480",
+    "fixed:544",
+    "fixed:576",
+    "fixed:640",
+    "sequence",
+    "deadline",
+    "aimd",
+    "guarded"
+  ],
+  "budget_ms": 25,
+  "cpu_threads": 4,
+  "warmup_per_resolution": 3,
+  "order_seed": 20261116,
+  "protocol": "Frozen YOLO-derived controller transferred unchanged to all detectors. One measured serial run per policy/model, no test retuning. Fixed25ms service deadline chosen before runs. Validation-first-frame profiles only; labels never provided to policy. Shared workstation; no energy claims.",
+  "limitations": [
+    "YOLO test split has previously been examined in the repository. First test evaluation of the two new families.",
+    "YOLO training budget/recipe differs from the provisional two-hour additional-family runs; results describe these checkpoints, not controlled architecture superiority.",
+    "Internal preprocessing differs between YOLO and Torchvision; same long side, not identical padded input tensors.",
+    "Resolution576 chosen before this evaluation from existing project deployment and new-family validation settings.",
+    "GT original native label geometry as repository evaluator; training validation used clipped GT.",
+    "218 mostly short M3FD groups; not continuous video or an independent untouched test after the fixed-resolution comparison.",
+    "Local adaptive baselines, not published system reproductions. One trial per case, no confidence intervals."
+  ]
+}

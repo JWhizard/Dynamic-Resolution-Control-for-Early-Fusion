@@ -1,0 +1,16 @@
+{
+  "platform": "Linux-5.15.148-tegra-aarch64-with-glibc2.35",
+  "host": "ubuntu",
+  "torch": "2.10.0+cpu",
+  "cuda": null,
+  "execution_device": "cpu",
+  "cpu_affinity": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "source_sha256": "9fb099e60aff1cf801eb77c56b3383a10d288ce5010516315dbb8a728b985548",
+  "plan_sha256": "2431da2d5e60557358df5c84f278779a82f961d6309761342a7daa66e51fbdf9",
+  "started_utc": "2026-11-16T17:41:23.972889+00:00"
+}

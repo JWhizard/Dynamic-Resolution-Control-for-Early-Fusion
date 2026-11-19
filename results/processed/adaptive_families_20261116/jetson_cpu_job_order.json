@@ -1,0 +1,1 @@
+[["yolo26n_ms", "guarded"], ["retinanet", "deadline"], ["fasterrcnn", "deadline"], ["yolo26n_ms", "deadline"], ["fasterrcnn", "guarded"], ["retinanet", "sequence"], ["yolo26n_ms", "fixed:576"], ["retinanet", "guarded"], ["fasterrcnn", "sequence"], ["fasterrcnn", "fixed:576"], ["yolo26n_ms", "sequence"], ["retinanet", "fixed:576"]]

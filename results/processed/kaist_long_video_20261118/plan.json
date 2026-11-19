@@ -1,0 +1,1159 @@
+{
+  "created_utc": "2026-11-19T00:54:02.854443+00:00",
+  "dataset": "KAIST full versions of six previously selected official test sequences",
+  "models": [
+    {
+      "name": "yolo26n_ms",
+      "engine": "/media/imsel/4TBSSD/EMCH585_Artifacts/project_trt_fp32_strict/engine.json",
+      "adapter": "experiments.tensorrt_backend:create",
+      "validation": "/home/imsel/EMCH585_Workspace/Dynamic-Resolution-Control-for-Early-Fusion/results/processed/orin_followup_20261113/kaist_backend_validation.json"
+    },
+    {
+      "name": "fasterrcnn",
+      "engine": "/media/imsel/4TBSSD/EMCH585_Artifacts/family_trt_20261116/fasterrcnn_safe_fixed/engine.json",
+      "adapter": "experiments.family_trt_backend:create",
+      "validation": "/media/imsel/4TBSSD/EMCH585_Artifacts/kaist_video_20261116/fasterrcnn_gate.json"
+    },
+    {
+      "name": "retinanet",
+      "engine": "/media/imsel/4TBSSD/EMCH585_Artifacts/family_trt_20261116/retinanet_safe/engine.json",
+      "adapter": "experiments.family_trt_backend:create",
+      "validation": "/media/imsel/4TBSSD/EMCH585_Artifacts/kaist_video_20261116/retinanet_gate.json"
+    }
+  ],
+  "sequences": [
+    {
+      "sequence": "set06/V000",
+      "environment": "day",
+      "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/kaist_long_video_20261118/evaluation/set06_V000/manifest.json",
+      "manifest_sha256": "d807d0ca10361d84d971ab82b181b93bd169b7018d7e3bc400e7c9842cf41e68",
+      "annotations_sha256": "4626120eae26a594f0ee8c4e7e4ef39d12a199feb10906c426c98c92d7733314",
+      "frames": 1523,
+      "person_boxes": 1277,
+      "ignored_boxes": 96,
+      "native_dimensions": [
+        [
+          640,
+          512
+        ]
+      ]
+    },
+    {
+      "sequence": "set07/V000",
+      "environment": "day",
+      "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/kaist_long_video_20261118/evaluation/set07_V000/manifest.json",
+      "manifest_sha256": "51c082b7fec3f4bb19aa979f30db6d4d246acf7975e4c6238c78b9ca6f5b028d",
+      "annotations_sha256": "2f6df3a9b7bb2878ad85c03e7be10e8ebba4598a5c284a429689f42a0710a616",
+      "frames": 2544,
+      "person_boxes": 1162,
+      "ignored_boxes": 110,
+      "native_dimensions": [
+        [
+          640,
+          512
+        ]
+      ]
+    },
+    {
+      "sequence": "set08/V000",
+      "environment": "day",
+      "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/kaist_long_video_20261118/evaluation/set08_V000/manifest.json",
+      "manifest_sha256": "b483ebd85bd18c8ae4c2b7ee439ed7c7d7524645db7e006fbde46a5a195b4ffb",
+      "annotations_sha256": "ba7c98cbb209992e1b23a9c58a3c5072259967facd986f1ccc0c3bfbb06f0720",
+      "frames": 2578,
+      "person_boxes": 5998,
+      "ignored_boxes": 840,
+      "native_dimensions": [
+        [
+          640,
+          512
+        ]
+      ]
+    },
+    {
+      "sequence": "set09/V000",
+      "environment": "night",
+      "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/kaist_long_video_20261118/evaluation/set09_V000/manifest.json",
+      "manifest_sha256": "807520a42ade19adf1f0fb992a3f465fbcda2bc5ca2fcf9dd533b85d484fa4f3",
+      "annotations_sha256": "3d77c32e03c16191ff8b90bc45a3341836123ae5af7c111326e67ae75bfdb633",
+      "frames": 3500,
+      "person_boxes": 2539,
+      "ignored_boxes": 1139,
+      "native_dimensions": [
+        [
+          640,
+          512
+        ]
+      ]
+    },
+    {
+      "sequence": "set10/V000",
+      "environment": "night",
+      "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/kaist_long_video_20261118/evaluation/set10_V000/manifest.json",
+      "manifest_sha256": "4a5ac2297354a0b1f2e1128ccc8f994935d1f5eda906ea943c78d087e48ad2e1",
+      "annotations_sha256": "02017ea470f19f59564989624103d2f6ecac5a3c07ff8653b24a2331f3c2eb74",
+      "frames": 4708,
+      "person_boxes": 1566,
+      "ignored_boxes": 1029,
+      "native_dimensions": [
+        [
+          640,
+          512
+        ]
+      ]
+    },
+    {
+      "sequence": "set11/V000",
+      "environment": "night",
+      "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/kaist_long_video_20261118/evaluation/set11_V000/manifest.json",
+      "manifest_sha256": "a0a0ff44d3200676f304d8db46b01882c942a7e21187988f2410b1f43c9fe24b",
+      "annotations_sha256": "7fd8f235e97817b742473ee527ce3ba30840d277249708bcb2c671e0573d4e37",
+      "frames": 2020,
+      "person_boxes": 4806,
+      "ignored_boxes": 564,
+      "native_dimensions": [
+        [
+          640,
+          512
+        ]
+      ]
+    }
+  ],
+  "jobs": [
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set08/V000",
+      "policy": "fixed:576",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set08/V000",
+      "policy": "fixed:544",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set10/V000",
+      "policy": "guarded",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set08/V000",
+      "policy": "deadline",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set10/V000",
+      "policy": "aimd",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set10/V000",
+      "policy": "fixed:640",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set11/V000",
+      "policy": "fixed:576",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set10/V000",
+      "policy": "sequence",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set10/V000",
+      "policy": "fixed:576",
+      "condition": "constant_threads"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set07/V000",
+      "policy": "fixed:640",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set11/V000",
+      "policy": "sequence",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set08/V000",
+      "policy": "aimd",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set07/V000",
+      "policy": "aimd",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set07/V000",
+      "policy": "sequence",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set08/V000",
+      "policy": "guarded",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set08/V000",
+      "policy": "guarded",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set10/V000",
+      "policy": "guarded",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set07/V000",
+      "policy": "deadline",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set10/V000",
+      "policy": "fixed:544",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set07/V000",
+      "policy": "aimd",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set10/V000",
+      "policy": "fixed:576",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set11/V000",
+      "policy": "fixed:640",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set07/V000",
+      "policy": "fixed:640",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set06/V000",
+      "policy": "fixed:576",
+      "condition": "constant_threads"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set11/V000",
+      "policy": "fixed:576",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set07/V000",
+      "policy": "deadline",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set11/V000",
+      "policy": "sequence",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set09/V000",
+      "policy": "fixed:544",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set07/V000",
+      "policy": "fixed:480",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set11/V000",
+      "policy": "fixed:640",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set09/V000",
+      "policy": "sequence",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set09/V000",
+      "policy": "fixed:576",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set10/V000",
+      "policy": "sequence",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set09/V000",
+      "policy": "fixed:480",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set08/V000",
+      "policy": "fixed:576",
+      "condition": "constant_threads"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set08/V000",
+      "policy": "sequence",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set09/V000",
+      "policy": "fixed:640",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set07/V000",
+      "policy": "fixed:576",
+      "condition": "constant_threads"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set09/V000",
+      "policy": "fixed:576",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set09/V000",
+      "policy": "deadline",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set08/V000",
+      "policy": "fixed:640",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set06/V000",
+      "policy": "sequence",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set07/V000",
+      "policy": "fixed:544",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set09/V000",
+      "policy": "fixed:480",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set10/V000",
+      "policy": "fixed:480",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set07/V000",
+      "policy": "fixed:480",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set09/V000",
+      "policy": "aimd",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set08/V000",
+      "policy": "fixed:640",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set10/V000",
+      "policy": "deadline",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set06/V000",
+      "policy": "fixed:576",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set08/V000",
+      "policy": "fixed:576",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set06/V000",
+      "policy": "fixed:576",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set10/V000",
+      "policy": "fixed:480",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set07/V000",
+      "policy": "fixed:544",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set09/V000",
+      "policy": "fixed:544",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set09/V000",
+      "policy": "fixed:640",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set07/V000",
+      "policy": "fixed:480",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set06/V000",
+      "policy": "deadline",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set07/V000",
+      "policy": "fixed:640",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set06/V000",
+      "policy": "aimd",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set10/V000",
+      "policy": "fixed:640",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set11/V000",
+      "policy": "fixed:576",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set09/V000",
+      "policy": "aimd",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set08/V000",
+      "policy": "fixed:544",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set09/V000",
+      "policy": "deadline",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set11/V000",
+      "policy": "aimd",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set08/V000",
+      "policy": "fixed:640",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set06/V000",
+      "policy": "guarded",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set10/V000",
+      "policy": "fixed:576",
+      "condition": "constant_threads"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set06/V000",
+      "policy": "fixed:640",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set09/V000",
+      "policy": "guarded",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set07/V000",
+      "policy": "fixed:576",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set11/V000",
+      "policy": "guarded",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set06/V000",
+      "policy": "deadline",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set10/V000",
+      "policy": "fixed:576",
+      "condition": "constant_threads"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set06/V000",
+      "policy": "fixed:640",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set07/V000",
+      "policy": "guarded",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set11/V000",
+      "policy": "fixed:576",
+      "condition": "constant_threads"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set08/V000",
+      "policy": "fixed:576",
+      "condition": "constant_threads"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set11/V000",
+      "policy": "sequence",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set09/V000",
+      "policy": "fixed:640",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set08/V000",
+      "policy": "guarded",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set06/V000",
+      "policy": "fixed:576",
+      "condition": "constant_threads"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set11/V000",
+      "policy": "fixed:544",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set07/V000",
+      "policy": "deadline",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set08/V000",
+      "policy": "fixed:480",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set10/V000",
+      "policy": "fixed:640",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set06/V000",
+      "policy": "deadline",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set08/V000",
+      "policy": "sequence",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set09/V000",
+      "policy": "fixed:576",
+      "condition": "constant_threads"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set08/V000",
+      "policy": "fixed:480",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set08/V000",
+      "policy": "aimd",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set07/V000",
+      "policy": "guarded",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set11/V000",
+      "policy": "fixed:544",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set07/V000",
+      "policy": "sequence",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set09/V000",
+      "policy": "fixed:576",
+      "condition": "constant_threads"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set11/V000",
+      "policy": "deadline",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set09/V000",
+      "policy": "aimd",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set10/V000",
+      "policy": "guarded",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set11/V000",
+      "policy": "guarded",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set08/V000",
+      "policy": "fixed:576",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set09/V000",
+      "policy": "sequence",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set09/V000",
+      "policy": "fixed:544",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set06/V000",
+      "policy": "aimd",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set11/V000",
+      "policy": "aimd",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set09/V000",
+      "policy": "guarded",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set08/V000",
+      "policy": "sequence",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set10/V000",
+      "policy": "aimd",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set10/V000",
+      "policy": "fixed:544",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set06/V000",
+      "policy": "guarded",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set06/V000",
+      "policy": "fixed:576",
+      "condition": "constant_threads"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set06/V000",
+      "policy": "aimd",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set11/V000",
+      "policy": "fixed:480",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set10/V000",
+      "policy": "fixed:576",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set09/V000",
+      "policy": "fixed:576",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set11/V000",
+      "policy": "fixed:640",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set06/V000",
+      "policy": "fixed:576",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set11/V000",
+      "policy": "deadline",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set11/V000",
+      "policy": "fixed:576",
+      "condition": "constant_threads"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set11/V000",
+      "policy": "deadline",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set08/V000",
+      "policy": "aimd",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set07/V000",
+      "policy": "fixed:544",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set09/V000",
+      "policy": "guarded",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set07/V000",
+      "policy": "fixed:576",
+      "condition": "constant_threads"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set07/V000",
+      "policy": "guarded",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set11/V000",
+      "policy": "guarded",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set07/V000",
+      "policy": "fixed:576",
+      "condition": "constant_threads"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set11/V000",
+      "policy": "fixed:544",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set07/V000",
+      "policy": "fixed:576",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set10/V000",
+      "policy": "fixed:576",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set10/V000",
+      "policy": "deadline",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set06/V000",
+      "policy": "fixed:544",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set11/V000",
+      "policy": "fixed:480",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set09/V000",
+      "policy": "fixed:480",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set06/V000",
+      "policy": "guarded",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set06/V000",
+      "policy": "fixed:480",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set10/V000",
+      "policy": "fixed:480",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set11/V000",
+      "policy": "fixed:480",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set09/V000",
+      "policy": "fixed:576",
+      "condition": "constant_threads"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set08/V000",
+      "policy": "deadline",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set08/V000",
+      "policy": "deadline",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set10/V000",
+      "policy": "fixed:544",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set07/V000",
+      "policy": "aimd",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set11/V000",
+      "policy": "fixed:576",
+      "condition": "constant_threads"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set06/V000",
+      "policy": "fixed:544",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set10/V000",
+      "policy": "sequence",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set07/V000",
+      "policy": "sequence",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set09/V000",
+      "policy": "sequence",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set06/V000",
+      "policy": "sequence",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set06/V000",
+      "policy": "fixed:480",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set06/V000",
+      "policy": "fixed:544",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set10/V000",
+      "policy": "deadline",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set06/V000",
+      "policy": "fixed:480",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "retinanet",
+      "sequence": "set08/V000",
+      "policy": "fixed:480",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set08/V000",
+      "policy": "fixed:576",
+      "condition": "constant_threads"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set10/V000",
+      "policy": "aimd",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set06/V000",
+      "policy": "fixed:640",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set06/V000",
+      "policy": "sequence",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set07/V000",
+      "policy": "fixed:576",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set08/V000",
+      "policy": "fixed:544",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "fasterrcnn",
+      "sequence": "set09/V000",
+      "policy": "deadline",
+      "condition": "thread_reduction"
+    },
+    {
+      "model": "yolo26n_ms",
+      "sequence": "set11/V000",
+      "policy": "aimd",
+      "condition": "thread_reduction"
+    }
+  ],
+  "controller": "/home/imsel/EMCH585_Workspace/Dynamic-Resolution-Control-for-Early-Fusion/results/processed/sequence/controller.json",
+  "controller_sha256": "4ace5cab65e0c8ca65b9ac1b6d9b4b18ea9f63ab2b5a2d56d84f58698c1b960e",
+  "budget_ms": 100,
+  "mode": "realtime",
+  "nominal_source_fps": 20,
+  "frames_per_sequence": 600,
+  "unique_pairs": 3600,
+  "conditions": {
+    "thread_reduction": "4,1,4",
+    "constant_threads": "4,4,4"
+  },
+  "policy_names": [
+    "fixed:576",
+    "sequence",
+    "deadline",
+    "guarded"
+  ],
+  "protocol": "Frozen M3FD-trained models and controller; no KAIST fitting or selection by model outcomes.6 predeclared dense held-out prefixes (3 day,3 night),600 frames each.20Hz arrival replay with latest-due input, skipped-frame and causal latest-completed-box metrics.72 reduced-thread policy cases plus18 constant-thread fixed576 controls; one run per sequence/model/policy/condition.4 allowed CPU cores8\u201311. Browser/capture services stay active.",
+  "limitations": [
+    "First30s of6 selected test sequences, not the whole official KAIST test benchmark. COCO adaptation is not official KAIST log-average-miss-rate/reasonable scoring.",
+    "CPU-thread reduction limits Torch preprocessing parallelism, not GPU capacity or physical-core ownership. Constant controls apply only to fixed576.",
+    "100ms service budget remains from prior GPU study; native20Hz source has50ms arrivals. Service-budget satisfaction does not imply no drops or real-time output age.",
+    "Night preview was previously examined; official test prefixes are new. Backend sanity gates inspect firstframes without fitting/tuning.",
+    "One run per case; no repeated-run confidence interval. Shared-host resource/thermal noise and sequence content constrain causal claims."
+  ],
+  "long_video_protocol": {
+    "selection": "Full native dense sequence of the lexicographically first sequence in each official test set06\u201311; no label-based selection.",
+    "unique_pairs": 16873,
+    "sequence_lengths": {
+      "set06/V000": 1523,
+      "set07/V000": 2544,
+      "set08/V000": 2578,
+      "set09/V000": 3500,
+      "set10/V000": 4708,
+      "set11/V000": 2020
+    },
+    "fps": 20,
+    "primary_policies": [
+      "fixed:480",
+      "fixed:544",
+      "fixed:576",
+      "fixed:640",
+      "sequence",
+      "guarded",
+      "deadline",
+      "aimd"
+    ],
+    "primary_threads": "4,1,4",
+    "control_policies": [
+      "fixed:576"
+    ],
+    "control_threads": "4,4,4",
+    "budget_ms": 100,
+    "tuning": false,
+    "seed": 20261118,
+    "limitations": [
+      "Extends previously scored 600-frame prefixes; overlapping data, not an untouched confirmatory test.",
+      "Separate day/night sequences do not demonstrate natural day-to-night transitions.",
+      "Nominal timestamps; COCO person scoring with crowd-ignore regions, not official KAIST scoring.",
+      "CPU preprocessing thread intervention does not establish GPU contention robustness.",
+      "One run per case; named-rail energy includes background services."
+    ]
+  }
+}

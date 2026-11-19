@@ -1,0 +1,33 @@
+{
+  "fasterrcnn": {
+    "full_epochs": 62,
+    "last": {
+      "epoch": 63,
+      "epoch_complete": false,
+      "mean_loss": 0.29376277020025365,
+      "validation": {
+        "AP": 0.4038284051877007,
+        "AP50": 0.6611041684926567,
+        "AP_small": 0.15236181306666724
+      },
+      "seconds": 7248.414011870511
+    },
+    "best": {
+      "epoch": 62,
+      "epoch_complete": true,
+      "mean_loss": 0.30208771976382554,
+      "validation": {
+        "AP": 0.40727286840752364,
+        "AP50": 0.6582550408829512,
+        "AP_small": 0.15164592018744294
+      },
+      "seconds": 7158.545965724625
+    },
+    "scope": "Grouped validation metrics; not held-out test results"
+  },
+  "retinanet": {
+    "initial_attempt": "Failed before training: conda SSL trust-store error",
+    "retry": "Launched with verified system CA bundle, same training recipe, GPU0; separate output retinanet_retry_20261113",
+    "supervisor_pid": 2757708
+  }
+}

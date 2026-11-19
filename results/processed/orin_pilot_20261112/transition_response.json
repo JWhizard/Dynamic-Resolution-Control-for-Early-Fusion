@@ -1,0 +1,1294 @@
+{
+  "deadline_rep0_threads": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 5639.948787000321,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6681.124736000129,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "deadline_contention": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 50036.30507199978,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 685.4686510000647,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 4673.142980999728,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "deadline_ir_dropout": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6506.474996000179,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6680.71666700007,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": [
+      {
+        "frame_index": 40,
+        "from": "clean",
+        "to": "ir_dropout",
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6506.474996000179,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": "ir_dropout",
+        "to": "clean",
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6680.71666700007,
+        "observed_frames": 40
+      }
+    ]
+  },
+  "fixed-544_rep0_threads": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6871.982108999873,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 7510.250775999793,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "deadline_rgb_blur": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 8256.09221700006,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6105.2501939998365,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": [
+      {
+        "frame_index": 40,
+        "from": "clean",
+        "to": "rgb_blur",
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 8256.09221700006,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": "rgb_blur",
+        "to": "clean",
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6105.2501939998365,
+        "observed_frames": 40
+      }
+    ]
+  },
+  "fixed-576_rep0_threads": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 7206.414569000117,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6811.05879200004,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "fixed-576_ir_shift": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6019.219044000238,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6058.277255000121,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": [
+      {
+        "frame_index": 40,
+        "from": "clean",
+        "to": "ir_shift",
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6019.219044000238,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": "ir_shift",
+        "to": "clean",
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6058.277255000121,
+        "observed_frames": 40
+      }
+    ]
+  },
+  "fixed-576_rgb_blur": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 8746.665570000005,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 7717.798752999897,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": [
+      {
+        "frame_index": 40,
+        "from": "clean",
+        "to": "rgb_blur",
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 8746.665570000005,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": "rgb_blur",
+        "to": "clean",
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 7717.798752999897,
+        "observed_frames": 40
+      }
+    ]
+  },
+  "sequence_ir_shift": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6866.676921999897,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 5759.545518000323,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": [
+      {
+        "frame_index": 40,
+        "from": "clean",
+        "to": "ir_shift",
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6866.676921999897,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": "ir_shift",
+        "to": "clean",
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 5759.545518000323,
+        "observed_frames": 40
+      }
+    ]
+  },
+  "sequence_realtime": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 1221.2326300000313,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 5172.689576000266,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 5282.20162200023,
+        "observed_frames": 37
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "sequence_ir_dropout": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": 1798.703125999964,
+        "observed_horizon_ms": 7926.149739999801,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": 3714.2809649999435,
+        "observed_horizon_ms": 8874.012310000126,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": [
+      {
+        "frame_index": 40,
+        "from": "clean",
+        "to": "ir_dropout",
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": 1798.703125999964,
+        "observed_horizon_ms": 7926.149739999801,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": "ir_dropout",
+        "to": "clean",
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": 3714.2809649999435,
+        "observed_horizon_ms": 8874.012310000126,
+        "observed_frames": 40
+      }
+    ]
+  },
+  "fixed-544_rep1_threads": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6266.349723000076,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 5338.325407999946,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "fixed-480_rep0_threads": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 5349.189551000109,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 1676.9588780002778,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 4394.02716900031,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "deadline_rep1_threads": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 5666.212152999833,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 6630.0663329998315,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 9263.705468999888,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "fixed-640_rep0_threads": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 9149.425427000097,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 9957.756846999928,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "fixed-640_rep1_threads": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 8918.231823000042,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 10757.438806999744,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "deadline_rgb_dark": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6807.812208000087,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 1592.1984060000796,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6154.103149000093,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": [
+      {
+        "frame_index": 40,
+        "from": "clean",
+        "to": "rgb_dark",
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6807.812208000087,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": "rgb_dark",
+        "to": "clean",
+        "budget_settled": true,
+        "budget_settle_ms": 1592.1984060000796,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6154.103149000093,
+        "observed_frames": 40
+      }
+    ]
+  },
+  "random_rep0_threads": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": 332.7380720002111,
+        "observed_horizon_ms": 7595.188242999939,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": 203.9042060000611,
+        "observed_horizon_ms": 8367.404829999941,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "fixed-576_realtime": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 5237.737140999798,
+        "observed_frames": 30
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 5354.889071999878,
+        "observed_frames": 34
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "fixed-576_contention": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 28760.376909000115,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 5769.57622000009,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "deadline_realtime": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 4852.660338000078,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 5255.876981999791,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 1033.595337999941,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 5237.661994000064,
+        "observed_frames": 39
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "sequence_rgb_dark": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 1710.1392269996722,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 4753.259650000018,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": 188.71251900009156,
+        "observed_horizon_ms": 5859.958799000196,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": [
+      {
+        "frame_index": 40,
+        "from": "clean",
+        "to": "rgb_dark",
+        "budget_settled": true,
+        "budget_settle_ms": 1710.1392269996722,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 4753.259650000018,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": "rgb_dark",
+        "to": "clean",
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": 188.71251900009156,
+        "observed_horizon_ms": 5859.958799000196,
+        "observed_frames": 40
+      }
+    ]
+  },
+  "deadline_clean_constant": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6123.0395040001895,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6147.622634000072,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "fixed-480_rep1_threads": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 5759.123102999638,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6679.625134000162,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "fixed-576_ir_dropout": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 5873.966031999771,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6076.829442999951,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": [
+      {
+        "frame_index": 40,
+        "from": "clean",
+        "to": "ir_dropout",
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 5873.966031999771,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": "ir_dropout",
+        "to": "clean",
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6076.829442999951,
+        "observed_frames": 40
+      }
+    ]
+  },
+  "aimd_contention": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 49468.81813800019,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 762.2059280001849,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 4865.263751999919,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "switch_rep0_threads": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": 387.0305840000583,
+        "observed_horizon_ms": 7522.789832999933,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": 195.75642600011633,
+        "observed_horizon_ms": 8107.439729999896,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "deadline_ir_shift": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 7653.31237800001,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 848.8860479997129,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6165.300163999746,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": [
+      {
+        "frame_index": 40,
+        "from": "clean",
+        "to": "ir_shift",
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 7653.31237800001,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": "ir_shift",
+        "to": "clean",
+        "budget_settled": true,
+        "budget_settle_ms": 848.8860479997129,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6165.300163999746,
+        "observed_frames": 40
+      }
+    ]
+  },
+  "fixed-576_clean_constant": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 9295.597257000281,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 7918.3778850001545,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "fixed-576_rgb_dark": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 5735.068247000072,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 5611.682736000148,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": [
+      {
+        "frame_index": 40,
+        "from": "clean",
+        "to": "rgb_dark",
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 5735.068247000072,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": "rgb_dark",
+        "to": "clean",
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 5611.682736000148,
+        "observed_frames": 40
+      }
+    ]
+  },
+  "sequence_rep1_threads": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 5285.106519999772,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 1941.9838690000688,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 4868.28051700013,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "sequence_rgb_blur": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6436.360313000023,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6682.1260560000155,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": [
+      {
+        "frame_index": 40,
+        "from": "clean",
+        "to": "rgb_blur",
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6436.360313000023,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": "rgb_blur",
+        "to": "clean",
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6682.1260560000155,
+        "observed_frames": 40
+      }
+    ]
+  },
+  "random_rep1_threads": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": 140.29200899994976,
+        "observed_horizon_ms": 6681.151863000196,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": 130.771330999778,
+        "observed_horizon_ms": 6137.024611000015,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "switch_rep1_threads": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": 154.19241399968087,
+        "observed_horizon_ms": 7349.121656000079,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": 230.19902600026398,
+        "observed_horizon_ms": 7565.73461500011,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "aimd_rep1_threads": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 5548.0846749997,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6377.764699000181,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "sequence_contention": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 50259.70439599996,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 1690.0922780000656,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 4964.381485000104,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "fixed-576_rep1_threads": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6723.753117999877,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 5680.714655999964,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "sequence_rep0_threads": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 5592.272244000014,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6772.567481999886,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "sequence_clean_constant": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 5366.456496999945,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6326.458343000013,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": false,
+        "budget_settle_ms": null,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 6773.3334210001885,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "aimd_rep0_threads": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 2304.146983999999,
+        "time_to_first_resolution_change_ms": 163.06747599992377,
+        "observed_horizon_ms": 4992.41651300008,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 2124.652490999779,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 4899.101128999973,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  }
+}

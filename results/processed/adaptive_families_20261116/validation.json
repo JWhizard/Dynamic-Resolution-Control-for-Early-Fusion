@@ -1,0 +1,18 @@
+{
+  "workstation_jobs": 24,
+  "workstation_frames": 10056,
+  "buffered_jobs": 24,
+  "buffered_frames": 10056,
+  "jetson_cpu_jobs": 12,
+  "jetson_cpu_frames": 384,
+  "all_counts_and_ids_valid": true,
+  "all_jetson_energy_windows_covered": true,
+  "power_read_errors": 0,
+  "frozen_controller_and_checkpoint_sets_match": true,
+  "targeted_tests_passed": 10,
+  "source_snapshots_match_recorded_hashes": true,
+  "all_six_fixed576_AP_values_match_prior_evaluation": true,
+  "workstation_input_hashes_verified": 1257,
+  "jetson_pair_file_hashes_verified": 64,
+  "figures_visually_reviewed": true
+}

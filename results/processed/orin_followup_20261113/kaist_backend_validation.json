@@ -1,0 +1,324 @@
+{
+  "passed": true,
+  "gate": {
+    "confidence": 0.1,
+    "minimum_iou": 0.9,
+    "maximum_score_error": 0.02,
+    "equal_detection_counts": true
+  },
+  "engine": {
+    "backend": "TensorRT",
+    "version": "10.3.0",
+    "execution_device": "Jetson GPU",
+    "precision": "fp32_no_tf32",
+    "engine_sha256": "c233b6241340c5eeff253726d39d94d32b003b1f3d1fa6144c0c841073e6ffb8",
+    "checkpoint_sha256": "79d21a315500db3e0d061ce273de5affe26e8b778055e50f9ceca22994a55cda",
+    "preprocessing": "same CPU torch antialiased bilinear and letterbox as project",
+    "input_order": "B,G,R,IR",
+    "output": "native xyxy/conf/class",
+    "synchronous_return": true
+  },
+  "comparisons": [
+    {
+      "frame_index": 0,
+      "resolution": 480,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 0,
+      "resolution": 544,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 0,
+      "resolution": 576,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 0,
+      "resolution": 640,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 457,
+      "resolution": 480,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 457,
+      "resolution": 544,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 457,
+      "resolution": 576,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 457,
+      "resolution": 640,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 914,
+      "resolution": 480,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 914,
+      "resolution": 544,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 914,
+      "resolution": 576,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 914,
+      "resolution": 640,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 1371,
+      "resolution": 480,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 1371,
+      "resolution": 544,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 1371,
+      "resolution": 576,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 1371,
+      "resolution": 640,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 1828,
+      "resolution": 480,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 1828,
+      "resolution": 544,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 1828,
+      "resolution": 576,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 1828,
+      "resolution": 640,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 2285,
+      "resolution": 480,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 2285,
+      "resolution": 544,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 2285,
+      "resolution": 576,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 2285,
+      "resolution": 640,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 2742,
+      "resolution": 480,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 2742,
+      "resolution": 544,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 2742,
+      "resolution": 576,
+      "reference_count": 1,
+      "candidate_count": 1,
+      "matched": 1,
+      "matches": [
+        {
+          "iou": 0.9999995827674866,
+          "score_error": 1.0073184967041016e-05
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 2742,
+      "resolution": 640,
+      "reference_count": 1,
+      "candidate_count": 1,
+      "matched": 1,
+      "matches": [
+        {
+          "iou": 0.9999985694885254,
+          "score_error": 1.0728836059570312e-06
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 3199,
+      "resolution": 480,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 3199,
+      "resolution": 544,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 3199,
+      "resolution": 576,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    },
+    {
+      "frame_index": 3199,
+      "resolution": 640,
+      "reference_count": 0,
+      "candidate_count": 0,
+      "matched": 0,
+      "matches": [],
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Numerical agreement on sampled inputs, not AP equivalence on labeled test data."
+  ]
+}

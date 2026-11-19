@@ -4,6 +4,8 @@ __pycache__/
 *.pt
 results/cache/
 captures/
+.venv/
+*.log
 
 # The live dynamic-resolution demo needs this compact deployment checkpoint.
 !runs/

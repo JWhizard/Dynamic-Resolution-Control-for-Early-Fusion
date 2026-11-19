@@ -1,0 +1,15 @@
+{
+  "completed_jobs": 72,
+  "timed_frames": 8640,
+  "unique_source_pairs": 120,
+  "repetitions_per_case": 3,
+  "frame_accounting_valid": true,
+  "all_rail_windows_covered": true,
+  "power_read_errors": 0,
+  "source_and_engine_hashes_match": true,
+  "new_family_numerical_cases_passed": 136,
+  "targeted_tests_passed": 49,
+  "low_confidence_coordinate_comparisons_passed": 136,
+  "input_file_checksums_verified": 240,
+  "figures_visually_reviewed": true
+}

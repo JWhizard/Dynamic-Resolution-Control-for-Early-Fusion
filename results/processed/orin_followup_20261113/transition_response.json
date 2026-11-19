@@ -1,0 +1,756 @@
+{
+  "kaist_fixed-576": {
+    "phase": [
+      {
+        "frame_index": 400,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 2023.1423560035182,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 20545.82828900311,
+        "observed_frames": 400
+      },
+      {
+        "frame_index": 800,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 1374.0473950019805,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 20447.793749000994,
+        "observed_frames": 400
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "kaist_guarded-no-scene": {
+    "phase": [
+      {
+        "frame_index": 400,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 205.00586400157772,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 16040.230151003925,
+        "observed_frames": 400
+      },
+      {
+        "frame_index": 800,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 261.46168299601413,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 16092.94538598624,
+        "observed_frames": 400
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "resource_gpu_guarded": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 2572.381703997962,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 3369.993558997521,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 241.21889099478722,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 887.8652980056359,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "endurance_sequence_rep1": {
+    "phase": [
+      {
+        "frame_index": 800,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 188.9894420019118,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 1408.5501990048215,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 1600,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 165.71299299539533,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 2551.337696990231,
+        "observed_frames": 80
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "resource_memory_guarded": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 655.1350520021515,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 1705.3538330073934,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 253.61623799835797,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 1389.4617539917817,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "kaist_guarded-no-hysteresis": {
+    "phase": [
+      {
+        "frame_index": 400,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 218.46445099799894,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 16259.391867992235,
+        "observed_frames": 400
+      },
+      {
+        "frame_index": 800,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 206.06426500307862,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 16201.756251000916,
+        "observed_frames": 400
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "resource_memory_sequence": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 736.7708479869179,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 1854.252690987778,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 175.59860600158572,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 1305.3040060040075,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "kaist_fixed-480": {
+    "phase": [
+      {
+        "frame_index": 400,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 217.24033400823828,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 16225.685618002899,
+        "observed_frames": 400
+      },
+      {
+        "frame_index": 800,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 203.81176799128298,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 16162.790605987539,
+        "observed_frames": 400
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "resource_memory_deadline": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 449.0327090024948,
+        "time_to_first_resolution_change_ms": 305.443616991397,
+        "observed_horizon_ms": 1636.2431089946767,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 239.36266799864825,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 1466.3525649957592,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "endurance_sequence_rep2": {
+    "phase": [
+      {
+        "frame_index": 800,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 190.79273199895397,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 1405.2397549967282,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 1600,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 164.0284229943063,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 2558.6105580005096,
+        "observed_frames": 80
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "kaist_fixed-544": {
+    "phase": [
+      {
+        "frame_index": 400,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 226.50921699823812,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 17882.331346991123,
+        "observed_frames": 400
+      },
+      {
+        "frame_index": 800,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 278.5976860031951,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 18040.940653008875,
+        "observed_frames": 400
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "resource_cpu_guarded": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 290.51818601146806,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 1401.87404101016,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 176.9694250106113,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 1352.5798540067626,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "stream_guarded": {
+    "phase": [
+      {
+        "frame_index": 400,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 298.84964499797206,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 19990.78698499943,
+        "observed_frames": 399
+      },
+      {
+        "frame_index": 800,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 241.07522699341644,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 19994.52204699628,
+        "observed_frames": 400
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "stream_fixed-576": {
+    "phase": [
+      {
+        "frame_index": 400,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 3592.83839300042,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 19977.807639996172,
+        "observed_frames": 388
+      },
+      {
+        "frame_index": 800,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 297.11621699971147,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 19996.99276201136,
+        "observed_frames": 385
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "resource_gpu_sequence": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 2870.097895996878,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 3633.81353400473,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 268.76522599195596,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 936.0704249993432,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "kaist_guarded-no-resource": {
+    "phase": [
+      {
+        "frame_index": 400,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 274.8280660016462,
+        "time_to_first_resolution_change_ms": 8391.978050000034,
+        "observed_horizon_ms": 17942.17808499525,
+        "observed_frames": 400
+      },
+      {
+        "frame_index": 800,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 222.7248609997332,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 18125.708877996658,
+        "observed_frames": 400
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "resource_cpu_sequence": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 291.0075430118013,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 1435.1974480086938,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 154.77652499976102,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 1296.407816989813,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "kaist_guarded": {
+    "phase": [
+      {
+        "frame_index": 400,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 218.08175700425636,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 16518.56562800822,
+        "observed_frames": 400
+      },
+      {
+        "frame_index": 800,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 195.19497301371302,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 16436.23861001106,
+        "observed_frames": 400
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "kaist_guarded-no-switch-cost": {
+    "phase": [
+      {
+        "frame_index": 400,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 206.86584399663843,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 16445.467008001287,
+        "observed_frames": 400
+      },
+      {
+        "frame_index": 800,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 206.61158399889246,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 16292.267658005585,
+        "observed_frames": 400
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "endurance_sequence_rep0": {
+    "phase": [
+      {
+        "frame_index": 800,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 190.99955500860233,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 1418.9774590049637,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 1600,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 163.78493698721286,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 2594.454487989424,
+        "observed_frames": 80
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "kaist_sequence": {
+    "phase": [
+      {
+        "frame_index": 400,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 274.4143830059329,
+        "time_to_first_resolution_change_ms": 8582.731504997355,
+        "observed_horizon_ms": 18086.4497750008,
+        "observed_frames": 400
+      },
+      {
+        "frame_index": 800,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 283.5233780060662,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 18148.30535800138,
+        "observed_frames": 400
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "endurance_sequence_rep4": {
+    "phase": [
+      {
+        "frame_index": 800,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 182.89273099799175,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 1399.8210160061717,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 1600,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 163.56015599740203,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 2596.333195993793,
+        "observed_frames": 80
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "endurance_sequence_rep3": {
+    "phase": [
+      {
+        "frame_index": 800,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 238.88922299374826,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 1441.7584420007188,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 1600,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 175.65586700220592,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 2645.6730229983805,
+        "observed_frames": 80
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "kaist_fixed-640": {
+    "phase": [
+      {
+        "frame_index": 400,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 443.1225009902846,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 18514.078380991123,
+        "observed_frames": 400
+      },
+      {
+        "frame_index": 800,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 224.5226850063773,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 18742.30740200437,
+        "observed_frames": 400
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "kaist_deadline": {
+    "phase": [
+      {
+        "frame_index": 400,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 205.7963959960034,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 16002.088274995913,
+        "observed_frames": 400
+      },
+      {
+        "frame_index": 800,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 207.7804979926441,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 16070.165040990105,
+        "observed_frames": 400
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "resource_gpu_deadline": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 2668.47964200133,
+        "time_to_first_resolution_change_ms": 2551.0724730120273,
+        "observed_horizon_ms": 3475.9121790120844,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 252.3191040090751,
+        "time_to_first_resolution_change_ms": 168.63547000684775,
+        "observed_horizon_ms": 965.8964680129429,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "resource_cpu_deadline": {
+    "phase": [
+      {
+        "frame_index": 40,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 302.05964999913704,
+        "time_to_first_resolution_change_ms": 163.0495819990756,
+        "observed_horizon_ms": 1516.0651379992487,
+        "observed_frames": 40
+      },
+      {
+        "frame_index": 80,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 189.00221900548786,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 1420.6192040001042,
+        "observed_frames": 40
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "kaist_aimd": {
+    "phase": [
+      {
+        "frame_index": 400,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 253.34183899394702,
+        "time_to_first_resolution_change_ms": 93.91645800496917,
+        "observed_horizon_ms": 17134.159092005575,
+        "observed_frames": 400
+      },
+      {
+        "frame_index": 800,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 273.37424700090196,
+        "time_to_first_resolution_change_ms": 101.68546299973968,
+        "observed_horizon_ms": 17143.900990995462,
+        "observed_frames": 400
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  },
+  "stream_sequence": {
+    "phase": [
+      {
+        "frame_index": 400,
+        "from": 0,
+        "to": 1,
+        "budget_settled": true,
+        "budget_settle_ms": 441.68791599804536,
+        "time_to_first_resolution_change_ms": 9546.994128992083,
+        "observed_horizon_ms": 19992.567982990295,
+        "observed_frames": 400
+      },
+      {
+        "frame_index": 800,
+        "from": 1,
+        "to": 2,
+        "budget_settled": true,
+        "budget_settle_ms": 242.45315800362732,
+        "time_to_first_resolution_change_ms": null,
+        "observed_horizon_ms": 19995.716632998665,
+        "observed_frames": 400
+      }
+    ],
+    "scene": [],
+    "corruption": []
+  }
+}

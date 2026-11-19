@@ -1,0 +1,11 @@
+{
+  "torch": "2.10.0+cu128",
+  "torchvision": "0.25.0+cu128",
+  "ultralytics": "8.4.14",
+  "cuda": "12.8",
+  "gpu": "NVIDIA RTX 6000 Ada Generation",
+  "python": "3.10.19",
+  "source_sha256": "f25296297ce6815e2ec16a60808d2a4737ad3496dcf12058d430c83f5491a7aa",
+  "plan_sha256": "455b7c2d13aa94377cdc0af5b3ee2aaff52095c4c7b70c487f0cae329202600e",
+  "started_utc": "2026-11-16T17:31:20.917426+00:00"
+}

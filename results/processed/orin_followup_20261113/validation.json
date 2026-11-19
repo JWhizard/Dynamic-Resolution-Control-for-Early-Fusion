@@ -1,0 +1,44 @@
+{
+  "gpu_runs": 29,
+  "processed_frames": 31044,
+  "endurance_runs": 5,
+  "endurance_timed_frames": 12000,
+  "power_read_errors": 0,
+  "all_rail_energy_covered": true,
+  "all_frame_accounting_valid": true,
+  "labeled_runs": 15,
+  "source_versions": {
+    "/home/imsel/EMCH585_Workspace/Dynamic-Resolution-Control-for-Early-Fusion/experiments/run.py": [
+      "c72bed2dde3d9ccaa8eff01ea4436d8d1f15cf6b0ad03eb28cfdbfc8da4abbcb",
+      "ff772d759707413d722ee21948bdff54068f4ce7b0a597df2d74f7f496799064"
+    ],
+    "experiments/policies.py": [
+      "c59bda7e6740eb86d991f15ce289a398c73374c702ce1b36540db2b83fff1232",
+      "e260e8c962d04283d7e690b18bf57648adb11e71d0f33c1afdc6797bdf20aca0"
+    ],
+    "experiments/power.py": [
+      "fc606dcecdd15582ea57f136fd14e69138a618634dd42fc21e357c28432cc8aa"
+    ],
+    "experiments/resources.py": [
+      "dcddcc85b134000bde77958864aa58bb77e9a571672b08d5d87c6174f9e583ce"
+    ],
+    "experiments/tensorrt_backend.py": [
+      "f77e344c431a207a3e441b0e1d0d8be26098f774d926aa0ea23f098e695879fc"
+    ],
+    "fusion/preprocess.py": [
+      "08dce7c3a9fa8d0eeecc4eef6a44480e95ebcf16cb955550703f99aedb62fa6c"
+    ],
+    "controller_sequence.py": [
+      "2f32c46d5f9dc23345298154dba69f7138d0938d5398e2cba223de2211f3a5fd"
+    ]
+  },
+  "targeted_tests_passed": 35,
+  "numerical_cases_passed": 128,
+  "deck_slides": 11,
+  "office_archive_xml_valid": true,
+  "pdf_sample_pages_visually_reviewed": true,
+  "original_cpu_sources_exact_hash_verified": 5,
+  "workstation_reachable": true,
+  "workstation_authenticated": false,
+  "remote_training_jobs_launched": 0
+}

@@ -1,0 +1,15 @@
+{
+  "torch": "2.10.0",
+  "torchvision": "0.25.0",
+  "ultralytics": "8.4.14",
+  "numpy": "1.26.4",
+  "onnx": "1.22.0",
+  "opencv-python": "4.11.0.86",
+  "pycocotools": "2.0.11",
+  "matplotlib": "3.5.1",
+  "Flask": "3.1.1",
+  "python-pptx": "1.0.2",
+  "gdown": "6.5.1",
+  "Markdown": "3.10.3",
+  "native_packages": "cuda-cudart-12-6\t12.6.68-1\nlibnvinfer10\t10.3.0.30-1+cuda12.5\nlibnvonnxparsers10\t10.3.0.30-1+cuda12.5\nnvidia-l4t-core\t36.4.7-20250918154033\n"
+}

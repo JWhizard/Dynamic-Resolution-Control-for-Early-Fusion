@@ -1,0 +1,34 @@
+{
+  "criterion": "Non-dominated observed fixed points: maximize person AP, minimize service p95 and named-rail J/frame. Descriptive, one run each; not a convex AP mixture or deployable test-selected optimum.",
+  "tested_resolutions": [
+    480,
+    544,
+    576,
+    640
+  ],
+  "points": [
+    {
+      "run": "kaist_fixed-480",
+      "policy": "fixed:480",
+      "mode": "offline",
+      "frames": "1200",
+      "unique_source_frames": "1200",
+      "p50_ms": "40.4894070015871",
+      "p95_ms": "44.99947705262457",
+      "p99_ms": "47.28228511172347",
+      "controller_mean_ms": "0.10692014204929971",
+      "preprocess_mean_ms": "5.425638688939216",
+      "gpu_execute_mean_ms": "13.806534844239552",
+      "postprocess_mean_ms": "0.6509058448136784",
+      "rail_sum_J_per_frame": "0.8319559236913664",
+      "budget_miss_fraction": "0.0033333333333333335",
+      "dropped_frames": "0",
+      "switches": "0",
+      "u_turns": "0",
+      "AP": "0.014850845288733903",
+      "AP_small": "0.005629119530133915",
+      "person_recall50_conf25": "0.011034482758620689",
+      "causal_aligned_AP": ""
+    }
+  ]
+}

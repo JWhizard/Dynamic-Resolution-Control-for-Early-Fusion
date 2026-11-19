@@ -1,0 +1,103 @@
+{
+  "sequences": [
+    {
+      "sequence": "set06/V000",
+      "environment": "day",
+      "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/kaist_long_video_20261118/evaluation/set06_V000/manifest.json",
+      "manifest_sha256": "d807d0ca10361d84d971ab82b181b93bd169b7018d7e3bc400e7c9842cf41e68",
+      "annotations_sha256": "4626120eae26a594f0ee8c4e7e4ef39d12a199feb10906c426c98c92d7733314",
+      "frames": 1523,
+      "person_boxes": 1277,
+      "ignored_boxes": 96,
+      "native_dimensions": [
+        [
+          640,
+          512
+        ]
+      ]
+    },
+    {
+      "sequence": "set07/V000",
+      "environment": "day",
+      "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/kaist_long_video_20261118/evaluation/set07_V000/manifest.json",
+      "manifest_sha256": "51c082b7fec3f4bb19aa979f30db6d4d246acf7975e4c6238c78b9ca6f5b028d",
+      "annotations_sha256": "2f6df3a9b7bb2878ad85c03e7be10e8ebba4598a5c284a429689f42a0710a616",
+      "frames": 2544,
+      "person_boxes": 1162,
+      "ignored_boxes": 110,
+      "native_dimensions": [
+        [
+          640,
+          512
+        ]
+      ]
+    },
+    {
+      "sequence": "set08/V000",
+      "environment": "day",
+      "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/kaist_long_video_20261118/evaluation/set08_V000/manifest.json",
+      "manifest_sha256": "b483ebd85bd18c8ae4c2b7ee439ed7c7d7524645db7e006fbde46a5a195b4ffb",
+      "annotations_sha256": "ba7c98cbb209992e1b23a9c58a3c5072259967facd986f1ccc0c3bfbb06f0720",
+      "frames": 2578,
+      "person_boxes": 5998,
+      "ignored_boxes": 840,
+      "native_dimensions": [
+        [
+          640,
+          512
+        ]
+      ]
+    },
+    {
+      "sequence": "set09/V000",
+      "environment": "night",
+      "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/kaist_long_video_20261118/evaluation/set09_V000/manifest.json",
+      "manifest_sha256": "807520a42ade19adf1f0fb992a3f465fbcda2bc5ca2fcf9dd533b85d484fa4f3",
+      "annotations_sha256": "3d77c32e03c16191ff8b90bc45a3341836123ae5af7c111326e67ae75bfdb633",
+      "frames": 3500,
+      "person_boxes": 2539,
+      "ignored_boxes": 1139,
+      "native_dimensions": [
+        [
+          640,
+          512
+        ]
+      ]
+    },
+    {
+      "sequence": "set10/V000",
+      "environment": "night",
+      "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/kaist_long_video_20261118/evaluation/set10_V000/manifest.json",
+      "manifest_sha256": "4a5ac2297354a0b1f2e1128ccc8f994935d1f5eda906ea943c78d087e48ad2e1",
+      "annotations_sha256": "02017ea470f19f59564989624103d2f6ecac5a3c07ff8653b24a2331f3c2eb74",
+      "frames": 4708,
+      "person_boxes": 1566,
+      "ignored_boxes": 1029,
+      "native_dimensions": [
+        [
+          640,
+          512
+        ]
+      ]
+    },
+    {
+      "sequence": "set11/V000",
+      "environment": "night",
+      "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/kaist_long_video_20261118/evaluation/set11_V000/manifest.json",
+      "manifest_sha256": "a0a0ff44d3200676f304d8db46b01882c942a7e21187988f2410b1f43c9fe24b",
+      "annotations_sha256": "7fd8f235e97817b742473ee527ce3ba30840d277249708bcb2c671e0573d4e37",
+      "frames": 2020,
+      "person_boxes": 4806,
+      "ignored_boxes": 564,
+      "native_dimensions": [
+        [
+          640,
+          512
+        ]
+      ]
+    }
+  ],
+  "unique_pairs": 16873,
+  "train_test_disjoint": true,
+  "archive_file_hashes_verified": 50624
+}

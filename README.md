@@ -190,3 +190,87 @@ See `docs/controller_improvement_plan.md` (motivation) and `docs/controller_resu
   - Benchmarks were run in one pinned session.
   - The Milestone-2 deck is built.
   - Orin not yet brought up.
+
+## Jetson continuous-video evaluation
+
+The local research extension adds ordered RGB/IR capture, video replay,
+per-frame tail-latency/controller-overhead traces, Jetson INA3221 rail energy,
+controlled inference-thread changes, CPU contention, synthetic modality stress,
+and fixed/feedback/sequence baseline comparisons. Start with
+[`docs/RESEARCH_EVALUATION.md`](docs/RESEARCH_EVALUATION.md).
+
+```bash
+.venv/bin/python -m experiments.pilot --manifest captures/research_flir_pilot/manifest.json \
+  --output captures/new_orin_results --reps 2 --frames 120
+.venv/bin/python -m experiments.report captures/new_orin_results
+```
+
+This is a short CPU pilot on one unannotated indoor FLIR clip. It does not
+establish detection accuracy, natural-environment robustness, CUDA/TensorRT
+performance, or generalization across detectors/datasets/hardware. The research
+document specifies the additional evidence needed for each claim.
+
+
+### November 13 GPU follow-up
+
+A matching JetPack TensorRT backend now executes the exported project detector
+on the Orin GPU while preserving CPU preprocessing. The new study includes
+labeled KAIST night-preview transfer, five-run/12,000-frame replay endurance,
+CPU/GPU/memory contention, causal streaming accuracy, guarded-policy ablations,
+and cold/warm measurements. Frozen night transfer is weak; robustness and
+cross-detector/platform claims remain unproven.
+
+- [Measured GPU results](results/processed/orin_followup_20261113/REPORT.md)
+- [GPU setup and reproduction](docs/GPU_SETUP.md)
+- [Report draft](docs/deliverables/REPORT_DRAFT.md)
+- [Presentation draft](docs/deliverables/EMCH585_PROGRESS_DRAFT.pptx)
+- [Published-baseline/training plan](docs/BASELINE_REPRODUCTION_PLAN.md)
+
+### November 16 held-out detector comparison
+
+Faster R-CNN and RetinaNet completed provisional two-hour GPU training runs.
+All three frozen checkpoints were scored at fixed 576 on the same 419 grouped
+M3FD test pairs: AP 41.21% (YOLO26n multi-scale), 40.16% (Faster R-CNN),
+and 30.37% (RetinaNet). Training budgets/preprocessing differ; adaptive-resolution
+and cross-platform comparisons remain open.
+
+- [Scores, protocol, limitations and reproduction](results/processed/heldout_families_20261116/REPORT.md)
+
+### November 16 cross-family adaptive-resolution follow-up
+
+Completed 24 disk-replay GPU cases, 24 separate buffered-input GPU cases,
+and 12 short Jetson CPU cost cases. The frozen scene controller has no consistent
+accuracy/cost win across all three detectors. Disk PNG decoding dominates the
+primary workstation service costs. New-family Jetson CPU results are slow;
+new-family GPU deployment and longer continuous-video experiments remain open.
+
+- [Adaptive results, plots, methods and limits](results/processed/adaptive_families_20261116/REPORT.md)
+
+### November 16 complete Jetson GPU deployment
+
+Faster R-CNN and RetinaNet now run their complete detection graphs in native
+TensorRT on the Orin GPU, retaining original CPU transforms. Both passed 68
+primary numerical cases. A 72-run matrix compares all three GPU detectors
+across four fixed resolutions and four adaptive policies, with three fresh
+processes per case and measured controller/latency/named-rail energy costs.
+49 targeted tests passed. The short indoor clip remains unannotated; stable
+new-family tails and broader continuous-video robustness remain open.
+
+- [GPU deployment results and plots](results/processed/family_trt_20261116/REPORT.md)
+- [Export, validation and reproduction](docs/FAMILY_TENSORRT.md)
+
+### November 19 full-sequence labeled video evaluation
+
+All 162 Jetson TensorRT cases completed across three frozen detectors and six
+full KAIST day/night sequences: 16,873 unique RGB/thermal pairs and 455,571
+source-frame evaluations across the policy/control matrix. Latest-due-input
+replay processed 280,026 arrivals and dropped 175,545. The study extends earlier
+30-second prefixes and does not use KAIST for model or policy fitting.
+
+- [Per-sequence scores, costs and completion validation](results/processed/kaist_long_video_20261118/REPORT.md)
+- [Dataset selection, frozen protocol and reproduction](docs/KAIST_VIDEO_PROTOCOL.md)
+- [Project to-do list](docs/EMCH585_PROJECT_TODO.txt)
+
+The CSV contains individual sequence scores; pooled accuracy and transition
+analysis remain follow-up work. Separate day/night clips do not demonstrate
+natural environment transitions, and named-rail energy includes host activity.

@@ -1,0 +1,370 @@
+{
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/cold_start/process_0.json": {
+    "sha256": "81cc954e996095cbfd3f7591905c1706a6f70dd9319fe3c63b869a2e7283334f",
+    "bytes": 1087
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/cold_start/process_0.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/cold_start/process_1.json": {
+    "sha256": "82b03d63f03cf9f7091825bd028784259e1e6d7e1bf35383e620da3435cd627c",
+    "bytes": 1093
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/cold_start/process_1.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/cold_start/process_2.json": {
+    "sha256": "f5cf25c574b9ec3f10700e2a8885e1394d189007dd584cec08d1000ed1a21068",
+    "bytes": 1085
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/cold_start/process_2.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/cold_start/process_3.json": {
+    "sha256": "fa1dd91b8a24cafd6e3726d6ef9d801c5dbcca78e3df3998b125c55a8cfdc635",
+    "bytes": 1089
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/cold_start/process_3.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/cold_start/process_4.json": {
+    "sha256": "241bc4abd2ec75cdbc50907c68cf247d7cc99479fc8e2d2611f5a19b7daf3ae6",
+    "bytes": 1086
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/cold_start/process_4.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/cold_start/summary.json": {
+    "sha256": "b78f069bc8ef28991e96fdeab7b03e8c2c03e6b1b067d4f92ccfd99524e202a9",
+    "bytes": 6586
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/endurance_sequence_rep0.json": {
+    "sha256": "1294bb13d5063b6381497c3950eab10f664d72e21332fac3354f03a42e8b10ad",
+    "bytes": 11999347
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/endurance_sequence_rep0.log": {
+    "sha256": "37d1a85ec58f4bbf8a8851cdab85a3306dc04eb51de9eb3bc942726163c809f3",
+    "bytes": 1224
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/endurance_sequence_rep1.json": {
+    "sha256": "b72799190eaeb9504b3ad3fb8e8ae95a9638c34ce473b496660cae03356e37fc",
+    "bytes": 11999015
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/endurance_sequence_rep1.log": {
+    "sha256": "e5b3513ec4c14445af1a27ec5a8c5e00bb3ac8eb96d1803af41122bda2b52801",
+    "bytes": 1218
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/endurance_sequence_rep2.json": {
+    "sha256": "2670771ccd8b11715e5eb4ff59351b22487722878cddc293acfe650aeec6f81b",
+    "bytes": 11998790
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/endurance_sequence_rep2.log": {
+    "sha256": "2bfd0266baaea4c4adfc53ee1059c0b025f304d6e2485c0e3814052b8610e7df",
+    "bytes": 1221
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/endurance_sequence_rep3.json": {
+    "sha256": "6aa858d6d6f4763262450230bdb4cd6aba7c29ec403d79e36f2fcfefbb0aa5e9",
+    "bytes": 11999323
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/endurance_sequence_rep3.log": {
+    "sha256": "5d0e3b2e6875c60565a312cd51c89f1a2b748aabb35629b163f5b5ef17fa4c05",
+    "bytes": 1224
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/endurance_sequence_rep4.json": {
+    "sha256": "964586e77ae8de8986b8f2bd2bcf4e0133b721d6801ed97910c803267baa23cb",
+    "bytes": 11998777
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/endurance_sequence_rep4.log": {
+    "sha256": "cdddd527672844fa0f1be68f072608be59f61b4ee0cb344efc280c8555c80d27",
+    "bytes": 1220
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_aimd.json": {
+    "sha256": "1b77111b56550f479949c4759905bed7d94ffe35576c0e232db838f459184146",
+    "bytes": 2013790
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_aimd.log": {
+    "sha256": "778501d77b2e60705c89ee3208f834bf6388bbed7045eb958609ff69f572edfe",
+    "bytes": 1241
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_aimd_accuracy.json": {
+    "sha256": "6b00de9cb7701358dfdf3a9c999596c1b98648ac33cb8893c137d0fa48f714b5",
+    "bytes": 1688
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_deadline.json": {
+    "sha256": "a8bed070d623a0bc2053d0202210d2730dfba2ca456eb3e619bb10949c78e8a0",
+    "bytes": 2139307
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_deadline.log": {
+    "sha256": "30499e533d38a21a3a4b562ee58032780bf10e93fec9a44d7fbb17e5fb3d6f69",
+    "bytes": 1263
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_deadline_accuracy.json": {
+    "sha256": "7a5634e35bacc5bf72e82f61ed12599abca98d43884158829cd9939da49c0c27",
+    "bytes": 1660
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_fixed-480.json": {
+    "sha256": "16607317e924508be057cb818f034e6299e6b1aaff44d6f808b37384180b85e1",
+    "bytes": 2143932
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_fixed-480.log": {
+    "sha256": "f3b992b4186ff9fe04bfc74f171ee9b1f673366ee1a10638e044b0bb2f8a9c7d",
+    "bytes": 1213
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_fixed-480_accuracy.json": {
+    "sha256": "83fbd153ddc05d4bc180822880d429a04b2a31b529ddcb3f3087541320628256",
+    "bytes": 1662
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_fixed-544.json": {
+    "sha256": "0409dfa31db591efc4422ac7d14fcb14aa745dd7c7cc9a137e9d4a6163c37c6e",
+    "bytes": 1969346
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_fixed-544.log": {
+    "sha256": "4048fad027128388610444458e74274bf57de40d1fd686e6f03a544071fa57e5",
+    "bytes": 1203
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_fixed-544_accuracy.json": {
+    "sha256": "24a356766e59c4be2d86f9da17acd4c1779a78ed312af91c5e6155fcab57a2a1",
+    "bytes": 1692
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_fixed-576.json": {
+    "sha256": "89e4362503b838b8e21384585133bfc97d54531af539887c6286adaf97271ba7",
+    "bytes": 1891586
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_fixed-576.log": {
+    "sha256": "81a9725077c8f858c883f084b283900a8c81fc094ceffeb78dfa29d61ad76387",
+    "bytes": 1201
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_fixed-576_accuracy.json": {
+    "sha256": "682cc27d54a5ef753b5459a22b8460112e3cb5ea20db89b374c633fad937b996",
+    "bytes": 1696
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_fixed-640.json": {
+    "sha256": "aeaf51366bbb908f76b3a341a3a4031ec8561a7f2ddd8a9aff2e73d3d95dc99a",
+    "bytes": 1844840
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_fixed-640.log": {
+    "sha256": "8fb88bd7d20f87ad3bca738796209e98f692ce4c629a45b683fecfcbfe6768eb",
+    "bytes": 1199
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_fixed-640_accuracy.json": {
+    "sha256": "d0924cb8caefc75cad6cdc58c8f5ed561b455abb0c55bb4a7897a4e67f4a40e5",
+    "bytes": 1720
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_guarded-no-hysteresis.json": {
+    "sha256": "9b5c15fc4299b1c7c721ad445cfef63abc43fc4d57eeb44cf307c322d02e8f64",
+    "bytes": 2138280
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_guarded-no-hysteresis.log": {
+    "sha256": "1083ad0a8fbc634b2aac9499dc4b6ab84f94c5870a19d08ad846681824ad4099",
+    "bytes": 1253
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_guarded-no-hysteresis_accuracy.json": {
+    "sha256": "dc630261ab56c82ab31a55aa625e519186a66fda6658f93d82677d2f6843f6b1",
+    "bytes": 1662
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_guarded-no-resource.json": {
+    "sha256": "b49893c408cd1356da3c8f150e9d4f7a54230fd29b007629ae26d9065feccd4c",
+    "bytes": 1969161
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_guarded-no-resource.log": {
+    "sha256": "3bcab7104cd1e3242f619863309e5dc8e82a0864e7e7986711cc0c5306ed6763",
+    "bytes": 1244
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_guarded-no-resource_accuracy.json": {
+    "sha256": "f6737a5117f541ff76df83d6581bbf907db421d38ff8c0090f3b5895ba578f92",
+    "bytes": 1720
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_guarded-no-scene.json": {
+    "sha256": "6697b562d6a2c30b6ed87f155aa2bc756a54cae5a9f124a3a2b17f7d1bbafeea",
+    "bytes": 2139285
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_guarded-no-scene.log": {
+    "sha256": "9728f5cabdad35b3a0bd16eac5b657561f6a415d794771632a104e5107d514c1",
+    "bytes": 1268
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_guarded-no-scene_accuracy.json": {
+    "sha256": "8eda9a96f6755fada4237e75846c218087eb1c24f1ce6cdd0e1960393ffa8f47",
+    "bytes": 1662
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_guarded-no-switch-cost.json": {
+    "sha256": "357b7f5102b7a69d63d2cbc3004838abdc31086d03b31f0d276cbcef29832d4f",
+    "bytes": 2139624
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_guarded-no-switch-cost.log": {
+    "sha256": "ab774e86088354ee40dae8e36f97c5d9f3b2a11ee2ce0f3abbc1085a4c31db43",
+    "bytes": 1257
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_guarded-no-switch-cost_accuracy.json": {
+    "sha256": "8cb3645bae84c6cfc90fd457290c27af0bd35994328924f9f9fa690446b0c996",
+    "bytes": 1662
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_guarded.json": {
+    "sha256": "775a8fe31c4acf0273291a2abf14726154390da4c4ffda706558a98b29f68341",
+    "bytes": 2141896
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_guarded.log": {
+    "sha256": "826de3a83a79a2277b32906f58ba1a9df31a7841b54c5b48cfe364abd5487b1e",
+    "bytes": 1241
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_guarded_accuracy.json": {
+    "sha256": "057faafc1201e295d574cdf0b81bbced9b5a6352dfacb47ec4c10d86626f5410",
+    "bytes": 1660
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_sequence.json": {
+    "sha256": "27fa1f9d112c0ab9d19358e40e3d22956945626512b7632e1889747d11798674",
+    "bytes": 1969681
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_sequence.log": {
+    "sha256": "ec58f36d29cc064cd515676627a6163add67c92eeaa21cbe4ec6f1bfe5f86dbd",
+    "bytes": 1243
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/kaist_sequence_accuracy.json": {
+    "sha256": "a6c2bd9e28759bd80edce103e14181a0fb85ef9dc60e29646cf1b27cab3a61e9",
+    "bytes": 1720
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/paired_gpu_switch.json": {
+    "sha256": "61cdf135c7bbac0b5c3522c44cc30bb871860777c1ac20baa97b5e41dd649173",
+    "bytes": 50942
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/plan.json": {
+    "sha256": "1e0263506dbeb461cdab702bc4e192e3c8cc3b7e2053b12202dae77ca52131f3",
+    "bytes": 10066
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/resource_cpu_deadline.json": {
+    "sha256": "9c2812492ed5a02dc841b3a3ef609ba83d3b030344b4d47b2214472ba71d8e17",
+    "bytes": 707127
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/resource_cpu_deadline.log": {
+    "sha256": "78dd9aee5e6545a3a9e73fb7052d1f550c5859b1cb8ca5c93fa01eec1b4f598b",
+    "bytes": 1264
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/resource_cpu_guarded.json": {
+    "sha256": "77b72ac1fd4dae310ab8bc2e2d7e71a55e7498c4dc37c01637c42b952836ddf1",
+    "bytes": 631741
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/resource_cpu_guarded.log": {
+    "sha256": "3ec667165f3cdb088c390bbf60e0ceaa1c2605feeab28326f232b57ee5c50988",
+    "bytes": 1226
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/resource_cpu_sequence.json": {
+    "sha256": "3941c4db26de491bcc3f2972810c8763959e1210c5f69ef9337076193d41669d",
+    "bytes": 632045
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/resource_cpu_sequence.log": {
+    "sha256": "949ab8ac83cc953def91dc75e3559072ca4b04a47eddbf62400b4b99e8876044",
+    "bytes": 1225
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/resource_gpu_deadline.json": {
+    "sha256": "b00c305067f845d19bf7be993d4ecf83e4fefe28ba0c7abd0f7ac9d28663b47a",
+    "bytes": 681354
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/resource_gpu_deadline.log": {
+    "sha256": "4bba701d56d410569ab60b04dfbd9fc6049faee10705b08118e39f40ec5c50c3",
+    "bytes": 1250
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/resource_gpu_guarded.json": {
+    "sha256": "7bbe5db8692dbbbd35c950378d064473ff6b0ed1c690b195775926d8bb45abad",
+    "bytes": 634683
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/resource_gpu_guarded.log": {
+    "sha256": "f40204aa7476ad2d496cc827278c4e4ea34e13133701753bde67134b2c3a74e0",
+    "bytes": 1227
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/resource_gpu_sequence.json": {
+    "sha256": "2876897484a6549cefefa25392a4345f7244e99eb60b2c6a357b319440f6b350",
+    "bytes": 635341
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/resource_gpu_sequence.log": {
+    "sha256": "d47d3298604792cd6f36cf62ddf1e3b785e48753def7a5596ae4a99d7611e0ca",
+    "bytes": 1232
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/resource_memory_deadline.json": {
+    "sha256": "a80876659091e840628242777f7cdf3b6f2587bd28039e47c6928cd57bd1496d",
+    "bytes": 696186
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/resource_memory_deadline.log": {
+    "sha256": "083cebda3957e223957c47370e96490974f511255c71e4855ad86ba94858b613",
+    "bytes": 1249
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/resource_memory_guarded.json": {
+    "sha256": "48fc56076e6c5ab11dc8ceae8535e2bbdeb838ed52f7c2a447ae5344b575976c",
+    "bytes": 632726
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/resource_memory_guarded.log": {
+    "sha256": "c2af8473fe861c195fa0dc378861a6eba5dc8126d972b12f4000ae3a56df81cf",
+    "bytes": 1232
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/resource_memory_sequence.json": {
+    "sha256": "6cfe271ba83843e72a83a127c2a751799ac521d129208db5d7d53043b036628c",
+    "bytes": 632882
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/resource_memory_sequence.log": {
+    "sha256": "7b3ab1fc15fc5d72f0e34f00389f5ecfa12db741c99db85a6e1a8a0ce05d812f",
+    "bytes": 1227
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/setup_energy/build.log": {
+    "sha256": "852c12e476f437e5a5ee48f6690564f070c689a1bc10298cb6cbf5445858c05d",
+    "bytes": 9397
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/setup_energy/measurement_only.engine": {
+    "sha256": "a39bdde1ecf1a9b7cb22b16f6d5bd10dec8da2fc24e084370c536f1ef7d63d1f",
+    "bytes": 12758180
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/setup_energy/summary.json": {
+    "sha256": "3c8e2e5a05ebca76088a96076f5536921f1c09a2cda9fed2cdcabad109c549ed",
+    "bytes": 114486
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/stream_fixed-576.json": {
+    "sha256": "535274e7b8df935063c24a5dec4d72ecfc9214e4c7234e392df386166a6c1e3f",
+    "bytes": 1858589
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/stream_fixed-576.log": {
+    "sha256": "0118ab35e437c94c84935b746d935ea9c6c0ed6c24ebbf40f53259218e3bfdfa",
+    "bytes": 1213
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/stream_fixed-576_accuracy.json": {
+    "sha256": "9a13c9ddbbbd0824861d45cb9579da0ee73c3a389bcd4507b9661053afcbe1c0",
+    "bytes": 2366
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/stream_guarded.json": {
+    "sha256": "788b695ba4b7a237eb1b554b663c78125bbd9d35df5f35e12de65ade6e379109",
+    "bytes": 2174104
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/stream_guarded.log": {
+    "sha256": "b9d018e95d5d17a4e11828763b0cac5e46d8fecb2284b0aedcc965cd4f9afd38",
+    "bytes": 1237
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/stream_guarded_accuracy.json": {
+    "sha256": "1aee5102449f0a8dd0ac6401fa640eb24810fd6a750db526ce118347265ed76d",
+    "bytes": 2378
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/stream_sequence.json": {
+    "sha256": "ba590c7374a141fd35cda1cccc27a134c3975b9a26f6359a8c16261458ef6357",
+    "bytes": 1996189
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/stream_sequence.log": {
+    "sha256": "f56f62cfafbeb6757a7841a908be13c6a94195f98afb138a77fac3718bc77f57",
+    "bytes": 1245
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/stream_sequence_accuracy.json": {
+    "sha256": "8df52fd7ba31ced35845a56192bda7a34e86b138ccb810bd2c077e9d7b9af5b3",
+    "bytes": 2423
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/supplement_plan.json": {
+    "sha256": "8c9d30637ac9555b0e03c1be6d435d70026edb690bd49bea04955c368a08e550",
+    "bytes": 289
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/transition_response.json": {
+    "sha256": "c604acbad1e1ede7d38957448a493083691466c13cd2ee95639d76eea0dcaee4",
+    "bytes": 19798
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113/ui_before.json": {
+    "sha256": "7a10ed8dbea048481dbac3e44a572c8b013a67deded84dfa51b5f2fd6c32fc86",
+    "bytes": 1221
+  }
+}

@@ -1,0 +1,5 @@
+# CPU inference on this ARM64 Jetson; use a separate environment.
+torch==2.10.0
+torchvision==0.25.0
+ultralytics==8.4.14
+Flask>=3.0,<4

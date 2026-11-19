@@ -1,0 +1,269 @@
+EMCH585 PROJECT — REMAINING WORK
+Updated: November 19, 2026
+
+Project: Dynamic Resolution Control for RGB/IR Early Fusion
+
+STATUS KEY: [x] completed within the stated evidence; [~] partial; [ ] open.
+Read the Status notes: a checked measurement does not establish generality.
+
+PRIORITY 1 — AGREE ON PROJECT SCOPE
+[ ] Review the proposed evaluation with the instructor/advisor.
+[ ] Decide which claims are required for this class project and which are future work.
+[ ] Agree on the minimum number of detector families, datasets, environments,
+    and physical hardware platforms.
+[ ] Set the submission deadline, available compute budget, and success criteria.
+[~] Choose accuracy, latency, and energy targets before evaluating the test data.
+    Status: 50 ms GPU follow-up budget and frozen test protocol saved before runs; final accuracy/energy success margins await instructor review.
+
+PRIORITY 2 — PROVIDE DATA AND HARDWARE ACCESS
+[x] Locate labeled, registered RGB/IR continuous-video sequences.
+    Status: Official checksum-verified KAIST preview: 3,200 aligned-provider night pairs; first 1,200 evaluated without target fitting.
+[x] Provide dataset paths, access instructions, licenses, and annotation formats.
+    Status: See results/processed/orin_followup_20261113/data_access_inventory.json and docs/GPU_SETUP.md for verified available data, paths, formats and license.
+[~] Include multiple real environments: indoor/outdoor, day/night, weather,
+    camera motion, object density, and target distance as available.
+    Status: Indoor FLIR cost data plus labeled night transfer are available. Independent labeled day/weather/location tests remain.
+[~] Identify natural scene-transition times within continuous sequences.
+    Status: 11 stable person-presence changes derived retrospectively from labels; not independent day/night/weather transition annotations.
+[~] Verify camera registration, synchronization, and annotation coordinates.
+    Status: All KAIST image/label dimensions checked and sample overlays reviewed; provider alignment accepted. Independent sensor synchronization/calibration remains.
+[~] Split data by sequence/location to avoid train/test leakage.
+    Status: Existing M3FD grouped split retained and leakage guard prepared; KAIST preview is one training sequence, not an official held-out test set.
+[~] Provide additional trained detector checkpoints and their class mappings.
+    Status: Faster R-CNN/RetinaNet trained, checkpoints backed up, held-out M3FD scoring and validated Jetson TensorRT deployment completed. Cross-dataset video evaluation continues below.
+[~] Provide access to additional physical hardware if required by the agreed scope.
+    Status: Workstation whisenaj@10.173.92.11 authenticated; additional-family training and evaluation completed. Matched cross-platform cost comparisons remain open.
+
+PRIORITY 3 — COMPLETE THE JETSON EVALUATION
+[x] Validate a JetPack-compatible CUDA PyTorch and/or TensorRT deployment.
+    Status: Matching TensorRT 10.3 bindings and strict FP32 GPU engine validated; existing CPU PyTorch/dashboard preserved.
+[x] Check prediction equivalence before comparing execution backends.
+    Status: 128 sampled frame/resolution cases passed across FLIR and KAIST, including low-confidence checks; sampled numerical agreement is not AP equivalence.
+[x] Run longer repeated experiments for stable p95/p99 latency estimates.
+    Status: Five fresh-process GPU runs, 2,400 timed frames each; mean run p99 39.85 ms with run-level uncertainty. Repeats contain only 120 unique pairs.
+[x] Measure preprocessing, inference, postprocessing, controller, and switching costs.
+    Status: CPU preprocessing/postprocessing, synchronized GPU span/transfer, controller and switching costs recorded separately.
+[x] Measure energy over steady operation and resource transitions.
+    Status: Named-rail energy measured for steady/resource runs and separate shared-engine build/runtime warmup. Not wall-plug or isolated model energy.
+[ ] Cross-check onboard power measurements with an external meter if available.
+[x] Record power mode, clocks, temperatures, memory, warmup, and background workloads.
+    Status: Power mode, CPU/device clocks, temperatures, process status/RSS, warmup/profile wall time and process snapshots saved.
+[x] Test CPU/GPU contention and memory pressure separately where supported.
+    Status: Separate owned CPU, GPU and bounded memory-bandwidth workers tested; no host power/clock settings changed.
+[x] Measure budget misses, dropped frames, recovery time, and oscillation.
+    Status: Raw budget misses, output ages, drop accounting, resource recovery, switch counts and U-turn diagnostics saved.
+[x] Keep CPU pilot results separate from GPU/TensorRT results.
+    Status: November 12 CPU and November 13 TensorRT GPU results have separate directories and explicit backend metadata.
+
+PRIORITY 4 — EVALUATE CONTINUOUS VIDEO AND ADAPTIVE BASELINES
+[x] Score detection accuracy against real labels, including small-object/person recall.
+    Status: Person COCO AP/AP-small and IoU .5/conf .25 recall scored on the KAIST night prefix. Absolute transfer performance is weak.
+[x] Evaluate output age, dropped frames, and time-aligned streaming accuracy.
+    Status: Three 20 Hz replay cases scored both with dropped inputs empty and with causal latest-completed boxes. Not an official KAIST benchmark score.
+[~] Measure behavior before, during, and after natural scene transitions.
+    Status: Resource/corruption response and retrospective person-presence windows measured. Natural environment-transition quality tests remain.
+[x] Extend paired switching tests with more repetitions and cold/warm engine cases.
+    Status: 120 paired warm GPU switching trials and five process-cold startup tests completed. Driver/filesystem caches retained; build cost measured separately.
+[~] Compare against all relevant fixed resolutions and the best-fixed frontier.
+    Status: Compared 480/544/576/640 and saved observed non-dominated fixed points. Wider action-space/budget sweeps and confirmatory frontier comparisons remain.
+[~] Reproduce strong published adaptive baselines under comparable conditions.
+    Status: ApproxDet/Chanakya source revisions pinned and reproduction plan prepared. Faithful execution/training and comparable profiling remain pending.
+[~] Charge profiling, probing, controller, and reconfiguration overhead to each method.
+    Status: Controller/switch cost included; warmup/profile wall time, common build energy and runtime warmup energy reported separately. Full lifecycle and published-baseline accounting remain.
+[~] Tune policies on validation sequences only; keep test sequences held out.
+    Status: Current KAIST run is frozen with no target fitting. Additional-family training selects validation AP and checks group leakage; actual training/test evaluation pending.
+[x] Run ablations for scene feedback, resource feedback, hysteresis, and switch penalties.
+    Status: Guarded method evaluated with scene, resource, dwell and switch-reserve removals. Supplementary source versions/plans are preserved; results are diagnostic.
+
+PRIORITY 5 — ESTABLISH ROBUSTNESS AND GENERALIZATION
+[ ] Evaluate held-out real environments and locations with labels.
+[~] Report per-environment and worst-group accuracy, latency, and energy.
+    Status: Night-prefix accuracy/cost and indoor serving cost reported. Multiple independent labeled environments are needed for worst-group claims.
+[x] Keep synthetic darkening, blur, IR dropout, and misalignment results separate
+    from claims about real environmental robustness.
+    Status: Synthetic stress, natural object-presence changes and real environmental evidence are explicitly separated.
+[~] Test materially different detector families, according to the agreed scope.
+    Status: Three families now trained and scored on 419 grouped M3FD test pairs at fixed 576: YOLO26n, Faster R-CNN and RetinaNet. November 16: frozen-controller comparisons completed across all three families (48 GPU cases including a buffered supplement). Short Jetson CPU latency/energy costs measured for all three; additional-family Jetson GPU exports and validation are now complete; longer labeled continuous-video studies remain open. See results/processed/heldout_families_20261116/REPORT.md.
+[~] Evaluate multiple labeled datasets with explicit class mappings.
+    Status: Labeled KAIST preview and M3FD verified. All three families scored on M3FD; cross-dataset evaluation of the additional families remains open.
+[~] Evaluate additional physical hardware platforms, according to the agreed scope.
+    Status: Orin CPU/GPU are one physical platform. Workstation authenticated; additional-family training and held-out accuracy completed on RTX6000 Ada. Matched workstation-versus-Orin latency/energy benchmarks remain open.
+[~] Separate frozen transfer, hardware-only recalibration, and model fine-tuning.
+    Status: Frozen transfer and hardware profiling clearly labeled. Dataset fine-tuning has not run and will be a separate protocol.
+[x] Report confidence intervals using independent sequences/runs.
+    Status: Run-level bootstrap intervals across five fresh-process endurance repetitions reported; no independent environment/sequence CI is claimed.
+[x] Report ties and failures as well as improvements.
+    Status: Weak night transfer, ineffective constraints/ablations and resource failures are retained. No broad superiority claim.
+
+PRIORITY 6 — FINAL REPORT AND PRESENTATION
+[x] State the research question and the precise contribution.
+    Status: Research question and provisional contribution written in docs/deliverables/REPORT_DRAFT.md and INSTRUCTOR_SCOPE_REVIEW.txt.
+[x] Describe the controller, detector interface, and resource-adaptation method.
+    Status: Adapter contract, guarded policy, ablations, causal streaming convention and resource protocols documented.
+[x] Document datasets, splits, checkpoints, hardware, baselines, and measurement definitions.
+    Status: Available data, splits, weights/engines, hardware, baselines and measurement definitions documented with limitations and hashes.
+[x] Present accuracy/latency/energy tradeoffs and transition behavior.
+    Status: Measured tables, readable main-policy/ablation charts, transition diagnostics and draft slides prepared; no unsupported environmental claim.
+[x] Explain failure cases and limitations without overstating the pilot results.
+    Status: Weak absolute KAIST person AP, limited domains, setup-energy scope, correlated repeats and pending baseline/platform work are explicit.
+[x] Archive code versions, configurations, seeds, hashes, raw traces, and reproduction commands.
+    Status: Raw traces, job plans, source v1/v2 snapshots, seeds, hashes, deployment manifest and a source-bundle reproduction record are preserved.
+[~] Prepare the final paper/report, slides, and browser demonstration.
+    Status: Report and presentation review drafts plus a working browser demonstration are prepared. Instructor review, final requirements and remaining experiments are still needed.
+
+ALREADY COMPLETED — NOVEMBER 12 CPU/DEMO STAGE
+[x] Downloaded the project into the EMCH585 workspace.
+[x] Connected the project dashboard to live FLIR RGB/IR previews.
+[x] Tested browser controls and desktop/mobile rendering; fixed mobile video clipping.
+[x] Built the video experiment framework and local baseline suite.
+[x] Completed 40 CPU pilot runs using 120 unique indoor FLIR frame pairs.
+[x] Recorded 4,769 processed replay frames and measured rail energy and latency.
+[x] Completed 60 paired warm resolution-switching trials.
+[x] Verified 240 captured image-file checksums.
+[x] Passed 24 targeted tests.
+[x] Saved the pilot results, plots, and research evaluation protocol.
+
+IMPORTANT LIMITS OF THE NOVEMBER 12 CPU PILOT
+- One trained detector, one unannotated indoor clip, and one physical platform.
+- That pilot used CPU inference. A separate November 13 TensorRT GPU follow-up is now available.
+- No real FLIR ground-truth accuracy measurements.
+- Short-run tail percentiles are preliminary.
+- Named-rail energy is not wall-plug or isolated model energy.
+- Local adaptive baselines are not faithful reproductions of published systems.
+- Cross-environment and cross-platform generalization remain unproven.
+
+WHO DOES WHAT
+Your immediate tasks:
+- Agree on scope and success criteria with the instructor.
+- Workstation SSH configured; two additional-family training runs and held-out accuracy evaluation completed.
+- Help identify independent day/weather sequences and additional physical hardware as required.
+- Confirm submission requirements and deadlines.
+
+Work the coding assistant can continue with once resources are available:
+- Implement adapters and baseline integrations.
+- Automate experiments, validation, scoring, plots, and comparisons.
+- Draft the report, presentation, and reproduction instructions for your review.
+
+REFERENCE FILES
+Project directory:
+/home/imsel/EMCH585_Workspace/Dynamic-Resolution-Control-for-Early-Fusion
+
+Research protocol:
+Dynamic-Resolution-Control-for-Early-Fusion/docs/RESEARCH_EVALUATION.md
+
+Pilot results:
+Dynamic-Resolution-Control-for-Early-Fusion/results/processed/orin_pilot_20261112/REPORT.md
+
+Browser setup and service controls:
+Dynamic-Resolution-Control-for-Early-Fusion/FLIR_SETUP.md
+
+NOVEMBER 13 COMPLETION LOG
+[x] TensorRT GPU deployment and 128 sampled numerical comparisons.
+[x] 29 GPU runs; 31,044 processed frames; 12,000 endurance frames in five runs.
+[x] KAIST night-prefix pedestrian scoring and causal streaming accuracy.
+[x] CPU/GPU/memory contention, four guarded-controller ablations and 11
+    retrospective object-presence transitions (not weather/day/night events).
+[x] 120 warm GPU switching pairs, five process-cold startup repetitions,
+    and separate setup build/warmup energy measurements.
+[x] 35 targeted tests passed. Additional-family construction/data contracts
+    tested without performing CPU training.
+[x] Report/slides drafts, GPU setup instructions, pinned upstream baseline
+    source revisions, and workstation-access/training plans prepared.
+
+CURRENT ARTIFACTS (relative to project directory)
+Results: results/processed/orin_followup_20261113/REPORT.md
+Data/paths: results/processed/orin_followup_20261113/data_access_inventory.json
+Report draft: docs/deliverables/REPORT_DRAFT.md
+Presentation: docs/deliverables/EMCH585_PROGRESS_DRAFT.pptx
+GPU setup: docs/GPU_SETUP.md
+Baseline/training plan: docs/BASELINE_REPRODUCTION_PLAN.md
+Raw GPU runs: /media/imsel/4TBSSD/EMCH585_Artifacts/runs/followup_20261113
+Source archive record: /media/imsel/4TBSSD/EMCH585_Artifacts/reproducibility
+
+IMPORTANT: Frozen-model person AP on this night prefix is only about
+0.009–0.015. Fast serving is not evidence of robustness. These are historical
+single-family results; later milestones include three families, workstation
+training/evaluation and Jetson GPU deployment.
+
+REVIEW DOCUMENT EXPORTS (relative to project directory)
+Report PDF: docs/deliverables/EMCH585_REPORT_DRAFT.pdf
+Editable Word report: docs/deliverables/EMCH585_REPORT_DRAFT.docx
+Slides PDF: docs/deliverables/EMCH585_PROGRESS_DRAFT.pdf
+Slides source: docs/deliverables/EMCH585_PROGRESS_DRAFT.pptx
+The PDF report and slides were rendered and sample pages visually checked.
+These are review drafts, not instructor-approved final submissions.
+
+NOVEMBER 16 HELD-OUT MILESTONE
+[x] Freeze validation-best additional-family checkpoints and evaluation settings before test inference.
+[x] Score YOLO26n, Faster R-CNN and RetinaNet on the same 419 grouped M3FD test pairs.
+    AP/AP50/AP-small (%): YOLO 41.21/63.58/14.58; Faster R-CNN 40.16/65.18/18.38; RetinaNet 30.37/49.02/4.06.
+[x] Verify saved predictions, input sizes, checkpoint copies and evaluation provenance.
+    See results/processed/heldout_families_20261116/REPORT.md and raw_index.json.
+[~] Run adaptive-resolution comparisons across these detectors and measure new-family Jetson costs.
+    Completed 48 workstation GPU cases and 12 short Jetson CPU cases; additional-family Jetson GPU deployment and three-repeat cost comparisons are now complete; longer labeled continuous-video studies remain open.
+    See results/processed/adaptive_families_20261116/REPORT.md.
+
+NOVEMBER 16 ADAPTIVE-RESOLUTION MILESTONE
+[x] Compare frozen sequence controller, guarded controller, deadline EMA and AIMD against four fixed resolutions across YOLO26n, Faster R-CNN and RetinaNet.
+[x] Save primary disk-pipeline results separately from the post-hoc buffered-input supplement.
+    24+24 GPU cases, 419 test pairs each; 20,112 timed frames with no policy/model retuning.
+[x] Measure short Jetson CPU costs and named-rail energy for all three models.
+    12 cases,32 unique unannotated indoor pairs each;384 timed frames. CPU results do not establish new-family Jetson GPU performance or stable p99.
+[x] Verify source/checkpoint/input hashes, counts, energy coverage, fixed576 AP consistency and ten targeted tests.
+[~] Validate additional-family GPU deployment on Jetson and run longer repeated experiments.
+    GPU deployment validated; three fresh-process120-frame repetitions per case complete. Longer independent/continuous runs remain needed for stable tails.
+[ ] Evaluate all families on labeled continuous video with real resource/environment transitions.
+[ ] Complete faithful published adaptive-baseline reproductions and instructor-approved scope.
+
+NOVEMBER 16 JETSON GPU DEPLOYMENT — REQUESTED STEPS1–3 COMPLETE
+[x] Export frozen Faster R-CNN/RetinaNet to ONNX and build native TensorRT10.3 FP32/no-TF32 engines.
+    Full CNN, heads, proposal/ROI processing and NMS execute on GPU; input transforms and native-coordinate restoration remain CPU.
+[x] Validate against original PyTorch predictions before timing.
+    68 primary cases per new family (136 total), four resolutions, class/count parity at confidence0.10, IoU>=0.90, score error<=0.02.
+    Maximum12-image validation AP difference0.0141 percentage points. Zero-area-aware supplementary checks also pass at0.01/0.001.
+[x] Measure latency, controller overhead, switching and named-rail energy across fixed/adaptive policies on Jetson GPU.
+    72 runs:3 models x8 policies x3 fresh-process repetitions;120 unique recorded indoor pairs reused per run;8,640 timed frames.
+    Fixed576 mean service(ms)/named-rail J/frame: YOLO33.79/0.903; Faster R-CNN108.09/4.033; RetinaNet75.38/2.880.
+[x] Verify frame/source/engine/input hashes, energy coverage and49 targeted tests; preserve live browser/camera services.
+    Report:results/processed/family_trt_20261116/REPORT.md; reproduction:docs/FAMILY_TENSORRT.md.
+[ ] Longer labeled continuous-video, real resource transitions, held-out environments and faithful published adaptive baselines remain next.
+    These120-frame runs do not establish stable p99, wall-plug/model-only energy or broad robustness.
+
+NOVEMBER 18 — LONGER LABELED VIDEO AND LIVE CAMERA PLAN
+[x] Locate and audit existing held-out KAIST replay artifacts.
+    Found completed November 16 runs not reflected in the earlier checklist:
+    90 cases across six 600-frame official test prefixes, three day/three night,
+    3,600 unique pairs and 54,000 input-frame evaluations. Each clip is only
+    30 seconds. Raw completion: /media/imsel/4TBSSD/EMCH585_Artifacts/kaist_video_20261116/runs/COMPLETED.json.
+[x] Step 1: Evaluate all three frozen detectors on the FULL versions of the
+    six selected KAIST held-out day/night sequences, preserving native order.
+    16,873 unique pairs; per-sequence lengths 1,523/2,544/2,578/3,500/4,708/2,020
+    at nominal 20 Hz (about 14 minutes total). Dataset CC BY-NC-SA 4.0.
+    Matrix: fixed480/544/576/640, frozen sequence, guarded, deadline EMA and
+    AIMD with 4->1->4 CPU preprocessing threads; fixed576 constant-thread
+    controls. 162 cases; no model/policy tuning. Explicit person-class mapping,
+    crowd/difficult ignore handling, causal streaming accuracy, dropped frames,
+    output age, latency and named-rail energy. Run on Jetson TensorRT.
+    This is an extension of already-scored prefixes, not a wholly untouched
+    confirmatory test. Separate day/night recordings are not natural transitions.
+    Driver: experiments/start_long_kaist.py. Artifact directory:
+    /media/imsel/4TBSSD/EMCH585_Artifacts/kaist_long_video_20261118
+    Completed November 19: 162/162 cases, 455,571 source-frame evaluations,
+    280,026 processed and 175,545 dropped arrivals. Dataset remains 16,873
+    unique pairs, replayed across three models and nine configurations.
+    Compact results: results/processed/kaist_long_video_20261118.
+    Seven targeted KAIST selection/annotation/scoring tests passed.
+[ ] Validate completed long-video outputs and summarize per-sequence/day/night
+    accuracy, drops, output age, latency, energy and fixed/adaptive comparisons.
+    Integrate both the existing short-prefix study and this extension into report/slides.
+[ ] Step 2: Record three separate 10–15-minute synchronized RGB/thermal camera
+    sessions with timestamps: vary person distance, motion and lighting, and
+    apply controlled compute load. User camera setup/scene operation needed.
+    Measure acquisition/end-to-end latency, drops, temperature, energy and recovery.
+[ ] Step 3: If camera accuracy is required, predefine labeled segments around
+    transitions and human-check bounding boxes. Predictions may assist labeling
+    but cannot substitute for verified ground truth. Sparse labels support
+    accuracy claims only on the annotated frames/segments.
+[ ] Optional second public video dataset: assess FLIR ADAS labeled video
+    access/terms, sequence continuity, class mapping and spatial registration.
+    Publisher lists 7,498 video frames at 24 Hz; total is not one guaranteed clip.

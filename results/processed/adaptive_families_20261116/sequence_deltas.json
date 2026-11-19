@@ -1,0 +1,17 @@
+[
+  {
+    "model": "fasterrcnn",
+    "AP_percentage_point_change": -0.06585667969902231,
+    "mean_service_percent_change": 6.778843364367382
+  },
+  {
+    "model": "retinanet",
+    "AP_percentage_point_change": 0.32351097459460965,
+    "mean_service_percent_change": 2.831623883756751
+  },
+  {
+    "model": "yolo26n_ms",
+    "AP_percentage_point_change": 0.050081611566665796,
+    "mean_service_percent_change": -5.285788474531106
+  }
+]

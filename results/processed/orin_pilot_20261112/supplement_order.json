@@ -1,0 +1,8 @@
+{
+  "clean_controls": [
+    "deadline",
+    "fixed:576",
+    "sequence"
+  ],
+  "switch_reps": 5
+}

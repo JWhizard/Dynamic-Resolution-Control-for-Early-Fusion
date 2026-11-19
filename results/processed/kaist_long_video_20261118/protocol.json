@@ -1,0 +1,38 @@
+{
+  "selection": "Full native dense sequence of the lexicographically first sequence in each official test set06\u201311; no label-based selection.",
+  "unique_pairs": 16873,
+  "sequence_lengths": {
+    "set06/V000": 1523,
+    "set07/V000": 2544,
+    "set08/V000": 2578,
+    "set09/V000": 3500,
+    "set10/V000": 4708,
+    "set11/V000": 2020
+  },
+  "fps": 20,
+  "primary_policies": [
+    "fixed:480",
+    "fixed:544",
+    "fixed:576",
+    "fixed:640",
+    "sequence",
+    "guarded",
+    "deadline",
+    "aimd"
+  ],
+  "primary_threads": "4,1,4",
+  "control_policies": [
+    "fixed:576"
+  ],
+  "control_threads": "4,4,4",
+  "budget_ms": 100,
+  "tuning": false,
+  "seed": 20261118,
+  "limitations": [
+    "Extends previously scored 600-frame prefixes; overlapping data, not an untouched confirmatory test.",
+    "Separate day/night sequences do not demonstrate natural day-to-night transitions.",
+    "Nominal timestamps; COCO person scoring with crowd-ignore regions, not official KAIST scoring.",
+    "CPU preprocessing thread intervention does not establish GPU contention robustness.",
+    "One run per case; named-rail energy includes background services."
+  ]
+}

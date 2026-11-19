@@ -1,0 +1,774 @@
+{
+  "passed": true,
+  "gate": {
+    "confidence": 0.1,
+    "minimum_iou": 0.9,
+    "maximum_score_error": 0.02,
+    "equal_detection_counts": true
+  },
+  "engine": {
+    "backend": "TensorRT",
+    "version": "10.3.0",
+    "execution_device": "Jetson GPU",
+    "precision": "fp32_no_tf32",
+    "engine_sha256": "c233b6241340c5eeff253726d39d94d32b003b1f3d1fa6144c0c841073e6ffb8",
+    "checkpoint_sha256": "79d21a315500db3e0d061ce273de5affe26e8b778055e50f9ceca22994a55cda",
+    "preprocessing": "same CPU torch antialiased bilinear and letterbox as project",
+    "input_order": "B,G,R,IR",
+    "output": "native xyxy/conf/class",
+    "synchronous_return": true
+  },
+  "comparisons": [
+    {
+      "frame_index": 0,
+      "resolution": 480,
+      "reference_count": 4,
+      "candidate_count": 4,
+      "matched": 4,
+      "matches": [
+        {
+          "iou": 0.999998927116394,
+          "score_error": 1.1920928955078125e-07
+        },
+        {
+          "iou": 0.9999987483024597,
+          "score_error": 2.384185791015625e-07
+        },
+        {
+          "iou": 0.9999998807907104,
+          "score_error": 6.794929504394531e-06
+        },
+        {
+          "iou": 0.9999972581863403,
+          "score_error": 1.996755599975586e-06
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 0,
+      "resolution": 544,
+      "reference_count": 3,
+      "candidate_count": 3,
+      "matched": 3,
+      "matches": [
+        {
+          "iou": 0.9999995827674866,
+          "score_error": 0.0
+        },
+        {
+          "iou": 0.9999955892562866,
+          "score_error": 1.7881393432617188e-07
+        },
+        {
+          "iou": 0.9999997615814209,
+          "score_error": 3.8743019104003906e-07
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 0,
+      "resolution": 576,
+      "reference_count": 2,
+      "candidate_count": 2,
+      "matched": 2,
+      "matches": [
+        {
+          "iou": 0.9999991655349731,
+          "score_error": 0.0
+        },
+        {
+          "iou": 0.9999993443489075,
+          "score_error": 2.3245811462402344e-06
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 0,
+      "resolution": 640,
+      "reference_count": 5,
+      "candidate_count": 5,
+      "matched": 5,
+      "matches": [
+        {
+          "iou": 0.9999986290931702,
+          "score_error": 8.344650268554688e-07
+        },
+        {
+          "iou": 0.9999995827674866,
+          "score_error": 2.384185791015625e-07
+        },
+        {
+          "iou": 0.9999993443489075,
+          "score_error": 3.7550926208496094e-06
+        },
+        {
+          "iou": 0.9999996423721313,
+          "score_error": 1.043081283569336e-07
+        },
+        {
+          "iou": 0.9999998807907104,
+          "score_error": 1.2665987014770508e-06
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 17,
+      "resolution": 480,
+      "reference_count": 4,
+      "candidate_count": 4,
+      "matched": 4,
+      "matches": [
+        {
+          "iou": 0.9999993443489075,
+          "score_error": 5.960464477539062e-07
+        },
+        {
+          "iou": 0.9999991655349731,
+          "score_error": 1.7285346984863281e-06
+        },
+        {
+          "iou": 0.9999997019767761,
+          "score_error": 1.341104507446289e-06
+        },
+        {
+          "iou": 0.999999463558197,
+          "score_error": 3.129243850708008e-07
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 17,
+      "resolution": 544,
+      "reference_count": 3,
+      "candidate_count": 3,
+      "matched": 3,
+      "matches": [
+        {
+          "iou": 0.9999997615814209,
+          "score_error": 0.0
+        },
+        {
+          "iou": 1.0,
+          "score_error": 1.6689300537109375e-06
+        },
+        {
+          "iou": 0.9999991059303284,
+          "score_error": 1.1026859283447266e-06
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 17,
+      "resolution": 576,
+      "reference_count": 2,
+      "candidate_count": 2,
+      "matched": 2,
+      "matches": [
+        {
+          "iou": 0.9999993443489075,
+          "score_error": 0.0
+        },
+        {
+          "iou": 0.9999996423721313,
+          "score_error": 1.0132789611816406e-06
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 17,
+      "resolution": 640,
+      "reference_count": 5,
+      "candidate_count": 5,
+      "matched": 5,
+      "matches": [
+        {
+          "iou": 0.9999995231628418,
+          "score_error": 1.2516975402832031e-06
+        },
+        {
+          "iou": 0.9999993443489075,
+          "score_error": 3.0100345611572266e-06
+        },
+        {
+          "iou": 0.9999998211860657,
+          "score_error": 1.4901161193847656e-07
+        },
+        {
+          "iou": 0.9999995231628418,
+          "score_error": 3.3080577850341797e-06
+        },
+        {
+          "iou": 0.9999998807907104,
+          "score_error": 1.3709068298339844e-06
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 34,
+      "resolution": 480,
+      "reference_count": 4,
+      "candidate_count": 4,
+      "matched": 4,
+      "matches": [
+        {
+          "iou": 0.999998927116394,
+          "score_error": 8.344650268554688e-07
+        },
+        {
+          "iou": 0.9999993443489075,
+          "score_error": 3.4868717193603516e-06
+        },
+        {
+          "iou": 0.9999989867210388,
+          "score_error": 4.842877388000488e-06
+        },
+        {
+          "iou": 0.9999976754188538,
+          "score_error": 2.8461217880249023e-06
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 34,
+      "resolution": 544,
+      "reference_count": 2,
+      "candidate_count": 2,
+      "matched": 2,
+      "matches": [
+        {
+          "iou": 1.0,
+          "score_error": 0.0
+        },
+        {
+          "iou": 0.9999995231628418,
+          "score_error": 2.86102294921875e-06
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 34,
+      "resolution": 576,
+      "reference_count": 2,
+      "candidate_count": 2,
+      "matched": 2,
+      "matches": [
+        {
+          "iou": 0.9999997615814209,
+          "score_error": 0.0
+        },
+        {
+          "iou": 1.0,
+          "score_error": 1.8477439880371094e-06
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 34,
+      "resolution": 640,
+      "reference_count": 3,
+      "candidate_count": 3,
+      "matched": 3,
+      "matches": [
+        {
+          "iou": 0.9999997615814209,
+          "score_error": 5.364418029785156e-07
+        },
+        {
+          "iou": 0.9999997615814209,
+          "score_error": 1.519918441772461e-06
+        },
+        {
+          "iou": 0.9999991655349731,
+          "score_error": 1.7881393432617188e-07
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 51,
+      "resolution": 480,
+      "reference_count": 5,
+      "candidate_count": 5,
+      "matched": 5,
+      "matches": [
+        {
+          "iou": 0.9999997615814209,
+          "score_error": 1.7881393432617188e-07
+        },
+        {
+          "iou": 0.9999993443489075,
+          "score_error": 1.0132789611816406e-06
+        },
+        {
+          "iou": 1.0,
+          "score_error": 6.258487701416016e-07
+        },
+        {
+          "iou": 0.9999997615814209,
+          "score_error": 1.0281801223754883e-06
+        },
+        {
+          "iou": 0.9999998211860657,
+          "score_error": 1.7136335372924805e-07
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 51,
+      "resolution": 544,
+      "reference_count": 3,
+      "candidate_count": 3,
+      "matched": 3,
+      "matches": [
+        {
+          "iou": 0.9999997615814209,
+          "score_error": 0.0
+        },
+        {
+          "iou": 0.999997615814209,
+          "score_error": 1.5497207641601562e-06
+        },
+        {
+          "iou": 0.9999995827674866,
+          "score_error": 4.76837158203125e-07
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 51,
+      "resolution": 576,
+      "reference_count": 2,
+      "candidate_count": 2,
+      "matched": 2,
+      "matches": [
+        {
+          "iou": 0.9999995231628418,
+          "score_error": 0.0
+        },
+        {
+          "iou": 0.9999992251396179,
+          "score_error": 8.52346420288086e-06
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 51,
+      "resolution": 640,
+      "reference_count": 5,
+      "candidate_count": 5,
+      "matched": 5,
+      "matches": [
+        {
+          "iou": 0.9999992847442627,
+          "score_error": 5.364418029785156e-07
+        },
+        {
+          "iou": 0.9999993443489075,
+          "score_error": 2.2351741790771484e-06
+        },
+        {
+          "iou": 0.9999993443489075,
+          "score_error": 1.6540288925170898e-06
+        },
+        {
+          "iou": 0.9999996423721313,
+          "score_error": 1.1622905731201172e-06
+        },
+        {
+          "iou": 0.9999982714653015,
+          "score_error": 1.080334186553955e-06
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 68,
+      "resolution": 480,
+      "reference_count": 5,
+      "candidate_count": 5,
+      "matched": 5,
+      "matches": [
+        {
+          "iou": 0.9999991655349731,
+          "score_error": 4.172325134277344e-07
+        },
+        {
+          "iou": 0.9999985694885254,
+          "score_error": 7.748603820800781e-07
+        },
+        {
+          "iou": 0.999999463558197,
+          "score_error": 4.559755325317383e-06
+        },
+        {
+          "iou": 0.9999997019767761,
+          "score_error": 1.2442469596862793e-06
+        },
+        {
+          "iou": 0.9999987483024597,
+          "score_error": 3.725290298461914e-08
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 68,
+      "resolution": 544,
+      "reference_count": 3,
+      "candidate_count": 3,
+      "matched": 3,
+      "matches": [
+        {
+          "iou": 0.9999997615814209,
+          "score_error": 4.76837158203125e-07
+        },
+        {
+          "iou": 0.999998927116394,
+          "score_error": 3.874301910400391e-06
+        },
+        {
+          "iou": 0.9999995231628418,
+          "score_error": 1.7881393432617188e-07
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 68,
+      "resolution": 576,
+      "reference_count": 2,
+      "candidate_count": 2,
+      "matched": 2,
+      "matches": [
+        {
+          "iou": 1.0,
+          "score_error": 0.0
+        },
+        {
+          "iou": 1.0,
+          "score_error": 6.556510925292969e-07
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 68,
+      "resolution": 640,
+      "reference_count": 5,
+      "candidate_count": 5,
+      "matched": 5,
+      "matches": [
+        {
+          "iou": 0.9999997615814209,
+          "score_error": 1.1920928955078125e-07
+        },
+        {
+          "iou": 0.9999988675117493,
+          "score_error": 3.248453140258789e-06
+        },
+        {
+          "iou": 0.9999995827674866,
+          "score_error": 1.043081283569336e-06
+        },
+        {
+          "iou": 0.9999982118606567,
+          "score_error": 1.1920928955078125e-06
+        },
+        {
+          "iou": 0.9999993443489075,
+          "score_error": 1.8030405044555664e-06
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 85,
+      "resolution": 480,
+      "reference_count": 4,
+      "candidate_count": 4,
+      "matched": 4,
+      "matches": [
+        {
+          "iou": 0.9999998211860657,
+          "score_error": 7.152557373046875e-07
+        },
+        {
+          "iou": 0.9999989867210388,
+          "score_error": 2.384185791015625e-07
+        },
+        {
+          "iou": 0.9999975562095642,
+          "score_error": 3.8743019104003906e-07
+        },
+        {
+          "iou": 0.9999997019767761,
+          "score_error": 2.0265579223632812e-06
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 85,
+      "resolution": 544,
+      "reference_count": 3,
+      "candidate_count": 3,
+      "matched": 3,
+      "matches": [
+        {
+          "iou": 0.9999993443489075,
+          "score_error": 2.980232238769531e-07
+        },
+        {
+          "iou": 0.9999991655349731,
+          "score_error": 3.0994415283203125e-06
+        },
+        {
+          "iou": 0.9999978542327881,
+          "score_error": 7.748603820800781e-07
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 85,
+      "resolution": 576,
+      "reference_count": 2,
+      "candidate_count": 2,
+      "matched": 2,
+      "matches": [
+        {
+          "iou": 0.999998927116394,
+          "score_error": 0.0
+        },
+        {
+          "iou": 1.0,
+          "score_error": 1.6093254089355469e-06
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 85,
+      "resolution": 640,
+      "reference_count": 4,
+      "candidate_count": 4,
+      "matched": 4,
+      "matches": [
+        {
+          "iou": 0.9999997615814209,
+          "score_error": 3.5762786865234375e-07
+        },
+        {
+          "iou": 0.9999995827674866,
+          "score_error": 1.1622905731201172e-06
+        },
+        {
+          "iou": 0.9999997019767761,
+          "score_error": 1.0579824447631836e-06
+        },
+        {
+          "iou": 0.999998927116394,
+          "score_error": 1.3560056686401367e-06
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 102,
+      "resolution": 480,
+      "reference_count": 4,
+      "candidate_count": 4,
+      "matched": 4,
+      "matches": [
+        {
+          "iou": 0.9999989867210388,
+          "score_error": 4.5299530029296875e-06
+        },
+        {
+          "iou": 0.9999995827674866,
+          "score_error": 5.125999450683594e-06
+        },
+        {
+          "iou": 0.9999997019767761,
+          "score_error": 2.8312206268310547e-06
+        },
+        {
+          "iou": 1.0,
+          "score_error": 2.4586915969848633e-06
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 102,
+      "resolution": 544,
+      "reference_count": 3,
+      "candidate_count": 3,
+      "matched": 3,
+      "matches": [
+        {
+          "iou": 0.9999995827674866,
+          "score_error": 1.1920928955078125e-07
+        },
+        {
+          "iou": 0.9999990463256836,
+          "score_error": 1.430511474609375e-06
+        },
+        {
+          "iou": 1.0,
+          "score_error": 5.960464477539063e-08
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 102,
+      "resolution": 576,
+      "reference_count": 2,
+      "candidate_count": 2,
+      "matched": 2,
+      "matches": [
+        {
+          "iou": 0.999998927116394,
+          "score_error": 0.0
+        },
+        {
+          "iou": 0.9999998807907104,
+          "score_error": 6.556510925292969e-07
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 102,
+      "resolution": 640,
+      "reference_count": 4,
+      "candidate_count": 4,
+      "matched": 4,
+      "matches": [
+        {
+          "iou": 0.9999988675117493,
+          "score_error": 3.5762786865234375e-07
+        },
+        {
+          "iou": 0.9999986886978149,
+          "score_error": 1.4901161193847656e-06
+        },
+        {
+          "iou": 0.9999982714653015,
+          "score_error": 2.771615982055664e-06
+        },
+        {
+          "iou": 0.9999994039535522,
+          "score_error": 1.0132789611816406e-06
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 119,
+      "resolution": 480,
+      "reference_count": 4,
+      "candidate_count": 4,
+      "matched": 4,
+      "matches": [
+        {
+          "iou": 0.9999994039535522,
+          "score_error": 8.344650268554688e-07
+        },
+        {
+          "iou": 0.9999995827674866,
+          "score_error": 1.430511474609375e-06
+        },
+        {
+          "iou": 0.9999975562095642,
+          "score_error": 4.276633262634277e-06
+        },
+        {
+          "iou": 0.9999997615814209,
+          "score_error": 3.11434268951416e-06
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 119,
+      "resolution": 544,
+      "reference_count": 3,
+      "candidate_count": 3,
+      "matched": 3,
+      "matches": [
+        {
+          "iou": 0.9999991655349731,
+          "score_error": 0.0
+        },
+        {
+          "iou": 0.9999995231628418,
+          "score_error": 2.086162567138672e-06
+        },
+        {
+          "iou": 1.0,
+          "score_error": 3.5762786865234375e-07
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 119,
+      "resolution": 576,
+      "reference_count": 2,
+      "candidate_count": 2,
+      "matched": 2,
+      "matches": [
+        {
+          "iou": 0.9999991655349731,
+          "score_error": 0.0
+        },
+        {
+          "iou": 1.0,
+          "score_error": 3.4570693969726562e-06
+        }
+      ],
+      "passed": true
+    },
+    {
+      "frame_index": 119,
+      "resolution": 640,
+      "reference_count": 3,
+      "candidate_count": 3,
+      "matched": 3,
+      "matches": [
+        {
+          "iou": 0.9999993443489075,
+          "score_error": 1.1920928955078125e-07
+        },
+        {
+          "iou": 0.9999993443489075,
+          "score_error": 1.4901161193847656e-06
+        },
+        {
+          "iou": 0.9999973177909851,
+          "score_error": 3.427267074584961e-06
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Numerical agreement on sampled inputs, not AP equivalence on labeled test data."
+  ]
+}

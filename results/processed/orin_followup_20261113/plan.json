@@ -1,0 +1,403 @@
+{
+  "created_before_runs": "2026-11-13T16:05:25.209411",
+  "budget_ms": 50,
+  "engine": "/media/imsel/4TBSSD/EMCH585_Artifacts/project_trt_fp32_strict/engine.json",
+  "protocol": "Frozen M3FD detector/controller; first 1200 KAIST preview frames. Not official KAIST test. No target fitting.",
+  "guarded_method": "Scene preference capped by online cost plus 1ms switch reserve and four-frame dwell; budget priority.",
+  "endurance": "5 process repetitions \u00d7 20 cycles \u00d7 120 frames; 120 unique frames only.",
+  "jobs": [
+    {
+      "name": "kaist_guarded",
+      "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/datasets/kaist/evaluation/manifest.json",
+      "score": true,
+      "args": [
+        "--policy",
+        "guarded",
+        "--max-frames",
+        "1200",
+        "--thread-trace",
+        "4,4,4"
+      ]
+    },
+    {
+      "name": "stream_guarded",
+      "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/datasets/kaist/evaluation/manifest.json",
+      "score": true,
+      "args": [
+        "--policy",
+        "guarded",
+        "--max-frames",
+        "1200",
+        "--mode",
+        "realtime",
+        "--thread-trace",
+        "4,4,4"
+      ]
+    },
+    {
+      "name": "resource_memory_guarded",
+      "manifest": "captures/research_flir_pilot/manifest.json",
+      "score": false,
+      "args": [
+        "--policy",
+        "guarded",
+        "--thread-trace",
+        "4,4,4",
+        "--contenders",
+        "1",
+        "--contention-kind",
+        "memory",
+        "--contention-engine",
+        "/media/imsel/4TBSSD/EMCH585_Artifacts/project_trt_fp32_strict/engine.json"
+      ]
+    },
+    {
+      "name": "resource_gpu_guarded",
+      "manifest": "captures/research_flir_pilot/manifest.json",
+      "score": false,
+      "args": [
+        "--policy",
+        "guarded",
+        "--thread-trace",
+        "4,4,4",
+        "--contenders",
+        "1",
+        "--contention-kind",
+        "gpu",
+        "--contention-engine",
+        "/media/imsel/4TBSSD/EMCH585_Artifacts/project_trt_fp32_strict/engine.json"
+      ]
+    },
+    {
+      "name": "resource_gpu_deadline",
+      "manifest": "captures/research_flir_pilot/manifest.json",
+      "score": false,
+      "args": [
+        "--policy",
+        "deadline",
+        "--thread-trace",
+        "4,4,4",
+        "--contenders",
+        "1",
+        "--contention-kind",
+        "gpu",
+        "--contention-engine",
+        "/media/imsel/4TBSSD/EMCH585_Artifacts/project_trt_fp32_strict/engine.json"
+      ]
+    },
+    {
+      "name": "endurance_sequence_rep2",
+      "manifest": "captures/research_flir_pilot/manifest.json",
+      "score": false,
+      "args": [
+        "--policy",
+        "sequence",
+        "--cycles",
+        "20",
+        "--seed",
+        "2"
+      ]
+    },
+    {
+      "name": "resource_cpu_deadline",
+      "manifest": "captures/research_flir_pilot/manifest.json",
+      "score": false,
+      "args": [
+        "--policy",
+        "deadline",
+        "--thread-trace",
+        "4,4,4",
+        "--contenders",
+        "2",
+        "--contention-kind",
+        "cpu",
+        "--contention-engine",
+        "/media/imsel/4TBSSD/EMCH585_Artifacts/project_trt_fp32_strict/engine.json"
+      ]
+    },
+    {
+      "name": "endurance_sequence_rep0",
+      "manifest": "captures/research_flir_pilot/manifest.json",
+      "score": false,
+      "args": [
+        "--policy",
+        "sequence",
+        "--cycles",
+        "20",
+        "--seed",
+        "0"
+      ]
+    },
+    {
+      "name": "endurance_sequence_rep3",
+      "manifest": "captures/research_flir_pilot/manifest.json",
+      "score": false,
+      "args": [
+        "--policy",
+        "sequence",
+        "--cycles",
+        "20",
+        "--seed",
+        "3"
+      ]
+    },
+    {
+      "name": "resource_memory_sequence",
+      "manifest": "captures/research_flir_pilot/manifest.json",
+      "score": false,
+      "args": [
+        "--policy",
+        "sequence",
+        "--thread-trace",
+        "4,4,4",
+        "--contenders",
+        "1",
+        "--contention-kind",
+        "memory",
+        "--contention-engine",
+        "/media/imsel/4TBSSD/EMCH585_Artifacts/project_trt_fp32_strict/engine.json"
+      ]
+    },
+    {
+      "name": "kaist_guarded-no-switch-cost",
+      "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/datasets/kaist/evaluation/manifest.json",
+      "score": true,
+      "args": [
+        "--policy",
+        "guarded-no-switch-cost",
+        "--max-frames",
+        "1200",
+        "--thread-trace",
+        "4,4,4"
+      ]
+    },
+    {
+      "name": "resource_cpu_sequence",
+      "manifest": "captures/research_flir_pilot/manifest.json",
+      "score": false,
+      "args": [
+        "--policy",
+        "sequence",
+        "--thread-trace",
+        "4,4,4",
+        "--contenders",
+        "2",
+        "--contention-kind",
+        "cpu",
+        "--contention-engine",
+        "/media/imsel/4TBSSD/EMCH585_Artifacts/project_trt_fp32_strict/engine.json"
+      ]
+    },
+    {
+      "name": "kaist_guarded-no-hysteresis",
+      "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/datasets/kaist/evaluation/manifest.json",
+      "score": true,
+      "args": [
+        "--policy",
+        "guarded-no-hysteresis",
+        "--max-frames",
+        "1200",
+        "--thread-trace",
+        "4,4,4"
+      ]
+    },
+    {
+      "name": "resource_cpu_guarded",
+      "manifest": "captures/research_flir_pilot/manifest.json",
+      "score": false,
+      "args": [
+        "--policy",
+        "guarded",
+        "--thread-trace",
+        "4,4,4",
+        "--contenders",
+        "2",
+        "--contention-kind",
+        "cpu",
+        "--contention-engine",
+        "/media/imsel/4TBSSD/EMCH585_Artifacts/project_trt_fp32_strict/engine.json"
+      ]
+    },
+    {
+      "name": "kaist_aimd",
+      "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/datasets/kaist/evaluation/manifest.json",
+      "score": true,
+      "args": [
+        "--policy",
+        "aimd",
+        "--max-frames",
+        "1200",
+        "--thread-trace",
+        "4,4,4"
+      ]
+    },
+    {
+      "name": "kaist_fixed-544",
+      "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/datasets/kaist/evaluation/manifest.json",
+      "score": true,
+      "args": [
+        "--policy",
+        "fixed:544",
+        "--max-frames",
+        "1200",
+        "--thread-trace",
+        "4,4,4"
+      ]
+    },
+    {
+      "name": "kaist_fixed-640",
+      "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/datasets/kaist/evaluation/manifest.json",
+      "score": true,
+      "args": [
+        "--policy",
+        "fixed:640",
+        "--max-frames",
+        "1200",
+        "--thread-trace",
+        "4,4,4"
+      ]
+    },
+    {
+      "name": "stream_fixed-576",
+      "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/datasets/kaist/evaluation/manifest.json",
+      "score": true,
+      "args": [
+        "--policy",
+        "fixed:576",
+        "--max-frames",
+        "1200",
+        "--mode",
+        "realtime",
+        "--thread-trace",
+        "4,4,4"
+      ]
+    },
+    {
+      "name": "resource_gpu_sequence",
+      "manifest": "captures/research_flir_pilot/manifest.json",
+      "score": false,
+      "args": [
+        "--policy",
+        "sequence",
+        "--thread-trace",
+        "4,4,4",
+        "--contenders",
+        "1",
+        "--contention-kind",
+        "gpu",
+        "--contention-engine",
+        "/media/imsel/4TBSSD/EMCH585_Artifacts/project_trt_fp32_strict/engine.json"
+      ]
+    },
+    {
+      "name": "kaist_fixed-576",
+      "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/datasets/kaist/evaluation/manifest.json",
+      "score": true,
+      "args": [
+        "--policy",
+        "fixed:576",
+        "--max-frames",
+        "1200",
+        "--thread-trace",
+        "4,4,4"
+      ]
+    },
+    {
+      "name": "endurance_sequence_rep4",
+      "manifest": "captures/research_flir_pilot/manifest.json",
+      "score": false,
+      "args": [
+        "--policy",
+        "sequence",
+        "--cycles",
+        "20",
+        "--seed",
+        "4"
+      ]
+    },
+    {
+      "name": "stream_sequence",
+      "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/datasets/kaist/evaluation/manifest.json",
+      "score": true,
+      "args": [
+        "--policy",
+        "sequence",
+        "--max-frames",
+        "1200",
+        "--mode",
+        "realtime",
+        "--thread-trace",
+        "4,4,4"
+      ]
+    },
+    {
+      "name": "resource_memory_deadline",
+      "manifest": "captures/research_flir_pilot/manifest.json",
+      "score": false,
+      "args": [
+        "--policy",
+        "deadline",
+        "--thread-trace",
+        "4,4,4",
+        "--contenders",
+        "1",
+        "--contention-kind",
+        "memory",
+        "--contention-engine",
+        "/media/imsel/4TBSSD/EMCH585_Artifacts/project_trt_fp32_strict/engine.json"
+      ]
+    },
+    {
+      "name": "endurance_sequence_rep1",
+      "manifest": "captures/research_flir_pilot/manifest.json",
+      "score": false,
+      "args": [
+        "--policy",
+        "sequence",
+        "--cycles",
+        "20",
+        "--seed",
+        "1"
+      ]
+    },
+    {
+      "name": "kaist_sequence",
+      "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/datasets/kaist/evaluation/manifest.json",
+      "score": true,
+      "args": [
+        "--policy",
+        "sequence",
+        "--max-frames",
+        "1200",
+        "--thread-trace",
+        "4,4,4"
+      ]
+    },
+    {
+      "name": "kaist_fixed-480",
+      "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/datasets/kaist/evaluation/manifest.json",
+      "score": true,
+      "args": [
+        "--policy",
+        "fixed:480",
+        "--max-frames",
+        "1200",
+        "--thread-trace",
+        "4,4,4"
+      ]
+    },
+    {
+      "name": "kaist_deadline",
+      "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/datasets/kaist/evaluation/manifest.json",
+      "score": true,
+      "args": [
+        "--policy",
+        "deadline",
+        "--max-frames",
+        "1200",
+        "--thread-trace",
+        "4,4,4"
+      ]
+    }
+  ]
+}

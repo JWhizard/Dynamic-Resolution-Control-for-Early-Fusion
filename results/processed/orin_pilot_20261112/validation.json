@@ -1,0 +1,36 @@
+{
+  "complete_runs": 40,
+  "processed_replay_frames": 4769,
+  "unique_source_frame_pairs": 120,
+  "capture_files_sha256_verified": 240,
+  "power_read_errors": 0,
+  "all_run_rail_integrals_covered": true,
+  "frame_accounting_valid": true,
+  "paired_switch_trials": 60,
+  "targeted_tests_passed": 24,
+  "accuracy_on_real_flir_data": null,
+  "physical_platforms_tested": [
+    "Jetson AGX Orin CPU"
+  ],
+  "detectors_tested": [
+    "ms_fusion_seed42 four-channel YOLO26n"
+  ],
+  "source_hash_versions": {
+    "/home/imsel/EMCH585_Workspace/Dynamic-Resolution-Control-for-Early-Fusion/experiments/run.py": [
+      "5dc06a30059b01f94ab04d3e2c836cf7b39586d06ccc35f02f81644aaeb83959"
+    ],
+    "experiments/policies.py": [
+      "913c5540f4e7695786011d3e1d320728f6da42f3f03314338adc0fd33a791429"
+    ],
+    "experiments/power.py": [
+      "fc606dcecdd15582ea57f136fd14e69138a618634dd42fc21e357c28432cc8aa"
+    ],
+    "fusion/preprocess.py": [
+      "08dce7c3a9fa8d0eeecc4eef6a44480e95ebcf16cb955550703f99aedb62fa6c"
+    ],
+    "controller_sequence.py": [
+      "2f32c46d5f9dc23345298154dba69f7138d0938d5398e2cba223de2211f3a5fd"
+    ]
+  },
+  "controller_artifact_sha256": "4ace5cab65e0c8ca65b9ac1b6d9b4b18ea9f63ab2b5a2d56d84f58698c1b960e"
+}

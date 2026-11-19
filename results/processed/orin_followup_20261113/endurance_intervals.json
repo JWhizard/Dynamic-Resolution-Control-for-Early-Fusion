@@ -1,0 +1,38 @@
+{
+  "p95_ms": {
+    "n_runs": 5,
+    "mean": 37.77117881356389,
+    "bootstrap_mean_ci95": [
+      37.63485818373738,
+      37.87845555401873
+    ],
+    "definition": "Percentile bootstrap of run-level statistics, not frame-level independent samples."
+  },
+  "p99_ms": {
+    "n_runs": 5,
+    "mean": 39.848250925220746,
+    "bootstrap_mean_ci95": [
+      39.66481718371502,
+      40.10520231322148
+    ],
+    "definition": "Percentile bootstrap of run-level statistics, not frame-level independent samples."
+  },
+  "controller_mean_ms": {
+    "n_runs": 5,
+    "mean": 0.5525567330890528,
+    "bootstrap_mean_ci95": [
+      0.5491645599504409,
+      0.5561329773154285
+    ],
+    "definition": "Percentile bootstrap of run-level statistics, not frame-level independent samples."
+  },
+  "rail_sum_J_per_frame": {
+    "n_runs": 5,
+    "mean": 0.6755378067751605,
+    "bootstrap_mean_ci95": [
+      0.6743124874113275,
+      0.6762783961368093
+    ],
+    "definition": "Percentile bootstrap of run-level statistics, not frame-level independent samples."
+  }
+}

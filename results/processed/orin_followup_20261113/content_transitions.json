@@ -1,0 +1,2512 @@
+{
+  "definition": "Post-hoc person-present/no-person transitions from supplied labels; state persists >=10 frames. Labels are not controller inputs.",
+  "limitations": [
+    "One night preview prefix; these are not day/night/weather transitions.",
+    "One-second windows are correlated diagnostic observations; no transition-window AP or significance claim."
+  ],
+  "events": [
+    {
+      "frame_index": 71,
+      "timestamp_s": 3.55,
+      "from": "no-person",
+      "to": "person-present",
+      "stable_segment_frames": 56
+    },
+    {
+      "frame_index": 127,
+      "timestamp_s": 6.35,
+      "from": "person-present",
+      "to": "no-person",
+      "stable_segment_frames": 137
+    },
+    {
+      "frame_index": 264,
+      "timestamp_s": 13.2,
+      "from": "no-person",
+      "to": "person-present",
+      "stable_segment_frames": 23
+    },
+    {
+      "frame_index": 335,
+      "timestamp_s": 16.75,
+      "from": "person-present",
+      "to": "no-person",
+      "stable_segment_frames": 258
+    },
+    {
+      "frame_index": 593,
+      "timestamp_s": 29.65,
+      "from": "no-person",
+      "to": "person-present",
+      "stable_segment_frames": 37
+    },
+    {
+      "frame_index": 630,
+      "timestamp_s": 31.5,
+      "from": "person-present",
+      "to": "no-person",
+      "stable_segment_frames": 44
+    },
+    {
+      "frame_index": 674,
+      "timestamp_s": 33.7,
+      "from": "no-person",
+      "to": "person-present",
+      "stable_segment_frames": 32
+    },
+    {
+      "frame_index": 706,
+      "timestamp_s": 35.3,
+      "from": "person-present",
+      "to": "no-person",
+      "stable_segment_frames": 226
+    },
+    {
+      "frame_index": 932,
+      "timestamp_s": 46.6,
+      "from": "no-person",
+      "to": "person-present",
+      "stable_segment_frames": 29
+    },
+    {
+      "frame_index": 961,
+      "timestamp_s": 48.05,
+      "from": "person-present",
+      "to": "no-person",
+      "stable_segment_frames": 178
+    },
+    {
+      "frame_index": 1139,
+      "timestamp_s": 56.95,
+      "from": "no-person",
+      "to": "person-present",
+      "stable_segment_frames": 61
+    }
+  ],
+  "observations": {
+    "kaist_fixed-576": [
+      {
+        "event": {
+          "frame_index": 71,
+          "timestamp_s": 3.55,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 56
+        },
+        "before_resolution_mix": {
+          "576": 20
+        },
+        "after_resolution_mix": {
+          "576": 20
+        },
+        "before_mean_service_ms": 50.34104859951185,
+        "after_mean_service_ms": 48.104859200975625,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 127,
+          "timestamp_s": 6.35,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 137
+        },
+        "before_resolution_mix": {
+          "576": 20
+        },
+        "after_resolution_mix": {
+          "576": 20
+        },
+        "before_mean_service_ms": 49.61528995190747,
+        "after_mean_service_ms": 49.006454249320086,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 264,
+          "timestamp_s": 13.2,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 23
+        },
+        "before_resolution_mix": {
+          "576": 20
+        },
+        "after_resolution_mix": {
+          "576": 20
+        },
+        "before_mean_service_ms": 49.227772749145515,
+        "after_mean_service_ms": 47.99029025089112,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 335,
+          "timestamp_s": 16.75,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 258
+        },
+        "before_resolution_mix": {
+          "576": 20
+        },
+        "after_resolution_mix": {
+          "576": 20
+        },
+        "before_mean_service_ms": 50.649054447421804,
+        "after_mean_service_ms": 51.906471101392526,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 593,
+          "timestamp_s": 29.65,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 37
+        },
+        "before_resolution_mix": {
+          "576": 20
+        },
+        "after_resolution_mix": {
+          "576": 20
+        },
+        "before_mean_service_ms": 52.000783900439274,
+        "after_mean_service_ms": 49.682240751280915,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 630,
+          "timestamp_s": 31.5,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 44
+        },
+        "before_resolution_mix": {
+          "576": 20
+        },
+        "after_resolution_mix": {
+          "576": 20
+        },
+        "before_mean_service_ms": 53.66819625123753,
+        "after_mean_service_ms": 51.885673950164346,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 674,
+          "timestamp_s": 33.7,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 32
+        },
+        "before_resolution_mix": {
+          "576": 20
+        },
+        "after_resolution_mix": {
+          "576": 20
+        },
+        "before_mean_service_ms": 49.70157185089192,
+        "after_mean_service_ms": 51.0858666493732,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 706,
+          "timestamp_s": 35.3,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 226
+        },
+        "before_resolution_mix": {
+          "576": 20
+        },
+        "after_resolution_mix": {
+          "576": 20
+        },
+        "before_mean_service_ms": 52.22453625174239,
+        "after_mean_service_ms": 53.6978315009037,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 932,
+          "timestamp_s": 46.6,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 29
+        },
+        "before_resolution_mix": {
+          "576": 20
+        },
+        "after_resolution_mix": {
+          "576": 20
+        },
+        "before_mean_service_ms": 53.138741147267865,
+        "after_mean_service_ms": 51.648707001731964,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 961,
+          "timestamp_s": 48.05,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 178
+        },
+        "before_resolution_mix": {
+          "576": 20
+        },
+        "after_resolution_mix": {
+          "576": 20
+        },
+        "before_mean_service_ms": 49.25923685223097,
+        "after_mean_service_ms": 51.389997149817646,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 1139,
+          "timestamp_s": 56.95,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 61
+        },
+        "before_resolution_mix": {
+          "576": 20
+        },
+        "after_resolution_mix": {
+          "576": 20
+        },
+        "before_mean_service_ms": 50.27237110043643,
+        "after_mean_service_ms": 49.246237549959915,
+        "first_switch_source_delay_ms": null
+      }
+    ],
+    "kaist_guarded-no-scene": [
+      {
+        "event": {
+          "frame_index": 71,
+          "timestamp_s": 3.55,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 56
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 41.49882100173272,
+        "after_mean_service_ms": 38.949756349029485,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 127,
+          "timestamp_s": 6.35,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 137
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 39.9210421492171,
+        "after_mean_service_ms": 40.32194580431678,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 264,
+          "timestamp_s": 13.2,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 23
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 39.919895099592395,
+        "after_mean_service_ms": 40.18254039983731,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 335,
+          "timestamp_s": 16.75,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 258
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 39.72355584992329,
+        "after_mean_service_ms": 39.602290548646124,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 593,
+          "timestamp_s": 29.65,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 37
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 41.28723754838575,
+        "after_mean_service_ms": 40.39451339995139,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 630,
+          "timestamp_s": 31.5,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 44
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 41.68235469987849,
+        "after_mean_service_ms": 40.802678401814774,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 674,
+          "timestamp_s": 33.7,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 32
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 39.83705609862227,
+        "after_mean_service_ms": 41.27145779784769,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 706,
+          "timestamp_s": 35.3,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 226
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 39.6866050970857,
+        "after_mean_service_ms": 39.78671019867761,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 932,
+          "timestamp_s": 46.6,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 29
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 39.96578389778733,
+        "after_mean_service_ms": 40.92511479902896,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 961,
+          "timestamp_s": 48.05,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 178
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 41.72692214924609,
+        "after_mean_service_ms": 39.17010254954221,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 1139,
+          "timestamp_s": 56.95,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 61
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 40.41427774936892,
+        "after_mean_service_ms": 40.79184005022398,
+        "first_switch_source_delay_ms": null
+      }
+    ],
+    "kaist_guarded-no-hysteresis": [
+      {
+        "event": {
+          "frame_index": 71,
+          "timestamp_s": 3.55,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 56
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 39.18223985019722,
+        "after_mean_service_ms": 40.292664647859056,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 127,
+          "timestamp_s": 6.35,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 137
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 42.45687299844576,
+        "after_mean_service_ms": 40.969599899835885,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 264,
+          "timestamp_s": 13.2,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 23
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 40.280839751358144,
+        "after_mean_service_ms": 40.345440198871074,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 335,
+          "timestamp_s": 16.75,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 258
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 40.93117735174019,
+        "after_mean_service_ms": 40.56607414895552,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 593,
+          "timestamp_s": 29.65,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 37
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 39.5763877502759,
+        "after_mean_service_ms": 41.0357925495191,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 630,
+          "timestamp_s": 31.5,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 44
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 40.71533030219143,
+        "after_mean_service_ms": 40.772908748476766,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 674,
+          "timestamp_s": 33.7,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 32
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 41.27087890083203,
+        "after_mean_service_ms": 42.130640247341944,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 706,
+          "timestamp_s": 35.3,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 226
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 41.71294909683638,
+        "after_mean_service_ms": 41.14036414975999,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 932,
+          "timestamp_s": 46.6,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 29
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 38.788159398245625,
+        "after_mean_service_ms": 40.727441800845554,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 961,
+          "timestamp_s": 48.05,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 178
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 40.44227335252799,
+        "after_mean_service_ms": 40.231201400456484,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 1139,
+          "timestamp_s": 56.95,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 61
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 41.69407399967895,
+        "after_mean_service_ms": 40.86733799849753,
+        "first_switch_source_delay_ms": null
+      }
+    ],
+    "kaist_fixed-480": [
+      {
+        "event": {
+          "frame_index": 71,
+          "timestamp_s": 3.55,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 56
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 40.79424574956647,
+        "after_mean_service_ms": 39.64402299898211,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 127,
+          "timestamp_s": 6.35,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 137
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 40.523040950211,
+        "after_mean_service_ms": 41.829580201010685,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 264,
+          "timestamp_s": 13.2,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 23
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 40.497749299538555,
+        "after_mean_service_ms": 41.156282399606425,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 335,
+          "timestamp_s": 16.75,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 258
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 41.181681850139285,
+        "after_mean_service_ms": 41.44786164833931,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 593,
+          "timestamp_s": 29.65,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 37
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 41.4035320012772,
+        "after_mean_service_ms": 40.89666770014446,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 630,
+          "timestamp_s": 31.5,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 44
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 41.44127929903334,
+        "after_mean_service_ms": 41.13830079950276,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 674,
+          "timestamp_s": 33.7,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 32
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 39.16942510040826,
+        "after_mean_service_ms": 40.921301300113555,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 706,
+          "timestamp_s": 35.3,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 226
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 40.74294425081462,
+        "after_mean_service_ms": 40.30592070048442,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 932,
+          "timestamp_s": 46.6,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 29
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 42.4617620978097,
+        "after_mean_service_ms": 41.552244401100324,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 961,
+          "timestamp_s": 48.05,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 178
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 42.2105614998145,
+        "after_mean_service_ms": 39.67732880191761,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 1139,
+          "timestamp_s": 56.95,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 61
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 40.773986197746126,
+        "after_mean_service_ms": 41.20539979921887,
+        "first_switch_source_delay_ms": null
+      }
+    ],
+    "kaist_fixed-544": [
+      {
+        "event": {
+          "frame_index": 71,
+          "timestamp_s": 3.55,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 56
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 45.821408752090065,
+        "after_mean_service_ms": 43.0777893983759,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 127,
+          "timestamp_s": 6.35,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 137
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 45.819877599569736,
+        "after_mean_service_ms": 43.96280504952301,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 264,
+          "timestamp_s": 13.2,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 23
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 43.10367280195351,
+        "after_mean_service_ms": 45.513465398107655,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 335,
+          "timestamp_s": 16.75,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 258
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 43.476486599683994,
+        "after_mean_service_ms": 44.17287949909223,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 593,
+          "timestamp_s": 29.65,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 37
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 44.9426767489058,
+        "after_mean_service_ms": 45.65161170103238,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 630,
+          "timestamp_s": 31.5,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 44
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 46.2360475488822,
+        "after_mean_service_ms": 43.58058700017864,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 674,
+          "timestamp_s": 33.7,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 32
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 45.84556559930206,
+        "after_mean_service_ms": 45.24583879538113,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 706,
+          "timestamp_s": 35.3,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 226
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 45.98503079614602,
+        "after_mean_service_ms": 44.62254255049629,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 932,
+          "timestamp_s": 46.6,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 29
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 44.972403998690424,
+        "after_mean_service_ms": 43.78129715114483,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 961,
+          "timestamp_s": 48.05,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 178
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 44.249512301030336,
+        "after_mean_service_ms": 45.00762585157645,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 1139,
+          "timestamp_s": 56.95,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 61
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 43.27466365284636,
+        "after_mean_service_ms": 46.43925940254121,
+        "first_switch_source_delay_ms": null
+      }
+    ],
+    "kaist_guarded-no-resource": [
+      {
+        "event": {
+          "frame_index": 71,
+          "timestamp_s": 3.55,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 56
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 44.35161510045873,
+        "after_mean_service_ms": 42.98374434947618,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 127,
+          "timestamp_s": 6.35,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 137
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 43.871096150542144,
+        "after_mean_service_ms": 42.23573819908779,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 264,
+          "timestamp_s": 13.2,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 23
+        },
+        "before_resolution_mix": {
+          "544": 13,
+          "640": 7
+        },
+        "after_resolution_mix": {
+          "640": 17,
+          "544": 3
+        },
+        "before_mean_service_ms": 45.53794719977304,
+        "after_mean_service_ms": 46.59493825092795,
+        "first_switch_source_delay_ms": 850.0000000000014
+      },
+      {
+        "event": {
+          "frame_index": 335,
+          "timestamp_s": 16.75,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 258
+        },
+        "before_resolution_mix": {
+          "640": 9,
+          "544": 11
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 48.195701051008655,
+        "after_mean_service_ms": 44.344939799339045,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 593,
+          "timestamp_s": 29.65,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 37
+        },
+        "before_resolution_mix": {
+          "544": 17,
+          "640": 3
+        },
+        "after_resolution_mix": {
+          "640": 20
+        },
+        "before_mean_service_ms": 46.97091715061106,
+        "after_mean_service_ms": 48.065176798263565,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 630,
+          "timestamp_s": 31.5,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 44
+        },
+        "before_resolution_mix": {
+          "640": 7,
+          "544": 13
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 45.39019129879307,
+        "after_mean_service_ms": 45.764233200316085,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 674,
+          "timestamp_s": 33.7,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 32
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 45.205181049823295,
+        "after_mean_service_ms": 44.68804615025874,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 706,
+          "timestamp_s": 35.3,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 226
+        },
+        "before_resolution_mix": {
+          "544": 11,
+          "640": 9
+        },
+        "after_resolution_mix": {
+          "640": 7,
+          "544": 13
+        },
+        "before_mean_service_ms": 45.85730465114466,
+        "after_mean_service_ms": 46.91660269963904,
+        "first_switch_source_delay_ms": 350.0000000000014
+      },
+      {
+        "event": {
+          "frame_index": 932,
+          "timestamp_s": 46.6,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 29
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 46.267455050110584,
+        "after_mean_service_ms": 43.98548235039925,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 961,
+          "timestamp_s": 48.05,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 178
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 43.20355535091949,
+        "after_mean_service_ms": 44.448471349460306,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 1139,
+          "timestamp_s": 56.95,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 61
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 45.2269551497011,
+        "after_mean_service_ms": 46.85532130097272,
+        "first_switch_source_delay_ms": null
+      }
+    ],
+    "kaist_guarded": [
+      {
+        "event": {
+          "frame_index": 71,
+          "timestamp_s": 3.55,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 56
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 41.54735804841039,
+        "after_mean_service_ms": 41.681490150949685,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 127,
+          "timestamp_s": 6.35,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 137
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 39.035503302147845,
+        "after_mean_service_ms": 40.045335352624534,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 264,
+          "timestamp_s": 13.2,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 23
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 43.0120259479736,
+        "after_mean_service_ms": 42.37510770035442,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 335,
+          "timestamp_s": 16.75,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 258
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 40.299102497374406,
+        "after_mean_service_ms": 38.807320749765495,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 593,
+          "timestamp_s": 29.65,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 37
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 40.62643235156429,
+        "after_mean_service_ms": 41.148660401813686,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 630,
+          "timestamp_s": 31.5,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 44
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 40.960404500947334,
+        "after_mean_service_ms": 44.13308275179588,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 674,
+          "timestamp_s": 33.7,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 32
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 42.67903625004692,
+        "after_mean_service_ms": 42.08129619801184,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 706,
+          "timestamp_s": 35.3,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 226
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 41.44032844924368,
+        "after_mean_service_ms": 38.721624949539546,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 932,
+          "timestamp_s": 46.6,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 29
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 43.591112799185794,
+        "after_mean_service_ms": 40.380464200279675,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 961,
+          "timestamp_s": 48.05,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 178
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 40.26479579988518,
+        "after_mean_service_ms": 39.61072570018587,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 1139,
+          "timestamp_s": 56.95,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 61
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 41.289575299742864,
+        "after_mean_service_ms": 40.86869609891437,
+        "first_switch_source_delay_ms": null
+      }
+    ],
+    "kaist_guarded-no-switch-cost": [
+      {
+        "event": {
+          "frame_index": 71,
+          "timestamp_s": 3.55,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 56
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 41.0179953010811,
+        "after_mean_service_ms": 40.6530427011603,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 127,
+          "timestamp_s": 6.35,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 137
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 39.73050360218622,
+        "after_mean_service_ms": 40.15818645057152,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 264,
+          "timestamp_s": 13.2,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 23
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 39.81198920082534,
+        "after_mean_service_ms": 40.12786909879651,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 335,
+          "timestamp_s": 16.75,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 258
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 40.73763274936937,
+        "after_mean_service_ms": 41.29017339873826,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 593,
+          "timestamp_s": 29.65,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 37
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 40.401607097737724,
+        "after_mean_service_ms": 40.86160334991291,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 630,
+          "timestamp_s": 31.5,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 44
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 41.01439319856581,
+        "after_mean_service_ms": 42.26334190097987,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 674,
+          "timestamp_s": 33.7,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 32
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 41.40599820020725,
+        "after_mean_service_ms": 40.660262599703856,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 706,
+          "timestamp_s": 35.3,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 226
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 42.748039899015566,
+        "after_mean_service_ms": 40.67680809748708,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 932,
+          "timestamp_s": 46.6,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 29
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 39.62329255009536,
+        "after_mean_service_ms": 41.212460250244476,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 961,
+          "timestamp_s": 48.05,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 178
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 40.9502867005358,
+        "after_mean_service_ms": 40.455795051093446,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 1139,
+          "timestamp_s": 56.95,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 61
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 41.06812390018604,
+        "after_mean_service_ms": 41.39341334885103,
+        "first_switch_source_delay_ms": null
+      }
+    ],
+    "kaist_sequence": [
+      {
+        "event": {
+          "frame_index": 71,
+          "timestamp_s": 3.55,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 56
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 44.543172898556804,
+        "after_mean_service_ms": 45.364238797628786,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 127,
+          "timestamp_s": 6.35,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 137
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 42.45946444934816,
+        "after_mean_service_ms": 42.650300150125986,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 264,
+          "timestamp_s": 13.2,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 23
+        },
+        "before_resolution_mix": {
+          "544": 13,
+          "640": 7
+        },
+        "after_resolution_mix": {
+          "640": 17,
+          "544": 3
+        },
+        "before_mean_service_ms": 47.483524651033804,
+        "after_mean_service_ms": 45.80629814736312,
+        "first_switch_source_delay_ms": 850.0000000000014
+      },
+      {
+        "event": {
+          "frame_index": 335,
+          "timestamp_s": 16.75,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 258
+        },
+        "before_resolution_mix": {
+          "640": 9,
+          "544": 11
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 48.77328395086806,
+        "after_mean_service_ms": 42.80456614869763,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 593,
+          "timestamp_s": 29.65,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 37
+        },
+        "before_resolution_mix": {
+          "544": 17,
+          "640": 3
+        },
+        "after_resolution_mix": {
+          "640": 20
+        },
+        "before_mean_service_ms": 45.60312865069136,
+        "after_mean_service_ms": 47.204123349365545,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 630,
+          "timestamp_s": 31.5,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 44
+        },
+        "before_resolution_mix": {
+          "640": 7,
+          "544": 13
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 47.73673540039454,
+        "after_mean_service_ms": 43.437796447688015,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 674,
+          "timestamp_s": 33.7,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 32
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 43.67009955094545,
+        "after_mean_service_ms": 45.57811165068415,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 706,
+          "timestamp_s": 35.3,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 226
+        },
+        "before_resolution_mix": {
+          "544": 11,
+          "640": 9
+        },
+        "after_resolution_mix": {
+          "640": 7,
+          "544": 13
+        },
+        "before_mean_service_ms": 48.00499549965025,
+        "after_mean_service_ms": 46.4712545988732,
+        "first_switch_source_delay_ms": 350.0000000000014
+      },
+      {
+        "event": {
+          "frame_index": 932,
+          "timestamp_s": 46.6,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 29
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 44.608362099097576,
+        "after_mean_service_ms": 46.51901260076556,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 961,
+          "timestamp_s": 48.05,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 178
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 45.694790850393474,
+        "after_mean_service_ms": 44.70222479867516,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 1139,
+          "timestamp_s": 56.95,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 61
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 45.57595409787609,
+        "after_mean_service_ms": 45.47350174980238,
+        "first_switch_source_delay_ms": null
+      }
+    ],
+    "kaist_fixed-640": [
+      {
+        "event": {
+          "frame_index": 71,
+          "timestamp_s": 3.55,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 56
+        },
+        "before_resolution_mix": {
+          "640": 20
+        },
+        "after_resolution_mix": {
+          "640": 20
+        },
+        "before_mean_service_ms": 46.978864650736796,
+        "after_mean_service_ms": 45.363362749048974,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 127,
+          "timestamp_s": 6.35,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 137
+        },
+        "before_resolution_mix": {
+          "640": 20
+        },
+        "after_resolution_mix": {
+          "640": 20
+        },
+        "before_mean_service_ms": 48.032203099137405,
+        "after_mean_service_ms": 46.08830579891219,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 264,
+          "timestamp_s": 13.2,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 23
+        },
+        "before_resolution_mix": {
+          "640": 20
+        },
+        "after_resolution_mix": {
+          "640": 20
+        },
+        "before_mean_service_ms": 44.434082850057166,
+        "after_mean_service_ms": 42.44190014869673,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 335,
+          "timestamp_s": 16.75,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 258
+        },
+        "before_resolution_mix": {
+          "640": 20
+        },
+        "after_resolution_mix": {
+          "640": 20
+        },
+        "before_mean_service_ms": 46.928770602244185,
+        "after_mean_service_ms": 46.953968549496494,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 593,
+          "timestamp_s": 29.65,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 37
+        },
+        "before_resolution_mix": {
+          "640": 20
+        },
+        "after_resolution_mix": {
+          "640": 20
+        },
+        "before_mean_service_ms": 42.053164548269706,
+        "after_mean_service_ms": 46.406376000959426,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 630,
+          "timestamp_s": 31.5,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 44
+        },
+        "before_resolution_mix": {
+          "640": 20
+        },
+        "after_resolution_mix": {
+          "640": 20
+        },
+        "before_mean_service_ms": 48.099863048264524,
+        "after_mean_service_ms": 47.59150110039627,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 674,
+          "timestamp_s": 33.7,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 32
+        },
+        "before_resolution_mix": {
+          "640": 20
+        },
+        "after_resolution_mix": {
+          "640": 20
+        },
+        "before_mean_service_ms": 48.54988980005146,
+        "after_mean_service_ms": 47.88884049921762,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 706,
+          "timestamp_s": 35.3,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 226
+        },
+        "before_resolution_mix": {
+          "640": 20
+        },
+        "after_resolution_mix": {
+          "640": 20
+        },
+        "before_mean_service_ms": 47.969671399187064,
+        "after_mean_service_ms": 46.81053849635646,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 932,
+          "timestamp_s": 46.6,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 29
+        },
+        "before_resolution_mix": {
+          "640": 20
+        },
+        "after_resolution_mix": {
+          "640": 20
+        },
+        "before_mean_service_ms": 47.781183850747766,
+        "after_mean_service_ms": 46.75741044993629,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 961,
+          "timestamp_s": 48.05,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 178
+        },
+        "before_resolution_mix": {
+          "640": 20
+        },
+        "after_resolution_mix": {
+          "640": 20
+        },
+        "before_mean_service_ms": 46.7765237983258,
+        "after_mean_service_ms": 47.8966576512903,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 1139,
+          "timestamp_s": 56.95,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 61
+        },
+        "before_resolution_mix": {
+          "640": 20
+        },
+        "after_resolution_mix": {
+          "640": 20
+        },
+        "before_mean_service_ms": 46.0696933507279,
+        "after_mean_service_ms": 46.77231494933949,
+        "first_switch_source_delay_ms": null
+      }
+    ],
+    "kaist_deadline": [
+      {
+        "event": {
+          "frame_index": 71,
+          "timestamp_s": 3.55,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 56
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 40.34858149825595,
+        "after_mean_service_ms": 39.916680597525556,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 127,
+          "timestamp_s": 6.35,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 137
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 39.03320344979875,
+        "after_mean_service_ms": 40.598243949352764,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 264,
+          "timestamp_s": 13.2,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 23
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 41.781450051348656,
+        "after_mean_service_ms": 40.52423134926357,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 335,
+          "timestamp_s": 16.75,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 258
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 40.62786369831883,
+        "after_mean_service_ms": 39.879444850521395,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 593,
+          "timestamp_s": 29.65,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 37
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 39.827885297563625,
+        "after_mean_service_ms": 39.21300319925649,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 630,
+          "timestamp_s": 31.5,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 44
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 39.133811200008495,
+        "after_mean_service_ms": 40.104597301979084,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 674,
+          "timestamp_s": 33.7,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 32
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 40.93933474941878,
+        "after_mean_service_ms": 39.45892590127187,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 706,
+          "timestamp_s": 35.3,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 226
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 38.94014640027308,
+        "after_mean_service_ms": 39.58267044799868,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 932,
+          "timestamp_s": 46.6,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 29
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 38.84648015155108,
+        "after_mean_service_ms": 39.5612965527107,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 961,
+          "timestamp_s": 48.05,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 178
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 40.33733440301148,
+        "after_mean_service_ms": 40.23029154850519,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 1139,
+          "timestamp_s": 56.95,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 61
+        },
+        "before_resolution_mix": {
+          "480": 20
+        },
+        "after_resolution_mix": {
+          "480": 20
+        },
+        "before_mean_service_ms": 41.18374754834804,
+        "after_mean_service_ms": 39.28712990091299,
+        "first_switch_source_delay_ms": null
+      }
+    ],
+    "kaist_aimd": [
+      {
+        "event": {
+          "frame_index": 71,
+          "timestamp_s": 3.55,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 56
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 8,
+          "480": 12
+        },
+        "before_mean_service_ms": 43.98152919820859,
+        "after_mean_service_ms": 43.96043995002401,
+        "first_switch_source_delay_ms": 400.00000000000034
+      },
+      {
+        "event": {
+          "frame_index": 127,
+          "timestamp_s": 6.35,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 137
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 42.67868210008601,
+        "after_mean_service_ms": 42.94495970243588,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 264,
+          "timestamp_s": 13.2,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 23
+        },
+        "before_resolution_mix": {
+          "480": 16,
+          "544": 4
+        },
+        "after_resolution_mix": {
+          "544": 15,
+          "480": 5
+        },
+        "before_mean_service_ms": 40.50448049893021,
+        "after_mean_service_ms": 42.32633909850847,
+        "first_switch_source_delay_ms": 750.0
+      },
+      {
+        "event": {
+          "frame_index": 335,
+          "timestamp_s": 16.75,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 258
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 43.377542449889006,
+        "after_mean_service_ms": 42.76517919861362,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 593,
+          "timestamp_s": 29.65,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 37
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 44.50845750034205,
+        "after_mean_service_ms": 44.191951851098565,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 630,
+          "timestamp_s": 31.5,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 44
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 7,
+          "480": 13
+        },
+        "before_mean_service_ms": 43.40990305136074,
+        "after_mean_service_ms": 43.50140749957063,
+        "first_switch_source_delay_ms": 350.0000000000014
+      },
+      {
+        "event": {
+          "frame_index": 674,
+          "timestamp_s": 33.7,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 32
+        },
+        "before_resolution_mix": {
+          "480": 19,
+          "544": 1
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 40.36954800103558,
+        "after_mean_service_ms": 43.17020944945398,
+        "first_switch_source_delay_ms": null
+      },
+      {
+        "event": {
+          "frame_index": 706,
+          "timestamp_s": 35.3,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 226
+        },
+        "before_resolution_mix": {
+          "544": 17,
+          "480": 3
+        },
+        "after_resolution_mix": {
+          "480": 7,
+          "544": 13
+        },
+        "before_mean_service_ms": 45.50790665089153,
+        "after_mean_service_ms": 40.85395999936736,
+        "first_switch_source_delay_ms": 350.0000000000014
+      },
+      {
+        "event": {
+          "frame_index": 932,
+          "timestamp_s": 46.6,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 29
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 14,
+          "480": 6
+        },
+        "before_mean_service_ms": 43.209427299007075,
+        "after_mean_service_ms": 43.670273203315446,
+        "first_switch_source_delay_ms": 699.9999999999957
+      },
+      {
+        "event": {
+          "frame_index": 961,
+          "timestamp_s": 48.05,
+          "from": "person-present",
+          "to": "no-person",
+          "stable_segment_frames": 178
+        },
+        "before_resolution_mix": {
+          "544": 5,
+          "480": 15
+        },
+        "after_resolution_mix": {
+          "480": 13,
+          "544": 7
+        },
+        "before_mean_service_ms": 41.916323751502205,
+        "after_mean_service_ms": 40.541341651260154,
+        "first_switch_source_delay_ms": 650.0000000000057
+      },
+      {
+        "event": {
+          "frame_index": 1139,
+          "timestamp_s": 56.95,
+          "from": "no-person",
+          "to": "person-present",
+          "stable_segment_frames": 61
+        },
+        "before_resolution_mix": {
+          "544": 20
+        },
+        "after_resolution_mix": {
+          "544": 20
+        },
+        "before_mean_service_ms": 43.09387295070337,
+        "after_mean_service_ms": 41.50957870078855,
+        "first_switch_source_delay_ms": null
+      }
+    ]
+  }
+}

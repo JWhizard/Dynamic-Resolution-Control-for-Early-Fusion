@@ -1,4 +1,12 @@
 const $ = (id) => document.getElementById(id);
+const cameraUrl = new URL(window.location.href);
+cameraUrl.port = '8080'; cameraUrl.pathname = '/'; cameraUrl.search = ''; cameraUrl.hash = '';
+$('cpp-workspace').href = cameraUrl.href;
+try { document.body.classList.toggle('light-theme', localStorage.getItem('fusion-theme') === 'light'); } catch (_) {}
+$('theme-toggle').addEventListener('click', () => {
+  const light = document.body.classList.toggle('light-theme');
+  try { localStorage.setItem('fusion-theme', light ? 'light' : 'dark'); } catch (_) {}
+});
 const colors = { Bus: '#ffa62b', Car: '#36d399', Lamp: '#facc15', Motorcycle: '#f472b6', People: '#60a5fa', Truck: '#c084fc' };
 let lastFrame = 0;
 let toastTimer;
@@ -53,11 +61,14 @@ function render(status) {
   setSegment('policy', status.policy); setSegment('view', status.view);
   renderCounts(latest.class_counts);
 
-  const healthy = status.running && rgb.connected && thermal.connected && !status.error;
+  const stale = status.latest_age_ms == null || status.latest_age_ms > 5000;
+  const healthy = status.running && rgb.connected && thermal.connected && !status.error && !stale;
+  $('live-label').textContent = healthy ? 'LIVE' : status.running ? 'WAITING' : 'STOPPED';
   $('state-dot').className = `state-dot ${healthy ? 'ok' : status.error ? 'error' : ''}`;
   $('state-label').textContent = status.loading ? 'Loading model' : healthy ? 'System online' : status.running ? 'Waiting for input' : 'Pipeline stopped';
-  $('error-banner').classList.toggle('hidden', !status.error);
-  $('error-text').textContent = status.error || '';
+  const sourceError = status.running ? (rgb.error || thermal.error) : null;
+  $('error-banner').classList.toggle('hidden', !status.error && !sourceError);
+  $('error-text').textContent = status.error || sourceError || '';
   $('stream-empty').classList.toggle('hidden', Boolean(latest.frame));
   const toggle = $('run-toggle');
   toggle.classList.toggle('stopped', !status.running);

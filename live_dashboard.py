@@ -33,6 +33,7 @@ from flask import Flask, Response, jsonify, render_template, request
 from controller_heuristic import Fixed
 from controller_sequence import SequenceController
 from fusion.preprocess import detect, load_model
+from flir_bridge import capture_factory as open_capture
 
 REPO = Path(__file__).resolve().parent
 DEFAULT_WEIGHTS = REPO / "runs" / "ms_fusion_seed42" / "weights" / "best.pt"
@@ -100,7 +101,7 @@ class CaptureWorker:
         name: str,
         source: int | str,
         loop_files: bool = False,
-        capture_factory: Callable = cv2.VideoCapture,
+        capture_factory: Callable = open_capture,
     ):
         self.name = name
         self.source = source
@@ -145,6 +146,7 @@ class CaptureWorker:
             "frames_read": self.frames_read,
             "reconnects": self.reconnects,
             "shape": list(packet.frame.shape) if packet else None,
+            "age_ms": round((time.monotonic() - packet.timestamp) * 1000, 1) if packet else None,
         }
 
     def _publish(self, frame: np.ndarray) -> None:
@@ -296,7 +298,7 @@ class DashboardRuntime:
         confidence: float = 0.25,
         max_skew_ms: float = 50.0,
         loop_files: bool = False,
-        capture_factory: Callable = cv2.VideoCapture,
+        capture_factory: Callable = open_capture,
         snapshot_dir: str | Path = REPO / "captures",
     ):
         self.device = torch.device("cuda:0" if device == "auto" and torch.cuda.is_available() else
@@ -326,6 +328,7 @@ class DashboardRuntime:
         self._jpeg: bytes | None = None
         self._frame_sequence = 0
         self._metadata: dict = {}
+        self._last_frame_at: float | None = None
         self._latencies: deque[float] = deque(maxlen=120)
         self._completed_at: deque[float] = deque(maxlen=120)
 
@@ -448,6 +451,7 @@ class DashboardRuntime:
                     self.error = None
                     self._jpeg = encoded.tobytes()
                     self._metadata = metadata
+                    self._last_frame_at = completed
                     self._frame_sequence += 1
                     # CUDA kernel setup makes the first frames unrepresentative. Keep
                     # displaying them, but exclude them from the rolling live rate.
@@ -481,6 +485,8 @@ class DashboardRuntime:
                 "fps": round(fps, 1),
                 "mean_inference_ms": round(float(np.mean(latency)), 2) if latency else None,
                 "latest": dict(self._metadata),
+                "latest_age_ms": round((time.monotonic() - self._last_frame_at) * 1000, 1)
+                if self._last_frame_at is not None else None,
                 "sources": self.source.status(),
             }
 
@@ -547,8 +553,10 @@ def create_app(runtime) -> Flask:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--rgb-source", required=True, help="camera index, video file, or RTSP URL")
-    parser.add_argument("--thermal-source", required=True, help="camera index, video file, or RTSP URL")
+    parser.add_argument("--rgb-source", help="camera index, video file, RTSP URL, or HTTP JPEG endpoint")
+    parser.add_argument("--thermal-source", help="camera index, video file, RTSP URL, or HTTP JPEG endpoint")
+    parser.add_argument("--flir-server", help="use calibrated RGB/IR snapshots from a FLIR C++ server, e.g. http://127.0.0.1:8080")
+    parser.add_argument("--cpu-threads", type=int, default=4)
     parser.add_argument("--weights", default=str(DEFAULT_WEIGHTS))
     parser.add_argument("--controller", default=str(DEFAULT_CONTROLLER))
     parser.add_argument("--device", default="auto", help="auto, cpu, cuda:0, ...")
@@ -559,6 +567,19 @@ def main() -> None:
     parser.add_argument("--port", type=int, default=5000)
     parser.add_argument("--no-autostart", action="store_true")
     args = parser.parse_args()
+    if args.cpu_threads < 1:
+        parser.error("--cpu-threads must be positive")
+    torch.set_num_threads(args.cpu_threads)
+    if args.flir_server:
+        if args.rgb_source or args.thermal_source:
+            parser.error("use --flir-server or explicit sources")
+        base = args.flir_server.rstrip("/")
+        if not base.startswith(("http://", "https://")):
+            parser.error("--flir-server must be an HTTP(S) URL")
+        args.rgb_source = base + "/api/frame/fusion/rgb"
+        args.thermal_source = base + "/api/frame/fusion/thermal"
+    if not args.rgb_source or not args.thermal_source:
+        parser.error("provide --flir-server or both --rgb-source and --thermal-source")
 
     runtime = DashboardRuntime(
         parse_source(args.rgb_source), parse_source(args.thermal_source), args.weights, args.controller,
@@ -568,6 +589,7 @@ def main() -> None:
 
     def shutdown(_signum=None, _frame=None):
         runtime.close()
+        raise SystemExit(0)
 
     signal.signal(signal.SIGINT, shutdown)
     signal.signal(signal.SIGTERM, shutdown)

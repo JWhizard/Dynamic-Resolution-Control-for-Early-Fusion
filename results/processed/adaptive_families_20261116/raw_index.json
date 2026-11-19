@@ -1,0 +1,490 @@
+{
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/fasterrcnn_guarded.json": {
+    "bytes": 3257267,
+    "sha256": "dd6e82d0ac5bda2b695ed216054e63c4dd66f8b689ef69e1f931c74d43b805bf"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/yolo26n_ms_fixed-544.json": {
+    "bytes": 3396416,
+    "sha256": "fa67bd5dc4aecf2c58b7f8ff19b893f0e0eacd5315f2937b3c5e61554417ea58"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/yolo26n_ms_guarded.json": {
+    "bytes": 3361552,
+    "sha256": "d81f9721b5cb9e9382b528683319df6fe5c451aef60ee01fe1a7720097934257"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/fasterrcnn_fixed-480.json": {
+    "bytes": 3266258,
+    "sha256": "e6ed9fd36473671f7ce3e8c4bed3bff2bff89a26f41d00b36ad3e80ebac81d44"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/yolo26n_ms_fixed-480.json": {
+    "bytes": 3350741,
+    "sha256": "5cd5043106030f10e00ae28d3ea89567c83f326b33d5420ee419fe3fccd014f1"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/yolo26n_ms_aimd.json": {
+    "bytes": 3360292,
+    "sha256": "3c3d5ceb0f02e2d879a578bb81f518cf31e5463559e1169fa7db0fc5408ab668"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/retinanet_fixed-544.json": {
+    "bytes": 11546166,
+    "sha256": "c4b1ca9be3310e30d9cb3d1f935d3d606f795f8459bd2bcaf23b7f3105147e8e"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/fasterrcnn_fixed-640.json": {
+    "bytes": 3314922,
+    "sha256": "b145870c240b3097fd4e4208df2116dfc93a304b174db125b12351cd5540814b"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/retinanet_fixed-480.json": {
+    "bytes": 11769485,
+    "sha256": "fb53fc6f6881e15a6960723293fa6be7e9d91ae2b3be224847e7b094f3088a2c"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/yolo26n_ms_fixed-576.json": {
+    "bytes": 3519687,
+    "sha256": "4a4b10a1b57cac5fed81353720df9094d98cc3cd2b39a727dff03c90985ed305"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/fasterrcnn_fixed-544.json": {
+    "bytes": 3181039,
+    "sha256": "1de9dbf22c3d9ec02efad1582adf6e788526756e6525265cbba412d69863f48e"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/fasterrcnn_deadline.json": {
+    "bytes": 3356275,
+    "sha256": "1d5cf6260f5bc25a7bccc99abc06c062217cbfda47aa55e168bd2e16f0924e93"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/retinanet_sequence.json": {
+    "bytes": 11580150,
+    "sha256": "e667c38d584c89ace817cf8954b0562af3c7ac19fe6d97ba55bef60565e8f14e"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/COMPLETED.json": {
+    "bytes": 100,
+    "sha256": "e73b02bed04b6726cc78037328149d2e13af580980924c851b03660038736289"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/yolo26n_ms_sequence.json": {
+    "bytes": 3504509,
+    "sha256": "9308d6d9df4e681e778cef7f0c1f564a6baed85ae998feb6b1ffbf4804de0d63"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/fasterrcnn_fixed-576.json": {
+    "bytes": 3091764,
+    "sha256": "0c580d396bca7afbcb2d0e8c20d0bd3324d5ba04ccc5f685c9a2146ed367e20b"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/retinanet_guarded.json": {
+    "bytes": 11769258,
+    "sha256": "248344d11e37848d698c9cc812b548b0526fedb69192e8557fcb3dfe14304a1e"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/fasterrcnn_sequence.json": {
+    "bytes": 3285560,
+    "sha256": "56b72fc8980e3ef746522b06e555f55bae6ff78ad34eaa6f58ebda56c5558455"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/adaptive_20261116.log": {
+    "bytes": 4766,
+    "sha256": "629cff105190c2e737f10e6b1bd0d7a9161cad387bf6c6e1820b181557cacba3"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/fasterrcnn_aimd.json": {
+    "bytes": 3508549,
+    "sha256": "020d4f31c74278d98ab7758ecd5b9209e61e2adbf59f6c5db84f4126bb6be2c2"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/retinanet_deadline.json": {
+    "bytes": 11769535,
+    "sha256": "d4827d84abd48fa9b118501c7b163739204ec418f457304da980b1174714ab49"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/environment.json": {
+    "bytes": 1357,
+    "sha256": "c705583b192ae5c2ce807417d78f1d9ca8d07c5f8d8be50ce494fb425997b75b"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/retinanet_fixed-576.json": {
+    "bytes": 11585857,
+    "sha256": "e8c42852608f72c4766ac2c897cbd78c08e5d66fea9cd4f7867b00cafc9f8557"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/retinanet_fixed-640.json": {
+    "bytes": 11610044,
+    "sha256": "9b3b076ad726dc8f68286e96067246e7974879ae23c85778c38c66393a0cc371"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/yolo26n_ms_deadline.json": {
+    "bytes": 3358065,
+    "sha256": "b8b233997cab5d8afa3a97ea6df14df7eb81509ea21dbcc295fc1307c897045c"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/job_order.json": {
+    "bytes": 661,
+    "sha256": "2af34b4425b418cbc4691acf68454b48cdd59861f4125eaa4685e3511ecdf87b"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/plan.json": {
+    "bytes": 3046,
+    "sha256": "b5cd4459fb43ede93c227ad80f6d928d84c3d49c085a150cf19f3eb0040d18eb"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/input_integrity.json": {
+    "bytes": 136,
+    "sha256": "64ce860cf2699c5830a5e45646034655bc641a512cde8bae9fe66a99abe99c28"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/yolo26n_ms_fixed-640.json": {
+    "bytes": 3481415,
+    "sha256": "5fe16ceb12fdfdc7254cc0164c9bad16016ca429016c87a93c383ea2f929e4a2"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/summary.json": {
+    "bytes": 47533,
+    "sha256": "152d1e1d453be0e5cbd1c6dd34ee528b32a17f2b47eb1ede61551b8fa703934e"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/retinanet_aimd.json": {
+    "bytes": 11773726,
+    "sha256": "06dfe409b960b3513b16120214caae4bad819d0cd1582ce7b46a6f91da40a13c"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/source/adaptive_manifest_20261116.json": {
+    "bytes": 97884,
+    "sha256": "f0363efbe48dedf3aae9fcb3491204e9c318d13b921d25b70063deb831154817"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/source/probe_features.py": {
+    "bytes": 1826,
+    "sha256": "9c0501a937bbd74b759c85089b825821fe7e6823fae0236c425dce2d9884bec6"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/source/controller_sequence.py": {
+    "bytes": 4669,
+    "sha256": "2f32c46d5f9dc23345298154dba69f7138d0938d5398e2cba223de2211f3a5fd"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/source/fusion/preprocess.py": {
+    "bytes": 3639,
+    "sha256": "08dce7c3a9fa8d0eeecc4eef6a44480e95ebcf16cb955550703f99aedb62fa6c"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/source/heldout_20261116/ground_truth.json": {
+    "bytes": 536692,
+    "sha256": "59132825b7e179713de81897c9ee004fa80824aa570b6d6a831c5f7218b8f57e"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/source/experiments/detector_families.py": {
+    "bytes": 3070,
+    "sha256": "df493e0298fa34322ebe1c23a7e12b2a85dc52a3d8befcf3fca35098fa557e98"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/source/experiments/evaluate_families.py": {
+    "bytes": 8970,
+    "sha256": "f25296297ce6815e2ec16a60808d2a4737ad3496dcf12058d430c83f5491a7aa"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/source/experiments/adaptive_study.py": {
+    "bytes": 9572,
+    "sha256": "9fb099e60aff1cf801eb77c56b3383a10d288ce5010516315dbb8a728b985548"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/source/experiments/power.py": {
+    "bytes": 2572,
+    "sha256": "fc606dcecdd15582ea57f136fd14e69138a618634dd42fc21e357c28432cc8aa"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/source/experiments/policies.py": {
+    "bytes": 3600,
+    "sha256": "c59bda7e6740eb86d991f15ce289a398c73374c702ce1b36540db2b83fff1232"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_workstation_20261116/source/results/processed/sequence/controller.json": {
+    "bytes": 4631,
+    "sha256": "4ace5cab65e0c8ca65b9ac1b6d9b4b18ea9f63ab2b5a2d56d84f58698c1b960e"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/fasterrcnn_guarded.json": {
+    "bytes": 3282649,
+    "sha256": "4945ff17c925fe4d6c18b926d605e2f96ecd683485332ada7afc00560b43144e"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/yolo26n_ms_fixed-544.json": {
+    "bytes": 3392744,
+    "sha256": "9e69e9d02c6a4fe6dae80cd448340658320af7f6c9f8fc7902aec9f26708ddf3"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/yolo26n_ms_guarded.json": {
+    "bytes": 3501898,
+    "sha256": "f05d0e5ea8bb22c28ed5e4526ac7b0dc2663eea848c36a6a536a3f6c6fa11fcb"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/fasterrcnn_fixed-480.json": {
+    "bytes": 3262257,
+    "sha256": "59ddcb169f505e89b96cc3f160135d67a34e5d67c53448c8e573329928018fab"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/yolo26n_ms_fixed-480.json": {
+    "bytes": 3347068,
+    "sha256": "6ca448eb5a74323fb4a1b756f7999eb08059b1d20f45264c97302430a61bfb18"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/yolo26n_ms_aimd.json": {
+    "bytes": 3480214,
+    "sha256": "f856510aafaddd48b07e14bf16d694d9cd98bce1df21884fd7db9aa60bcfbdab"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/retinanet_fixed-544.json": {
+    "bytes": 11542848,
+    "sha256": "97f786c551b98f8479846b12ec940db5bf21c12d7bc8171a830c160d56793064"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/fasterrcnn_fixed-640.json": {
+    "bytes": 3311513,
+    "sha256": "7ccf8ec24d7259507d1926117d7a71bb8ef9987cf919fa69487250c5d294ef92"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/retinanet_fixed-480.json": {
+    "bytes": 11765490,
+    "sha256": "8821bd50cd97a55fcd15a7cce5bfc4a04e29bfa224d6e28028461cd309d7da9b"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/yolo26n_ms_fixed-576.json": {
+    "bytes": 3516012,
+    "sha256": "be42392459581c0347095648f10f2dde9c5cc2b46a16ff55761e8907d5874a64"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/fasterrcnn_fixed-544.json": {
+    "bytes": 3176949,
+    "sha256": "a4d01228adaaff6b289f1d0a42deed3d910fc6bb85d4e9e587c06db6bc84891b"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/fasterrcnn_deadline.json": {
+    "bytes": 3312615,
+    "sha256": "52c63ec8b218dcb3f0fec1cb01e97bd3b9b21246d2fecd848ca558ac7addbdae"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/retinanet_sequence.json": {
+    "bytes": 11576606,
+    "sha256": "54397a097f91f02d11136218d376bdb636d83d02b89f8eefefae309f7678aad2"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/COMPLETED.json": {
+    "bytes": 100,
+    "sha256": "b228ab25933143f2cf4b123a4dba88a3805bb6143cc91854ecfd75f9d40a5801"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/yolo26n_ms_sequence.json": {
+    "bytes": 3500982,
+    "sha256": "b3923a2939b667e6cdd01982fcd496f48d15f32b2e609001f4f69feba69d10e3"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/fasterrcnn_fixed-576.json": {
+    "bytes": 3088480,
+    "sha256": "f4d85e710483452bca7ec4b9b95a1cc00ca5402adfc1a8b8626a8927caad2326"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/retinanet_guarded.json": {
+    "bytes": 11579470,
+    "sha256": "888859c751d6b384995645a8de54a02e4cde528d3d643196eff8c84032caf3f4"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/fasterrcnn_sequence.json": {
+    "bytes": 3281900,
+    "sha256": "7155923337ceda1d828f8340244eb593ef66c785d02e94d691af758bb9536aeb"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/fasterrcnn_aimd.json": {
+    "bytes": 3309406,
+    "sha256": "a1dad3df56a1cc6e7ddc303b8893d3792b7b842994018b83be7f02005ac17541"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/adaptive_buffered_20261116.log": {
+    "bytes": 4770,
+    "sha256": "7f6d01bb5ece8ec003afd9898aab06cb3099fc2c5dfb934b17bbfc520572225d"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/retinanet_deadline.json": {
+    "bytes": 11606558,
+    "sha256": "196bb583b113bdc29b2e7d305488f1177e70524233d7b9754e7719b08133f9a0"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/environment.json": {
+    "bytes": 1357,
+    "sha256": "f6c1371822e4de58f3218c3f2056372302ef1158c486c5f7cf4c90056a4602c1"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/retinanet_fixed-576.json": {
+    "bytes": 11582588,
+    "sha256": "64732fd934c8fb715c4c3f9a6b70dc17e8835f285e5bd642578ac73b70a570d7"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/retinanet_fixed-640.json": {
+    "bytes": 11606776,
+    "sha256": "21e13a1644c5d77372eecf0fa32a8beae28626384ea5c5d502444aa11d9e5cd5"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/yolo26n_ms_deadline.json": {
+    "bytes": 3477971,
+    "sha256": "645314ee862abe7b44c9bff7daeef969024da6f43b27df0fdfa1ae0f4bdd79bf"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/job_order.json": {
+    "bytes": 661,
+    "sha256": "2af34b4425b418cbc4691acf68454b48cdd59861f4125eaa4685e3511ecdf87b"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/plan.json": {
+    "bytes": 3277,
+    "sha256": "70c7d341483bcd0d626b61ce80b24d33020ff9d7e36085a4433f296da851334f"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/input_integrity.json": {
+    "bytes": 136,
+    "sha256": "64ce860cf2699c5830a5e45646034655bc641a512cde8bae9fe66a99abe99c28"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/prefetch.json": {
+    "bytes": 171,
+    "sha256": "8b74affd92b626867481e2d97372eb74dc77e74d66ae969e516a6d3b0fdf9f63"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/yolo26n_ms_fixed-640.json": {
+    "bytes": 3477941,
+    "sha256": "3df571a7f58bbf98c3a580cf827238b81ad112bcd1230be315e7daf29c6a5ea0"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/summary.json": {
+    "bytes": 47230,
+    "sha256": "bbe3e44722d49cb1f8604d6a93f41b72e4a296977efd7a8c9166e6dbc3ae3dfc"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/retinanet_aimd.json": {
+    "bytes": 11597678,
+    "sha256": "98081722cce418525acab0bf47dfe326f8c814bd4db8af1f6ae11a3a7be3b068"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/source/adaptive_manifest_20261116.json": {
+    "bytes": 97884,
+    "sha256": "f0363efbe48dedf3aae9fcb3491204e9c318d13b921d25b70063deb831154817"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/source/probe_features.py": {
+    "bytes": 1826,
+    "sha256": "9c0501a937bbd74b759c85089b825821fe7e6823fae0236c425dce2d9884bec6"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/source/controller_sequence.py": {
+    "bytes": 4669,
+    "sha256": "2f32c46d5f9dc23345298154dba69f7138d0938d5398e2cba223de2211f3a5fd"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/source/fusion/preprocess.py": {
+    "bytes": 3639,
+    "sha256": "08dce7c3a9fa8d0eeecc4eef6a44480e95ebcf16cb955550703f99aedb62fa6c"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/source/experiments/detector_families.py": {
+    "bytes": 3070,
+    "sha256": "df493e0298fa34322ebe1c23a7e12b2a85dc52a3d8befcf3fca35098fa557e98"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/source/experiments/evaluate_families.py": {
+    "bytes": 8970,
+    "sha256": "f25296297ce6815e2ec16a60808d2a4737ad3496dcf12058d430c83f5491a7aa"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/source/experiments/adaptive_study.py": {
+    "bytes": 10095,
+    "sha256": "ab6daefc562950173e50e04f8e07a73b592a727179365fcdda9e52510474333c"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/source/experiments/power.py": {
+    "bytes": 2572,
+    "sha256": "fc606dcecdd15582ea57f136fd14e69138a618634dd42fc21e357c28432cc8aa"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/source/experiments/policies.py": {
+    "bytes": 3600,
+    "sha256": "c59bda7e6740eb86d991f15ce289a398c73374c702ce1b36540db2b83fff1232"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_buffered_20261116/source/results/processed/sequence/controller.json": {
+    "bytes": 4631,
+    "sha256": "4ace5cab65e0c8ca65b9ac1b6d9b4b18ea9f63ab2b5a2d56d84f58698c1b960e"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/run.log": {
+    "bytes": 970,
+    "sha256": "27444b6d1347a6e1e836fabb70e6f0e950146ba69bf3686c620b651dbc5b7408"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/source_capture_manifest.json": {
+    "bytes": 56327,
+    "sha256": "7ec2086b121b7c2ca26faba076de1a4c4191fb7f0b9afc40bfa5a1323c8b4f26"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/host_after.json": {
+    "bytes": 1380,
+    "sha256": "a208b6c640808dbf51c20f884da80976b1b53af62020aadc204727170c9de3f5"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/host_before.json": {
+    "bytes": 15928,
+    "sha256": "ad7c7530597ecae9291b0cf223db5f249a4d8df07d179f2b78317c75e9f03ba6"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/plan.json": {
+    "bytes": 2281,
+    "sha256": "2431da2d5e60557358df5c84f278779a82f961d6309761342a7daa66e51fbdf9"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/input_hashes_verified.json": {
+    "bytes": 14137,
+    "sha256": "4741c721b9d983e81f883f83855a2f0ecef26fa081d46fe53dc991332127f82d"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/launch.json": {
+    "bytes": 99,
+    "sha256": "95f12a02d48ee9269f0f5abe435b2e2cdeef456bf159b73102f583248d57c87e"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/manifest.json": {
+    "bytes": 11225,
+    "sha256": "a503ad7226a4d75e64022c8034d0f0e8cb2fbaee4957329c749f21501a86242c"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/telemetry_midrun.json": {
+    "bytes": 1958,
+    "sha256": "03d0ec01ba9f8973cc3536d42de8ff20514a9fa29dc3039cfa0607dc030eda84"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/source/probe_features.py": {
+    "bytes": 1826,
+    "sha256": "9c0501a937bbd74b759c85089b825821fe7e6823fae0236c425dce2d9884bec6"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/source/controller_sequence.py": {
+    "bytes": 4669,
+    "sha256": "2f32c46d5f9dc23345298154dba69f7138d0938d5398e2cba223de2211f3a5fd"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/source/fusion/preprocess.py": {
+    "bytes": 3639,
+    "sha256": "08dce7c3a9fa8d0eeecc4eef6a44480e95ebcf16cb955550703f99aedb62fa6c"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/source/experiments/detector_families.py": {
+    "bytes": 3070,
+    "sha256": "df493e0298fa34322ebe1c23a7e12b2a85dc52a3d8befcf3fca35098fa557e98"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/source/experiments/evaluate_families.py": {
+    "bytes": 8970,
+    "sha256": "f25296297ce6815e2ec16a60808d2a4737ad3496dcf12058d430c83f5491a7aa"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/source/experiments/adaptive_study.py": {
+    "bytes": 9572,
+    "sha256": "9fb099e60aff1cf801eb77c56b3383a10d288ce5010516315dbb8a728b985548"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/source/experiments/power.py": {
+    "bytes": 2572,
+    "sha256": "fc606dcecdd15582ea57f136fd14e69138a618634dd42fc21e357c28432cc8aa"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/source/experiments/policies.py": {
+    "bytes": 3600,
+    "sha256": "c59bda7e6740eb86d991f15ce289a398c73374c702ce1b36540db2b83fff1232"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/source/tests/test_adaptive_study.py": {
+    "bytes": 939,
+    "sha256": "9ac5b322bcbc5d50eaefa43e52a037e0e3cd54e79d355c77d23bebe70a16049a"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/source/results/processed/sequence/controller.json": {
+    "bytes": 4631,
+    "sha256": "4ace5cab65e0c8ca65b9ac1b6d9b4b18ea9f63ab2b5a2d56d84f58698c1b960e"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/analysis_source/experiments/report_adaptive.py": {
+    "bytes": 15010,
+    "sha256": "355e6a63e578c7876133b545b0c8502c843f6bf94ae1aa0cabe832ba161abcb0"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/analysis_source/tests/test_adaptive_study.py": {
+    "bytes": 2153,
+    "sha256": "1968558d1b0f35ba700c19b4b6c528698040eb9f8e856f19fe81583a6d338740"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/runs/fasterrcnn_guarded.json": {
+    "bytes": 310112,
+    "sha256": "29406c997cf6671c3f402e91674d709fdc99e8066405b42518906978c1201159"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/runs/yolo26n_ms_guarded.json": {
+    "bytes": 80037,
+    "sha256": "0a4548bc0f32d861f7a0b74eec31cc5081ea55872539f7886e860ba956092b41"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/runs/yolo26n_ms_fixed-576.json": {
+    "bytes": 72198,
+    "sha256": "6ac4c2b86275ba99ae47bc20044456698de5165e4b80e380e1c36af063a6cccc"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/runs/fasterrcnn_deadline.json": {
+    "bytes": 313295,
+    "sha256": "5ff4deb119d9b7b05938614272b07da38a6e6abcc95363c8a1e30e71f7972ea3"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/runs/retinanet_sequence.json": {
+    "bytes": 988087,
+    "sha256": "db5c4cdfb1c20aa0bb1d1db02d6993170eb69f25f055f6f461731213ef336e7c"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/runs/COMPLETED.json": {
+    "bytes": 98,
+    "sha256": "53f46cc4a6f9315b9276c8bc0d78b02e3efbc459dcbe7d3b704423b462a22751"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/runs/yolo26n_ms_sequence.json": {
+    "bytes": 80290,
+    "sha256": "b29864d0935a100f75798fdba1ba9c57035ae59554a053d73005f7dcd87890f4"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/runs/fasterrcnn_fixed-576.json": {
+    "bytes": 334106,
+    "sha256": "eaa2561679206dcf5dfae15908238eb488b036b55363c6a3f5c2cbbce7771d54"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/runs/retinanet_guarded.json": {
+    "bytes": 971997,
+    "sha256": "e9d5534bacf902ced22545aca495d05be256d7b7fbfe17cec37c3e3cf2e33548"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/runs/fasterrcnn_sequence.json": {
+    "bytes": 328025,
+    "sha256": "2577edd0f428f318c6cd5beb5e6dd2863f0b6876d835f6de9cf5959b23fac16e"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/runs/retinanet_deadline.json": {
+    "bytes": 975693,
+    "sha256": "968cbc3f8d92e2a3ddf157b90dc4be35e63bf00bcc3f906bc2d177c00fa2ede7"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/runs/environment.json": {
+    "bytes": 432,
+    "sha256": "02524f835d7f54af9bd6684f79eaa8ab30260d000567711d6625d750045d1c20"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/runs/retinanet_fixed-576.json": {
+    "bytes": 972076,
+    "sha256": "849430dfdc7c4a3cd404037d6eeb46e04424f2acb6ab311eb9ce1ad1fed55a2e"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/runs/yolo26n_ms_deadline.json": {
+    "bytes": 102177,
+    "sha256": "bf3b3b1c6cb223e0238c95683f9397cefce3ba4ecb93f7a464a5fa99e816ce28"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/runs/job_order.json": {
+    "bytes": 332,
+    "sha256": "b62f3ff82f296ff32e10c9edec8ba06e8de84f110d5a22a3e796ed010dcee4f7"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/runs/plan.json": {
+    "bytes": 2281,
+    "sha256": "2431da2d5e60557358df5c84f278779a82f961d6309761342a7daa66e51fbdf9"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/adaptive_jetson_cpu_20261116/runs/summary.json": {
+    "bytes": 17204,
+    "sha256": "69c14e20d5ca472b210b0541a8cb89c16f26ca25508d666d1737d562f960e1c0"
+  }
+}

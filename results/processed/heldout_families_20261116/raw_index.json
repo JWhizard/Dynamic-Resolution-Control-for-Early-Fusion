@@ -1,0 +1,66 @@
+{
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/heldout_20261116/heldout_eval_20261116.log": {
+    "bytes": 2698,
+    "sha256": "ef41d71f268871fe8cfac6bb6ae2c27179b3a736f226342dade6e88d16146fa7"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/heldout_20261116/fasterrcnn_predictions.json": {
+    "bytes": 4375217,
+    "sha256": "8075ac806ba39dc40515422946fbec8213fe0852a05f648a55ca52328aaaa097"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/heldout_20261116/COMPLETED.json": {
+    "bytes": 94,
+    "sha256": "feeb51822bf446c13e25a24b79172f12791b48b63d0d633e061b2b1a572a2e8a"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/heldout_20261116/ground_truth.json": {
+    "bytes": 536692,
+    "sha256": "59132825b7e179713de81897c9ee004fa80824aa570b6d6a831c5f7218b8f57e"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/heldout_20261116/retinanet_predictions.json": {
+    "bytes": 17771434,
+    "sha256": "8a8a1e060d1b11997f6c9e013761a5edab720c4b70deffa559049adb43f55091"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/heldout_20261116/metrics.json": {
+    "bytes": 2930,
+    "sha256": "2cf2059e28e559bec50a4d483f786f573e751c7991a8a4e5344b37c45f17a3d4"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/heldout_20261116/environment.json": {
+    "bytes": 398,
+    "sha256": "28cf6823c97055932701fd19ef14b70d4bf10eda2ce1d761156ef6e0792fc1c6"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/heldout_20261116/yolo26n_ms_predictions.json": {
+    "bytes": 5020163,
+    "sha256": "30f2b241ec69e259a633b117bbfbdf12db58ac4b8a48d7ff9b98544315d8158f"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/heldout_20261116/plan.json": {
+    "bytes": 2347,
+    "sha256": "455b7c2d13aa94377cdc0af5b3ee2aaff52095c4c7b70c487f0cae329202600e"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/heldout_20261116/input_hashes.json": {
+    "bytes": 277194,
+    "sha256": "a3c6310006e2a00aadbfa2572b7e04b2d995b7a1de863a50a44a34fb85264e7a"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/heldout_20261116/source/fusion/preprocess.py": {
+    "bytes": 3639,
+    "sha256": "08dce7c3a9fa8d0eeecc4eef6a44480e95ebcf16cb955550703f99aedb62fa6c"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/heldout_20261116/source/splits/m3fd_grouped_seed42.json": {
+    "bytes": 116792,
+    "sha256": "c2ca3f51cc2fe1b700ee097a3cf63d71667246f697fbe12c82a3e11aaee7c6ca"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/heldout_20261116/source/experiments/detector_families.py": {
+    "bytes": 3070,
+    "sha256": "df493e0298fa34322ebe1c23a7e12b2a85dc52a3d8befcf3fca35098fa557e98"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/heldout_20261116/source/experiments/train_families.py": {
+    "bytes": 8738,
+    "sha256": "630ce06b54db9b5d9cd20348087c673be028b0da6eb38ce2d5781ea543a1da46"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/heldout_20261116/source/experiments/evaluate_families.py": {
+    "bytes": 8970,
+    "sha256": "f25296297ce6815e2ec16a60808d2a4737ad3496dcf12058d430c83f5491a7aa"
+  },
+  "/media/imsel/4TBSSD/EMCH585_Artifacts/heldout_20261116/source/tests/test_family_evaluation.py": {
+    "bytes": 1287,
+    "sha256": "fc40b3015510405af08a946152105bc1355310f867e1ef107704fb63223218f1"
+  }
+}

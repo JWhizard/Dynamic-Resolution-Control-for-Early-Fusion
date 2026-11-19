@@ -1,0 +1,410 @@
+{
+  "created_utc": "2026-11-16T19:00:34.410705+00:00",
+  "models": [
+    {
+      "name": "yolo26n_ms",
+      "engine": "/media/imsel/4TBSSD/EMCH585_Artifacts/project_trt_fp32_strict/engine.json",
+      "adapter": "experiments.tensorrt_backend:create",
+      "validation": "/home/imsel/EMCH585_Workspace/Dynamic-Resolution-Control-for-Early-Fusion/results/processed/orin_followup_20261113/backend_validation.json"
+    },
+    {
+      "name": "fasterrcnn",
+      "engine": "/media/imsel/4TBSSD/EMCH585_Artifacts/family_trt_20261116/fasterrcnn_safe_fixed/engine.json",
+      "adapter": "experiments.family_trt_backend:create",
+      "validation": "/media/imsel/4TBSSD/EMCH585_Artifacts/family_trt_20261116/fasterrcnn_validation.json"
+    },
+    {
+      "name": "retinanet",
+      "engine": "/media/imsel/4TBSSD/EMCH585_Artifacts/family_trt_20261116/retinanet_safe/engine.json",
+      "adapter": "experiments.family_trt_backend:create",
+      "validation": "/media/imsel/4TBSSD/EMCH585_Artifacts/family_trt_20261116/retinanet_validation.json"
+    }
+  ],
+  "jobs": [
+    {
+      "model": "fasterrcnn",
+      "policy": "fixed:576",
+      "repeat": 2
+    },
+    {
+      "model": "yolo26n_ms",
+      "policy": "aimd",
+      "repeat": 2
+    },
+    {
+      "model": "retinanet",
+      "policy": "fixed:544",
+      "repeat": 0
+    },
+    {
+      "model": "yolo26n_ms",
+      "policy": "sequence",
+      "repeat": 1
+    },
+    {
+      "model": "fasterrcnn",
+      "policy": "fixed:576",
+      "repeat": 0
+    },
+    {
+      "model": "yolo26n_ms",
+      "policy": "fixed:480",
+      "repeat": 1
+    },
+    {
+      "model": "fasterrcnn",
+      "policy": "aimd",
+      "repeat": 0
+    },
+    {
+      "model": "yolo26n_ms",
+      "policy": "sequence",
+      "repeat": 2
+    },
+    {
+      "model": "retinanet",
+      "policy": "fixed:640",
+      "repeat": 2
+    },
+    {
+      "model": "yolo26n_ms",
+      "policy": "aimd",
+      "repeat": 0
+    },
+    {
+      "model": "retinanet",
+      "policy": "guarded",
+      "repeat": 2
+    },
+    {
+      "model": "fasterrcnn",
+      "policy": "fixed:640",
+      "repeat": 1
+    },
+    {
+      "model": "retinanet",
+      "policy": "guarded",
+      "repeat": 1
+    },
+    {
+      "model": "fasterrcnn",
+      "policy": "sequence",
+      "repeat": 2
+    },
+    {
+      "model": "fasterrcnn",
+      "policy": "fixed:576",
+      "repeat": 1
+    },
+    {
+      "model": "retinanet",
+      "policy": "aimd",
+      "repeat": 0
+    },
+    {
+      "model": "retinanet",
+      "policy": "sequence",
+      "repeat": 2
+    },
+    {
+      "model": "yolo26n_ms",
+      "policy": "guarded",
+      "repeat": 2
+    },
+    {
+      "model": "yolo26n_ms",
+      "policy": "deadline",
+      "repeat": 2
+    },
+    {
+      "model": "fasterrcnn",
+      "policy": "guarded",
+      "repeat": 1
+    },
+    {
+      "model": "retinanet",
+      "policy": "fixed:640",
+      "repeat": 0
+    },
+    {
+      "model": "fasterrcnn",
+      "policy": "guarded",
+      "repeat": 2
+    },
+    {
+      "model": "yolo26n_ms",
+      "policy": "aimd",
+      "repeat": 1
+    },
+    {
+      "model": "fasterrcnn",
+      "policy": "fixed:544",
+      "repeat": 1
+    },
+    {
+      "model": "retinanet",
+      "policy": "deadline",
+      "repeat": 0
+    },
+    {
+      "model": "retinanet",
+      "policy": "fixed:576",
+      "repeat": 2
+    },
+    {
+      "model": "retinanet",
+      "policy": "fixed:480",
+      "repeat": 0
+    },
+    {
+      "model": "retinanet",
+      "policy": "fixed:544",
+      "repeat": 1
+    },
+    {
+      "model": "yolo26n_ms",
+      "policy": "sequence",
+      "repeat": 0
+    },
+    {
+      "model": "retinanet",
+      "policy": "fixed:480",
+      "repeat": 2
+    },
+    {
+      "model": "yolo26n_ms",
+      "policy": "fixed:480",
+      "repeat": 0
+    },
+    {
+      "model": "fasterrcnn",
+      "policy": "sequence",
+      "repeat": 1
+    },
+    {
+      "model": "fasterrcnn",
+      "policy": "fixed:640",
+      "repeat": 0
+    },
+    {
+      "model": "retinanet",
+      "policy": "fixed:480",
+      "repeat": 1
+    },
+    {
+      "model": "yolo26n_ms",
+      "policy": "fixed:640",
+      "repeat": 2
+    },
+    {
+      "model": "yolo26n_ms",
+      "policy": "fixed:576",
+      "repeat": 0
+    },
+    {
+      "model": "yolo26n_ms",
+      "policy": "deadline",
+      "repeat": 0
+    },
+    {
+      "model": "yolo26n_ms",
+      "policy": "fixed:480",
+      "repeat": 2
+    },
+    {
+      "model": "retinanet",
+      "policy": "sequence",
+      "repeat": 1
+    },
+    {
+      "model": "yolo26n_ms",
+      "policy": "fixed:576",
+      "repeat": 1
+    },
+    {
+      "model": "yolo26n_ms",
+      "policy": "fixed:544",
+      "repeat": 2
+    },
+    {
+      "model": "fasterrcnn",
+      "policy": "fixed:480",
+      "repeat": 1
+    },
+    {
+      "model": "fasterrcnn",
+      "policy": "deadline",
+      "repeat": 2
+    },
+    {
+      "model": "yolo26n_ms",
+      "policy": "fixed:640",
+      "repeat": 0
+    },
+    {
+      "model": "fasterrcnn",
+      "policy": "deadline",
+      "repeat": 0
+    },
+    {
+      "model": "retinanet",
+      "policy": "aimd",
+      "repeat": 2
+    },
+    {
+      "model": "yolo26n_ms",
+      "policy": "deadline",
+      "repeat": 1
+    },
+    {
+      "model": "yolo26n_ms",
+      "policy": "fixed:544",
+      "repeat": 0
+    },
+    {
+      "model": "fasterrcnn",
+      "policy": "fixed:544",
+      "repeat": 0
+    },
+    {
+      "model": "retinanet",
+      "policy": "fixed:544",
+      "repeat": 2
+    },
+    {
+      "model": "retinanet",
+      "policy": "aimd",
+      "repeat": 1
+    },
+    {
+      "model": "yolo26n_ms",
+      "policy": "guarded",
+      "repeat": 1
+    },
+    {
+      "model": "yolo26n_ms",
+      "policy": "guarded",
+      "repeat": 0
+    },
+    {
+      "model": "fasterrcnn",
+      "policy": "fixed:480",
+      "repeat": 0
+    },
+    {
+      "model": "retinanet",
+      "policy": "fixed:640",
+      "repeat": 1
+    },
+    {
+      "model": "retinanet",
+      "policy": "fixed:576",
+      "repeat": 1
+    },
+    {
+      "model": "fasterrcnn",
+      "policy": "aimd",
+      "repeat": 1
+    },
+    {
+      "model": "fasterrcnn",
+      "policy": "aimd",
+      "repeat": 2
+    },
+    {
+      "model": "retinanet",
+      "policy": "fixed:576",
+      "repeat": 0
+    },
+    {
+      "model": "retinanet",
+      "policy": "deadline",
+      "repeat": 1
+    },
+    {
+      "model": "retinanet",
+      "policy": "guarded",
+      "repeat": 0
+    },
+    {
+      "model": "fasterrcnn",
+      "policy": "guarded",
+      "repeat": 0
+    },
+    {
+      "model": "yolo26n_ms",
+      "policy": "fixed:640",
+      "repeat": 1
+    },
+    {
+      "model": "fasterrcnn",
+      "policy": "fixed:640",
+      "repeat": 2
+    },
+    {
+      "model": "retinanet",
+      "policy": "sequence",
+      "repeat": 0
+    },
+    {
+      "model": "fasterrcnn",
+      "policy": "fixed:480",
+      "repeat": 2
+    },
+    {
+      "model": "yolo26n_ms",
+      "policy": "fixed:544",
+      "repeat": 1
+    },
+    {
+      "model": "yolo26n_ms",
+      "policy": "fixed:576",
+      "repeat": 2
+    },
+    {
+      "model": "fasterrcnn",
+      "policy": "fixed:544",
+      "repeat": 2
+    },
+    {
+      "model": "fasterrcnn",
+      "policy": "sequence",
+      "repeat": 0
+    },
+    {
+      "model": "retinanet",
+      "policy": "deadline",
+      "repeat": 2
+    },
+    {
+      "model": "fasterrcnn",
+      "policy": "deadline",
+      "repeat": 1
+    }
+  ],
+  "manifest": "/home/imsel/EMCH585_Workspace/Dynamic-Resolution-Control-for-Early-Fusion/captures/research_flir_pilot/manifest.json",
+  "manifest_sha256": "7ec2086b121b7c2ca26faba076de1a4c4191fb7f0b9afc40bfa5a1323c8b4f26",
+  "controller": "/home/imsel/EMCH585_Workspace/Dynamic-Resolution-Control-for-Early-Fusion/results/processed/sequence/controller.json",
+  "controller_sha256": "4ace5cab65e0c8ca65b9ac1b6d9b4b18ea9f63ab2b5a2d56d84f58698c1b960e",
+  "budget_ms": 100,
+  "policy_names": [
+    "fixed:480",
+    "fixed:544",
+    "fixed:576",
+    "fixed:640",
+    "sequence",
+    "deadline",
+    "aimd",
+    "guarded"
+  ],
+  "repeats": 3,
+  "frames_per_run": 120,
+  "seed": 20261116,
+  "protocol": "Three fresh-process repetitions of each detector/policy. All models TensorRT strict FP32/noTF32 on one Jetson AGX Orin GPU. Same120 recorded indoor pairs; offline serving, no frame dropping. Entire detection graph GPU; transforms and native-coordinate mapping CPU. Warmup and model setup excluded.4 CPU threads pinned8\u201311. Browser and capture services remain active.",
+  "limitations": [
+    "One unannotated indoor clip;120 unique pairs repeated across cases, not independent environments or accuracy samples.",
+    "Named-rail energy includes background services and is neither wall-plug nor isolated model energy.",
+    "Run-level intervals across3 fresh processes quantify local repeat variation only. Each run120 frames; tails remain preliminary.",
+    "Common100ms offline service budget is not real-time output-age guarantee. No controller retuning or training."
+  ]
+}

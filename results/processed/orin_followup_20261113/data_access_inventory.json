@@ -1,0 +1,32 @@
+{
+  "download": "https://github.com/SoonminHwang/rgbt-ped-detection",
+  "archive_md5": "9f6f867d033d0c552888e9a213068ef1",
+  "archive_path": "/media/imsel/4TBSSD/EMCH585_Artifacts/datasets/kaist/kaist-cvpr15-preview.tar",
+  "extracted_root": "/media/imsel/4TBSSD/EMCH585_Artifacts/datasets/kaist/extracted/kaist-cvpr15-preview",
+  "evaluation_manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/datasets/kaist/evaluation/manifest.json",
+  "license": "CC BY-NC-SA 4.0 dataset; retain publisher terms and attribution",
+  "sequences": [
+    "set04/V001"
+  ],
+  "environment": "night",
+  "source_frame_pairs": 3200,
+  "evaluated_prefix_pairs": 1200,
+  "person_annotations_full_preview": 3679,
+  "ignore_regions_full_preview": 1487,
+  "native_dimensions": [
+    640,
+    512
+  ],
+  "labels": "Official new sanitized XML, x/y/w/h; pedestrian-only COCO adaptation with explicit ignore regions.",
+  "limitations": [
+    "Training preview, not official test subset.",
+    "No independent multi-environment inference.",
+    "Timing from nominal 20Hz frame indices, not independently verified hardware timestamps."
+  ],
+  "other_local_assets": {
+    "FLIR": "120 unannotated indoor pairs in captures/research_flir_pilot; lake recordings on network share have hardware timestamp metadata but registration/labels are not verified.",
+    "fusion_checkpoints": "20 local YOLO26 fusion/unimodal variants; four fixed-640 ONNX deployments. Different channel/class contracts from this project; do not count as new detector families or compare published AP without re-evaluation.",
+    "M3FD": "Grouped split metadata is local; source image paths on workstation still require login verification.",
+    "additional_training_families": "Four-channel Faster R-CNN/RetinaNet builders and CUDA-only recipes prepared; not trained or GPU-validated."
+  }
+}

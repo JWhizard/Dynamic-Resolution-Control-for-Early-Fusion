@@ -1,0 +1,31 @@
+{
+  "arguments": {
+    "family": "fasterrcnn",
+    "data_root": "/mnt/12TB_Drive/whisenaj/Datasets/M3FD_Detection",
+    "splits": "/mnt/12TB_Drive/whisenaj/EMCH585_training/families_20261113_1745/splits/m3fd_grouped_seed42.json",
+    "output": "/mnt/12TB_Drive/whisenaj/EMCH585_training/families_20261113_1745/runs/fasterrcnn",
+    "device": "cuda:0",
+    "epochs": 100,
+    "batch_size": 4,
+    "workers": 2,
+    "seed": 42,
+    "max_hours": 2.0
+  },
+  "channel_order": "B,G,R,IR",
+  "class_names": [
+    "Bus",
+    "Car",
+    "Lamp",
+    "Motorcycle",
+    "People",
+    "Truck"
+  ],
+  "family": "fasterrcnn",
+  "split_sha256": "c2ca3f51cc2fe1b700ee097a3cf63d71667246f697fbe12c82a3e11aaee7c6ca",
+  "source_sha256": "630ce06b54db9b5d9cd20348087c673be028b0da6eb38ce2d5781ea543a1da46",
+  "torch": "2.10.0+cu128",
+  "builder_sha256": "df493e0298fa34322ebe1c23a7e12b2a85dc52a3d8befcf3fca35098fa557e98",
+  "gpu": "NVIDIA RTX 6000 Ada Generation",
+  "test_data_loaded": false,
+  "recipe_status": "Provisional comparable-data recipe; not yet matched to YOLO training/tuning budget or instructor-approved."
+}

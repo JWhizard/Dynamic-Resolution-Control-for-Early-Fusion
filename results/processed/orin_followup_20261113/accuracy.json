@@ -1,0 +1,713 @@
+{
+  "kaist_aimd": {
+    "overall": {
+      "AP": 0.014989188518702195,
+      "AP50": 0.05122662525877106,
+      "AP75": 0.002873777943832119,
+      "AP_small": 0.0036549329502988995,
+      "AP_medium": 0.02366193022751372,
+      "AP_large": -1.0,
+      "AR1": 0.020275862068965516,
+      "AR10": 0.04372413793103448,
+      "AR100": 0.044965517241379316,
+      "AR_small": 0.03741007194244604,
+      "AR_medium": 0.04675767918088737,
+      "AR_large": -1.0,
+      "person_recall_iou50_conf25": 0.009655172413793104,
+      "small_person_recall_iou50_conf25": 0.0
+    },
+    "environments": {
+      "night": {
+        "AP": 0.014989188518702195,
+        "AP50": 0.05122662525877106,
+        "AP75": 0.002873777943832119,
+        "AP_small": 0.0036549329502988995,
+        "AP_medium": 0.02366193022751372,
+        "AP_large": -1.0,
+        "AR1": 0.020275862068965516,
+        "AR10": 0.04372413793103448,
+        "AR100": 0.044965517241379316,
+        "AR_small": 0.03741007194244604,
+        "AR_medium": 0.04675767918088737,
+        "AR_large": -1.0,
+        "person_recall_iou50_conf25": 0.009655172413793104,
+        "small_person_recall_iou50_conf25": 0.0
+      }
+    },
+    "dropped_frame_treatment": "All input images scored; skipped inputs receive no detections.",
+    "limitations": "Environment subsets are descriptive; independent held-out sequences and repeated runs are required.",
+    "provenance": {
+      "manifest_sha256": "713b78d07b88448bceea7bbdf3af39b038532f2451e98da350bee70d7ea881db",
+      "annotations_sha256": "1f93acfbc5900b68168793270bc3bfb6afbfe252b65f88863b8484e49a150f32",
+      "result_sha256": "1b77111b56550f479949c4759905bed7d94ffe35576c0e232db838f459184146",
+      "scorer_sha256": "68c353711eeff61e9c81f25ce6e9a17b935d66b342d701951948f54267a92865"
+    }
+  },
+  "kaist_deadline": {
+    "overall": {
+      "AP": 0.01485351765859383,
+      "AP50": 0.05532791547895575,
+      "AP75": 0.0031359134785164094,
+      "AP_small": 0.005629316651666511,
+      "AP_medium": 0.021094356790233696,
+      "AP_large": -1.0,
+      "AR1": 0.020689655172413793,
+      "AR10": 0.044,
+      "AR100": 0.04496551724137931,
+      "AR_small": 0.041726618705035974,
+      "AR_medium": 0.04573378839590443,
+      "AR_large": -1.0,
+      "person_recall_iou50_conf25": 0.011034482758620689,
+      "small_person_recall_iou50_conf25": 0.0
+    },
+    "environments": {
+      "night": {
+        "AP": 0.01485351765859383,
+        "AP50": 0.05532791547895575,
+        "AP75": 0.0031359134785164094,
+        "AP_small": 0.005629316651666511,
+        "AP_medium": 0.021094356790233696,
+        "AP_large": -1.0,
+        "AR1": 0.020689655172413793,
+        "AR10": 0.044,
+        "AR100": 0.04496551724137931,
+        "AR_small": 0.041726618705035974,
+        "AR_medium": 0.04573378839590443,
+        "AR_large": -1.0,
+        "person_recall_iou50_conf25": 0.011034482758620689,
+        "small_person_recall_iou50_conf25": 0.0
+      }
+    },
+    "dropped_frame_treatment": "All input images scored; skipped inputs receive no detections.",
+    "limitations": "Environment subsets are descriptive; independent held-out sequences and repeated runs are required.",
+    "provenance": {
+      "manifest_sha256": "713b78d07b88448bceea7bbdf3af39b038532f2451e98da350bee70d7ea881db",
+      "annotations_sha256": "1f93acfbc5900b68168793270bc3bfb6afbfe252b65f88863b8484e49a150f32",
+      "result_sha256": "a8bed070d623a0bc2053d0202210d2730dfba2ca456eb3e619bb10949c78e8a0",
+      "scorer_sha256": "68c353711eeff61e9c81f25ce6e9a17b935d66b342d701951948f54267a92865"
+    }
+  },
+  "kaist_fixed-480": {
+    "overall": {
+      "AP": 0.014850845288733903,
+      "AP50": 0.055316770411368905,
+      "AP75": 0.0031353754280154193,
+      "AP_small": 0.005629119530133915,
+      "AP_medium": 0.02107702698576227,
+      "AP_large": -1.0,
+      "AR1": 0.020689655172413793,
+      "AR10": 0.044,
+      "AR100": 0.04496551724137931,
+      "AR_small": 0.041726618705035974,
+      "AR_medium": 0.04573378839590443,
+      "AR_large": -1.0,
+      "person_recall_iou50_conf25": 0.011034482758620689,
+      "small_person_recall_iou50_conf25": 0.0
+    },
+    "environments": {
+      "night": {
+        "AP": 0.014850845288733903,
+        "AP50": 0.055316770411368905,
+        "AP75": 0.0031353754280154193,
+        "AP_small": 0.005629119530133915,
+        "AP_medium": 0.02107702698576227,
+        "AP_large": -1.0,
+        "AR1": 0.020689655172413793,
+        "AR10": 0.044,
+        "AR100": 0.04496551724137931,
+        "AR_small": 0.041726618705035974,
+        "AR_medium": 0.04573378839590443,
+        "AR_large": -1.0,
+        "person_recall_iou50_conf25": 0.011034482758620689,
+        "small_person_recall_iou50_conf25": 0.0
+      }
+    },
+    "dropped_frame_treatment": "All input images scored; skipped inputs receive no detections.",
+    "limitations": "Environment subsets are descriptive; independent held-out sequences and repeated runs are required.",
+    "provenance": {
+      "manifest_sha256": "713b78d07b88448bceea7bbdf3af39b038532f2451e98da350bee70d7ea881db",
+      "annotations_sha256": "1f93acfbc5900b68168793270bc3bfb6afbfe252b65f88863b8484e49a150f32",
+      "result_sha256": "16607317e924508be057cb818f034e6299e6b1aaff44d6f808b37384180b85e1",
+      "scorer_sha256": "68c353711eeff61e9c81f25ce6e9a17b935d66b342d701951948f54267a92865"
+    }
+  },
+  "kaist_fixed-544": {
+    "overall": {
+      "AP": 0.01473654494638947,
+      "AP50": 0.050178983970953724,
+      "AP75": 0.0029007915118159384,
+      "AP_small": 0.0037834872431722847,
+      "AP_medium": 0.022257708345672252,
+      "AP_large": -1.0,
+      "AR1": 0.019448275862068966,
+      "AR10": 0.04220689655172414,
+      "AR100": 0.043448275862068966,
+      "AR_small": 0.03741007194244604,
+      "AR_medium": 0.04488054607508533,
+      "AR_large": -1.0,
+      "person_recall_iou50_conf25": 0.009655172413793104,
+      "small_person_recall_iou50_conf25": 0.0
+    },
+    "environments": {
+      "night": {
+        "AP": 0.01473654494638947,
+        "AP50": 0.050178983970953724,
+        "AP75": 0.0029007915118159384,
+        "AP_small": 0.0037834872431722847,
+        "AP_medium": 0.022257708345672252,
+        "AP_large": -1.0,
+        "AR1": 0.019448275862068966,
+        "AR10": 0.04220689655172414,
+        "AR100": 0.043448275862068966,
+        "AR_small": 0.03741007194244604,
+        "AR_medium": 0.04488054607508533,
+        "AR_large": -1.0,
+        "person_recall_iou50_conf25": 0.009655172413793104,
+        "small_person_recall_iou50_conf25": 0.0
+      }
+    },
+    "dropped_frame_treatment": "All input images scored; skipped inputs receive no detections.",
+    "limitations": "Environment subsets are descriptive; independent held-out sequences and repeated runs are required.",
+    "provenance": {
+      "manifest_sha256": "713b78d07b88448bceea7bbdf3af39b038532f2451e98da350bee70d7ea881db",
+      "annotations_sha256": "1f93acfbc5900b68168793270bc3bfb6afbfe252b65f88863b8484e49a150f32",
+      "result_sha256": "0409dfa31db591efc4422ac7d14fcb14aa745dd7c7cc9a137e9d4a6163c37c6e",
+      "scorer_sha256": "68c353711eeff61e9c81f25ce6e9a17b935d66b342d701951948f54267a92865"
+    }
+  },
+  "kaist_fixed-576": {
+    "overall": {
+      "AP": 0.009344601294237248,
+      "AP50": 0.03512529435183192,
+      "AP75": 0.0007616146230007616,
+      "AP_small": 0.0037643797932010547,
+      "AP_medium": 0.016514406182012935,
+      "AP_large": -1.0,
+      "AR1": 0.014068965517241381,
+      "AR10": 0.027034482758620693,
+      "AR100": 0.027310344827586208,
+      "AR_small": 0.03741007194244604,
+      "AR_medium": 0.024914675767918087,
+      "AR_large": -1.0,
+      "person_recall_iou50_conf25": 0.004137931034482759,
+      "small_person_recall_iou50_conf25": 0.0
+    },
+    "environments": {
+      "night": {
+        "AP": 0.009344601294237248,
+        "AP50": 0.03512529435183192,
+        "AP75": 0.0007616146230007616,
+        "AP_small": 0.0037643797932010547,
+        "AP_medium": 0.016514406182012935,
+        "AP_large": -1.0,
+        "AR1": 0.014068965517241381,
+        "AR10": 0.027034482758620693,
+        "AR100": 0.027310344827586208,
+        "AR_small": 0.03741007194244604,
+        "AR_medium": 0.024914675767918087,
+        "AR_large": -1.0,
+        "person_recall_iou50_conf25": 0.004137931034482759,
+        "small_person_recall_iou50_conf25": 0.0
+      }
+    },
+    "dropped_frame_treatment": "All input images scored; skipped inputs receive no detections.",
+    "limitations": "Environment subsets are descriptive; independent held-out sequences and repeated runs are required.",
+    "provenance": {
+      "manifest_sha256": "713b78d07b88448bceea7bbdf3af39b038532f2451e98da350bee70d7ea881db",
+      "annotations_sha256": "1f93acfbc5900b68168793270bc3bfb6afbfe252b65f88863b8484e49a150f32",
+      "result_sha256": "89e4362503b838b8e21384585133bfc97d54531af539887c6286adaf97271ba7",
+      "scorer_sha256": "68c353711eeff61e9c81f25ce6e9a17b935d66b342d701951948f54267a92865"
+    }
+  },
+  "kaist_fixed-640": {
+    "overall": {
+      "AP": 0.010221384542430208,
+      "AP50": 0.04163288709254931,
+      "AP75": 4.829751267809708e-05,
+      "AP_small": 0.010326352125425846,
+      "AP_medium": 0.013775308639776399,
+      "AP_large": -1.0,
+      "AR1": 0.017241379310344827,
+      "AR10": 0.0326896551724138,
+      "AR100": 0.0326896551724138,
+      "AR_small": 0.04820143884892087,
+      "AR_medium": 0.029010238907849827,
+      "AR_large": -1.0,
+      "person_recall_iou50_conf25": 0.009655172413793104,
+      "small_person_recall_iou50_conf25": 0.007194244604316547
+    },
+    "environments": {
+      "night": {
+        "AP": 0.010221384542430208,
+        "AP50": 0.04163288709254931,
+        "AP75": 4.829751267809708e-05,
+        "AP_small": 0.010326352125425846,
+        "AP_medium": 0.013775308639776399,
+        "AP_large": -1.0,
+        "AR1": 0.017241379310344827,
+        "AR10": 0.0326896551724138,
+        "AR100": 0.0326896551724138,
+        "AR_small": 0.04820143884892087,
+        "AR_medium": 0.029010238907849827,
+        "AR_large": -1.0,
+        "person_recall_iou50_conf25": 0.009655172413793104,
+        "small_person_recall_iou50_conf25": 0.007194244604316547
+      }
+    },
+    "dropped_frame_treatment": "All input images scored; skipped inputs receive no detections.",
+    "limitations": "Environment subsets are descriptive; independent held-out sequences and repeated runs are required.",
+    "provenance": {
+      "manifest_sha256": "713b78d07b88448bceea7bbdf3af39b038532f2451e98da350bee70d7ea881db",
+      "annotations_sha256": "1f93acfbc5900b68168793270bc3bfb6afbfe252b65f88863b8484e49a150f32",
+      "result_sha256": "aeaf51366bbb908f76b3a341a3a4031ec8561a7f2ddd8a9aff2e73d3d95dc99a",
+      "scorer_sha256": "68c353711eeff61e9c81f25ce6e9a17b935d66b342d701951948f54267a92865"
+    }
+  },
+  "kaist_guarded-no-hysteresis": {
+    "overall": {
+      "AP": 0.014853776802306486,
+      "AP50": 0.055328869854839154,
+      "AP75": 0.0031359134785164094,
+      "AP_small": 0.005629386895206363,
+      "AP_medium": 0.02109512880171135,
+      "AP_large": -1.0,
+      "AR1": 0.020689655172413793,
+      "AR10": 0.044,
+      "AR100": 0.04496551724137931,
+      "AR_small": 0.041726618705035974,
+      "AR_medium": 0.04573378839590443,
+      "AR_large": -1.0,
+      "person_recall_iou50_conf25": 0.011034482758620689,
+      "small_person_recall_iou50_conf25": 0.0
+    },
+    "environments": {
+      "night": {
+        "AP": 0.014853776802306486,
+        "AP50": 0.055328869854839154,
+        "AP75": 0.0031359134785164094,
+        "AP_small": 0.005629386895206363,
+        "AP_medium": 0.02109512880171135,
+        "AP_large": -1.0,
+        "AR1": 0.020689655172413793,
+        "AR10": 0.044,
+        "AR100": 0.04496551724137931,
+        "AR_small": 0.041726618705035974,
+        "AR_medium": 0.04573378839590443,
+        "AR_large": -1.0,
+        "person_recall_iou50_conf25": 0.011034482758620689,
+        "small_person_recall_iou50_conf25": 0.0
+      }
+    },
+    "dropped_frame_treatment": "All input images scored; skipped inputs receive no detections.",
+    "limitations": "Environment subsets are descriptive; independent held-out sequences and repeated runs are required.",
+    "provenance": {
+      "manifest_sha256": "713b78d07b88448bceea7bbdf3af39b038532f2451e98da350bee70d7ea881db",
+      "annotations_sha256": "1f93acfbc5900b68168793270bc3bfb6afbfe252b65f88863b8484e49a150f32",
+      "result_sha256": "9b5c15fc4299b1c7c721ad445cfef63abc43fc4d57eeb44cf307c322d02e8f64",
+      "scorer_sha256": "68c353711eeff61e9c81f25ce6e9a17b935d66b342d701951948f54267a92865"
+    }
+  },
+  "kaist_guarded-no-resource": {
+    "overall": {
+      "AP": 0.011325526956710363,
+      "AP50": 0.04510248568276099,
+      "AP75": 0.00046267172816903554,
+      "AP_small": 0.008426440958621823,
+      "AP_medium": 0.01688140420230899,
+      "AP_large": -1.0,
+      "AR1": 0.01779310344827586,
+      "AR10": 0.03889655172413793,
+      "AR100": 0.03958620689655172,
+      "AR_small": 0.046762589928057555,
+      "AR_medium": 0.0378839590443686,
+      "AR_large": -1.0,
+      "person_recall_iou50_conf25": 0.009655172413793104,
+      "small_person_recall_iou50_conf25": 0.007194244604316547
+    },
+    "environments": {
+      "night": {
+        "AP": 0.011325526956710363,
+        "AP50": 0.04510248568276099,
+        "AP75": 0.00046267172816903554,
+        "AP_small": 0.008426440958621823,
+        "AP_medium": 0.01688140420230899,
+        "AP_large": -1.0,
+        "AR1": 0.01779310344827586,
+        "AR10": 0.03889655172413793,
+        "AR100": 0.03958620689655172,
+        "AR_small": 0.046762589928057555,
+        "AR_medium": 0.0378839590443686,
+        "AR_large": -1.0,
+        "person_recall_iou50_conf25": 0.009655172413793104,
+        "small_person_recall_iou50_conf25": 0.007194244604316547
+      }
+    },
+    "dropped_frame_treatment": "All input images scored; skipped inputs receive no detections.",
+    "limitations": "Environment subsets are descriptive; independent held-out sequences and repeated runs are required.",
+    "provenance": {
+      "manifest_sha256": "713b78d07b88448bceea7bbdf3af39b038532f2451e98da350bee70d7ea881db",
+      "annotations_sha256": "1f93acfbc5900b68168793270bc3bfb6afbfe252b65f88863b8484e49a150f32",
+      "result_sha256": "b49893c408cd1356da3c8f150e9d4f7a54230fd29b007629ae26d9065feccd4c",
+      "scorer_sha256": "68c353711eeff61e9c81f25ce6e9a17b935d66b342d701951948f54267a92865"
+    }
+  },
+  "kaist_guarded-no-scene": {
+    "overall": {
+      "AP": 0.014850175347983057,
+      "AP50": 0.05531255469244605,
+      "AP75": 0.0031351074860880806,
+      "AP_small": 0.005629316651666511,
+      "AP_medium": 0.021067625602136736,
+      "AP_large": -1.0,
+      "AR1": 0.020689655172413793,
+      "AR10": 0.044,
+      "AR100": 0.04496551724137931,
+      "AR_small": 0.041726618705035974,
+      "AR_medium": 0.04573378839590443,
+      "AR_large": -1.0,
+      "person_recall_iou50_conf25": 0.011034482758620689,
+      "small_person_recall_iou50_conf25": 0.0
+    },
+    "environments": {
+      "night": {
+        "AP": 0.014850175347983057,
+        "AP50": 0.05531255469244605,
+        "AP75": 0.0031351074860880806,
+        "AP_small": 0.005629316651666511,
+        "AP_medium": 0.021067625602136736,
+        "AP_large": -1.0,
+        "AR1": 0.020689655172413793,
+        "AR10": 0.044,
+        "AR100": 0.04496551724137931,
+        "AR_small": 0.041726618705035974,
+        "AR_medium": 0.04573378839590443,
+        "AR_large": -1.0,
+        "person_recall_iou50_conf25": 0.011034482758620689,
+        "small_person_recall_iou50_conf25": 0.0
+      }
+    },
+    "dropped_frame_treatment": "All input images scored; skipped inputs receive no detections.",
+    "limitations": "Environment subsets are descriptive; independent held-out sequences and repeated runs are required.",
+    "provenance": {
+      "manifest_sha256": "713b78d07b88448bceea7bbdf3af39b038532f2451e98da350bee70d7ea881db",
+      "annotations_sha256": "1f93acfbc5900b68168793270bc3bfb6afbfe252b65f88863b8484e49a150f32",
+      "result_sha256": "6697b562d6a2c30b6ed87f155aa2bc756a54cae5a9f124a3a2b17f7d1bbafeea",
+      "scorer_sha256": "68c353711eeff61e9c81f25ce6e9a17b935d66b342d701951948f54267a92865"
+    }
+  },
+  "kaist_guarded-no-switch-cost": {
+    "overall": {
+      "AP": 0.014853776802306486,
+      "AP50": 0.055328869854839154,
+      "AP75": 0.0031359134785164094,
+      "AP_small": 0.005629372515640589,
+      "AP_medium": 0.02109512880171135,
+      "AP_large": -1.0,
+      "AR1": 0.020689655172413793,
+      "AR10": 0.044,
+      "AR100": 0.04496551724137931,
+      "AR_small": 0.041726618705035974,
+      "AR_medium": 0.04573378839590443,
+      "AR_large": -1.0,
+      "person_recall_iou50_conf25": 0.011034482758620689,
+      "small_person_recall_iou50_conf25": 0.0
+    },
+    "environments": {
+      "night": {
+        "AP": 0.014853776802306486,
+        "AP50": 0.055328869854839154,
+        "AP75": 0.0031359134785164094,
+        "AP_small": 0.005629372515640589,
+        "AP_medium": 0.02109512880171135,
+        "AP_large": -1.0,
+        "AR1": 0.020689655172413793,
+        "AR10": 0.044,
+        "AR100": 0.04496551724137931,
+        "AR_small": 0.041726618705035974,
+        "AR_medium": 0.04573378839590443,
+        "AR_large": -1.0,
+        "person_recall_iou50_conf25": 0.011034482758620689,
+        "small_person_recall_iou50_conf25": 0.0
+      }
+    },
+    "dropped_frame_treatment": "All input images scored; skipped inputs receive no detections.",
+    "limitations": "Environment subsets are descriptive; independent held-out sequences and repeated runs are required.",
+    "provenance": {
+      "manifest_sha256": "713b78d07b88448bceea7bbdf3af39b038532f2451e98da350bee70d7ea881db",
+      "annotations_sha256": "1f93acfbc5900b68168793270bc3bfb6afbfe252b65f88863b8484e49a150f32",
+      "result_sha256": "357b7f5102b7a69d63d2cbc3004838abdc31086d03b31f0d276cbcef29832d4f",
+      "scorer_sha256": "68c353711eeff61e9c81f25ce6e9a17b935d66b342d701951948f54267a92865"
+    }
+  },
+  "kaist_guarded": {
+    "overall": {
+      "AP": 0.014853685792109243,
+      "AP50": 0.05532855135941636,
+      "AP75": 0.0031359134785164094,
+      "AP_small": 0.005629316651666511,
+      "AP_medium": 0.02109512880171135,
+      "AP_large": -1.0,
+      "AR1": 0.020689655172413793,
+      "AR10": 0.044,
+      "AR100": 0.04496551724137931,
+      "AR_small": 0.041726618705035974,
+      "AR_medium": 0.04573378839590443,
+      "AR_large": -1.0,
+      "person_recall_iou50_conf25": 0.011034482758620689,
+      "small_person_recall_iou50_conf25": 0.0
+    },
+    "environments": {
+      "night": {
+        "AP": 0.014853685792109243,
+        "AP50": 0.05532855135941636,
+        "AP75": 0.0031359134785164094,
+        "AP_small": 0.005629316651666511,
+        "AP_medium": 0.02109512880171135,
+        "AP_large": -1.0,
+        "AR1": 0.020689655172413793,
+        "AR10": 0.044,
+        "AR100": 0.04496551724137931,
+        "AR_small": 0.041726618705035974,
+        "AR_medium": 0.04573378839590443,
+        "AR_large": -1.0,
+        "person_recall_iou50_conf25": 0.011034482758620689,
+        "small_person_recall_iou50_conf25": 0.0
+      }
+    },
+    "dropped_frame_treatment": "All input images scored; skipped inputs receive no detections.",
+    "limitations": "Environment subsets are descriptive; independent held-out sequences and repeated runs are required.",
+    "provenance": {
+      "manifest_sha256": "713b78d07b88448bceea7bbdf3af39b038532f2451e98da350bee70d7ea881db",
+      "annotations_sha256": "1f93acfbc5900b68168793270bc3bfb6afbfe252b65f88863b8484e49a150f32",
+      "result_sha256": "775a8fe31c4acf0273291a2abf14726154390da4c4ffda706558a98b29f68341",
+      "scorer_sha256": "68c353711eeff61e9c81f25ce6e9a17b935d66b342d701951948f54267a92865"
+    }
+  },
+  "kaist_sequence": {
+    "overall": {
+      "AP": 0.011325526956710363,
+      "AP50": 0.04510248568276099,
+      "AP75": 0.00046267172816903554,
+      "AP_small": 0.008426440958621823,
+      "AP_medium": 0.01688140420230899,
+      "AP_large": -1.0,
+      "AR1": 0.01779310344827586,
+      "AR10": 0.03889655172413793,
+      "AR100": 0.03958620689655172,
+      "AR_small": 0.046762589928057555,
+      "AR_medium": 0.0378839590443686,
+      "AR_large": -1.0,
+      "person_recall_iou50_conf25": 0.009655172413793104,
+      "small_person_recall_iou50_conf25": 0.007194244604316547
+    },
+    "environments": {
+      "night": {
+        "AP": 0.011325526956710363,
+        "AP50": 0.04510248568276099,
+        "AP75": 0.00046267172816903554,
+        "AP_small": 0.008426440958621823,
+        "AP_medium": 0.01688140420230899,
+        "AP_large": -1.0,
+        "AR1": 0.01779310344827586,
+        "AR10": 0.03889655172413793,
+        "AR100": 0.03958620689655172,
+        "AR_small": 0.046762589928057555,
+        "AR_medium": 0.0378839590443686,
+        "AR_large": -1.0,
+        "person_recall_iou50_conf25": 0.009655172413793104,
+        "small_person_recall_iou50_conf25": 0.007194244604316547
+      }
+    },
+    "dropped_frame_treatment": "All input images scored; skipped inputs receive no detections.",
+    "limitations": "Environment subsets are descriptive; independent held-out sequences and repeated runs are required.",
+    "provenance": {
+      "manifest_sha256": "713b78d07b88448bceea7bbdf3af39b038532f2451e98da350bee70d7ea881db",
+      "annotations_sha256": "1f93acfbc5900b68168793270bc3bfb6afbfe252b65f88863b8484e49a150f32",
+      "result_sha256": "27fa1f9d112c0ab9d19358e40e3d22956945626512b7632e1889747d11798674",
+      "scorer_sha256": "68c353711eeff61e9c81f25ce6e9a17b935d66b342d701951948f54267a92865"
+    }
+  },
+  "stream_fixed-576": {
+    "overall": {
+      "AP": 0.009365840347918663,
+      "AP50": 0.03520723724972783,
+      "AP75": 0.0007616146230007616,
+      "AP_small": 0.0037878415673967673,
+      "AP_medium": 0.016514239301320822,
+      "AP_large": -1.0,
+      "AR1": 0.014068965517241381,
+      "AR10": 0.026620689655172412,
+      "AR100": 0.026896551724137928,
+      "AR_small": 0.03741007194244604,
+      "AR_medium": 0.02440273037542662,
+      "AR_large": -1.0,
+      "person_recall_iou50_conf25": 0.004137931034482759,
+      "small_person_recall_iou50_conf25": 0.0
+    },
+    "environments": {
+      "night": {
+        "AP": 0.009365840347918663,
+        "AP50": 0.03520723724972783,
+        "AP75": 0.0007616146230007616,
+        "AP_small": 0.0037878415673967673,
+        "AP_medium": 0.016514239301320822,
+        "AP_large": -1.0,
+        "AR1": 0.014068965517241381,
+        "AR10": 0.026620689655172412,
+        "AR100": 0.026896551724137928,
+        "AR_small": 0.03741007194244604,
+        "AR_medium": 0.02440273037542662,
+        "AR_large": -1.0,
+        "person_recall_iou50_conf25": 0.004137931034482759,
+        "small_person_recall_iou50_conf25": 0.0
+      }
+    },
+    "dropped_frame_treatment": "All input images scored; skipped inputs receive no detections.",
+    "limitations": "Environment subsets are descriptive; independent held-out sequences and repeated runs are required.",
+    "causal_time_aligned": {
+      "AP": 0.0004757193929835191,
+      "AP50": 0.003001042770251964,
+      "AP75": 0.0,
+      "AP_small": 0.000308257498187425,
+      "AP_medium": 0.0014557793759053877,
+      "AP_large": -1.0,
+      "AR1": 0.004275862068965517,
+      "AR10": 0.008689655172413793,
+      "AR100": 0.009379310344827585,
+      "AR_small": 0.00935251798561151,
+      "AR_medium": 0.009385665529010238,
+      "AR_large": -1.0,
+      "person_recall_iou50_conf25": 0.0,
+      "small_person_recall_iou50_conf25": 0.0
+    },
+    "alignment_protocol": "Latest completed boxes at each recorded arrival; no tracking, interpolation, or future results. Explicit convention, not an official KAIST score.",
+    "provenance": {
+      "manifest_sha256": "713b78d07b88448bceea7bbdf3af39b038532f2451e98da350bee70d7ea881db",
+      "annotations_sha256": "1f93acfbc5900b68168793270bc3bfb6afbfe252b65f88863b8484e49a150f32",
+      "result_sha256": "535274e7b8df935063c24a5dec4d72ecfc9214e4c7234e392df386166a6c1e3f",
+      "scorer_sha256": "68c353711eeff61e9c81f25ce6e9a17b935d66b342d701951948f54267a92865"
+    }
+  },
+  "stream_guarded": {
+    "overall": {
+      "AP": 0.014853685792109243,
+      "AP50": 0.05532855135941636,
+      "AP75": 0.0031359134785164094,
+      "AP_small": 0.005629316651666511,
+      "AP_medium": 0.02109512880171135,
+      "AP_large": -1.0,
+      "AR1": 0.020689655172413793,
+      "AR10": 0.044,
+      "AR100": 0.04496551724137931,
+      "AR_small": 0.041726618705035974,
+      "AR_medium": 0.04573378839590443,
+      "AR_large": -1.0,
+      "person_recall_iou50_conf25": 0.011034482758620689,
+      "small_person_recall_iou50_conf25": 0.0
+    },
+    "environments": {
+      "night": {
+        "AP": 0.014853685792109243,
+        "AP50": 0.05532855135941636,
+        "AP75": 0.0031359134785164094,
+        "AP_small": 0.005629316651666511,
+        "AP_medium": 0.02109512880171135,
+        "AP_large": -1.0,
+        "AR1": 0.020689655172413793,
+        "AR10": 0.044,
+        "AR100": 0.04496551724137931,
+        "AR_small": 0.041726618705035974,
+        "AR_medium": 0.04573378839590443,
+        "AR_large": -1.0,
+        "person_recall_iou50_conf25": 0.011034482758620689,
+        "small_person_recall_iou50_conf25": 0.0
+      }
+    },
+    "dropped_frame_treatment": "All input images scored; skipped inputs receive no detections.",
+    "limitations": "Environment subsets are descriptive; independent held-out sequences and repeated runs are required.",
+    "causal_time_aligned": {
+      "AP": 0.009515020282865288,
+      "AP50": 0.038035114105731946,
+      "AP75": 0.0003094059405940594,
+      "AP_small": 0.0078973674977048,
+      "AP_medium": 0.011899410034811169,
+      "AP_large": -1.0,
+      "AR1": 0.014482758620689656,
+      "AR10": 0.03324137931034483,
+      "AR100": 0.033931034482758624,
+      "AR_small": 0.039568345323741004,
+      "AR_medium": 0.0325938566552901,
+      "AR_large": -1.0,
+      "person_recall_iou50_conf25": 0.009655172413793104,
+      "small_person_recall_iou50_conf25": 0.007194244604316547
+    },
+    "alignment_protocol": "Latest completed boxes at each recorded arrival; no tracking, interpolation, or future results. Explicit convention, not an official KAIST score.",
+    "provenance": {
+      "manifest_sha256": "713b78d07b88448bceea7bbdf3af39b038532f2451e98da350bee70d7ea881db",
+      "annotations_sha256": "1f93acfbc5900b68168793270bc3bfb6afbfe252b65f88863b8484e49a150f32",
+      "result_sha256": "788b695ba4b7a237eb1b554b663c78125bbd9d35df5f35e12de65ade6e379109",
+      "scorer_sha256": "68c353711eeff61e9c81f25ce6e9a17b935d66b342d701951948f54267a92865"
+    }
+  },
+  "stream_sequence": {
+    "overall": {
+      "AP": 0.011325526956710363,
+      "AP50": 0.04510248568276099,
+      "AP75": 0.00046267172816903554,
+      "AP_small": 0.008426440958621823,
+      "AP_medium": 0.01688140420230899,
+      "AP_large": -1.0,
+      "AR1": 0.01779310344827586,
+      "AR10": 0.03889655172413793,
+      "AR100": 0.03958620689655172,
+      "AR_small": 0.046762589928057555,
+      "AR_medium": 0.0378839590443686,
+      "AR_large": -1.0,
+      "person_recall_iou50_conf25": 0.009655172413793104,
+      "small_person_recall_iou50_conf25": 0.007194244604316547
+    },
+    "environments": {
+      "night": {
+        "AP": 0.011325526956710363,
+        "AP50": 0.04510248568276099,
+        "AP75": 0.00046267172816903554,
+        "AP_small": 0.008426440958621823,
+        "AP_medium": 0.01688140420230899,
+        "AP_large": -1.0,
+        "AR1": 0.01779310344827586,
+        "AR10": 0.03889655172413793,
+        "AR100": 0.03958620689655172,
+        "AR_small": 0.046762589928057555,
+        "AR_medium": 0.0378839590443686,
+        "AR_large": -1.0,
+        "person_recall_iou50_conf25": 0.009655172413793104,
+        "small_person_recall_iou50_conf25": 0.007194244604316547
+      }
+    },
+    "dropped_frame_treatment": "All input images scored; skipped inputs receive no detections.",
+    "limitations": "Environment subsets are descriptive; independent held-out sequences and repeated runs are required.",
+    "causal_time_aligned": {
+      "AP": 0.004232183201312336,
+      "AP50": 0.022358520950941728,
+      "AP75": 0.000825082508250825,
+      "AP_small": 0.0027025428728977992,
+      "AP_medium": 0.007398474533471521,
+      "AP_large": -1.0,
+      "AR1": 0.009793103448275862,
+      "AR10": 0.022068965517241378,
+      "AR100": 0.02303448275862069,
+      "AR_small": 0.02014388489208633,
+      "AR_medium": 0.02372013651877133,
+      "AR_large": -1.0,
+      "person_recall_iou50_conf25": 0.002758620689655172,
+      "small_person_recall_iou50_conf25": 0.0
+    },
+    "alignment_protocol": "Latest completed boxes at each recorded arrival; no tracking, interpolation, or future results. Explicit convention, not an official KAIST score.",
+    "provenance": {
+      "manifest_sha256": "713b78d07b88448bceea7bbdf3af39b038532f2451e98da350bee70d7ea881db",
+      "annotations_sha256": "1f93acfbc5900b68168793270bc3bfb6afbfe252b65f88863b8484e49a150f32",
+      "result_sha256": "ba590c7374a141fd35cda1cccc27a134c3975b9a26f6359a8c16261458ef6357",
+      "scorer_sha256": "68c353711eeff61e9c81f25ce6e9a17b935d66b342d701951948f54267a92865"
+    }
+  }
+}

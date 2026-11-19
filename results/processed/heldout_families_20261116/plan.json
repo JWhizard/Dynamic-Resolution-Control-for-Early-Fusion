@@ -1,0 +1,39 @@
+{
+  "created_utc": "2026-11-16T17:31:07.022765+00:00",
+  "data_root": "/mnt/12TB_Drive/whisenaj/Datasets/M3FD_Detection",
+  "splits": "/mnt/12TB_Drive/whisenaj/EMCH585_training/families_20261113_1745/splits/m3fd_grouped_seed42.json",
+  "split_sha256": "c2ca3f51cc2fe1b700ee097a3cf63d71667246f697fbe12c82a3e11aaee7c6ca",
+  "test_images": 419,
+  "resolution": 576,
+  "confidence": 0.001,
+  "models": [
+    {
+      "name": "yolo26n_ms",
+      "family": "yolo",
+      "checkpoint": "/mnt/12TB_Drive/whisenaj/EMCH585_training/families_20261113_1745/runs/ms_fusion_seed42/weights/best.pt",
+      "sha256": "79d21a315500db3e0d061ce273de5affe26e8b778055e50f9ceca22994a55cda"
+    },
+    {
+      "name": "fasterrcnn",
+      "family": "fasterrcnn",
+      "checkpoint": "/mnt/12TB_Drive/whisenaj/EMCH585_training/families_20261113_1745/runs/fasterrcnn/best.pt",
+      "sha256": "b8244ba7e660afb07cf176440d575c53d34152dc48093b5daa45c97fa62230be",
+      "training_metadata": "/mnt/12TB_Drive/whisenaj/EMCH585_training/families_20261113_1745/runs/fasterrcnn/metadata.json"
+    },
+    {
+      "name": "retinanet",
+      "family": "retinanet",
+      "checkpoint": "/mnt/12TB_Drive/whisenaj/EMCH585_training/families_20261113_1745/runs/retinanet_retry_20261113/best.pt",
+      "sha256": "560592ed877a3e414918f5c88a19a36129a49f613ce9729423473c115b93dc71",
+      "training_metadata": "/mnt/12TB_Drive/whisenaj/EMCH585_training/families_20261113_1745/runs/retinanet_retry_20261113/metadata.json"
+    }
+  ],
+  "protocol": "Fixed 576 long side; float32 native torch; model-specific trained resize/normalization; common native ground truth, six classes and COCO maxDets1/10/100; no fitting or threshold search.",
+  "limitations": [
+    "YOLO test split has previously been examined in the repository. First test evaluation of the two new families.",
+    "YOLO training budget/recipe differs from the provisional two-hour additional-family runs; results describe these checkpoints, not controlled architecture superiority.",
+    "Internal preprocessing differs between YOLO and Torchvision; same long side, not identical padded input tensors.",
+    "Resolution576 chosen before this evaluation from existing project deployment and new-family validation settings.",
+    "GT original native label geometry as repository evaluator; training validation used clipped GT."
+  ]
+}
