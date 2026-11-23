@@ -1,0 +1,74 @@
+[
+  {
+    "path": "/media/imsel/4TBSSD/EMCH585_Artifacts/platform_comparison_20261123/orin/fasterrcnn_rep0.json",
+    "sha256": "3dca480d9fc031d54e48c240ef0d7c89edc47f75cd5adf4f1f2e783d670551b6"
+  },
+  {
+    "path": "/media/imsel/4TBSSD/EMCH585_Artifacts/platform_comparison_20261123/orin/fasterrcnn_rep1.json",
+    "sha256": "d33b40037c4448a46b8353293a2d9b6a0849ae05291421b676a3023df7082702"
+  },
+  {
+    "path": "/media/imsel/4TBSSD/EMCH585_Artifacts/platform_comparison_20261123/orin/fasterrcnn_rep2.json",
+    "sha256": "7c4ad305d43658ca3be684799e6586392aaef63f42a3d4f9abee3bd8c367ad91"
+  },
+  {
+    "path": "/media/imsel/4TBSSD/EMCH585_Artifacts/platform_comparison_20261123/orin/retinanet_rep0.json",
+    "sha256": "b93c4acdf44227c6e4026c0a040edf88fe2043f79e5e71c15dbd4b69752b43f4"
+  },
+  {
+    "path": "/media/imsel/4TBSSD/EMCH585_Artifacts/platform_comparison_20261123/orin/retinanet_rep1.json",
+    "sha256": "cbdb087858efb4c3b942fc1b41f680283a58f31d2d7737598229dfb4185cd292"
+  },
+  {
+    "path": "/media/imsel/4TBSSD/EMCH585_Artifacts/platform_comparison_20261123/orin/retinanet_rep2.json",
+    "sha256": "dbeae9409c6c1f560cdcc6a529b1cbc73cc58239bea3eed56fb4776c72a7460b"
+  },
+  {
+    "path": "/media/imsel/4TBSSD/EMCH585_Artifacts/platform_comparison_20261123/orin/yolo26n_ms_rep0.json",
+    "sha256": "5a9b89cb83b450d8b3a7f0b7a1efacc9af81077c45565c944918536278692520"
+  },
+  {
+    "path": "/media/imsel/4TBSSD/EMCH585_Artifacts/platform_comparison_20261123/orin/yolo26n_ms_rep1.json",
+    "sha256": "2e6347e7504933bb0e70a15033f75824801388e148d5fb589af3857a40925184"
+  },
+  {
+    "path": "/media/imsel/4TBSSD/EMCH585_Artifacts/platform_comparison_20261123/orin/yolo26n_ms_rep2.json",
+    "sha256": "c8bbe2b5d8ef8c8f216ddeb1d6a874a565e7208a5d5c8d64009477a0f4111e74"
+  },
+  {
+    "path": "/media/imsel/4TBSSD/EMCH585_Artifacts/platform_comparison_20261123/workstation/fasterrcnn_rep0.json",
+    "sha256": "f65c8449bea24401820cea83edff022905ffe74435a2610e6c2e1bd768c43b8b"
+  },
+  {
+    "path": "/media/imsel/4TBSSD/EMCH585_Artifacts/platform_comparison_20261123/workstation/fasterrcnn_rep1.json",
+    "sha256": "2816183c12c825fa78f5c940140b001fe0d84301eb146a5f9e95085f0ad69683"
+  },
+  {
+    "path": "/media/imsel/4TBSSD/EMCH585_Artifacts/platform_comparison_20261123/workstation/fasterrcnn_rep2.json",
+    "sha256": "870083d87b042bd9da6e2af65d4558658b14f5eb0e006f2100d007cc9f4e193a"
+  },
+  {
+    "path": "/media/imsel/4TBSSD/EMCH585_Artifacts/platform_comparison_20261123/workstation/retinanet_rep0.json",
+    "sha256": "8a734b02bd6c22e4a5d2dfa168e9b4949ba08fd25c43daf0cd55a1273499ab28"
+  },
+  {
+    "path": "/media/imsel/4TBSSD/EMCH585_Artifacts/platform_comparison_20261123/workstation/retinanet_rep1.json",
+    "sha256": "a1be090f1daccb6d200324ecd5454514af8744ab20c052a4468f6d89498b8cf5"
+  },
+  {
+    "path": "/media/imsel/4TBSSD/EMCH585_Artifacts/platform_comparison_20261123/workstation/retinanet_rep2.json",
+    "sha256": "96801f0695c5bf17fd1d26c51652d7f735b4d6226b55f4f8586beb131db73a92"
+  },
+  {
+    "path": "/media/imsel/4TBSSD/EMCH585_Artifacts/platform_comparison_20261123/workstation/yolo26n_ms_rep0.json",
+    "sha256": "a92594329af0ca7d532da53c7ea2efd2076e16e1a6dd0f829f82ddd55cfffbd8"
+  },
+  {
+    "path": "/media/imsel/4TBSSD/EMCH585_Artifacts/platform_comparison_20261123/workstation/yolo26n_ms_rep1.json",
+    "sha256": "516f1f03370c6117a7c243f8769249d2f537630a7d8e33ac85934e9d1a7fc33f"
+  },
+  {
+    "path": "/media/imsel/4TBSSD/EMCH585_Artifacts/platform_comparison_20261123/workstation/yolo26n_ms_rep2.json",
+    "sha256": "0cf586fcbffdbc6be94459169acdafaef4e666ceaa29b01e81000d47a2b3d5e0"
+  }
+]

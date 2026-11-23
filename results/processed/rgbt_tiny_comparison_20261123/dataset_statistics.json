@@ -1,0 +1,54 @@
+{
+  "M3FD": {
+    "images": 419,
+    "boxes": 2958,
+    "class_boxes": {
+      "car": 2090,
+      "person": 791,
+      "bus": 77
+    },
+    "below_16_squared": 244,
+    "below_32_squared": 925,
+    "fraction_below_16_squared": 0.08248816768086545,
+    "fraction_below_32_squared": 0.312711291413117,
+    "mean_boxes_per_image": 7.059665871121719,
+    "images_over_100_boxes": 0
+  },
+  "RGBT_Tiny": {
+    "images": 12590,
+    "boxes": 136408,
+    "class_boxes": {
+      "car": 103261,
+      "person": 27039,
+      "bus": 6108
+    },
+    "below_16_squared": 109485,
+    "below_32_squared": 133236,
+    "fraction_below_16_squared": 0.8026288780716674,
+    "fraction_below_32_squared": 0.9767462318925576,
+    "mean_boxes_per_image": 10.834630659253376,
+    "images_over_100_boxes": 496
+  },
+  "target_all_classes": {
+    "images": 12590,
+    "boxes": 180251,
+    "class_boxes": {
+      "ship": 14497,
+      "car": 103261,
+      "cyclist": 20579,
+      "pedestrian": 27039,
+      "bus": 6108,
+      "drone": 3314,
+      "plane": 5453
+    },
+    "below_16_squared": 149283,
+    "below_32_squared": 177071,
+    "fraction_below_16_squared": 0.828195127904977,
+    "fraction_below_32_squared": 0.9823579342139572,
+    "mean_boxes_per_image": 14.316997617156474,
+    "images_over_100_boxes": 620
+  },
+  "source_train_test_disjoint": true,
+  "target_paired_images": 12590,
+  "target_individual_modality_frames": 25180
+}

@@ -1,0 +1,5 @@
+{
+  "preview": "/media/imsel/4TBSSD/EMCH585_Artifacts/rgbt_tiny_comparison_20261123/annotation_sanity.png",
+  "preview_sha256": "90adae83326d390d0a293e0259d70969ff553bf7e95d4e49b7ebfe0e25bb8776",
+  "checked": "One paired native-frame person overlay visually inspected: modality00 RGB, modality01 thermal; visible-coordinate label corresponds to the person. Not an independent calibration/synchronization validation."
+}

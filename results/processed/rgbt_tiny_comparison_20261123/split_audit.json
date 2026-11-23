@@ -1,0 +1,14 @@
+{
+  "official_sequence_ids_disjoint": true,
+  "shared_filename_recording_prefixes": [
+    "DJI_0028",
+    "DJI_0030",
+    "DJI_0032",
+    "DJI_0051",
+    "DJI_0257",
+    "DJI_0277",
+    "DJI_0307",
+    "DJI_0309"
+  ],
+  "interpretation": "Filename prefixes suggest possible related captures; they do not prove identical recording identity. Preserve the official split and verify capture groups before any new target-training protocol."
+}

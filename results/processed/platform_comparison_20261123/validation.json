@@ -1,0 +1,12 @@
+{
+  "runs": 18,
+  "models": 3,
+  "repetitions_each": 3,
+  "frames_each": 120,
+  "total_timed_frames": 2160,
+  "unique_pairs": 120,
+  "identical_input_hashes_and_order": true,
+  "common_plan_hash": true,
+  "all_power_measurements_present": true,
+  "energy_scopes_comparable_across_platforms": false
+}

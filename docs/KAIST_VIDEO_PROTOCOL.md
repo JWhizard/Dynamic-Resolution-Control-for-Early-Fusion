@@ -49,9 +49,12 @@ Study directory:
 Monitor `status.json` there for preparation/overall state, then
 `runs/progress.json` for completed cases. The external launcher log is
 `/media/imsel/4TBSSD/EMCH585_Artifacts/kaist_long_video_20261118_launcher.log`.
-`runs/COMPLETED.json` is written only after all cases finish. The existing
-`report_kaist_video.py` still assumes 600-frame cases and must be generalized
-and validated before reporting this longer study. Preserve all raw outputs.
+`runs/COMPLETED.json` is written only after all cases finish. Long-study analysis
+uses `experiments/analyze_long_kaist.py`, which handles unequal sequence lengths,
+sequence-macro accuracy, pooled latency/age tails and paired sequence bootstrap.
+Its report is in `results/processed/kaist_long_video_20261118/analysis_20261119`.
+The older `report_kaist_video.py` remains specific to the 600-frame study.
+Preserve all raw outputs.
 
 The sections below describe the original November 16 prefix study.
 

@@ -1,5 +1,9 @@
 # Full-sequence KAIST replay completion — November 19, 2026
 
+The completed [accuracy, streaming, latency and energy analysis](analysis_20261119/REPORT.md)
+compares all fixed/adaptive policies by model and day/night, including paired
+sequence-bootstrap intervals and observed fixed-resolution frontiers.
+
 All 162 planned cases completed: three frozen detectors, six full
 day/night sequences, eight fixed/adaptive configurations under CPU preprocessing
 thread changes and one fixed576 constant-thread control per detector/sequence.
@@ -24,4 +28,6 @@ Run-level outputs, predictions and traces remain at `/media/imsel/4TBSSD/EMCH585
 Source snapshots and the launch protocol were preserved there before scoring.
 Reproduce this export with `python -m experiments.summarize_long_kaist
 --raw /path/to/study --output /NEW/summary` (on one shell line).
-Broader pooled, worst-sequence and transition analysis remains follow-up work.
+The linked analysis reports sequence-macro and worst-sequence accuracy, pooled
+latency/age percentiles and resource controls. Dataset-pooled COCO AP and natural
+environment-transition studies are not claimed.

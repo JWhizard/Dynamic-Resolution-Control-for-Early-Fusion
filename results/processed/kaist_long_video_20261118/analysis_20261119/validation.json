@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-11-19T20:39:10.793868+00:00",
+  "verified_cases": 162,
+  "unique_pairs": 16873,
+  "jobs": 162,
+  "input_frame_evaluations": 455571,
+  "processed_frames": 280026,
+  "dropped_frames": 175545,
+  "processed_counts_match": true,
+  "manifest_annotation_engine_source_scorer_hashes_match": true,
+  "power_read_errors": 0,
+  "bootstrap_repetitions": 1000,
+  "bootstrap_seed": 20261119,
+  "bootstrap_unit": "paired sequence (six selected sequences)",
+  "accuracy_aggregation": "Equal-weight sequence macro means of saved exact pycocotools scores; not pooled COCO AP",
+  "post_hoc_analysis": true,
+  "model_or_policy_tuning": false
+}

@@ -1,0 +1,22 @@
+{
+  "run": "/media/imsel/4TBSSD/EMCH585_Artifacts/kaist_long_video_20261118/runs/010_yolo26n_ms_sequence_thread_reduction_set11_V000.json",
+  "manifest": "/media/imsel/4TBSSD/EMCH585_Artifacts/kaist_long_video_20261118/evaluation/set11_V000/manifest.json",
+  "sequence": "set11/V000",
+  "source_frame_range": [
+    1140,
+    1339
+  ],
+  "rendered_frames": 100,
+  "duration_seconds": 10.0,
+  "resolutions": [
+    480,
+    544,
+    640
+  ],
+  "recorded_resolution_changes": 9,
+  "displayed_confidence": 0.25,
+  "protocol": "Same-frame boxes from saved processed outputs; source-index sampling at 10 fps. Native image display, not simulated lower-resolution imagery. Not a live capture or causal display-age demonstration.",
+  "selection": "Illustrative night segment selected after evaluation for visible detections and resolution changes; not representative performance evidence.",
+  "source": "KAIST Multispectral Pedestrian Detection Benchmark, Hwang et al., CVPR 2015",
+  "license": "Dataset-derived imagery: CC BY-NC-SA 4.0; https://soonminhwang.github.io/rgbt-ped-detection/"
+}

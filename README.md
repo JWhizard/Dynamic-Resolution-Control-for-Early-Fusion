@@ -268,9 +268,33 @@ replay processed 280,026 arrivals and dropped 175,545. The study extends earlier
 30-second prefixes and does not use KAIST for model or policy fitting.
 
 - [Per-sequence scores, costs and completion validation](results/processed/kaist_long_video_20261118/REPORT.md)
+- [Fixed/adaptive comparison, day/night accuracy, drops, latency and energy analysis](results/processed/kaist_long_video_20261118/analysis_20261119/REPORT.md)
 - [Dataset selection, frozen protocol and reproduction](docs/KAIST_VIDEO_PROTOCOL.md)
 - [Project to-do list](docs/EMCH585_PROJECT_TODO.txt)
 
-The CSV contains individual sequence scores; pooled accuracy and transition
-analysis remain follow-up work. Separate day/night clips do not demonstrate
+The analysis reports sequence-macro accuracy and pooled latency/age percentiles;
+dataset-pooled COCO accuracy is not claimed. Separate day/night clips do not demonstrate
 natural environment transitions, and named-rail energy includes host activity.
+
+### November 23 RGBT-Tiny comparison and updated review drafts
+
+The three frozen M3FD-trained models completed the full official RGBT-Tiny test
+split (12,590 paired images, 30 sequence IDs) at fixed576. Original M3FD test
+predictions were rescored on the shared bus/car/person classes. Shared-class
+COCO AP is 54.730% / 51.904% / 43.793% on M3FD and 0.095% / 0.114% / 0.013%
+on RGBT-Tiny for YOLO26n / Faster R-CNN / RetinaNet, respectively. This is
+frozen transfer, not within-dataset training or an intrinsic dataset ranking.
+
+- [Comparison, class metrics, object-scale audit and validation](results/processed/rgbt_tiny_comparison_20261123/REPORT.md)
+- [Matched-input Orin/workstation costs and energy measurement scopes](results/processed/platform_comparison_20261123/REPORT.md)
+- [Updated report PDF](docs/deliverables/EMCH585_REPORT_REVIEW_20261123.pdf)
+- [Editable Word report](docs/deliverables/EMCH585_REPORT_REVIEW_20261123.docx)
+- [Updated slides with recorded daytime/nighttime GIFs](docs/deliverables/EMCH585_PROGRESS_REVIEW_20261123.pptx)
+- [Slide PDF](docs/deliverables/EMCH585_PROGRESS_REVIEW_20261123.pdf)
+- [Current checklist](docs/EMCH585_PROJECT_TODO.txt)
+
+The 18 platform runs use identical predecoded inputs and three fresh processes
+per model/platform. Backends differ, and NVML GPU energy and Orin host rail sums
+have different scopes. The official RGBT-Tiny split has disjoint sequence IDs,
+but eight DJI filename prefixes occur in both partitions; capture identity
+needs checking before a new target-training protocol. No target fitting ran.

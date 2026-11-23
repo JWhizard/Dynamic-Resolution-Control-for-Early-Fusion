@@ -1,0 +1,30 @@
+{
+  "/home/imsel/EMCH585_Workspace/Dynamic-Resolution-Control-for-Early-Fusion/experiments/run.py": {
+    "sha256": "c72bed2dde3d9ccaa8eff01ea4436d8d1f15cf6b0ad03eb28cfdbfc8da4abbcb",
+    "archived_copy": "/media/imsel/4TBSSD/EMCH585_Artifacts/kaist_long_video_20261118/source/experiments/run.py"
+  },
+  "experiments/policies.py": {
+    "sha256": "c59bda7e6740eb86d991f15ce289a398c73374c702ce1b36540db2b83fff1232",
+    "archived_copy": "/media/imsel/4TBSSD/EMCH585_Artifacts/kaist_long_video_20261118/source/experiments/policies.py"
+  },
+  "experiments/power.py": {
+    "sha256": "fc606dcecdd15582ea57f136fd14e69138a618634dd42fc21e357c28432cc8aa",
+    "archived_copy": "/media/imsel/4TBSSD/EMCH585_Artifacts/kaist_long_video_20261118/source/experiments/power.py"
+  },
+  "experiments/resources.py": {
+    "sha256": "dcddcc85b134000bde77958864aa58bb77e9a571672b08d5d87c6174f9e583ce",
+    "archived_copy": "/media/imsel/4TBSSD/EMCH585_Artifacts/kaist_long_video_20261118/source/experiments/resources.py"
+  },
+  "experiments/tensorrt_backend.py": {
+    "sha256": "f77e344c431a207a3e441b0e1d0d8be26098f774d926aa0ea23f098e695879fc",
+    "archived_copy": "/media/imsel/4TBSSD/EMCH585_Artifacts/kaist_long_video_20261118/source/experiments/tensorrt_backend.py"
+  },
+  "fusion/preprocess.py": {
+    "sha256": "08dce7c3a9fa8d0eeecc4eef6a44480e95ebcf16cb955550703f99aedb62fa6c",
+    "archived_copy": "/media/imsel/4TBSSD/EMCH585_Artifacts/kaist_long_video_20261118/source/fusion/preprocess.py"
+  },
+  "controller_sequence.py": {
+    "sha256": "2f32c46d5f9dc23345298154dba69f7138d0938d5398e2cba223de2211f3a5fd",
+    "archived_copy": "/media/imsel/4TBSSD/EMCH585_Artifacts/kaist_video_20261116/source/controller_sequence.py"
+  }
+}

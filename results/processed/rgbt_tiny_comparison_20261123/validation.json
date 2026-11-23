@@ -1,0 +1,16 @@
+{
+  "models": 3,
+  "target_pairs": 12590,
+  "target_sequences": 30,
+  "source_pairs": 419,
+  "shared_classes": [
+    "bus",
+    "car",
+    "person"
+  ],
+  "all_target_images_accounted": true,
+  "finite_predictions": true,
+  "predictions_hashed": true,
+  "trained_on_target": false,
+  "cached_fasterrcnn_rescored": "RESUME.json preserved; original six-class helper failed before target scoring"
+}

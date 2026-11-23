@@ -1,0 +1,26 @@
+[
+  {
+    "model": "fasterrcnn",
+    "predictions": "/media/imsel/4TBSSD/EMCH585_Artifacts/rgbt_tiny_comparison_20261123/fasterrcnn_predictions.json",
+    "predictions_sha256": "aa8e76615bfd26b38f0956af4fc6dd77c8d7e951adb196f76fa40f9d9066d771",
+    "timing": "/media/imsel/4TBSSD/EMCH585_Artifacts/rgbt_tiny_comparison_20261123/fasterrcnn_timing.json",
+    "timing_sha256": "98140c944289a120ab3c546f9a73f090ce1c9fbdd8bff5fd12bf6286b877f1cb",
+    "detections": 286788
+  },
+  {
+    "model": "retinanet",
+    "predictions": "/media/imsel/4TBSSD/EMCH585_Artifacts/rgbt_tiny_comparison_20261123/retinanet_predictions.json",
+    "predictions_sha256": "b0327060d1e6bb10860ae3da2ab9948e2f14fef35cca1d58d0ae6c4eec30f7ea",
+    "timing": "/media/imsel/4TBSSD/EMCH585_Artifacts/rgbt_tiny_comparison_20261123/retinanet_timing.json",
+    "timing_sha256": "dc6cf96ee1f13d55753e1c88f999c97c8ce227bc6c438d26b4479e4bb5e7fc82",
+    "detections": 2496772
+  },
+  {
+    "model": "yolo26n_ms",
+    "predictions": "/media/imsel/4TBSSD/EMCH585_Artifacts/rgbt_tiny_comparison_20261123/yolo26n_ms_predictions.json",
+    "predictions_sha256": "b90b8550dd03487cfb1a0115d296acf8003609d7230e08e4c31c9031ddc9c889",
+    "timing": "/media/imsel/4TBSSD/EMCH585_Artifacts/rgbt_tiny_comparison_20261123/yolo26n_ms_timing.json",
+    "timing_sha256": "690432f552b55baa085199f9a939f4050c7b83323558569a14d793ec79a93ef0",
+    "detections": 343053
+  }
+]

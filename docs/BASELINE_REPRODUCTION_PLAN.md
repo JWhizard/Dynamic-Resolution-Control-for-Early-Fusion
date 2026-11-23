@@ -20,7 +20,18 @@ Verified source snapshots downloaded November 13, 2026:
   named OOD/classification repository for the video-detection method.
 
 Downloaded code is preparation, not a successful reproduction. No upstream
-training or inference has been run. GPU workstation authentication is pending.
+training or inference has been run. Workstation authentication and three-family
+GPU training/evaluation are complete. Original upstream model/data assets,
+legacy runtime isolation and comparable multimodal execution remain open.
+
+November 23 progress: the upstream ApproxDet model bundle was downloaded and
+its seven regular model assets extracted into a separate artifact directory.
+The archive SHA-256 and member inventory are in
+`results/processed/baseline_preparation_20261123/status.json`. This is asset
+preparation, not a successful baseline execution. The upstream contention
+cleanup uses pattern-wide `pkill`; replace it with cleanup restricted to owned
+processes before execution on shared hardware. Original ImageNet-VID case data,
+compatible runtime validation and reprofiled multimodal integration remain open.
 
 Required execution steps:
 
@@ -55,7 +66,9 @@ must run on the authorized workstation. The entry point rejects CPU training.
 The recipes use the existing grouped M3FD split, preserve B,G,R,IR channel order,
 reserve model label zero and map the six project classes to 1–6. Validation AP
 selects `best.pt`; test images are not loaded. The time limit is checked between
-batches; a final validation pass can extend elapsed time. Training has not been
-validated on a GPU or matched to the YOLO tuning budget yet, so these recipes
-remain provisional. A trained checkpoint can use the common experiment adapter
+batches; a final validation pass can extend elapsed time. These recipes ran on
+the workstation: Faster R-CNN completed 62 full epochs plus a partial epoch 63,
+and RetinaNet completed 60 full epochs. Frozen validation-best checkpoints were
+evaluated on M3FD and KAIST; RGBT-Tiny transfer was added November 23. Training
+budgets remain unmatched to the YOLO recipe. A trained checkpoint uses the common experiment adapter
 `--adapter experiments.detector_families:create --weights best.pt --device cuda:N`.

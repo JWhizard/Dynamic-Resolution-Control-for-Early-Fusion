@@ -1,0 +1,74 @@
+[
+  {
+    "platform": "orin",
+    "model": "fasterrcnn",
+    "backend": "tensorrt",
+    "runs": 3,
+    "mean_service_ms": 95.64487563610176,
+    "mean_run_p95_ms": 115.6433411335456,
+    "min_run_mean_ms": 92.17038748331561,
+    "max_run_mean_ms": 97.82611312500269,
+    "mean_J_per_frame": 2.942301862017843,
+    "energy_scope": "Orin named-rail host sum; shared services included"
+  },
+  {
+    "platform": "orin",
+    "model": "retinanet",
+    "backend": "tensorrt",
+    "runs": 3,
+    "mean_service_ms": 58.145628824993565,
+    "mean_run_p95_ms": 75.54375111666711,
+    "min_run_mean_ms": 53.437814341649904,
+    "max_run_mean_ms": 61.7063625416525,
+    "mean_J_per_frame": 2.009401301499435,
+    "energy_scope": "Orin named-rail host sum; shared services included"
+  },
+  {
+    "platform": "orin",
+    "model": "yolo26n_ms",
+    "backend": "tensorrt",
+    "runs": 3,
+    "mean_service_ms": 26.19416504167526,
+    "mean_run_p95_ms": 30.189627400075853,
+    "min_run_mean_ms": 26.009930900014904,
+    "max_run_mean_ms": 26.47964761665283,
+    "mean_J_per_frame": 0.5109191441265623,
+    "energy_scope": "Orin named-rail host sum; shared services included"
+  },
+  {
+    "platform": "workstation",
+    "model": "fasterrcnn",
+    "backend": "pytorch",
+    "runs": 3,
+    "mean_service_ms": 8.889872782553235,
+    "mean_run_p95_ms": 9.64796457750102,
+    "min_run_mean_ms": 8.782870198289553,
+    "max_run_mean_ms": 8.94595067948103,
+    "mean_J_per_frame": 2.3117194443941114,
+    "energy_scope": "GPU device NVML total-energy delta"
+  },
+  {
+    "platform": "workstation",
+    "model": "retinanet",
+    "backend": "pytorch",
+    "runs": 3,
+    "mean_service_ms": 14.64366298686299,
+    "mean_run_p95_ms": 15.387975051999092,
+    "min_run_mean_ms": 14.520549681037664,
+    "max_run_mean_ms": 14.781120947251717,
+    "mean_J_per_frame": 3.896363888846503,
+    "energy_scope": "GPU device NVML total-energy delta"
+  },
+  {
+    "platform": "workstation",
+    "model": "yolo26n_ms",
+    "backend": "pytorch",
+    "runs": 3,
+    "mean_service_ms": 4.186827376381391,
+    "mean_run_p95_ms": 5.5250585079193115,
+    "min_run_mean_ms": 3.9739628322422504,
+    "max_run_mean_ms": 4.374732558305065,
+    "mean_J_per_frame": 0.44670833316114217,
+    "energy_scope": "GPU device NVML total-energy delta"
+  }
+]

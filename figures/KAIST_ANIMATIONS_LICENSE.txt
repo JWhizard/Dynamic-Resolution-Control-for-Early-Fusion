@@ -1,0 +1,17 @@
+KAIST controller replay animations and preview images
+
+Files: kaist_controller_detections.gif/.png and
+kaist_controller_night_detections.gif/.png.
+
+The underlying RGB/thermal imagery is from the KAIST Multispectral Pedestrian
+Detection Benchmark, Soonmin Hwang, Jaesik Park, Namil Kim, Yukyung Choi and
+In So Kweon, CVPR 2015. Official release:
+https://github.com/SoonminHwang/rgbt-ped-detection
+
+The dataset-derived animations and previews are provided under Creative Commons
+Attribution NonCommercial ShareAlike 4.0 International:
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+Modifications: paired views, saved model detections, controller resolution trace,
+measurement overlays, temporal sampling and GIF encoding. The JSON sidecars
+identify source runs, frames, thresholds and the illustrative selection process.

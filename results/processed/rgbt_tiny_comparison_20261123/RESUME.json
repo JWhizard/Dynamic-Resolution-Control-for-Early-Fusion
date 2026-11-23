@@ -1,0 +1,7 @@
+{
+  "utc": "2026-11-23T18:13:04.237593+00:00",
+  "original_source_sha256": "10014a7ee3ed7b19b55e40fba0081dc59da139694fa2115ad49de13db6bc4490",
+  "current_source_sha256": "6aec316572ca05d5ce4760a1d77fbad27ecd8fc548d2f1003dbf45afd23498fc",
+  "scorer_sha256": "9f3bc5712d29f83dd6331ab323dcdbc63837f9a851cb7ea277b5e892bdaa73a0",
+  "reason": "Shared-class evaluator compatibility; reuse native saved predictions, no target fitting."
+}

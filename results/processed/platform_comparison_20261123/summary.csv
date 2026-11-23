@@ -1,0 +1,7 @@
+platform,model,backend,runs,mean_service_ms,mean_run_p95_ms,min_run_mean_ms,max_run_mean_ms,mean_J_per_frame,energy_scope
+orin,fasterrcnn,tensorrt,3,95.64487563610176,115.6433411335456,92.17038748331561,97.82611312500269,2.942301862017843,Orin named-rail host sum; shared services included
+orin,retinanet,tensorrt,3,58.145628824993565,75.54375111666711,53.437814341649904,61.7063625416525,2.009401301499435,Orin named-rail host sum; shared services included
+orin,yolo26n_ms,tensorrt,3,26.19416504167526,30.189627400075853,26.009930900014904,26.47964761665283,0.5109191441265623,Orin named-rail host sum; shared services included
+workstation,fasterrcnn,pytorch,3,8.889872782553235,9.64796457750102,8.782870198289553,8.94595067948103,2.3117194443941114,GPU device NVML total-energy delta
+workstation,retinanet,pytorch,3,14.64366298686299,15.387975051999092,14.520549681037664,14.781120947251717,3.896363888846503,GPU device NVML total-energy delta
+workstation,yolo26n_ms,pytorch,3,4.186827376381391,5.5250585079193115,3.9739628322422504,4.374732558305065,0.44670833316114217,GPU device NVML total-energy delta

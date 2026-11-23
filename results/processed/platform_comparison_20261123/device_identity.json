@@ -1,0 +1,8 @@
+{
+  "checked_after_runs": true,
+  "cuda_environment": "CUDA_DEVICE_ORDER=PCI_BUS_ID; CUDA_VISIBLE_DEVICES=3",
+  "nvml_index": 3,
+  "cuda_uuid": "c1ac767b-2eb6-6a70-6409-44664d62ef58",
+  "nvml_uuid": "GPU-c1ac767b-2eb6-6a70-6409-44664d62ef58",
+  "same_device": true
+}

@@ -1,0 +1,7 @@
+{
+  "host": "COMECH-2080",
+  "platform": "Linux-6.17.0-29-generic-x86_64-with-glibc2.39",
+  "torch": "2.10.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA RTX 6000 Ada Generation"
+}

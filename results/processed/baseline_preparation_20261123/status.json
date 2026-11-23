@@ -1,0 +1,51 @@
+{
+  "status": "assets_prepared_not_reproduced",
+  "upstream": "https://github.com/purdue-dcsl/ApproxDet",
+  "upstream_commit": "d3c745a8d70a35dddcab0d6f4173a51c682d043a",
+  "archive_sha256": "f6dd3794be10cebe06336fcf425991fe9547c3fb40dec4eb22b18192d9783b62",
+  "archive_bytes": 116490240,
+  "assets": [
+    {
+      "name": "models/ApproxDet_Acc2.pb",
+      "bytes": 273947,
+      "regular": true
+    },
+    {
+      "name": "models/ApproxDet_LatTr.pb",
+      "bytes": 9801,
+      "regular": true
+    },
+    {
+      "name": "models/ApproxDet_LatDet.pb",
+      "bytes": 5628,
+      "regular": true
+    },
+    {
+      "name": "models/ApproxDet_Acc.pb",
+      "bytes": 119914,
+      "regular": true
+    },
+    {
+      "name": "models/ApproxDet_CS.pb",
+      "bytes": 505583,
+      "regular": true
+    },
+    {
+      "name": "models/ApproxDet.pb",
+      "bytes": 115555149,
+      "regular": true
+    },
+    {
+      "name": "models/ApproxDet_LatSw.pb",
+      "bytes": 6432,
+      "regular": true
+    }
+  ],
+  "local_root": "/media/imsel/4TBSSD/EMCH585_Artifacts/baselines/reproduction_20261123",
+  "next_steps": [
+    "Create isolated compatible runtime and prepare original ImageNet-VID case.",
+    "Replace upstream pattern-wide pkill with owned-process cleanup before any scheduler/contention execution on shared hardware.",
+    "Validate original zero-contention case, then document RGB/thermal detector replacement and reprofile on validation data."
+  ],
+  "caveat": "Asset download is preparation, not a faithful published-baseline result. No upstream model inference or scheduler execution was performed."
+}

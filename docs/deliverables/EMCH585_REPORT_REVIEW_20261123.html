@@ -1,0 +1,317 @@
+<!doctype html><html><head><meta charset="utf-8"><title>EMCH585 Report Draft</title><style>@page {size:Letter;margin:.75in;} body {font-family:"Liberation Sans",sans-serif;font-size:11pt;line-height:1.35;color:#182033;} h1 {font-size:22pt;color:#383283;} h2 {font-size:15pt;color:#383283;page-break-after:avoid;} h3 {font-size:12pt;} p {margin:0 0 9pt;} table {border-collapse:collapse;width:100%;font-size:9pt;} td,th {border:1px solid #bbb;padding:5px;} pre {font-size:9pt;white-space:pre-wrap;} img {display:block;} a {color:#383283;}</style></head><body><h1>Dynamic resolution control for RGB thermal detection</h1>
+<p>Review draft updated November 23, 2026. Instructor scope, submission requirements and final claims remain to be agreed.</p>
+<h2>Research question and contribution</h2>
+<p>Can causal input-resolution control improve the accuracy, timeliness and energy cost of RGB–thermal detection under changing content and compute availability? The implemented contribution is a reproducible evaluation system with common detector adapters, native-coordinate scoring, explicit streaming arrivals, resource interventions, controller accounting and recorded power. Current measurements show useful reductions relative to some fixed settings, but no consistent adaptive-policy advantage across all three detector families and the observed fixed-resolution alternatives.</p>
+<h2>Models and data</h2>
+<p>All fusion detectors consume B,G,R,IR. YOLO26n uses the existing multi-scale project checkpoint; Faster R-CNN and RetinaNet use frozen validation-best checkpoints from provisional two-hour training runs. Training budgets differ, so these are checkpoint comparisons rather than a matched-budget architecture study.</p>
+<table>
+<thead>
+<tr>
+<th>Dataset</th>
+<th style="text-align: right;">Paired images used</th>
+<th>Purpose</th>
+<th>Split and scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M3FD</td>
+<td style="text-align: right;">4,200 total; 419 test</td>
+<td>Source training and held-out accuracy</td>
+<td>Sequence-grouped 2,940/841/419 train/validation/test</td>
+</tr>
+<tr>
+<td>KAIST</td>
+<td style="text-align: right;">16,873</td>
+<td>Frozen video transfer across three day and three night sequences</td>
+<td>Full versions of six selected official test sequences; earlier prefixes were already examined</td>
+</tr>
+<tr>
+<td>RGBT-Tiny</td>
+<td style="text-align: right;">46,701 total; 12,590 test</td>
+<td>Frozen transfer and tiny-object comparison</td>
+<td>Official 85 training / 30 test sequences; no target fitting</td>
+</tr>
+<tr>
+<td>Local FLIR</td>
+<td style="text-align: right;">120 recorded indoor pairs</td>
+<td>Deployment cost, repetition and switching</td>
+<td>Unannotated; repeated frames do not establish accuracy or independent scene coverage</td>
+</tr>
+</tbody>
+</table>
+<p>RGBT-Tiny stores two modality frames per pair; the local release has 34,111 training pairs and 12,590 test pairs. Its native release includes modality-specific boxes. The comparison uses original visible-coordinate annotations with paired thermal inputs. Dataset counts and official split membership are audited from the local release. Eight DJI filename prefixes occur in both official partitions; this suggests possibly related captures, not proven frame leakage. Future target training should verify capture identity before selecting validation/test units.</p>
+<h2>Deployment and measurements</h2>
+<p>Batch size is one. Jetson AGX Orin uses TensorRT 10.3 strict FP32 GPU engines and retains CPU preprocessing. The workstation uses an RTX 6000 Ada and native FP32 PyTorch. Both additional-family TensorRT exports passed sampled prediction agreement gates before timing. Backends and preprocessing contracts are recorded; cost differences are not attributed solely to hardware.</p>
+<p>Accuracy uses pycocotools COCO AP over IoU .50:.95, AP-small and person recall at IoU .5/confidence .25. The streaming replay runs nominal 20 Hz arrivals, retains the latest due input and counts skipped arrivals. Causal scoring uses only the latest completed boxes at each arrival, without tracking or future results. Service time, completion age and display age are separate metrics. The 100 ms service budget differs from the 50 ms arrival period.</p>
+<p>Named-rail energy includes shared-host browser/camera load. Both joules per source arrival and joules per completed inference are reported; neither is wall-plug or isolated model energy. Model loading, profiling, warmup and common engine builds are recorded separately.</p>
+<h2>M3FD held-out accuracy</h2>
+<table>
+<thead>
+<tr>
+<th>Frozen checkpoint</th>
+<th style="text-align: right;">Six-class AP %</th>
+<th style="text-align: right;">AP50 %</th>
+<th style="text-align: right;">AP-small %</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>YOLO26n</td>
+<td style="text-align: right;">41.21</td>
+<td style="text-align: right;">63.58</td>
+<td style="text-align: right;">14.58</td>
+</tr>
+<tr>
+<td>Faster R-CNN</td>
+<td style="text-align: right;">40.16</td>
+<td style="text-align: right;">65.18</td>
+<td style="text-align: right;">18.38</td>
+</tr>
+<tr>
+<td>RetinaNet</td>
+<td style="text-align: right;">30.37</td>
+<td style="text-align: right;">49.02</td>
+<td style="text-align: right;">4.06</td>
+</tr>
+</tbody>
+</table>
+<p>All models were evaluated on the same 419 grouped test pairs at a 576-pixel long side. These six-class scores must not be directly subtracted from person-only KAIST scores or the three-class transfer scores below.</p>
+<h2>KAIST fixed and adaptive comparisons</h2>
+<p>All 162 cases completed: three models × six sequences × eight policies plus a fixed576 constant-thread control. The 16,873 unique pairs generate 455,571 source-arrival evaluations, of which 280,026 were processed and 175,545 skipped. The primary CPU preprocessing-thread trace is 4→1→4, within fixed process affinity; this is not a GPU-contention experiment.</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Policy</th>
+<th style="text-align: right;">Sequence-macro causal person AP %</th>
+<th style="text-align: right;">Mean service ms</th>
+<th style="text-align: right;">Dropped arrivals %</th>
+<th style="text-align: right;">J/source arrival</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>YOLO26n</td>
+<td>fixed:480</td>
+<td style="text-align: right;">2.742</td>
+<td style="text-align: right;">44.83</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">0.999</td>
+</tr>
+<tr>
+<td>YOLO26n</td>
+<td>fixed:576</td>
+<td style="text-align: right;">1.318</td>
+<td style="text-align: right;">50.85</td>
+<td style="text-align: right;">2.66</td>
+<td style="text-align: right;">1.001</td>
+</tr>
+<tr>
+<td>YOLO26n</td>
+<td>sequence</td>
+<td style="text-align: right;">1.558</td>
+<td style="text-align: right;">47.46</td>
+<td style="text-align: right;">0.09</td>
+<td style="text-align: right;">1.001</td>
+</tr>
+<tr>
+<td>YOLO26n</td>
+<td>guarded</td>
+<td style="text-align: right;">1.546</td>
+<td style="text-align: right;">47.74</td>
+<td style="text-align: right;">0.15</td>
+<td style="text-align: right;">1.000</td>
+</tr>
+<tr>
+<td>Faster R-CNN</td>
+<td>fixed:480</td>
+<td style="text-align: right;">0.402</td>
+<td style="text-align: right;">131.29</td>
+<td style="text-align: right;">61.93</td>
+<td style="text-align: right;">1.405</td>
+</tr>
+<tr>
+<td>Faster R-CNN</td>
+<td>fixed:576</td>
+<td style="text-align: right;">0.408</td>
+<td style="text-align: right;">139.18</td>
+<td style="text-align: right;">64.08</td>
+<td style="text-align: right;">1.555</td>
+</tr>
+<tr>
+<td>Faster R-CNN</td>
+<td>sequence</td>
+<td style="text-align: right;">0.377</td>
+<td style="text-align: right;">137.40</td>
+<td style="text-align: right;">63.61</td>
+<td style="text-align: right;">1.570</td>
+</tr>
+<tr>
+<td>Faster R-CNN</td>
+<td>guarded</td>
+<td style="text-align: right;">0.358</td>
+<td style="text-align: right;">130.09</td>
+<td style="text-align: right;">61.57</td>
+<td style="text-align: right;">1.424</td>
+</tr>
+<tr>
+<td>RetinaNet</td>
+<td>fixed:480</td>
+<td style="text-align: right;">0.692</td>
+<td style="text-align: right;">97.29</td>
+<td style="text-align: right;">48.97</td>
+<td style="text-align: right;">1.316</td>
+</tr>
+<tr>
+<td>RetinaNet</td>
+<td>fixed:576</td>
+<td style="text-align: right;">0.656</td>
+<td style="text-align: right;">109.88</td>
+<td style="text-align: right;">54.78</td>
+<td style="text-align: right;">1.511</td>
+</tr>
+<tr>
+<td>RetinaNet</td>
+<td>sequence</td>
+<td style="text-align: right;">0.645</td>
+<td style="text-align: right;">108.26</td>
+<td style="text-align: right;">54.06</td>
+<td style="text-align: right;">1.527</td>
+</tr>
+<tr>
+<td>RetinaNet</td>
+<td>guarded</td>
+<td style="text-align: right;">0.673</td>
+<td style="text-align: right;">97.48</td>
+<td style="text-align: right;">49.03</td>
+<td style="text-align: right;">1.306</td>
+</tr>
+</tbody>
+</table>
+<p>Daytime sequence-macro AP exceeds nighttime AP in every tested model/policy combination. YOLO fixed480 has the highest observed person AP (2.742%); its frozen sequence controller reaches 1.558%. Faster R-CNN and RetinaNet have weak absolute transfer accuracy and substantial source drops. Guarded RetinaNet reduces cost relative to fixed576, but the frozen sequence policy has no consistent advantage over the observed fixed alternatives.</p>
+<p>Accuracy aggregates equally across sequences; latency/age percentiles pool actual samples. Paired differences use 1,000 bootstrap resamples of the six matched sequence units. With one run per case and six selected sequences, those intervals describe sequence-mix sensitivity, not repeated-run variability or broad environmental robustness.</p>
+<p><a href="../../results/processed/kaist_long_video_20261118/analysis_20261119/REPORT.md">Detailed KAIST analysis and figures</a>.</p>
+<h2>RGBT-Tiny comparison with M3FD</h2>
+<p>The same frozen M3FD-trained checkpoints are evaluated at fixed576 on the full RGBT-Tiny test split. Both datasets are scored on bus, car and person only; original M3FD predictions are rescored to that subset. Cyclist is not treated as motorcycle. Ship, drone, plane and other unmatched classes are outside this comparison, while all test images remain included as positives or negatives.</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th style="text-align: right;">M3FD shared-class AP %</th>
+<th style="text-align: right;">RGBT-Tiny shared-class AP %</th>
+<th style="text-align: right;">M3FD AP-small %</th>
+<th style="text-align: right;">RGBT-Tiny AP-small %</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Faster R-CNN</td>
+<td style="text-align: right;">51.904</td>
+<td style="text-align: right;">0.114</td>
+<td style="text-align: right;">20.054</td>
+<td style="text-align: right;">0.239</td>
+</tr>
+<tr>
+<td>RetinaNet</td>
+<td style="text-align: right;">43.793</td>
+<td style="text-align: right;">0.013</td>
+<td style="text-align: right;">4.740</td>
+<td style="text-align: right;">0.032</td>
+</tr>
+<tr>
+<td>YOLO26n</td>
+<td style="text-align: right;">54.730</td>
+<td style="text-align: right;">0.095</td>
+<td style="text-align: right;">17.338</td>
+<td style="text-align: right;">0.107</td>
+</tr>
+</tbody>
+</table>
+<p>Comparison status: all three models complete.</p>
+<p>In the shared-class test annotations, 80.26% of RGBT-Tiny boxes have area below 16² native pixels, versus 8.25% in M3FD. Native dimensions and resized input footprints differ. Object size, viewpoint, environment and annotation conventions all change, so the size difference alone is not established as the cause of the transfer gap. <a href="../../results/processed/rgbt_tiny_comparison_20261123/REPORT.md">Detailed class metrics and scale audit</a>.</p>
+<p>These are frozen cross-dataset transfer results, not evidence that one dataset is intrinsically harder or a comparison of models trained on each dataset. COCO IoU AP is distinct from RGBT-Tiny’s SAFit metric. Residual cross-camera parallax, object scale and annotation conventions can affect transfer. Test results are not used to choose a new policy.</p>
+<h2>Matched input deployment costs</h2>
+<p>A separate fixed576 comparison uses the same 120 predecoded indoor pairs, three fresh processes per model/platform, and four pinned CPU threads. Both input hashes and ordering match. These are short deployment-stack comparisons: Orin TensorRT and RTX 6000 Ada PyTorch differ in backend as well as hardware.</p>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Model</th>
+<th style="text-align: right;">Mean service ms</th>
+<th style="text-align: right;">Mean run p95 ms</th>
+<th style="text-align: right;">J/frame</th>
+<th>Energy scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>orin</td>
+<td>Faster R-CNN</td>
+<td style="text-align: right;">95.64</td>
+<td style="text-align: right;">115.64</td>
+<td style="text-align: right;">2.942</td>
+<td>Orin named-rail host sum; shared services included</td>
+</tr>
+<tr>
+<td>orin</td>
+<td>RetinaNet</td>
+<td style="text-align: right;">58.15</td>
+<td style="text-align: right;">75.54</td>
+<td style="text-align: right;">2.009</td>
+<td>Orin named-rail host sum; shared services included</td>
+</tr>
+<tr>
+<td>orin</td>
+<td>YOLO26n</td>
+<td style="text-align: right;">26.19</td>
+<td style="text-align: right;">30.19</td>
+<td style="text-align: right;">0.511</td>
+<td>Orin named-rail host sum; shared services included</td>
+</tr>
+<tr>
+<td>workstation</td>
+<td>Faster R-CNN</td>
+<td style="text-align: right;">8.89</td>
+<td style="text-align: right;">9.65</td>
+<td style="text-align: right;">2.312</td>
+<td>GPU device NVML total-energy delta</td>
+</tr>
+<tr>
+<td>workstation</td>
+<td>RetinaNet</td>
+<td style="text-align: right;">14.64</td>
+<td style="text-align: right;">15.39</td>
+<td style="text-align: right;">3.896</td>
+<td>GPU device NVML total-energy delta</td>
+</tr>
+<tr>
+<td>workstation</td>
+<td>YOLO26n</td>
+<td style="text-align: right;">4.19</td>
+<td style="text-align: right;">5.53</td>
+<td style="text-align: right;">0.447</td>
+<td>GPU device NVML total-energy delta</td>
+</tr>
+</tbody>
+</table>
+<p>Workstation NVML measures GPU-device energy; Orin rails include host/background load. These scopes do not support a cross-platform energy-efficiency ratio. Prefetch, loading and warmup are excluded, so the table is not end-to-end camera latency. The 120-frame repetitions do not establish stable p99 or unseen-scene behavior. <a href="../../results/processed/platform_comparison_20261123/REPORT.md">Protocol and validation</a>.</p>
+<h2>Related adaptive systems</h2>
+<p><a href="https://arxiv.org/abs/2010.10754">ApproxDet</a> and <a href="https://www.microsoft.com/en-us/research/publication/chanakya-learning-runtime-decisions-for-adaptive-real-time-perception/">Chanakya</a> already study content/resource-aware inference. Local deadline, AIMD and guarded controls are diagnostic implementations, not reproductions of those published systems. The preserved upstream environments require older dependencies and original model/data assets; faithful execution and a documented multimodal adaptation remain open.</p>
+<h2>Remaining evaluation and paper direction</h2>
+<ul>
+<li>Measure longer live-camera sessions with verified synchronization, controlled changes and human-checked labels for accuracy claims.</li>
+<li>Extend the short matched-input platform measurements to independent scenes and longer runs; cross-check power with an external meter where available.</li>
+<li>Reproduce at least one published adaptive baseline under declared comparable capabilities and full overhead accounting.</li>
+<li>Investigate why feedback fails under transfer before designing reliability-aware probing or fallback control. Confirm any new method on untouched data.</li>
+<li>Agree on instructor scope, submission requirements and success margins. The evidence supports an empirical system study; it does not yet establish a new state-of-the-art controller.</li>
+</ul>
+<h2>Evidence and reproduction</h2>
+<ul>
+<li><a href="../EMCH585_PROJECT_TODO.txt">Project checklist</a></li>
+<li><a href="../FAMILY_TENSORRT.md">GPU export and numerical validation</a></li>
+<li><a href="../KAIST_VIDEO_PROTOCOL.md">KAIST video protocol</a></li>
+<li><a href="../../results/processed/heldout_families_20261116/REPORT.md">M3FD held-out report</a></li>
+<li><a href="https://github.com/XinyiYing/RGBT-Tiny">RGBT-Tiny official release</a> and <a href="https://arxiv.org/abs/2406.14482">paper</a>. Existing data-access terms remain applicable; the repository does not establish a public-domain dataset license.</li>
+</ul>
+<p>The dated November 13 drafts remain preserved. This review draft incorporates the November 16 training/deployment and November 19 full-video analysis.</p></body></html>
