@@ -1,0 +1,21 @@
+{
+  "stem_preserved": true,
+  "channels": 4,
+  "class_order": [
+    "ship",
+    "car",
+    "cyclist",
+    "pedestrian",
+    "bus",
+    "drone",
+    "plane"
+  ],
+  "training_images": 20218,
+  "validation_images": 4419,
+  "holdout_loaded": false,
+  "ultralytics": "8.4.14",
+  "torch": "2.10.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA RTX 6000 Ada Generation",
+  "source_sha256": "e01defde95182270469a2446ac8b5663f263e8c49c2f726b3af8c45c882045e9"
+}

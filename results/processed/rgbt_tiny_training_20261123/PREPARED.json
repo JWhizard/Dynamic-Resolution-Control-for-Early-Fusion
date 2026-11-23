@@ -1,0 +1,17 @@
+{
+  "counts": {
+    "train": 20218,
+    "val": 4419,
+    "holdout": 4294
+  },
+  "groups": {
+    "train": 46,
+    "val": 10,
+    "holdout": 10
+  },
+  "plan_sha256": "479318439b9fc6d2870af042d68aaad53ce151d30b7967e0f661aec07d10081f",
+  "frame_inventory_sha256": "6bd17c19b59ace3cd3ed5990c8d50c388a28502ff420c299e1e8166efd91088f",
+  "clipped_training_validation_boxes": 1043,
+  "no_exact_decoded_pairs_cross_splits": true,
+  "holdout_in_training_yaml": false
+}

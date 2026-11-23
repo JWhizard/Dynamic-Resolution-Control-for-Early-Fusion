@@ -32,9 +32,13 @@ CURRENT WORK — RGBT-TINY AND M3FD
     An older six-class scorer failed at the source score; saved Faster R-CNN
     predictions are preserved and rescored with the corrected shared-class evaluator.
 [x] Verify/export complete three-model results, class metrics, plots and reproduction records.
-[ ] If dataset-trained comparisons are required, define separate RGBT-Tiny training,
-    validation and untouched test protocol with capture-group audit first.
-    Current work measures frozen transfer, not within-dataset training or target adaptive policies.
+[~] Execute the target-trained YOLO26n study authorized after the frozen baseline.
+    Capture/content audit complete: 20,218 train / 4,419 validation / 4,294 fresh
+    holdout pairs in 46/10/10 groups; 5,180 old-test-related training pairs excluded.
+    Plan: docs/RGBT_TINY_TRAINING_PROTOCOL.md. Holdout remains unscored.
+    Train one seven-class, four-channel model, maximum 100 epochs or 6 training
+    hours; validation patience 20. Automatic fixed/current-controller comparisons
+    use validation only. New probing/fallback design follows those results.
 
 CURRENT WORK — MATCHED DEPLOYMENT COSTS
 [x] Compare fixed576 across the same 120 indoor pairs with predecoded host inputs:
@@ -80,4 +84,5 @@ REQUIRES USER INPUT OR PHYSICAL EQUIPMENT
 INTERPRETATION
 - Weak frozen cross-dataset transfer and mixed adaptive-policy results are retained.
 - No broad robustness, state-of-the-art accuracy or universal adaptive advantage is established.
-- No additional detector training is currently queued; new target fitting is a separate study.
+- RGBT-Tiny target YOLO pipeline is active. Live status is in TODO/TRAINING_QUEUE_STATUS.json
+  under target_training and in the local artifact status.json. No fresh-holdout result is available.
